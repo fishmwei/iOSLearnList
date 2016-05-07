@@ -1,0 +1,21 @@
+创建Podfile文件 
+pod init
+
+
+pod 'AFNetworking', :path => '~/Documents/AFNetworking'
+
+
+pod install 
+
+cd  ~/.cocoapods
+du -sh *
+
+
+
+
+
+
+创建自己的库
+======================================================
+
+Making a CocoaPod
