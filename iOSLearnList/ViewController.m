@@ -37,7 +37,10 @@
     
     [self.view addSubview:self.tableview];
     
-    self.showData = @[@[@"Timer_NotificationViewController", @"Timer_NotificationViewController"]];
+    self.showData = @[
+  @[@"Timer_NotificationViewController", @"Timer_NotificationViewController"],
+  @[@"unRecognizeViewController", @"unRecognizeViewController"],
+  @[@"undoRedoViewController", @"undoRedoViewController"]];
     
     
     
