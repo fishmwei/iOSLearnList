@@ -40,7 +40,8 @@
     self.showData = @[
   @[@"Timer_NotificationViewController", @"Timer_NotificationViewController"],
   @[@"unRecognizeViewController", @"unRecognizeViewController"],
-  @[@"undoRedoViewController", @"undoRedoViewController"]];
+  @[@"undoRedoViewController", @"undoRedoViewController"],
+  @[@"defaultNSURLSessionController", @"defaultNSURLSessionController"]];
     
     
     

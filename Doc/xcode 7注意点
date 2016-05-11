@@ -1,0 +1,5 @@
+xcode 7 
+
+
+访问http： info.plist 设置 App Transport Security Settings  -- Allow Arbitrary Loads 为YES
+

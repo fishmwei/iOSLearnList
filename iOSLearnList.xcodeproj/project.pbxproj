@@ -23,6 +23,8 @@
 		51F68EFD1CDE1A06009338D6 /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EFB1CDE1A06009338D6 /* Timer+NotificationViewController.m */; };
 		51F68EFE1CDE1A06009338D6 /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EFB1CDE1A06009338D6 /* Timer+NotificationViewController.m */; };
 		9D46EA2DA7D7768517D7BAAD /* libPods-iOSLearnListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D49CD72D19F8635C4B54AB /* libPods-iOSLearnListUITests.a */; };
+		C167143C1CE337B800269C61 /* FWSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C167143B1CE337B800269C61 /* FWSessionDelegate.m */; };
+		C167143F1CE3595D00269C61 /* defaultNSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C167143E1CE3595D00269C61 /* defaultNSURLSessionController.m */; };
 		D2824AD9E3594DEB0072BFC2 /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C3CAA700DBDD83543E8C87 /* libPods-iOSLearnList.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,10 @@
 		92A8E28E59B80A306E046CC0 /* libPods-iOSLearnListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D49CD72D19F8635C4B54AB /* libPods-iOSLearnListUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE29A9DA159F8FB003CC70C /* Pods-iOSLearnListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.release.xcconfig"; sourceTree = "<group>"; };
+		C167143A1CE337B800269C61 /* FWSessionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWSessionDelegate.h; sourceTree = "<group>"; };
+		C167143B1CE337B800269C61 /* FWSessionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWSessionDelegate.m; sourceTree = "<group>"; };
+		C167143D1CE3595D00269C61 /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
+		C167143E1CE3595D00269C61 /* defaultNSURLSessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = defaultNSURLSessionController.m; sourceTree = "<group>"; };
 		D9DCEB1393A12CF2A3DA0CD7 /* Pods-iOSLearnList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +203,7 @@
 		51F68EF81CDE1A06009338D6 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C16714391CE3379700269C61 /* NSURLLearn */,
 				51A6AAFD1CE0E54F007D2D19 /* customClass */,
 				51F68EF91CDE1A06009338D6 /* controller */,
 			);
@@ -212,8 +219,19 @@
 				51A6AAF61CE0DF6E007D2D19 /* unRecognizeViewController.m */,
 				51A6AB011CE0EC42007D2D19 /* undoRedoViewController.h */,
 				51A6AB021CE0EC42007D2D19 /* undoRedoViewController.m */,
+				C167143D1CE3595D00269C61 /* defaultNSURLSessionController.h */,
+				C167143E1CE3595D00269C61 /* defaultNSURLSessionController.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		C16714391CE3379700269C61 /* NSURLLearn */ = {
+			isa = PBXGroup;
+			children = (
+				C167143A1CE337B800269C61 /* FWSessionDelegate.h */,
+				C167143B1CE337B800269C61 /* FWSessionDelegate.m */,
+			);
+			path = NSURLLearn;
 			sourceTree = "<group>";
 		};
 		FF244CA6CD667A7603CC9B8F /* Frameworks */ = {
@@ -489,9 +507,11 @@
 			files = (
 				51F68EC81CDE1905009338D6 /* ViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
+				C167143C1CE337B800269C61 /* FWSessionDelegate.m in Sources */,
 				51A6AAF71CE0DF6E007D2D19 /* unRecognizeViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				51A6AB031CE0EC42007D2D19 /* undoRedoViewController.m in Sources */,
+				C167143F1CE3595D00269C61 /* defaultNSURLSessionController.m in Sources */,
 				51F68EFC1CDE1A06009338D6 /* Timer+NotificationViewController.m in Sources */,
 				51A6AB001CE0E56E007D2D19 /* ReversibleString.m in Sources */,
 			);
