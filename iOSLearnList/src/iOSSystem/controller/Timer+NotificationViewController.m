@@ -12,10 +12,18 @@
 
 @property(nonatomic, retain) UILabel *showLabel;
 @property (nonatomic, retain) NSTimer *showTimer;
-
+@property (nonatomic, assign) NSUInteger count;
 @end
 
+
 @implementation Timer_NotificationViewController
+
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self.showTimer invalidate];
+    self.showTimer = nil;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +38,7 @@
     
     
     self.showTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(show:) userInfo:nil repeats:YES];
+    [self.showTimer fire];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showHello:) name:@"testMsg" object:nil];
     
@@ -49,10 +58,11 @@
 
 -(void)show:(NSTimer *)timer
 {
-    static NSUInteger i = 0;
+    NSLog( @"hello xxx ");
+    _count++;
+    __weak typeof(self) weakSelf = self;
     
-    i++;
-    self.showLabel.text = [NSString stringWithFormat:@"%ldS", i];
+    weakSelf.showLabel.text = [NSString stringWithFormat:@"%ldS", _count];
 }
 
 - (void)sendMsg

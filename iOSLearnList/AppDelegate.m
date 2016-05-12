@@ -47,4 +47,21 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+//后台session下载 完成
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(nonnull NSString *)identifier completionHandler:(nonnull void (^)())completionHandler
+{
+    NSURLSessionConfiguration *backgroundConfigObject = [NSURLSessionConfiguration backgroundSessionConfiguration: identifier];
+    
+    backgroundConfigObject.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+    
+    
+//    NSURLSession *backgroundSession = [NSURLSession sessionWithConfiguration: backgroundConfigObject delegate: self.mySessionDelegate delegateQueue: [NSOperationQueue mainQueue]];
+//    
+//    NSLog(@"Rejoining session %@\n", identifier);
+//    
+//    [ self.mySessionDelegate addCompletionHandler: completionHandler forSession: identifier];
+    
+}
+
+
 @end
