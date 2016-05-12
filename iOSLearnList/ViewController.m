@@ -7,15 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "IndexTableViewController.h"
 
 #import "Timer+NotificationViewController.h"
+
+
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, retain) UITableView *tableview;
-
-
 @property (nonatomic, retain) NSArray *showData;
+
 @end
 
 @implementation ViewController
@@ -23,27 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTitle:@"列表页面"];
+    [self setTitle:@"分类"];
     
-    self.tableview = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    
-    self.tableview.dataSource = self;
-    self.tableview.delegate = self;
-    //    [self.tableview setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
-    
-    //没有数据不显示分割线
-    [self.tableview setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-    
-    [self.view addSubview:self.tableview];
-    
-    self.showData = @[
-  @[@"Timer_NotificationViewController", @"Timer_NotificationViewController"],
-  @[@"unRecognizeViewController", @"unRecognizeViewController"],
-  @[@"undoRedoViewController", @"undoRedoViewController"],
-  @[@"defaultNSURLSessionController", @"defaultNSURLSessionController"]];
-    
-    
+    [self createData];
+    [self createView];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -52,6 +37,26 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)createData
+{
+    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative"];
+    
+}
+
+-(void)createView
+{
+    self.tableview = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    self.tableview.dataSource = self;
+    self.tableview.delegate = self;
+    //    [self.tableview setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    
+    //没有数据不显示分割线
+    [self.tableview setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
+    
+    [self.view addSubview:self.tableview];
 }
 
 
@@ -72,11 +77,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    NSArray *data = [self.showData objectAtIndex:indexPath.row];
-    cell.textLabel.text = [data objectAtIndex:0];
-    
-    
-    
+    NSString *subject = [self.showData objectAtIndex:indexPath.row];
+    cell.textLabel.text = subject;
+
     return cell;
 }
 
@@ -88,16 +91,49 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *data = [self.showData objectAtIndex:indexPath.row];
-    NSString *className = [data objectAtIndex:1];
-    Class cls = NSClassFromString(className);
+    NSString *subject = [self.showData objectAtIndex:indexPath.row];
     
-    if (cls) {
-        UIViewController *vc = [(UIViewController *)[cls alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+    NSString *selectorStr = [@"goto" stringByAppendingString:subject];
+    SEL selector = NSSelectorFromString(selectorStr);
+    if ([self respondsToSelector:selector]) {
+        [self performSelectorOnMainThread:selector withObject:nil waitUntilDone:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+
+#pragma  mark - goto Function
+
+-(void)gotoNSURLLearn
+{
+    IndexTableViewController *vc = [[IndexTableViewController alloc] init];
+    vc.showData = @[@"defaultNSURLSessionController"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+-(void)gotoiOSSystem
+{
+    IndexTableViewController *vc = [[IndexTableViewController alloc] init];
+    vc.showData = @[@"Timer_NotificationViewController"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)gotoObjRelative
+{
+    IndexTableViewController *vc = [[IndexTableViewController alloc] init];
+    vc.showData = @[@"Timer_NotificationViewController", @"unRecognizeViewController"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+
+
+
+
 
 @end

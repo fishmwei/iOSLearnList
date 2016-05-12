@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface defaultNSURLSessionController : UIViewController
-@property (nonatomic, retain) UIButton *pressedBtn;
+@interface defaultNSURLSessionController : UIViewController <NSURLSessionDataDelegate>
+@property (nonatomic, retain) UIButton *systemBtn;
+@property (nonatomic, retain) UIButton *customBtn;
 @property (nonatomic, retain) UITextView *responseView;
 @end
