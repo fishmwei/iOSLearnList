@@ -11,6 +11,7 @@
 @interface downloadController : UIViewController
 
 @property (nonatomic, retain) UIButton *systemBtn;
+@property (nonatomic, retain) UIButton *cancelBtn;
 @property (nonatomic, retain) UITextView *responseView;
 
 @end
