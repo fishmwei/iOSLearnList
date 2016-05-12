@@ -10,6 +10,15 @@
 
 @implementation IndexTableViewController
 
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
+}
+
+
+
 #pragma mark - tableView datasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -46,7 +55,7 @@
     Class cls = NSClassFromString(className);
     
     if (cls) {
-        UIViewController *vc = [(UIViewController *)[cls alloc] init];
+        UIViewController *vc = [[cls alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     

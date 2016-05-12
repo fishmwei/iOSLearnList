@@ -108,7 +108,7 @@
 -(void)gotoNSURLLearn
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
-    vc.showData = @[@"defaultNSURLSessionController"];
+    vc.showData = @[@"defaultNSURLSessionController", @"downloadController"];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
