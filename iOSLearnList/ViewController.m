@@ -125,7 +125,7 @@
 -(void)gotoObjRelative
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
-    vc.showData = @[@"Timer_NotificationViewController", @"unRecognizeViewController"];
+    vc.showData = @[@"undoRedoViewController", @"unRecognizeViewController"];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
