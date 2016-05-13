@@ -9,8 +9,7 @@
 #import "ViewController.h"
 #import "IndexTableViewController.h"
 
-#import "Timer+NotificationViewController.h"
-
+#import "ExtendMainController.h"
 
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -41,7 +40,7 @@
 
 -(void)createData
 {
-    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative"];
+    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"ExtendMainController"];
     
 }
 
@@ -108,7 +107,7 @@
 -(void)gotoNSURLLearn
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
-    vc.showData = @[@"defaultNSURLSessionController", @"downloadController"];
+    vc.showData = @[@"defaultNSURLSessionController", @"downloadController", @"NSURLConnectionController"];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -130,7 +129,11 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-
+-(void)gotoExtendMainController
+{
+    ExtendMainController *vc = [[ExtendMainController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 

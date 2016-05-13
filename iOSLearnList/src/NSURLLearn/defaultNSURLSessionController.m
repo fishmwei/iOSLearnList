@@ -94,7 +94,7 @@
 
 #pragma mark - NSURLSessionDataDelegate
 
-//组装数据
+#pragma mark 接收组装数据
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
     didReceiveData:(NSData *)data
 {
@@ -115,7 +115,7 @@
     
  }
 
-//显示数据
+#pragma mark  完成接收数据
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
 didCompleteWithError:(nullable NSError *)error
 {
@@ -131,5 +131,40 @@ didCompleteWithError:(nullable NSError *)error
         _responseView.text = resp;
     });
 }
+
+
+#pragma mark 处理重定向, 如果没有实现 默认允许重定向
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
+willPerformHTTPRedirection:(NSHTTPURLResponse *)response
+        newRequest:(NSURLRequest *)request
+ completionHandler:(void (^)(NSURLRequest * __nullable))completionHandler
+{
+    NSURLRequest *newRequest = request;
+    if (response) {
+        newRequest = nil;
+    }
+    
+    completionHandler(newRequest);
+}
+
+-(void)connection:(NSURLConnection *)connection
+didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+{
+    if ([challenge previousFailureCount] == 0) {
+        NSURLCredential *newCredential;
+        newCredential = [NSURLCredential credentialWithUser:@"userName"
+                                                   password:@"password"
+                                                persistence:NSURLCredentialPersistenceNone];
+        [[challenge sender] useCredential:newCredential
+               forAuthenticationChallenge:challenge];
+    } else {
+        [[challenge sender] cancelAuthenticationChallenge:challenge];
+        // inform the user that the user name and password
+        // in the preferences are incorrect
+//        [self showPreferencesCredentialsAreIncorrectPanel:self];
+    }
+}
+
+
 
 @end

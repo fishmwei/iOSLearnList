@@ -18,6 +18,7 @@
 		51F68EE61CDE1905009338D6 /* iOSLearnListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EE51CDE1905009338D6 /* iOSLearnListUITests.m */; };
 		9D46EA2DA7D7768517D7BAAD /* libPods-iOSLearnListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D49CD72D19F8635C4B54AB /* libPods-iOSLearnListUITests.a */; };
 		C167143C1CE337B800269C61 /* FWSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C167143B1CE337B800269C61 /* FWSessionDelegate.m */; };
+		C1C0D4FE1CE5779C007FCF90 /* NSURLConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C0D4FD1CE5779C007FCF90 /* NSURLConnectionController.m */; };
 		C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FCC1CE4231900445669 /* IndexTableViewController.m */; };
 		C1E36FD11CE4243F00445669 /* defaultNSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FD01CE4243F00445669 /* defaultNSURLSessionController.m */; };
 		C1E36FE21CE4259400445669 /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FD71CE4259400445669 /* Timer+NotificationViewController.m */; };
@@ -25,6 +26,9 @@
 		C1E36FE41CE4259400445669 /* unRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FDF1CE4259400445669 /* unRecognizeViewController.m */; };
 		C1E36FE71CE4260000445669 /* ReversibleString.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FE61CE4260000445669 /* ReversibleString.m */; };
 		C1E36FEA1CE4325D00445669 /* downloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FE91CE4325D00445669 /* downloadController.m */; };
+		C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */; };
+		C1ED59721CE5BCAC00096EC7 /* weibo_touch.png in Resources */ = {isa = PBXBuildFile; fileRef = C1ED59701CE5BCAC00096EC7 /* weibo_touch.png */; };
+		C1ED59731CE5BCAC00096EC7 /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = C1ED59711CE5BCAC00096EC7 /* weibo.png */; };
 		D2824AD9E3594DEB0072BFC2 /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C3CAA700DBDD83543E8C87 /* libPods-iOSLearnList.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +76,8 @@
 		ADE29A9DA159F8FB003CC70C /* Pods-iOSLearnListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.release.xcconfig"; sourceTree = "<group>"; };
 		C167143A1CE337B800269C61 /* FWSessionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWSessionDelegate.h; sourceTree = "<group>"; };
 		C167143B1CE337B800269C61 /* FWSessionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWSessionDelegate.m; sourceTree = "<group>"; };
+		C1C0D4FC1CE5779C007FCF90 /* NSURLConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionController.h; sourceTree = "<group>"; };
+		C1C0D4FD1CE5779C007FCF90 /* NSURLConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionController.m; sourceTree = "<group>"; };
 		C1E36FCB1CE4231900445669 /* IndexTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexTableViewController.h; sourceTree = "<group>"; };
 		C1E36FCC1CE4231900445669 /* IndexTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexTableViewController.m; sourceTree = "<group>"; };
 		C1E36FCF1CE4243F00445669 /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
@@ -86,6 +92,10 @@
 		C1E36FE61CE4260000445669 /* ReversibleString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReversibleString.m; path = controller/ReversibleString.m; sourceTree = "<group>"; };
 		C1E36FE81CE4325D00445669 /* downloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = downloadController.h; sourceTree = "<group>"; };
 		C1E36FE91CE4325D00445669 /* downloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = downloadController.m; sourceTree = "<group>"; };
+		C1ED596C1CE5B0A200096EC7 /* ExtendMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendMainController.h; sourceTree = "<group>"; };
+		C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMainController.m; sourceTree = "<group>"; };
+		C1ED59701CE5BCAC00096EC7 /* weibo_touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo_touch.png; sourceTree = "<group>"; };
+		C1ED59711CE5BCAC00096EC7 /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
 		D9DCEB1393A12CF2A3DA0CD7 /* Pods-iOSLearnList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +165,7 @@
 		51F68EBF1CDE1905009338D6 /* iOSLearnList */ = {
 			isa = PBXGroup;
 			children = (
+				C1ED596F1CE5BC9C00096EC7 /* Images */,
 				51F68EF81CDE1A06009338D6 /* src */,
 				51F68EC31CDE1905009338D6 /* AppDelegate.h */,
 				51F68EC41CDE1905009338D6 /* AppDelegate.m */,
@@ -198,6 +209,7 @@
 		51F68EF81CDE1A06009338D6 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C1ED596B1CE5B07900096EC7 /* Extend */,
 				C1E36FCA1CE4230300445669 /* Base */,
 				C16714391CE3379700269C61 /* NSURLLearn */,
 				C1E36FD41CE4259400445669 /* iOSSystem */,
@@ -232,6 +244,8 @@
 				C1E36FD01CE4243F00445669 /* defaultNSURLSessionController.m */,
 				C1E36FE81CE4325D00445669 /* downloadController.h */,
 				C1E36FE91CE4325D00445669 /* downloadController.m */,
+				C1C0D4FC1CE5779C007FCF90 /* NSURLConnectionController.h */,
+				C1C0D4FD1CE5779C007FCF90 /* NSURLConnectionController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -304,6 +318,24 @@
 			children = (
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		C1ED596B1CE5B07900096EC7 /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				C1ED596C1CE5B0A200096EC7 /* ExtendMainController.h */,
+				C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		C1ED596F1CE5BC9C00096EC7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C1ED59701CE5BCAC00096EC7 /* weibo_touch.png */,
+				C1ED59711CE5BCAC00096EC7 /* weibo.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		FF244CA6CD667A7603CC9B8F /* Frameworks */ = {
@@ -428,8 +460,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1ED59731CE5BCAC00096EC7 /* weibo.png in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
+				C1ED59721CE5BCAC00096EC7 /* weibo_touch.png in Resources */,
 				51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,7 +613,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				51F68EC81CDE1905009338D6 /* ViewController.m in Sources */,
+				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
 				C1E36FE31CE4259400445669 /* undoRedoViewController.m in Sources */,
+				C1C0D4FE1CE5779C007FCF90 /* NSURLConnectionController.m in Sources */,
 				C1E36FE41CE4259400445669 /* unRecognizeViewController.m in Sources */,
 				C1E36FEA1CE4325D00445669 /* downloadController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
