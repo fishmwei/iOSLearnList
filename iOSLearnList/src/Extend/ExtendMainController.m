@@ -28,7 +28,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    self.bottomItems = @[@"UIViewController",
+    self.bottomItems = @[@"LevelViewController",
                          @"UIViewController",
                          @"UIViewController"];
     
@@ -41,6 +41,8 @@
             UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
             nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
             nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+            
+            
             
             [vc setTitle:str];
             nav.title = @"aaa";

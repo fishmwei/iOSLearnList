@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "ExtendMainController.h"
-
+#import "BBLaunchAdMonitor.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +19,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //AD
+    {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAdDetail:) name:BBLaunchAdDetailDisplayNotification object:nil];
+        NSString *path = @"http://mg.soupingguo.com/bizhi/big/10/258/043/10258043.jpg";
+        [BBLaunchAdMonitor showAdAtPath:path
+                                 onView:self.window.rootViewController.view
+                           timeInterval:5.
+                       detailParameters:@{@"carId":@(12345), @"name":@"奥迪-品质生活"}];
+    }
+    
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    
     
 //    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    self.window.rootViewController = [[ExtendMainController alloc] init];
@@ -50,10 +67,10 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-//后台session下载 完成
+#pragma mark 后台session下载 完成
 - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(nonnull NSString *)identifier completionHandler:(nonnull void (^)())completionHandler
 {
-    NSURLSessionConfiguration *backgroundConfigObject = [NSURLSessionConfiguration backgroundSessionConfiguration: identifier];
+    NSURLSessionConfiguration *backgroundConfigObject = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier: identifier];
     
     backgroundConfigObject.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
     
@@ -66,5 +83,10 @@
     
 }
 
+#pragma mark AD
+- (void)showAdDetail:(NSNotification *)noti
+{
+    NSLog(@"detail parameters:%@", noti.object);
+}
 
 @end
