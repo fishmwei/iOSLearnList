@@ -138,11 +138,11 @@
 
 
 #pragma mark 下载成功
-- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)task
 didFinishDownloadingToURL:(NSURL *)location
 {
     NSLog(@"Session %@ download task %@ finished downloading to URL %@\n",
-          session, downloadTask, location);
+          session, task, location);
  
     NSFileManager *fm = [NSFileManager defaultManager];
     NSArray *URLs = [fm URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];

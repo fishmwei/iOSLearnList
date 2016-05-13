@@ -27,8 +27,8 @@
 		C1E36FE71CE4260000445669 /* ReversibleString.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FE61CE4260000445669 /* ReversibleString.m */; };
 		C1E36FEA1CE4325D00445669 /* downloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FE91CE4325D00445669 /* downloadController.m */; };
 		C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */; };
-		C1ED59721CE5BCAC00096EC7 /* weibo_touch.png in Resources */ = {isa = PBXBuildFile; fileRef = C1ED59701CE5BCAC00096EC7 /* weibo_touch.png */; };
-		C1ED59731CE5BCAC00096EC7 /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = C1ED59711CE5BCAC00096EC7 /* weibo.png */; };
+		C1ED59721CE5BCAC00096EC7 /* weibo_touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1ED59701CE5BCAC00096EC7 /* weibo_touch@2x.png */; };
+		C1ED59731CE5BCAC00096EC7 /* weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1ED59711CE5BCAC00096EC7 /* weibo@2x.png */; };
 		C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */; };
 		C1ED597A1CE5DD6600096EC7 /* LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED59791CE5DD6600096EC7 /* LevelViewController.m */; };
 		D2824AD9E3594DEB0072BFC2 /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C3CAA700DBDD83543E8C87 /* libPods-iOSLearnList.a */; };
@@ -96,8 +96,8 @@
 		C1E36FE91CE4325D00445669 /* downloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = downloadController.m; sourceTree = "<group>"; };
 		C1ED596C1CE5B0A200096EC7 /* ExtendMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendMainController.h; sourceTree = "<group>"; };
 		C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMainController.m; sourceTree = "<group>"; };
-		C1ED59701CE5BCAC00096EC7 /* weibo_touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo_touch.png; sourceTree = "<group>"; };
-		C1ED59711CE5BCAC00096EC7 /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
+		C1ED59701CE5BCAC00096EC7 /* weibo_touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo_touch@2x.png"; sourceTree = "<group>"; };
+		C1ED59711CE5BCAC00096EC7 /* weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo@2x.png"; sourceTree = "<group>"; };
 		C1ED59751CE5D09100096EC7 /* BBLaunchAdMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLaunchAdMonitor.h; sourceTree = "<group>"; };
 		C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLaunchAdMonitor.m; sourceTree = "<group>"; };
 		C1ED59781CE5DD6600096EC7 /* LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelViewController.h; sourceTree = "<group>"; };
@@ -341,8 +341,8 @@
 		C1ED596F1CE5BC9C00096EC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				C1ED59701CE5BCAC00096EC7 /* weibo_touch.png */,
-				C1ED59711CE5BCAC00096EC7 /* weibo.png */,
+				C1ED59701CE5BCAC00096EC7 /* weibo_touch@2x.png */,
+				C1ED59711CE5BCAC00096EC7 /* weibo@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -478,10 +478,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1ED59731CE5BCAC00096EC7 /* weibo.png in Resources */,
+				C1ED59731CE5BCAC00096EC7 /* weibo@2x.png in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
-				C1ED59721CE5BCAC00096EC7 /* weibo_touch.png in Resources */,
+				C1ED59721CE5BCAC00096EC7 /* weibo_touch@2x.png in Resources */,
 				51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

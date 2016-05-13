@@ -24,8 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTitle:@"分类"];
-    
+//    [self setTitle:@"分类"];
+    [self.navigationItem setTitle:@"分类"];
     [self createData];
     [self createView];
     
@@ -40,7 +40,7 @@
 
 -(void)createData
 {
-    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"ExtendMainController"];
+    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative"];
     
 }
 
@@ -108,6 +108,7 @@
 -(void)gotoNSURLLearn
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
     vc.showData = @[@"defaultNSURLSessionController", @"downloadController", @"NSURLConnectionController"];
     
     [self.navigationController pushViewController:vc animated:YES];
@@ -117,6 +118,7 @@
 -(void)gotoiOSSystem
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
     vc.showData = @[@"Timer_NotificationViewController"];
     
     [self.navigationController pushViewController:vc animated:YES];
@@ -125,16 +127,17 @@
 -(void)gotoObjRelative
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
     vc.showData = @[@"undoRedoViewController", @"unRecognizeViewController"];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
 
--(void)gotoExtendMainController
-{
-    ExtendMainController *vc = [[ExtendMainController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
+//-(void)gotoExtendMainController
+//{
+//    ExtendMainController *vc = [[ExtendMainController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
+//}
 
 
 
