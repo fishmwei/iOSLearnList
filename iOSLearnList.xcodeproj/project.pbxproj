@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		321995B3B177A86469974E5F /* libPods-iOSLearnListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A8E28E59B80A306E046CC0 /* libPods-iOSLearnListTests.a */; };
+		519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B21CE85BCC002CB3AE /* myLanguage.strings */; };
+		519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B81CE85C03002CB3AE /* InfoPlist.strings */; };
+		519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5BE1CE85C88002CB3AE /* Localizable.strings */; };
+		519EB5C01CE85F40002CB3AE /* wait.png in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5C21CE85F40002CB3AE /* wait.png */; };
 		51F1DF991CE8199000F05BBB /* SDUIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F1DF981CE8199000F05BBB /* SDUIImageViewController.m */; };
-		51F1DF9F1CE8218400F05BBB /* wait.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F1DF9E1CE8218400F05BBB /* wait.png */; };
 		51F68EC21CDE1905009338D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC11CDE1905009338D6 /* main.m */; };
 		51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC41CDE1905009338D6 /* AppDelegate.m */; };
 		51F68EC81CDE1905009338D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC71CDE1905009338D6 /* ViewController.m */; };
@@ -58,9 +61,18 @@
 		265635B35938D1D329844EDA /* Pods-iOSLearnListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		47A4E6C3FD7CC816CCB150D3 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4B0AE5BD30C12D83DFBF53B6 /* Pods-iOSLearnListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		519EB5AA1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		519EB5AB1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		519EB5B11CE85BCC002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/myLanguage.strings; sourceTree = "<group>"; };
+		519EB5B31CE85BCE002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/myLanguage.strings"; sourceTree = "<group>"; };
+		519EB5B71CE85C03002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		519EB5B91CE85C05002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		519EB5BD1CE85C88002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		519EB5BF1CE85C8A002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		519EB5C11CE85F40002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/wait.png; sourceTree = "<group>"; };
+		519EB5C31CE85F68002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/wait.png"; sourceTree = "<group>"; };
 		51F1DF971CE8199000F05BBB /* SDUIImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDUIImageViewController.h; sourceTree = "<group>"; };
 		51F1DF981CE8199000F05BBB /* SDUIImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDUIImageViewController.m; sourceTree = "<group>"; };
-		51F1DF9E1CE8218400F05BBB /* wait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wait.png; sourceTree = "<group>"; };
 		51F68EBD1CDE1905009338D6 /* iOSLearnList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F68EC11CDE1905009338D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51F68EC31CDE1905009338D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -216,6 +228,9 @@
 			isa = PBXGroup;
 			children = (
 				51F68EC11CDE1905009338D6 /* main.m */,
+				519EB5B21CE85BCC002CB3AE /* myLanguage.strings */,
+				519EB5B81CE85C03002CB3AE /* InfoPlist.strings */,
+				519EB5BE1CE85C88002CB3AE /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -365,7 +380,7 @@
 		C1ED596F1CE5BC9C00096EC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				51F1DF9E1CE8218400F05BBB /* wait.png */,
+				519EB5C21CE85F40002CB3AE /* wait.png */,
 				C1ED59701CE5BCAC00096EC7 /* weibo_touch@2x.png */,
 				C1ED59711CE5BCAC00096EC7 /* weibo@2x.png */,
 			);
@@ -485,6 +500,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 51F68EB41CDE1905009338D6;
 			productRefGroup = 51F68EBE1CDE1905009338D6 /* Products */;
@@ -504,8 +520,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1ED59731CE5BCAC00096EC7 /* weibo@2x.png in Resources */,
+				519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,
-				51F1DF9F1CE8218400F05BBB /* wait.png in Resources */,
+				519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */,
+				519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */,
+				519EB5C01CE85F40002CB3AE /* wait.png in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
 				C1ED59721CE5BCAC00096EC7 /* weibo_touch@2x.png in Resources */,
 				51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */,
@@ -707,10 +726,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		519EB5B21CE85BCC002CB3AE /* myLanguage.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519EB5B11CE85BCC002CB3AE /* en */,
+				519EB5B31CE85BCE002CB3AE /* zh-Hans */,
+			);
+			name = myLanguage.strings;
+			sourceTree = "<group>";
+		};
+		519EB5B81CE85C03002CB3AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519EB5B71CE85C03002CB3AE /* en */,
+				519EB5B91CE85C05002CB3AE /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		519EB5BE1CE85C88002CB3AE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519EB5BD1CE85C88002CB3AE /* en */,
+				519EB5BF1CE85C8A002CB3AE /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		519EB5C21CE85F40002CB3AE /* wait.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519EB5C11CE85F40002CB3AE /* en */,
+				519EB5C31CE85F68002CB3AE /* zh-Hans */,
+			);
+			name = wait.png;
+			sourceTree = "<group>";
+		};
 		51F68EC91CDE1905009338D6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				51F68ECA1CDE1905009338D6 /* Base */,
+				519EB5AA1CE85894002CB3AE /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -719,6 +775,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				51F68ECF1CDE1905009338D6 /* Base */,
+				519EB5AB1CE85894002CB3AE /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

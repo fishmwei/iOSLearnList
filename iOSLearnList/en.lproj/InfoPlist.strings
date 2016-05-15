@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  iOSLearnList
+
+  Created by mingwei on 16/5/15.
+  Copyright © 2016年 mingwei. All rights reserved.
+*/
+CFBundleDisplayName ="Learn"; 

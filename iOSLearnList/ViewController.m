@@ -25,7 +25,7 @@
     [super viewDidLoad];
     
 //    [self setTitle:@"分类"];
-    [self.navigationItem setTitle:@"分类"];
+    [self.navigationItem setTitle:NSLocalizedString(@"Category", nil)];
     [self createData];
     [self createView];
     

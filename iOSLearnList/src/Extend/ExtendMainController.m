@@ -45,7 +45,7 @@
     nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 //    [vc setTitle:@"分类"];
-    nav.tabBarItem.title = @"高级";
+    nav.tabBarItem.title = NSLocalizedStringFromTable(@"Advance", @"myLanguage", nil);
     _advanceCtl = nav;
     
     
@@ -53,7 +53,7 @@
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    nav.tabBarItem.title = @"基础";
+    nav.tabBarItem.title = NSLocalizedStringFromTable(@"Base", @"myLanguage", nil);
     _baseCtl = nav;
     
     ivc = [[IndexTableViewController alloc] init];
@@ -63,8 +63,7 @@
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     _otherCtl = nav;
-    nav.tabBarItem.title = @"其它";
-//    [nav setTitle:@"其它"];
+   nav.tabBarItem.title = NSLocalizedStringFromTable(@"Other", @"myLanguage", nil);
     
 }
 

@@ -1,0 +1,11 @@
+/* 
+  myLanguage.strings
+  iOSLearnList
+
+  Created by mingwei on 16/5/15.
+  Copyright © 2016年 mingwei. All rights reserved.
+*/
+"iOSLearnList"="iOS学习列表";
+"Base"="基础";
+"Advance"="高级";
+"Other"="其它";
