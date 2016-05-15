@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		321995B3B177A86469974E5F /* libPods-iOSLearnListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A8E28E59B80A306E046CC0 /* libPods-iOSLearnListTests.a */; };
+		51F1DF991CE8199000F05BBB /* SDUIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F1DF981CE8199000F05BBB /* SDUIImageViewController.m */; };
+		51F1DF9F1CE8218400F05BBB /* wait.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F1DF9E1CE8218400F05BBB /* wait.png */; };
 		51F68EC21CDE1905009338D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC11CDE1905009338D6 /* main.m */; };
 		51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC41CDE1905009338D6 /* AppDelegate.m */; };
 		51F68EC81CDE1905009338D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC71CDE1905009338D6 /* ViewController.m */; };
@@ -56,6 +58,9 @@
 		265635B35938D1D329844EDA /* Pods-iOSLearnListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		47A4E6C3FD7CC816CCB150D3 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4B0AE5BD30C12D83DFBF53B6 /* Pods-iOSLearnListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51F1DF971CE8199000F05BBB /* SDUIImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDUIImageViewController.h; sourceTree = "<group>"; };
+		51F1DF981CE8199000F05BBB /* SDUIImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDUIImageViewController.m; sourceTree = "<group>"; };
+		51F1DF9E1CE8218400F05BBB /* wait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wait.png; sourceTree = "<group>"; };
 		51F68EBD1CDE1905009338D6 /* iOSLearnList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F68EC11CDE1905009338D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51F68EC31CDE1905009338D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +151,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		51142C7D1CE60F8F009FC9F6 /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				C16714391CE3379700269C61 /* NSURLLearn */,
+				C1E36FD41CE4259400445669 /* iOSSystem */,
+				C1E36FDA1CE4259400445669 /* ObjRelative */,
+			);
+			name = Advanced;
+			sourceTree = "<group>";
+		};
+		51142C801CE60FE8009FC9F6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				51F1DF971CE8199000F05BBB /* SDUIImageViewController.h */,
+				51F1DF981CE8199000F05BBB /* SDUIImageViewController.m */,
+			);
+			name = Other;
+			path = Base/Other;
+			sourceTree = "<group>";
+		};
 		51F68EB41CDE1905009338D6 = {
 			isa = PBXGroup;
 			children = (
@@ -216,11 +241,10 @@
 		51F68EF81CDE1A06009338D6 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				51142C7D1CE60F8F009FC9F6 /* Advanced */,
 				C1ED596B1CE5B07900096EC7 /* Extend */,
 				C1E36FCA1CE4230300445669 /* Base */,
-				C16714391CE3379700269C61 /* NSURLLearn */,
-				C1E36FD41CE4259400445669 /* iOSSystem */,
-				C1E36FDA1CE4259400445669 /* ObjRelative */,
+				51142C801CE60FE8009FC9F6 /* Other */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -341,6 +365,7 @@
 		C1ED596F1CE5BC9C00096EC7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				51F1DF9E1CE8218400F05BBB /* wait.png */,
 				C1ED59701CE5BCAC00096EC7 /* weibo_touch@2x.png */,
 				C1ED59711CE5BCAC00096EC7 /* weibo@2x.png */,
 			);
@@ -480,6 +505,7 @@
 			files = (
 				C1ED59731CE5BCAC00096EC7 /* weibo@2x.png in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,
+				51F1DF9F1CE8218400F05BBB /* wait.png in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
 				C1ED59721CE5BCAC00096EC7 /* weibo_touch@2x.png in Resources */,
 				51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */,
@@ -641,6 +667,7 @@
 				C1E36FE21CE4259400445669 /* Timer+NotificationViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
+				51F1DF991CE8199000F05BBB /* SDUIImageViewController.m in Sources */,
 				C1ED597A1CE5DD6600096EC7 /* LevelViewController.m in Sources */,
 				C1E36FE71CE4260000445669 /* ReversibleString.m in Sources */,
 				C1E36FD11CE4243F00445669 /* defaultNSURLSessionController.m in Sources */,

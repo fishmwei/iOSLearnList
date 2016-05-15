@@ -56,6 +56,7 @@
     
     if (cls) {
         UIViewController *vc = [[cls alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
     
