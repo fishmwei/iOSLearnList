@@ -61,8 +61,6 @@
 
 -(void)forwardInvocation:(NSInvocation *)anInvocation
 {
- 
-    
     SEL sel = [anInvocation selector];
     fellow *next = [[fellow alloc] init];
     if ([next respondsToSelector:sel]) {
