@@ -119,7 +119,7 @@
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
-    vc.showData = @[@"Timer_NotificationViewController"];
+    vc.showData = @[@"Timer_NotificationViewController", @"multiThreadController"];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
