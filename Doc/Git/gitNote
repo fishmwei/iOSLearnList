@@ -1,0 +1,82 @@
+
+
+1.WebGithub   website
+
+2.github on mac
+
+
+
+
+===create global config
+git config --global user.name "fishmwei"
+git config  --global user.email "fishmwei@qq.com"
+
+
+//save password
+git credential-osxkeychain
+git config --global credential.helper osxkeychain
+
+
+//user git
+git init
+git remote add origin https://gitxxx
+
+git clone https://gitxxx
+git add xxx
+git commit -m "commit msg"
+git push -u origin master
+
+
+//user branch 
+git branch bb
+git checkout bb //switch bb
+git branch //see branches
+
+
+//git stash  //临时保存修改 便于切换到其它分支   git status 看不出来哦~~~~
+
+git pop //pop my stash   ==git apply
+
+git stash list //see all stashes
+git stash clear  
+
+
+//.gitignore
+
+===========================
+# Mac OS X
+*.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+＃Git
+.gitingore
+.gitingore.swp
+===========================
+
+
+//git all reposi
+$ git config –global core.excludesfile ~/.gitignore_global
+$vim ~/.gitignore_global
+
+
+
+
+git rm --cache xxx // ignore xxx file
+
+
+
+
+git merge // git rebase 
+
+
+
+
+
