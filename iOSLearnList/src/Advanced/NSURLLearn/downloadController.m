@@ -9,11 +9,12 @@
 #import "downloadController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
-@interface downloadController() <NSURLSessionDownloadDelegate>
+@interface downloadController() <NSURLSessionDownloadDelegate, MBProgressHUDDelegate>
 {
     UILabel *label;
     UIImageView *showImageView;
     NSURLSessionDownloadTask *downloadTask;
+    MBProgressHUD *myhud;
 }
 
 
@@ -124,10 +125,20 @@
     downloadTask = [self.downloadSession downloadTaskWithURL:url];
     [downloadTask resume];
     
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    myhud = [[MBProgressHUD alloc] initWithView:self.view];
+    myhud.removeFromSuperViewOnHide = YES;
+    myhud.labelText = @"Loading";
+    myhud.detailsLabelText = @"Test detail";
+    myhud.mode = MBProgressHUDModeAnnularDeterminate;
+//    myhud.animationType = ;
+    [myhud show:YES];
+    myhud.delegate = self;
+    [self.view addSubview:myhud];
 }
 
-#pragma  mark j- NSURLSessionDownloadDelegate
+#pragma  mark - NSURLSessionDownloadDelegate
 
 #pragma mark 下载完成
 - (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error
@@ -250,6 +261,7 @@ didFinishDownloadingToURL:(NSURL *)location
 //        self.progressIndicator.hidden = NO;
 //        self.progressIndicator.progress = currentProgress;
         label.text = [NSString stringWithFormat:@"Image:%%%.0f", currentProgress*100];
+        myhud.progress = currentProgress;
     });
         
         
@@ -300,5 +312,9 @@ didFinishDownloadingToURL:(NSURL *)location
         downloadTask = nil;
 }
 
+- (void)hudWasHidden:(MBProgressHUD *)hud
+{
+    myhud = nil;
+}
 
 @end
