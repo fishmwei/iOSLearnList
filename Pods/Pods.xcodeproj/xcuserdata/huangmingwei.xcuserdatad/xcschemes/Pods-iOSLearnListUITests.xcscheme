@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '57C93313E942CD0D9B86502F45AED89B'
-               BlueprintName = 'Pods-iOSLearnList'
+               BlueprintIdentifier = '23724F433BA003BB7D296EEE'
+               BlueprintName = 'Pods-iOSLearnListUITests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-iOSLearnList.a'>
+               BuildableName = 'libPods-iOSLearnListUITests.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
