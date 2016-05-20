@@ -9,6 +9,7 @@ platform :ios, '7.0'
 target 'iOSLearnList' do
 	pod 'MJRefresh', '3.1.0'
     pod 'SDWebImage'
+    pod 'MBProgressHUD'
 end
 
 target 'iOSLearnListTests' do

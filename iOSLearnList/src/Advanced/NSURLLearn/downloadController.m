@@ -7,6 +7,7 @@
 //
 
 #import "downloadController.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface downloadController() <NSURLSessionDownloadDelegate>
 {
@@ -17,8 +18,6 @@
 
 
 @property (nonatomic, retain) NSURLSession *downloadSession;
-
-
 
 @end
 
@@ -58,11 +57,11 @@
     [self.view addSubview:_systemBtn];
     
     
-    _cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(210, 64+5, 100, 44)];
-    [_cancelBtn setTitle:@"Cancel" forState:UIControlStateNormal];
-    [_cancelBtn addTarget:self action:@selector(cancelDownloadFile:) forControlEvents:UIControlEventTouchUpInside];
-    _cancelBtn.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:_cancelBtn];
+//    _cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(210, 64+5, 100, 44)];
+//    [_cancelBtn setTitle:@"Cancel" forState:UIControlStateNormal];
+//    [_cancelBtn addTarget:self action:@selector(cancelDownloadFile:) forControlEvents:UIControlEventTouchUpInside];
+//    _cancelBtn.backgroundColor = [UIColor blueColor];
+//    [self.view addSubview:_cancelBtn];
     
     
     
@@ -124,6 +123,8 @@
     
     downloadTask = [self.downloadSession downloadTaskWithURL:url];
     [downloadTask resume];
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
 #pragma  mark j- NSURLSessionDownloadDelegate
@@ -131,9 +132,7 @@
 #pragma mark 下载完成
 - (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error
 {
-
-    
-    
+    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }
 
 
@@ -166,6 +165,7 @@ didFinishDownloadingToURL:(NSURL *)location
             _systemBtn.enabled = YES;
             _systemBtn.userInteractionEnabled = YES;
             [_systemBtn setTitle:@"Request" forState:UIControlStateNormal];
+            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         });
         
         downloadTask = nil;
@@ -180,6 +180,7 @@ didFinishDownloadingToURL:(NSURL *)location
             _systemBtn.enabled = YES;
             _systemBtn.userInteractionEnabled = YES;
             [_systemBtn setTitle:@"Request" forState:UIControlStateNormal];
+            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         });
     }
     
