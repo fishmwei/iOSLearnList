@@ -14,9 +14,27 @@
 
 @implementation collectionViewController
 
+- (instancetype)init
+{
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.itemSize = CGSizeMake(150, 100);
+    layout.minimumLineSpacing = 40;
+    layout.minimumInteritemSpacing = 20;
+    layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    
+    return [self initWithCollectionViewLayout:layout];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 注意:  self.collectionView != self.view
+    
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    
+    // 注册cell
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,13 +48,18 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 0;
+    return 30;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [[UICollectionViewCell alloc] init];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    
+    cell.backgroundColor = [UIColor redColor];
+
+    
+    return cell;
 }
 /*
 #pragma mark - Navigation

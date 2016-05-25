@@ -23,6 +23,8 @@
 		51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2EF1CECB49A0050E75E /* myTableViewController.m */; };
 		51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2F21CECB5750050E75E /* collectionViewController.m */; };
 		9F32092F5F94E768907A6FD5 /* libPods-iOSLearnListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833CEE134107F0083DD15E92 /* libPods-iOSLearnListUITests.a */; };
+		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
+		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */; };
 		C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506F1CE99E75006A117B /* defaultNSURLSessionController.m */; };
 		C1A650821CE99E75006A117B /* downloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650711CE99E75006A117B /* downloadController.m */; };
@@ -96,6 +98,13 @@
 		833CEE134107F0083DD15E92 /* libPods-iOSLearnListUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D14FFD38BF9B5D89DAC3CAB /* libPods-iOSLearnList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7137117FA13317ECE29D685 /* Pods-iOSLearnList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.debug.xcconfig"; sourceTree = "<group>"; };
+		C1209B141CF53C0800182559 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = AdHoc/Configuration.plist; sourceTree = "<group>"; };
+		C1209B161CF53C3000182559 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = Debug/Configuration.plist; sourceTree = "<group>"; };
+		C1209B181CF53C4800182559 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = Release/Configuration.plist; sourceTree = "<group>"; };
+		C1209B1C1CF53EED00182559 /* configViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = configViewController.h; sourceTree = "<group>"; };
+		C1209B1D1CF53EED00182559 /* configViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = configViewController.m; sourceTree = "<group>"; };
+		C1209B201CF53F2900182559 /* ConfigCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigCommon.h; sourceTree = "<group>"; };
+		C1209B211CF53F2900182559 /* ConfigCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCommon.m; sourceTree = "<group>"; };
 		C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Timer+NotificationViewController.h"; sourceTree = "<group>"; };
 		C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Timer+NotificationViewController.m"; sourceTree = "<group>"; };
 		C1A6506E1CE99E75006A117B /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
@@ -213,6 +222,7 @@
 		51F68EC01CDE1905009338D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C1209B101CF53B9600182559 /* Configuration */,
 				51F68EC11CDE1905009338D6 /* main.m */,
 				519EB5B21CE85BCC002CB3AE /* myLanguage.strings */,
 				519EB5B81CE85C03002CB3AE /* InfoPlist.strings */,
@@ -248,6 +258,49 @@
 				C1ED596B1CE5B07900096EC7 /* Extend */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		C1209B101CF53B9600182559 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C1209B131CF53BCC00182559 /* Release */,
+				C1209B121CF53BC500182559 /* Debug */,
+				C1209B111CF53BBC00182559 /* AdHoc */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C1209B111CF53BBC00182559 /* AdHoc */ = {
+			isa = PBXGroup;
+			children = (
+				C1209B141CF53C0800182559 /* Configuration.plist */,
+			);
+			name = AdHoc;
+			sourceTree = "<group>";
+		};
+		C1209B121CF53BC500182559 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				C1209B161CF53C3000182559 /* Configuration.plist */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		C1209B131CF53BCC00182559 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				C1209B181CF53C4800182559 /* Configuration.plist */,
+			);
+			name = Release;
+			sourceTree = "<group>";
+		};
+		C1209B1F1CF53F0500182559 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1209B201CF53F2900182559 /* ConfigCommon.h */,
+				C1209B211CF53F2900182559 /* ConfigCommon.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C1A650661CE99E75006A117B /* Advanced */ = {
@@ -361,12 +414,15 @@
 		C1E36FCA1CE4230300445669 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C1209B1F1CF53F0500182559 /* Model */,
 				C1E36FCB1CE4231900445669 /* IndexTableViewController.h */,
 				C1E36FCC1CE4231900445669 /* IndexTableViewController.m */,
 				51FAA2EE1CECB49A0050E75E /* myTableViewController.h */,
 				51FAA2EF1CECB49A0050E75E /* myTableViewController.m */,
 				51FAA2F11CECB5750050E75E /* collectionViewController.h */,
 				51FAA2F21CECB5750050E75E /* collectionViewController.m */,
+				C1209B1C1CF53EED00182559 /* configViewController.h */,
+				C1209B1D1CF53EED00182559 /* configViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -425,6 +481,7 @@
 				51F68EBB1CDE1905009338D6 /* Resources */,
 				58FDB0FB331BBC9ABFB3E495 /* 📦 Embed Pods Frameworks */,
 				7EADA77247ED1EE1FE5CF8EC /* 📦 Copy Pods Resources */,
+				C1209B1A1CF53D1500182559 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -674,6 +731,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		C1209B1A1CF53D1500182559 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "RESOURCE_PATH=${SRCROOT}/${PRODUCT_NAME}/Configuration/${CONFIGURATION}\n\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\necho \"Copying all files under ${RESOURCE_PATH} to ${BUILD_APP_DIR}\"\n\ncp -v \"${RESOURCE_PATH}/\"* \"${BUILD_APP_DIR}/\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -687,12 +757,14 @@
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C1A650851CE99E75006A117B /* ReversibleString.m in Sources */,
 				C1A650841CE99E75006A117B /* NSURLConnectionController.m in Sources */,
+				C1209B1E1CF53EED00182559 /* configViewController.m in Sources */,
 				51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
 				C1A650831CE99E75006A117B /* FWSessionDelegate.m in Sources */,
 				C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */,
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
+				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
 				C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */,
@@ -958,6 +1030,86 @@
 			};
 			name = Release;
 		};
+		C1209B0C1CF53B0200182559 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		C1209B0D1CF53B0200182559 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52CBA7FBCBF31E1C7A934E4 /* Pods-iOSLearnList.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = iOSLearnList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fishmweiVM.iOSLearnList1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = AdHoc;
+		};
+		C1209B0E1CF53B0200182559 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B86F821EFE8D2EDB6BCE3F /* Pods-iOSLearnListTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iOSLearnListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.iOSLearnListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSLearnList.app/iOSLearnList";
+			};
+			name = AdHoc;
+		};
+		C1209B0F1CF53B0200182559 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28741EDF4096EB7DBDFFCFA1 /* Pods-iOSLearnListUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = iOSLearnListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.iOSLearnListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iOSLearnList;
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -966,6 +1118,7 @@
 			buildConfigurations = (
 				51F68EE81CDE1905009338D6 /* Debug */,
 				51F68EE91CDE1905009338D6 /* Release */,
+				C1209B0C1CF53B0200182559 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -975,6 +1128,7 @@
 			buildConfigurations = (
 				51F68EEB1CDE1905009338D6 /* Debug */,
 				51F68EEC1CDE1905009338D6 /* Release */,
+				C1209B0D1CF53B0200182559 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -984,6 +1138,7 @@
 			buildConfigurations = (
 				51F68EEE1CDE1905009338D6 /* Debug */,
 				51F68EEF1CDE1905009338D6 /* Release */,
+				C1209B0E1CF53B0200182559 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -993,6 +1148,7 @@
 			buildConfigurations = (
 				51F68EF11CDE1905009338D6 /* Debug */,
 				51F68EF21CDE1905009338D6 /* Release */,
+				C1209B0F1CF53B0200182559 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
