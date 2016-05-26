@@ -62,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ED0841BA3C379EE8E77894F /* Pods-iOSLearnListUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		28741EDF4096EB7DBDFFCFA1 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		519EB5AA1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		519EB5AB1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -137,7 +138,9 @@
 		C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLaunchAdMonitor.m; sourceTree = "<group>"; };
 		DA3F9CE8707AFB2CD5DBC438 /* Pods-iOSLearnListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E52CBA7FBCBF31E1C7A934E4 /* Pods-iOSLearnList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.release.xcconfig"; sourceTree = "<group>"; };
+		EAD4BFBAAD2BC7C6493B76BE /* Pods-iOSLearnList.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.adhoc.xcconfig"; sourceTree = "<group>"; };
 		F0BF68F51A69EE826487CB75 /* libPods-iOSLearnListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEE6C6A2CA567A00B895CD81 /* Pods-iOSLearnListTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -464,6 +467,9 @@
 				81B86F821EFE8D2EDB6BCE3F /* Pods-iOSLearnListTests.release.xcconfig */,
 				635BB7C1CDD115F852EF5562 /* Pods-iOSLearnListUITests.debug.xcconfig */,
 				28741EDF4096EB7DBDFFCFA1 /* Pods-iOSLearnListUITests.release.xcconfig */,
+				EAD4BFBAAD2BC7C6493B76BE /* Pods-iOSLearnList.adhoc.xcconfig */,
+				FEE6C6A2CA567A00B895CD81 /* Pods-iOSLearnListTests.adhoc.xcconfig */,
+				0ED0841BA3C379EE8E77894F /* Pods-iOSLearnListUITests.adhoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -481,7 +487,7 @@
 				51F68EBB1CDE1905009338D6 /* Resources */,
 				58FDB0FB331BBC9ABFB3E495 /* 📦 Embed Pods Frameworks */,
 				7EADA77247ED1EE1FE5CF8EC /* 📦 Copy Pods Resources */,
-				C1209B1A1CF53D1500182559 /* ShellScript */,
+				C1209B1A1CF53D1500182559 /* Copy configuration */,
 			);
 			buildRules = (
 			);
@@ -731,13 +737,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C1209B1A1CF53D1500182559 /* ShellScript */ = {
+		C1209B1A1CF53D1500182559 /* Copy configuration */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Copy configuration";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1055,6 +1062,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "AdHoc=2";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1071,7 +1079,7 @@
 		};
 		C1209B0D1CF53B0200182559 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E52CBA7FBCBF31E1C7A934E4 /* Pods-iOSLearnList.release.xcconfig */;
+			baseConfigurationReference = EAD4BFBAAD2BC7C6493B76BE /* Pods-iOSLearnList.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1087,7 +1095,7 @@
 		};
 		C1209B0E1CF53B0200182559 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81B86F821EFE8D2EDB6BCE3F /* Pods-iOSLearnListTests.release.xcconfig */;
+			baseConfigurationReference = FEE6C6A2CA567A00B895CD81 /* Pods-iOSLearnListTests.adhoc.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = iOSLearnListTests/Info.plist;
@@ -1100,7 +1108,7 @@
 		};
 		C1209B0F1CF53B0200182559 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28741EDF4096EB7DBDFFCFA1 /* Pods-iOSLearnListUITests.release.xcconfig */;
+			baseConfigurationReference = 0ED0841BA3C379EE8E77894F /* Pods-iOSLearnListUITests.adhoc.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = iOSLearnListUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

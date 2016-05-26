@@ -16,6 +16,17 @@
 @end
 @implementation ConfigCommon
 
++(id)shareInstance
+{
+    static ConfigCommon *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[ConfigCommon alloc] init];
+        [instance readData];
+    });
+    
+    return instance;
+}
 
 #pragma  mark - private
 - (void)readData
@@ -26,6 +37,9 @@
     
 }
 
-
+- (NSString *)currentConfig
+{
+    return [dict objectForKey:@"CurrentConfig"];
+}
 
 @end

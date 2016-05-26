@@ -9,6 +9,7 @@
 #import "ExtendMainController.h"
 #import "IndexTableViewController.h"
 #import "ViewController.h"
+#import "ConfigCommon.h"
 
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
@@ -62,7 +63,7 @@
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
+    [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _otherCtl = nav;
    nav.tabBarItem.title = NSLocalizedStringFromTable(@"Other", @"myLanguage", nil);
     

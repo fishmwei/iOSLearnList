@@ -9,6 +9,7 @@
 -->
 <plist version="1.0">
     <dict>
-    
+        <key>CurrentConfig</key>
+        <string>Debug</string>
     </dict>
 </plist>
