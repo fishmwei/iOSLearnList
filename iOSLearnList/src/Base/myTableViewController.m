@@ -17,10 +17,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
     [self.navigationItem setTitle:@"myTableViewController"];
+    
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"写私信" style:UIBarButtonItemStylePlain target:self action:@selector(xie)];
+    
+//   self.navigationItem.leftBarButtonItem =  [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemUndo target:self action: @selector(xie)];
+    
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(xie)];
+    
+    self.navigationItem.leftBarButtonItem = item;
+    
+    
     // Do any additional setup after loading the view.
+}
+
+-(void)xie
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
