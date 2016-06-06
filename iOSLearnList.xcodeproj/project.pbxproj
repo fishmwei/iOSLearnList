@@ -25,6 +25,7 @@
 		9F32092F5F94E768907A6FD5 /* libPods-iOSLearnListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833CEE134107F0083DD15E92 /* libPods-iOSLearnListUITests.a */; };
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
+		C14CB7691CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */; };
 		C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */; };
 		C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506F1CE99E75006A117B /* defaultNSURLSessionController.m */; };
 		C1A650821CE99E75006A117B /* downloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650711CE99E75006A117B /* downloadController.m */; };
@@ -106,6 +107,7 @@
 		C1209B1D1CF53EED00182559 /* configViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = configViewController.m; sourceTree = "<group>"; };
 		C1209B201CF53F2900182559 /* ConfigCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigCommon.h; sourceTree = "<group>"; };
 		C1209B211CF53F2900182559 /* ConfigCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCommon.m; sourceTree = "<group>"; };
+		C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "general_top_icon_back_normal@2x.png"; sourceTree = "<group>"; };
 		C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Timer+NotificationViewController.h"; sourceTree = "<group>"; };
 		C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Timer+NotificationViewController.m"; sourceTree = "<group>"; };
 		C1A6506E1CE99E75006A117B /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
@@ -426,6 +428,7 @@
 				51FAA2F21CECB5750050E75E /* collectionViewController.m */,
 				C1209B1C1CF53EED00182559 /* configViewController.h */,
 				C1209B1D1CF53EED00182559 /* configViewController.m */,
+				C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14CB7691CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png in Resources */,
 				C1ED59731CE5BCAC00096EC7 /* weibo@2x.png in Resources */,
 				519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,

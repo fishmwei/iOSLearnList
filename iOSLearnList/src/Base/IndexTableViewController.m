@@ -15,9 +15,15 @@
     [super viewDidLoad];
     
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
+ 
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"general_top_icon_back_normal"] style:UIBarButtonItemStyleDone target:self action:@selector(backBtnPressed)];
+    
 }
 
-
+-(void)backBtnPressed
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 #pragma mark - tableView datasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
