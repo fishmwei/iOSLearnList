@@ -553,7 +553,7 @@
 				TargetAttributes = {
 					51F68EBC1CDE1905009338D6 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = N4G9ZN8438;
+						DevelopmentTeam = H79W6YY34M;
 					};
 					51F68ED51CDE1905009338D6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -967,7 +967,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fishmweiVM.iOSLearnList1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -983,7 +983,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fishmweiVM.iOSLearnList1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1089,7 +1089,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fishmweiVM.iOSLearnList1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
