@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		09D89A8EC9ED6983BB431658 /* libPods-iOSLearnListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BF68F51A69EE826487CB75 /* libPods-iOSLearnListTests.a */; };
+		519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785F91D04189A00DF3981 /* autolayoutCellCtl.m */; };
+		519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785FD1D0418E200DF3981 /* autolayoutCell.m */; };
+		519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519785FE1D0418E200DF3981 /* autolayoutCell.xib */; };
 		519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B21CE85BCC002CB3AE /* myLanguage.strings */; };
 		519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B81CE85C03002CB3AE /* InfoPlist.strings */; };
 		519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5BE1CE85C88002CB3AE /* Localizable.strings */; };
@@ -65,6 +68,11 @@
 /* Begin PBXFileReference section */
 		0ED0841BA3C379EE8E77894F /* Pods-iOSLearnListUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		28741EDF4096EB7DBDFFCFA1 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		519785F81D04189A00DF3981 /* autolayoutCellCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCellCtl.h; sourceTree = "<group>"; };
+		519785F91D04189A00DF3981 /* autolayoutCellCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autolayoutCellCtl.m; sourceTree = "<group>"; };
+		519785FC1D0418E200DF3981 /* autolayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCell.h; sourceTree = "<group>"; };
+		519785FD1D0418E200DF3981 /* autolayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autolayoutCell.m; sourceTree = "<group>"; };
+		519785FE1D0418E200DF3981 /* autolayoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = autolayoutCell.xib; sourceTree = "<group>"; };
 		519EB5AA1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		519EB5AB1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		519EB5B11CE85BCC002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/myLanguage.strings; sourceTree = "<group>"; };
@@ -181,6 +189,16 @@
 				833CEE134107F0083DD15E92 /* libPods-iOSLearnListUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		519785FB1D0418BB00DF3981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				519785FC1D0418E200DF3981 /* autolayoutCell.h */,
+				519785FD1D0418E200DF3981 /* autolayoutCell.m */,
+				519785FE1D0418E200DF3981 /* autolayoutCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		51F68EB41CDE1905009338D6 = {
@@ -419,9 +437,12 @@
 		C1E36FCA1CE4230300445669 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				519785FB1D0418BB00DF3981 /* View */,
 				C1209B1F1CF53F0500182559 /* Model */,
 				C1E36FCB1CE4231900445669 /* IndexTableViewController.h */,
 				C1E36FCC1CE4231900445669 /* IndexTableViewController.m */,
+				519785F81D04189A00DF3981 /* autolayoutCellCtl.h */,
+				519785F91D04189A00DF3981 /* autolayoutCellCtl.m */,
 				51FAA2EE1CECB49A0050E75E /* myTableViewController.h */,
 				51FAA2EF1CECB49A0050E75E /* myTableViewController.m */,
 				51FAA2F11CECB5750050E75E /* collectionViewController.h */,
@@ -600,6 +621,7 @@
 				519EB5C01CE85F40002CB3AE /* wait.png in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
 				C1ED59721CE5BCAC00096EC7 /* weibo_touch@2x.png in Resources */,
+				519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */,
 				51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,12 +794,14 @@
 				51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
+				519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */,
 				C1A650831CE99E75006A117B /* FWSessionDelegate.m in Sources */,
 				C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */,
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
+				519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */,
 				C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */,
 				C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */,
 				C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */,
