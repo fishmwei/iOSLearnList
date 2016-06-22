@@ -29,6 +29,9 @@
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C14CB7691CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */; };
+		C19D17DF1D18D7B900E29256 /* ELSDPBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17DE1D18D7B900E29256 /* ELSDPBaseAnimation.m */; };
+		C19D17E21D18D96300E29256 /* ELSDPBasePresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E11D18D96300E29256 /* ELSDPBasePresentViewController.m */; };
+		C19D17E51D18D9BA00E29256 /* ELSDPPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E41D18D9BA00E29256 /* ELSDPPresentAnimation.m */; };
 		C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */; };
 		C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506F1CE99E75006A117B /* defaultNSURLSessionController.m */; };
 		C1A650821CE99E75006A117B /* downloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650711CE99E75006A117B /* downloadController.m */; };
@@ -116,6 +119,12 @@
 		C1209B201CF53F2900182559 /* ConfigCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigCommon.h; sourceTree = "<group>"; };
 		C1209B211CF53F2900182559 /* ConfigCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCommon.m; sourceTree = "<group>"; };
 		C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "general_top_icon_back_normal@2x.png"; sourceTree = "<group>"; };
+		C19D17DD1D18D7B900E29256 /* ELSDPBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELSDPBaseAnimation.h; sourceTree = "<group>"; };
+		C19D17DE1D18D7B900E29256 /* ELSDPBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELSDPBaseAnimation.m; sourceTree = "<group>"; };
+		C19D17E01D18D96200E29256 /* ELSDPBasePresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELSDPBasePresentViewController.h; sourceTree = "<group>"; };
+		C19D17E11D18D96300E29256 /* ELSDPBasePresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELSDPBasePresentViewController.m; sourceTree = "<group>"; };
+		C19D17E31D18D9BA00E29256 /* ELSDPPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELSDPPresentAnimation.h; sourceTree = "<group>"; };
+		C19D17E41D18D9BA00E29256 /* ELSDPPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELSDPPresentAnimation.m; sourceTree = "<group>"; };
 		C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Timer+NotificationViewController.h"; sourceTree = "<group>"; };
 		C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Timer+NotificationViewController.m"; sourceTree = "<group>"; };
 		C1A6506E1CE99E75006A117B /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
@@ -326,9 +335,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C19D17D91D18CC6000E29256 /* customPresentView */ = {
+			isa = PBXGroup;
+			children = (
+				C19D17DD1D18D7B900E29256 /* ELSDPBaseAnimation.h */,
+				C19D17DE1D18D7B900E29256 /* ELSDPBaseAnimation.m */,
+				C19D17E01D18D96200E29256 /* ELSDPBasePresentViewController.h */,
+				C19D17E11D18D96300E29256 /* ELSDPBasePresentViewController.m */,
+				C19D17E31D18D9BA00E29256 /* ELSDPPresentAnimation.h */,
+				C19D17E41D18D9BA00E29256 /* ELSDPPresentAnimation.m */,
+			);
+			path = customPresentView;
+			sourceTree = "<group>";
+		};
 		C1A650661CE99E75006A117B /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				C19D17D91D18CC6000E29256 /* customPresentView */,
 				C1A650671CE99E75006A117B /* iOSSystem */,
 				C1A6506D1CE99E75006A117B /* NSURLLearn */,
 				C1A650761CE99E75006A117B /* ObjRelative */,
@@ -791,14 +814,17 @@
 				C1A650851CE99E75006A117B /* ReversibleString.m in Sources */,
 				C1A650841CE99E75006A117B /* NSURLConnectionController.m in Sources */,
 				C1209B1E1CF53EED00182559 /* configViewController.m in Sources */,
+				C19D17E51D18D9BA00E29256 /* ELSDPPresentAnimation.m in Sources */,
 				51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
 				519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */,
 				C1A650831CE99E75006A117B /* FWSessionDelegate.m in Sources */,
+				C19D17DF1D18D7B900E29256 /* ELSDPBaseAnimation.m in Sources */,
 				C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */,
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
+				C19D17E21D18D96300E29256 /* ELSDPBasePresentViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
 				519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */,
@@ -996,6 +1022,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fishmweiVM.iOSLearnList1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1012,6 +1039,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fishmweiVM.iOSLearnList1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1118,6 +1146,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fishmweiVM.iOSLearnList1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = AdHoc;
 		};

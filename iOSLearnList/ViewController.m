@@ -10,7 +10,7 @@
 #import "IndexTableViewController.h"
 
 #import "ExtendMainController.h"
-
+#import "ELSDPBasePresentViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -20,6 +20,25 @@
 @end
 
 @implementation ViewController
+
+#pragma mark  Autorotate
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIDeviceOrientationPortrait);
+}
+
+- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0) {
+    return UIInterfaceOrientationMaskPortrait;
+    //UIInterfaceOrientationMaskPortrait
+}
+
+-(BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0) {
+    return YES;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,7 +59,7 @@
 
 -(void)createData
 {
-    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative"];
+    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView"];
     
 }
 
@@ -133,14 +152,16 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-//-(void)gotoExtendMainController
-//{
-//    ExtendMainController *vc = [[ExtendMainController alloc] init];
-//    [self.navigationController pushViewController:vc animated:YES];
-//}
 
 
-
+- (void)gotoCustomPresentView
+{
+    ELSDPBasePresentViewController *vc = [[ELSDPBasePresentViewController alloc] init];
+    
+    vc.showRect = CGRectMake(30, 60, CGRectGetWidth(self.view.bounds)-60, CGRectGetHeight(self.view.bounds)-120);
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 
 @end
