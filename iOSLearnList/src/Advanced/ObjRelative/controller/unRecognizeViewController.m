@@ -52,7 +52,11 @@
 
 -(BOOL)respondsToSelector:(SEL)aSelector
 {
-    return YES;
+    if (aSelector == @selector(pressed:)) {
+        return YES;
+    }
+    
+    return [super respondsToSelector:aSelector];
 }
 
 
