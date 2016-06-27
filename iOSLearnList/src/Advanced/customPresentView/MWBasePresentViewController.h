@@ -1,5 +1,5 @@
 //
-//  ELSDPBasePresentViewController.h
+//  MWBasePresentViewController.h
 //  iOSLearnList
 //
 //  Created by huangmingwei on 16/6/21.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ELSDPBasePresentViewController : UIViewController
+@interface MWBasePresentViewController : UIViewController
 
 @property (nonatomic, assign) CGRect showRect;
 

@@ -1,17 +1,17 @@
 //
-//  ELSDPBaseAnimation.m
+//  MWBaseAnimation.m
 //  iOSLearnList
 //
 //  Created by huangmingwei on 16/6/21.
 //  Copyright © 2016年 fishmwei. All rights reserved.
 //
 
-#import "ELSDPBaseAnimation.h"
+#import "MWBaseAnimation.h"
 
-@interface ELSDPBaseAnimation () 
+@interface MWBaseAnimation ()
 @end
 
-@implementation ELSDPBaseAnimation
+@implementation MWBaseAnimation
 
 #pragma mark - UIViewControllerAnimatedTransitioning
 

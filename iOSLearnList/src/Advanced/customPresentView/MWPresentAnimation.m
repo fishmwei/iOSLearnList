@@ -1,26 +1,26 @@
 //
-//  ELSDPPresentAnimation.m
+//  MWPresentAnimation.m
 //  iOSLearnList
 //
 //  Created by huangmingwei on 16/6/21.
 //  Copyright © 2016年 fishmwei. All rights reserved.
 //
 
-#import "ELSDPPresentAnimation.h"
+#import "MWPresentAnimation.h"
 
-@interface ELSDPPresentAnimation () {
+@interface MWPresentAnimation () {
     UIView *_coverView;
 }
 @end
 
-@implementation ELSDPPresentAnimation
+@implementation MWPresentAnimation
 #pragma mark - Animated Transitioning
 
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     //The view controller's view that is presenting the modal view
     UIView *containerView = [transitionContext containerView];
     
-    if (self.type == ELSDPAnimationPresent) {
+    if (self.type == MWAnimationPresent) {
         //The modal view itself
         UIView *modalView = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view;
         
@@ -66,7 +66,7 @@
 //        } completion:^(BOOL finished) {
 //            [transitionContext completeTransition:YES];
 //        }];
-    } else if (self.type == ELSDPAnimationDismiss) {
+    } else if (self.type == MWAnimationDismiss) {
         //The modal view itself
         UIView *modalView = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey].view;
         
@@ -123,8 +123,8 @@
 }
 
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    if (self.type == ELSDPAnimationPresent) return 0.5;
-    else if (self.type == ELSDPAnimationDismiss) return 0.5;
+    if (self.type == MWAnimationPresent) return 0.5;
+    else if (self.type == MWAnimationDismiss) return 0.5;
     else return [super transitionDuration:transitionContext];
 }
 

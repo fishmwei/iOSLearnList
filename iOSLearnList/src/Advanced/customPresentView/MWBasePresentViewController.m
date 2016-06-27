@@ -1,23 +1,23 @@
 //
-//  ELSDPBasePresentViewController.m
+//  MWBasePresentViewController.m
 //  iOSLearnList
 //
 //  Created by huangmingwei on 16/6/21.
 //  Copyright © 2016年 fishmwei. All rights reserved.
 //
 
-#import "ELSDPBasePresentViewController.h"
-#import "ELSDPPresentAnimation.h"
+#import "MWBasePresentViewController.h"
+#import "MWPresentAnimation.h"
 
-@interface ELSDPBasePresentViewController () <UIViewControllerTransitioningDelegate> {
+@interface MWBasePresentViewController () <UIViewControllerTransitioningDelegate> {
     UILabel *titleLabel;
     UIView *bottomView;
 }
 
-@property (nonatomic, retain) ELSDPPresentAnimation *presentAnimation;
+@property (nonatomic, retain) MWPresentAnimation *presentAnimation;
 @end
 
-@implementation ELSDPBasePresentViewController
+@implementation MWBasePresentViewController
 
 #pragma mark - UI
 #pragma mark  Autorotate
@@ -69,7 +69,7 @@
 {
     self = [super init];
     if (self) {
-        self.presentAnimation = [[ELSDPPresentAnimation alloc] init];
+        self.presentAnimation = [[MWPresentAnimation alloc] init];
         self.transitioningDelegate = self;
         self.modalPresentationStyle = UIModalPresentationCustom;
         self.showRect = CGRectZero;
@@ -98,7 +98,7 @@
 #pragma mark UIViewControllerTransitioningDelegate
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-    self.presentAnimation.type = ELSDPAnimationPresent;
+    self.presentAnimation.type = MWAnimationPresent;
     self.presentAnimation.modalFrame = self.showRect;
     
     return self.presentAnimation;
@@ -106,7 +106,7 @@
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-    self.presentAnimation.type = ELSDPAnimationDismiss;
+    self.presentAnimation.type = MWAnimationDismiss;
     self.presentAnimation.modalFrame = self.showRect;
     
     return self.presentAnimation;

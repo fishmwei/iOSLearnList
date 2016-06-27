@@ -10,7 +10,7 @@
 #import "IndexTableViewController.h"
 
 #import "ExtendMainController.h"
-#import "ELSDPBasePresentViewController.h"
+#import "MWBasePresentViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -156,7 +156,7 @@
 
 - (void)gotoCustomPresentView
 {
-    ELSDPBasePresentViewController *vc = [[ELSDPBasePresentViewController alloc] init];
+    MWBasePresentViewController *vc = [[MWBasePresentViewController alloc] init];
     
     vc.showRect = CGRectMake(30, 60, CGRectGetWidth(self.view.bounds)-60, CGRectGetHeight(self.view.bounds)-120);
     
