@@ -1,3 +1,6 @@
 *.xcuserdatad/
+/Pods
+Pods/
 Pods
 ./myBundleFrame/Pods
+./myBundleFrame/Pods/
