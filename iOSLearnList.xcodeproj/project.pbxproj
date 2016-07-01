@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		09D89A8EC9ED6983BB431658 /* libPods-iOSLearnListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BF68F51A69EE826487CB75 /* libPods-iOSLearnListTests.a */; };
+		5106ADFB1D26A43700284022 /* general_top_icon_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106ADF81D26A43700284022 /* general_top_icon_back_normal@2x.png */; };
+		5106ADFC1D26A43700284022 /* weibo_touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106ADF91D26A43700284022 /* weibo_touch@2x.png */; };
+		5106ADFD1D26A43700284022 /* weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106ADFA1D26A43700284022 /* weibo@2x.png */; };
+		5106AE001D26A46A00284022 /* wait.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106AE021D26A46A00284022 /* wait.png */; };
+		5106AE071D26A52400284022 /* MWNumberTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5106AE061D26A52400284022 /* MWNumberTools.m */; };
 		519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785F91D04189A00DF3981 /* autolayoutCellCtl.m */; };
 		519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785FD1D0418E200DF3981 /* autolayoutCell.m */; };
 		519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519785FE1D0418E200DF3981 /* autolayoutCell.xib */; };
 		519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B21CE85BCC002CB3AE /* myLanguage.strings */; };
 		519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B81CE85C03002CB3AE /* InfoPlist.strings */; };
 		519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5BE1CE85C88002CB3AE /* Localizable.strings */; };
-		519EB5C01CE85F40002CB3AE /* wait.png in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5C21CE85F40002CB3AE /* wait.png */; };
 		51F68EC21CDE1905009338D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC11CDE1905009338D6 /* main.m */; };
 		51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC41CDE1905009338D6 /* AppDelegate.m */; };
 		51F68EC81CDE1905009338D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC71CDE1905009338D6 /* ViewController.m */; };
@@ -45,13 +49,18 @@
 		C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650901CE99FA1006A117B /* NSObject+autoCoding.m */; };
 		C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FCC1CE4231900445669 /* IndexTableViewController.m */; };
 		C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */; };
-		C1ED59721CE5BCAC00096EC7 /* weibo_touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1ED59701CE5BCAC00096EC7 /* weibo_touch@2x.png */; };
-		C1ED59731CE5BCAC00096EC7 /* weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1ED59711CE5BCAC00096EC7 /* weibo@2x.png */; };
 		C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */; };
 		D04BC43F229180029CEA3ED6 /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D14FFD38BF9B5D89DAC3CAB /* libPods-iOSLearnList.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5106ADF61D26A40D00284022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51F68EB51CDE1905009338D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5106ADEE1D26A3D700284022;
+			remoteInfo = iOSLearnListBundle;
+		};
 		51F68ED71CDE1905009338D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51F68EB51CDE1905009338D6 /* Project object */;
@@ -71,6 +80,15 @@
 /* Begin PBXFileReference section */
 		0ED0841BA3C379EE8E77894F /* Pods-iOSLearnListUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		28741EDF4096EB7DBDFFCFA1 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5106ADEF1D26A3D700284022 /* iOSLearnListBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLearnListBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5106ADF11D26A3D700284022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5106ADF81D26A43700284022 /* general_top_icon_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "general_top_icon_back_normal@2x.png"; sourceTree = "<group>"; };
+		5106ADF91D26A43700284022 /* weibo_touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo_touch@2x.png"; sourceTree = "<group>"; };
+		5106ADFA1D26A43700284022 /* weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo@2x.png"; sourceTree = "<group>"; };
+		5106AE011D26A46A00284022 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/wait.png; sourceTree = "<group>"; };
+		5106AE031D26A46C00284022 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/wait.png"; sourceTree = "<group>"; };
+		5106AE051D26A52400284022 /* MWNumberTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNumberTools.h; sourceTree = "<group>"; };
+		5106AE061D26A52400284022 /* MWNumberTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWNumberTools.m; sourceTree = "<group>"; };
 		519785F81D04189A00DF3981 /* autolayoutCellCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCellCtl.h; sourceTree = "<group>"; };
 		519785F91D04189A00DF3981 /* autolayoutCellCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autolayoutCellCtl.m; sourceTree = "<group>"; };
 		519785FC1D0418E200DF3981 /* autolayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCell.h; sourceTree = "<group>"; };
@@ -84,8 +102,6 @@
 		519EB5B91CE85C05002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		519EB5BD1CE85C88002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		519EB5BF1CE85C8A002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		519EB5C11CE85F40002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/wait.png; sourceTree = "<group>"; };
-		519EB5C31CE85F68002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/wait.png"; sourceTree = "<group>"; };
 		51F68EBD1CDE1905009338D6 /* iOSLearnList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F68EC11CDE1905009338D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51F68EC31CDE1905009338D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -151,8 +167,6 @@
 		C1E36FCC1CE4231900445669 /* IndexTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexTableViewController.m; sourceTree = "<group>"; };
 		C1ED596C1CE5B0A200096EC7 /* ExtendMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendMainController.h; sourceTree = "<group>"; };
 		C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMainController.m; sourceTree = "<group>"; };
-		C1ED59701CE5BCAC00096EC7 /* weibo_touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo_touch@2x.png"; sourceTree = "<group>"; };
-		C1ED59711CE5BCAC00096EC7 /* weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo@2x.png"; sourceTree = "<group>"; };
 		C1ED59751CE5D09100096EC7 /* BBLaunchAdMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLaunchAdMonitor.h; sourceTree = "<group>"; };
 		C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLaunchAdMonitor.m; sourceTree = "<group>"; };
 		DA3F9CE8707AFB2CD5DBC438 /* Pods-iOSLearnListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +177,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5106ADEC1D26A3D700284022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51F68EBA1CDE1905009338D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +221,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5106ADF01D26A3D700284022 /* iOSLearnListBundle */ = {
+			isa = PBXGroup;
+			children = (
+				5106AE021D26A46A00284022 /* wait.png */,
+				5106ADF81D26A43700284022 /* general_top_icon_back_normal@2x.png */,
+				5106ADF91D26A43700284022 /* weibo_touch@2x.png */,
+				5106ADFA1D26A43700284022 /* weibo@2x.png */,
+				5106ADF11D26A3D700284022 /* Info.plist */,
+			);
+			path = iOSLearnListBundle;
+			sourceTree = "<group>";
+		};
+		5106AE041D26A50800284022 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				5106AE051D26A52400284022 /* MWNumberTools.h */,
+				5106AE061D26A52400284022 /* MWNumberTools.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		519785FB1D0418BB00DF3981 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +258,7 @@
 				51F68EBF1CDE1905009338D6 /* iOSLearnList */,
 				51F68ED91CDE1905009338D6 /* iOSLearnListTests */,
 				51F68EE41CDE1905009338D6 /* iOSLearnListUITests */,
+				5106ADF01D26A3D700284022 /* iOSLearnListBundle */,
 				51F68EBE1CDE1905009338D6 /* Products */,
 				FAFB439979C4B8B9EA7BA4C5 /* Pods */,
 				2280475D99DB7B44D5738EA0 /* Frameworks */,
@@ -228,6 +271,7 @@
 				51F68EBD1CDE1905009338D6 /* iOSLearnList.app */,
 				51F68ED61CDE1905009338D6 /* iOSLearnListTests.xctest */,
 				51F68EE11CDE1905009338D6 /* iOSLearnListUITests.xctest */,
+				5106ADEF1D26A3D700284022 /* iOSLearnListBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,8 +279,8 @@
 		51F68EBF1CDE1905009338D6 /* iOSLearnList */ = {
 			isa = PBXGroup;
 			children = (
+				5106AE041D26A50800284022 /* common */,
 				C1ED59741CE5D09100096EC7 /* 3rdParty */,
-				C1ED596F1CE5BC9C00096EC7 /* Images */,
 				51F68EF81CDE1A06009338D6 /* src */,
 				51F68EC31CDE1905009338D6 /* AppDelegate.h */,
 				51F68EC41CDE1905009338D6 /* AppDelegate.m */,
@@ -486,16 +530,6 @@
 			path = Extend;
 			sourceTree = "<group>";
 		};
-		C1ED596F1CE5BC9C00096EC7 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				519EB5C21CE85F40002CB3AE /* wait.png */,
-				C1ED59701CE5BCAC00096EC7 /* weibo_touch@2x.png */,
-				C1ED59711CE5BCAC00096EC7 /* weibo@2x.png */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		C1ED59741CE5D09100096EC7 /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,6 +558,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5106ADEE1D26A3D700284022 /* iOSLearnListBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5106ADF51D26A3D700284022 /* Build configuration list for PBXNativeTarget "iOSLearnListBundle" */;
+			buildPhases = (
+				5106ADEB1D26A3D700284022 /* Sources */,
+				5106ADEC1D26A3D700284022 /* Frameworks */,
+				5106ADED1D26A3D700284022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSLearnListBundle;
+			productName = iOSLearnListBundle;
+			productReference = 5106ADEF1D26A3D700284022 /* iOSLearnListBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		51F68EBC1CDE1905009338D6 /* iOSLearnList */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F68EEA1CDE1905009338D6 /* Build configuration list for PBXNativeTarget "iOSLearnList" */;
@@ -539,6 +590,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5106ADF71D26A40D00284022 /* PBXTargetDependency */,
 			);
 			name = iOSLearnList;
 			productName = iOSLearnList;
@@ -595,6 +647,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = fishmwei;
 				TargetAttributes = {
+					5106ADEE1D26A3D700284022 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					51F68EBC1CDE1905009338D6 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = H79W6YY34M;
@@ -626,24 +681,33 @@
 				51F68EBC1CDE1905009338D6 /* iOSLearnList */,
 				51F68ED51CDE1905009338D6 /* iOSLearnListTests */,
 				51F68EE01CDE1905009338D6 /* iOSLearnListUITests */,
+				5106ADEE1D26A3D700284022 /* iOSLearnListBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5106ADED1D26A3D700284022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5106AE001D26A46A00284022 /* wait.png in Resources */,
+				5106ADFB1D26A43700284022 /* general_top_icon_back_normal@2x.png in Resources */,
+				5106ADFD1D26A43700284022 /* weibo@2x.png in Resources */,
+				5106ADFC1D26A43700284022 /* weibo_touch@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51F68EBB1CDE1905009338D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C14CB7691CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png in Resources */,
-				C1ED59731CE5BCAC00096EC7 /* weibo@2x.png in Resources */,
 				519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,
 				519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */,
 				519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */,
-				519EB5C01CE85F40002CB3AE /* wait.png in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
-				C1ED59721CE5BCAC00096EC7 /* weibo_touch@2x.png in Resources */,
 				519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */,
 				51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */,
 			);
@@ -803,12 +867,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5106ADEB1D26A3D700284022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51F68EB91CDE1905009338D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				51F68EC81CDE1905009338D6 /* ViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
+				5106AE071D26A52400284022 /* MWNumberTools.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C1A650851CE99E75006A117B /* ReversibleString.m in Sources */,
@@ -855,6 +927,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5106ADF71D26A40D00284022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5106ADEE1D26A3D700284022 /* iOSLearnListBundle */;
+			targetProxy = 5106ADF61D26A40D00284022 /* PBXContainerItemProxy */;
+		};
 		51F68ED81CDE1905009338D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 51F68EBC1CDE1905009338D6 /* iOSLearnList */;
@@ -868,6 +945,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5106AE021D26A46A00284022 /* wait.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5106AE011D26A46A00284022 /* en */,
+				5106AE031D26A46C00284022 /* zh-Hans */,
+			);
+			name = wait.png;
+			sourceTree = "<group>";
+		};
 		519EB5B21CE85BCC002CB3AE /* myLanguage.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -895,15 +981,6 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		519EB5C21CE85F40002CB3AE /* wait.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				519EB5C11CE85F40002CB3AE /* en */,
-				519EB5C31CE85F68002CB3AE /* zh-Hans */,
-			);
-			name = wait.png;
-			sourceTree = "<group>";
-		};
 		51F68EC91CDE1905009338D6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -925,6 +1002,57 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5106ADF21D26A3D700284022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = iOSLearnListBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.iOSLearnListBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5106ADF31D26A3D700284022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = iOSLearnListBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.iOSLearnListBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5106ADF41D26A3D700284022 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = iOSLearnListBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.iOSLearnListBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = AdHoc;
+		};
 		51F68EE81CDE1905009338D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1178,6 +1306,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5106ADF51D26A3D700284022 /* Build configuration list for PBXNativeTarget "iOSLearnListBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5106ADF21D26A3D700284022 /* Debug */,
+				5106ADF31D26A3D700284022 /* Release */,
+				5106ADF41D26A3D700284022 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		51F68EB81CDE1905009338D6 /* Build configuration list for PBXProject "iOSLearnList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

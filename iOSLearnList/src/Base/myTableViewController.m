@@ -7,6 +7,7 @@
 //
 
 #import "myTableViewController.h"
+#import "MWNumberTools.h"
 
 @interface myTableViewController ()
 
@@ -59,89 +60,17 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
         
     }
-//    cell.backgroundColor = [UIColor blueColor];
-    cell.textLabel.text = [self stringOfFloat:43.100001f withDecimal:3];
+
+    cell.textLabel.text = [MWNumberTools stringOfFloat:43.102901f withDecimal:3];
     
     
     return cell;
 }
 
 
-+ (NSString *)stringOfFloat:(CGFloat)value withDecimal:(NSUInteger)num
-{
-    //
-    if (fmod(value, 1.0f) < 0.000001)
-    {
-        return [NSString stringWithFormat:@"%.0f",value];
-    }
-    
-    NSString *format = [NSString stringWithFormat:@"%%0.%df", num];
-    
-    NSString *lastStr = [NSString stringWithFormat:format, value];
-    
-    NSString *endStr = [lastStr substringFromIndex:[lastStr length] - 1];
-    while ([endStr isEqualToString:@"0"]) {
-        endStr = [lastStr substringToIndex:[lastStr length] - 1];
-        endStr = [lastStr substringFromIndex:[lastStr length] - 1];
-    }
-    
-    return lastStr;
-}
-
-
-
--(NSString *)formatFloatNum:(float )value
-{
-    if(fmodf(value, 1.0f) < 0.000001)//小数位数为0
-    {
-        return [NSString stringWithFormat:@"%.0f",value];
-    }
-    else if(fmodf(value*10, 1) < 0.000001)//小数位数为1
-    {
-        return [NSString stringWithFormat:@"%.1f",value];
-    }
-    else//小数位数大于等于2
-    {
-        return [NSString stringWithFormat:@"%.2f",value];
-    }
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-}
-
-
--(NSString *)stringWithoutEndZeroFromFloat:(CGFloat)value{
-    NSString *string = nil;
-    
-    NSInteger intValue = (NSInteger)value;
-    CGFloat decimalValue = value - intValue;
-    
-    if (decimalValue > -0.000001 && decimalValue < 0.000001) {
-        //如果小数部分为0，则只返回整数部分
-        string = [NSString stringWithFormat:@"%ld", (long)intValue];
-    }
-    else {
-        string = [NSString stringWithFormat:@"%f", value];
-        
-        NSString *endStr = [string substringFromIndex:[string length] - 1];
-        while ([endStr isEqualToString:@"0"]) {
-            string = [string substringToIndex:[string length] - 1];
-            endStr = [string substringFromIndex:[string length] - 1];
-        }
-    }
-    
-    
-    return string;
-}
-
-- (NSString *)stringOfFloat:(CGFloat)value withDecimal:(NSUInteger)num
-{
-    NSString *format = [NSString stringWithFormat:@"%%0.%df", num];
-    NSString *originalStr = [NSString stringWithFormat:format, value];
-    
-    return [self stringWithoutEndZeroFromFloat:[originalStr doubleValue]];
 }
 
 
