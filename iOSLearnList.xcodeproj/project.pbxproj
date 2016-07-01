@@ -12,7 +12,6 @@
 		5106ADFC1D26A43700284022 /* weibo_touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106ADF91D26A43700284022 /* weibo_touch@2x.png */; };
 		5106ADFD1D26A43700284022 /* weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106ADFA1D26A43700284022 /* weibo@2x.png */; };
 		5106AE001D26A46A00284022 /* wait.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106AE021D26A46A00284022 /* wait.png */; };
-		5106AE071D26A52400284022 /* MWNumberTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5106AE061D26A52400284022 /* MWNumberTools.m */; };
 		519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785F91D04189A00DF3981 /* autolayoutCellCtl.m */; };
 		519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785FD1D0418E200DF3981 /* autolayoutCell.m */; };
 		519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519785FE1D0418E200DF3981 /* autolayoutCell.xib */; };
@@ -87,8 +86,6 @@
 		5106ADFA1D26A43700284022 /* weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo@2x.png"; sourceTree = "<group>"; };
 		5106AE011D26A46A00284022 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/wait.png; sourceTree = "<group>"; };
 		5106AE031D26A46C00284022 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/wait.png"; sourceTree = "<group>"; };
-		5106AE051D26A52400284022 /* MWNumberTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNumberTools.h; sourceTree = "<group>"; };
-		5106AE061D26A52400284022 /* MWNumberTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWNumberTools.m; sourceTree = "<group>"; };
 		519785F81D04189A00DF3981 /* autolayoutCellCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCellCtl.h; sourceTree = "<group>"; };
 		519785F91D04189A00DF3981 /* autolayoutCellCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autolayoutCellCtl.m; sourceTree = "<group>"; };
 		519785FC1D0418E200DF3981 /* autolayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCell.h; sourceTree = "<group>"; };
@@ -236,8 +233,6 @@
 		5106AE041D26A50800284022 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				5106AE051D26A52400284022 /* MWNumberTools.h */,
-				5106AE061D26A52400284022 /* MWNumberTools.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -880,7 +875,6 @@
 			files = (
 				51F68EC81CDE1905009338D6 /* ViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
-				5106AE071D26A52400284022 /* MWNumberTools.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C1A650851CE99E75006A117B /* ReversibleString.m in Sources */,
@@ -1314,6 +1308,7 @@
 				5106ADF41D26A3D700284022 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51F68EB81CDE1905009338D6 /* Build configuration list for PBXProject "iOSLearnList" */ = {
 			isa = XCConfigurationList;

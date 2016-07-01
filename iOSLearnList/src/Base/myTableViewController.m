@@ -7,7 +7,7 @@
 //
 
 #import "myTableViewController.h"
-#import "MWNumberTools.h"
+#import <MWObjTools/MWNumberTools.h>
 
 @interface myTableViewController ()
 

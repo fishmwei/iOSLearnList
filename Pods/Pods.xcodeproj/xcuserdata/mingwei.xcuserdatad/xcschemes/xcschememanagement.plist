@@ -8,43 +8,36 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
+		</dict>
+		<key>MWObjTools.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-iOSLearnList.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>Pods-iOSLearnListTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>Pods-iOSLearnListUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -64,17 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>99E9CCEF22F09E0DF25DB0FA322D50AA</key>
+		<key>B533E11EBC489DF83D81FB2570D94842</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C03A4FB3B2449644AE82D1DFEA823D3D</key>
+		<key>CCF37A421FF9EA88AD7F6E1013280639</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>D9130DAEB86E93B1360B278A3CD5302E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCDA5A3442B9236D66563FDB8FAAA013</key>
 		<dict>
 			<key>primary</key>
 			<true/>

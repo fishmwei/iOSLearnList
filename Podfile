@@ -10,6 +10,7 @@ target 'iOSLearnList' do
 	pod 'MJRefresh', '3.1.0'
     pod 'SDWebImage'
     pod 'MBProgressHUD'
+    pod 'MWObjTools'
 end
 
 target 'iOSLearnListTests' do
