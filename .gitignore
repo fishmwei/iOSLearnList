@@ -1,3 +1,4 @@
+#test
 *.xcuserdatad/
 Pods/
-./myBundleFrame/Pods/
+myBundleFrame/Pods/
