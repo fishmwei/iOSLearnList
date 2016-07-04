@@ -1,0 +1,4 @@
+Create static library
+
+lipo -create xx.a XX.a -output merged.a 
+

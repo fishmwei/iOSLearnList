@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "ExtendMainController.h"
 #import "BBLaunchAdMonitor.h"
+#import "myBundleFrame.h"
 
 @interface AppDelegate ()
 
@@ -42,6 +43,11 @@
     [self.window makeKeyAndVisible];
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
+    
+    
+    
+    
+    [[[myBundleFrame alloc] init] showBundleframe];
     return YES;
 }
 

@@ -9,5 +9,8 @@
 #import "myBundleFrame.h"
 
 @implementation myBundleFrame
+- (void)showBundleframe {
+    NSLog(@"cmd %@", NSStringFromSelector(_cmd));
+}
 
 @end
