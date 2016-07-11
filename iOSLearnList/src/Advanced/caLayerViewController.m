@@ -40,6 +40,16 @@
     
     //enable clipping on the second layer
     self.layerView2.layer.masksToBounds = YES;
+    
+    CGMutablePathRef circlepath = CGPathCreateMutable();
+//    CGPathAddEllipseInRect(circlepath, NULL, self.shadowPathView.bounds);
+    CGPathAddRect(circlepath, NULL, self.shadowPathView.bounds);
+    self.shadowPathView.layer.shadowPath = circlepath;
+    self.shadowPathView.layer.shadowOpacity = 0.5;
+    self.shadowPathView.layer.shadowOffset = CGSizeMake(0.0f, -15.0f);
+    self.shadowPathView.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.2f];
+    CGPathRelease(circlepath);
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -14,4 +14,5 @@
 @property (nonatomic, weak) IBOutlet UIView *layerView2;
 @property (nonatomic, weak) IBOutlet UIView *shadowView;
 
+@property (nonatomic, weak) IBOutlet UIView *shadowPathView;
 @end
