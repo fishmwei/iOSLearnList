@@ -11,6 +11,7 @@
 
 #import "ExtendMainController.h"
 #import "MWBasePresentViewController.h"
+#import "caLayerViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -59,7 +60,7 @@
 
 -(void)createData
 {
-    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView"];
+    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample"];
     
 }
 
@@ -163,5 +164,11 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+- (void) gotoCALayerSample {
+    caLayerViewController *vc = [[caLayerViewController alloc] initWithNibName:@"caLayerViewController" bundle:[NSBundle mainBundle]];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 @end
