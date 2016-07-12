@@ -30,15 +30,19 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    scrollView.alwaysBounceVertical = YES;
+    [self.view addSubview:scrollView];
+    
     self.showLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, 200, 20)];
     self.showLabel.textColor = [UIColor blueColor];
     self.showLabel.textAlignment = NSTextAlignmentCenter;
     
-    [self.view addSubview:self.showLabel];
+    [scrollView addSubview:self.showLabel];
     
     
     self.showTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(show:) userInfo:nil repeats:YES];
-    [self.showTimer fire];
+    [[NSRunLoop currentRunLoop] addTimer:self.showTimer forMode:NSRunLoopCommonModes]; //注释掉在拖动过程中就不能运行啦
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showHello:) name:@"testMsg" object:nil];
     
@@ -49,7 +53,7 @@
     
     btn.backgroundColor = [UIColor blueColor];
     [btn addTarget:self action:@selector(sendMsg) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    [scrollView addSubview:btn];
     
     // Do any additional setup after loading the view.
 }
