@@ -49,10 +49,11 @@
     self.view.layer.cornerRadius = 10;
     
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 100, 20)];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
     btn.backgroundColor = [UIColor orangeColor];
+    btn.center = self.view.center;
     [self.view addSubview:btn];
-    [btn setTitle:@"Btn" forState:UIControlStateNormal];
+    [btn setTitle:@"Dismiss" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     

@@ -159,7 +159,7 @@
 {
     MWBasePresentViewController *vc = [[MWBasePresentViewController alloc] init];
     
-    vc.showRect = CGRectMake(30, 60, CGRectGetWidth(self.view.bounds)-60, CGRectGetHeight(self.view.bounds)-120);
+    vc.showRect = CGRectMake(60, 60, CGRectGetWidth(self.view.bounds)-120, CGRectGetHeight(self.view.bounds)-120);
     
     [self presentViewController:vc animated:YES completion:nil];
 }

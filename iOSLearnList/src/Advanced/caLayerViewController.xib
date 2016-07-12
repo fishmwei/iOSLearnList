@@ -2,16 +2,20 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="caLayerViewController">
             <connections>
+                <outlet property="D3View" destination="aO4-jv-UTT" id="xaz-IL-okT"/>
                 <outlet property="layerView1" destination="SOD-7U-oIm" id="rr9-Nw-2xz"/>
                 <outlet property="layerView2" destination="ygb-e6-ZF1" id="Lzs-Th-7gi"/>
+                <outlet property="maskBtn" destination="fPo-wJ-nbL" id="1hQ-H3-cGj"/>
                 <outlet property="shadowPathView" destination="jyQ-th-8W1" id="NMl-0n-N06"/>
                 <outlet property="shadowView" destination="t9n-Cp-Xt6" id="5HM-rI-Cr0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="faces" destination="RBJ-gR-YLV" id="H5u-2C-jlp"/>
+                <outletCollection property="faces" destination="3MF-Q1-gj1" id="rGm-na-sI8"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -54,8 +58,28 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyQ-th-8W1">
-                    <rect key="frame" x="100" y="250" width="100" height="100"/>
+                    <rect key="frame" x="10" y="224" width="100" height="100"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPo-wJ-nbL">
+                    <rect key="frame" x="164" y="244" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.21716093250877222" green="1" blue="0.25865393419291127" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="maskBtnPressed:" destination="-1" eventType="touchUpInside" id="xcl-9Z-2gx"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aO4-jv-UTT">
+                    <rect key="frame" x="10" y="419" width="100" height="104"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-gr-Mtg">
+                            <rect key="frame" x="29" y="41" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.48375270851279972" green="0.48072888100443412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

@@ -15,4 +15,13 @@
 @property (nonatomic, weak) IBOutlet UIView *shadowView;
 
 @property (nonatomic, weak) IBOutlet UIView *shadowPathView;
+
+@property (nonatomic, weak) IBOutlet UIButton *maskBtn;
+
+@property (nonatomic, weak) IBOutlet UIView *D3View;
+
+@property (nonatomic, strong) IBOutletCollection(UIView) NSArray *faces;
+
+- (IBAction)maskBtnPressed:(id)sender;
+
 @end
