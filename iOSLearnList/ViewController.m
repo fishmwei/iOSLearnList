@@ -169,6 +169,8 @@
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
     
+    
+//    [CABasicAnimation animationWithKeyPath:@"position"];
 }
 
 @end
