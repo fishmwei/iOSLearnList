@@ -13,6 +13,7 @@
                 <outlet property="maskBtn" destination="fPo-wJ-nbL" id="1hQ-H3-cGj"/>
                 <outlet property="shadowPathView" destination="jyQ-th-8W1" id="NMl-0n-N06"/>
                 <outlet property="shadowView" destination="t9n-Cp-Xt6" id="5HM-rI-Cr0"/>
+                <outlet property="shapeView" destination="myo-Me-cjX" id="qye-JT-Dhj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="faces" destination="RBJ-gR-YLV" id="H5u-2C-jlp"/>
                 <outletCollection property="faces" destination="3MF-Q1-gj1" id="rGm-na-sI8"/>
@@ -75,11 +76,15 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-gr-Mtg">
                             <rect key="frame" x="29" y="41" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.48375270851279972" green="0.48072888100443412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="myo-Me-cjX">
+                    <rect key="frame" x="164" y="339" width="97" height="85"/>
+                    <color key="backgroundColor" red="0.18089627327608659" green="0.20187447584840457" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

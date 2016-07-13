@@ -22,6 +22,9 @@
 
 @property (nonatomic, strong) IBOutletCollection(UIView) NSArray *faces;
 
+
+@property (nonatomic, weak) IBOutlet UIView *shapeView;
+
 - (IBAction)maskBtnPressed:(id)sender;
 
 @end

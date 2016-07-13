@@ -101,7 +101,29 @@
     
     UIView *v = self.faces[0];
     v.backgroundColor = [UIColor blueColor];
+    
+    
+    
+    [self drawShapeView];
+    
+    
 }
+
+- (void)drawShapeView {
+    CGFloat width = CGRectGetWidth(self.shapeView.bounds);
+    CGFloat height = CGRectGetHeight(self.shapeView.bounds);
+    
+    //Shape View
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    
+    UIRectCorner urc = UIRectCornerTopLeft | UIRectCornerBottomLeft | UIRectCornerBottomRight;
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.shapeView.bounds byRoundingCorners:urc cornerRadii:CGSizeMake(10, 10)];
+    layer.path = path.CGPath;
+    self.shapeView.layer.mask = layer;
+    
+    
+}
+
 
 CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
 {
