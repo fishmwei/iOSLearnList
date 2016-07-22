@@ -59,7 +59,7 @@
     _baseCtl = nav;
     
     ivc = [[IndexTableViewController alloc] init];
-    ivc.showData = @[@"SDUIImageViewController"];
+    ivc.showData = @[@"SDUIImageViewController", @"MasonryViewController"];
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

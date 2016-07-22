@@ -75,7 +75,7 @@
     CGAffineTransform t = CGAffineTransformIdentity;
     t = CGAffineTransformRotate(t, M_PI_4);
     self.maskBtn.layer.affineTransform = t;
-    
+    self.maskBtn.exclusiveTouch = YES;
     
     t = CGAffineTransformScale(t, 0.5, 0.5f);
     t = CGAffineTransformTranslate(t, 0, 50);
@@ -110,9 +110,6 @@
 }
 
 - (void)drawShapeView {
-    CGFloat width = CGRectGetWidth(self.shapeView.bounds);
-    CGFloat height = CGRectGetHeight(self.shapeView.bounds);
-    
     //Shape View
     CAShapeLayer *layer = [CAShapeLayer layer];
     
@@ -120,8 +117,13 @@
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.shapeView.bounds byRoundingCorners:urc cornerRadii:CGSizeMake(10, 10)];
     layer.path = path.CGPath;
     self.shapeView.layer.mask = layer;
+    self.shapeView.layer.anchorPoint = CGPointMake(0, 0);
     
-    
+    self.shapeView.layer.affineTransform = CGAffineTransformTranslate(CGAffineTransformIdentity,
+                                                                      -CGRectGetWidth(self.shapeView.bounds)/2,
+                                                                      -CGRectGetHeight(self.shapeView.bounds)/2);
+    self.shapeView.hidden = YES;
+    self.shapeView.center = CGPointMake(_maskBtn.center.x, CGRectGetMaxY(_maskBtn.frame));
 }
 
 
@@ -146,10 +148,24 @@ CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
 
 
 - (IBAction)maskBtnPressed:(id)sender {
-    UIAlertView *lv = [[UIAlertView alloc] initWithTitle:nil message:@"Click" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-    [lv show];
+    if (self.shapeView.hidden) {
+        self.shapeView.hidden = NO;
+    } else {
+        
+        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+        animation.duration    = 1.0;
+        animation.fromValue   = @1;
+        animation.toValue     = @0;
+        animation.delegate = self;
+        
+        [self.shapeView.layer addAnimation:animation forKey:@"scalex"];
+    }
 }
 
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    self.shapeView.hidden = YES;
+}
 
 
 /*

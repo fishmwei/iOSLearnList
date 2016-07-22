@@ -4,7 +4,7 @@ platform :ios, '7.0'
 # use_frameworks!
 
 
-
+pod 'Masonry'
 
 target 'iOSLearnList' do
 	pod 'MJRefresh', '3.1.0'

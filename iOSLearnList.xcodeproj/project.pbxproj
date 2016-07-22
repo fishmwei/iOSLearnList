@@ -29,12 +29,14 @@
 		51F68EE61CDE1905009338D6 /* iOSLearnListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EE51CDE1905009338D6 /* iOSLearnListUITests.m */; };
 		51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2EF1CECB49A0050E75E /* myTableViewController.m */; };
 		51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2F21CECB5750050E75E /* collectionViewController.m */; };
+		80AD915D0C5F758F67C592E5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38229377C7FFFE9588D956BB /* libPods.a */; };
 		9F32092F5F94E768907A6FD5 /* libPods-iOSLearnListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833CEE134107F0083DD15E92 /* libPods-iOSLearnListUITests.a */; };
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C14CB7691CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
+		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
 		C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17DE1D18D7B900E29256 /* MWBaseAnimation.m */; };
 		C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E11D18D96300E29256 /* MWBasePresentViewController.m */; };
 		C19D17E51D18D9BA00E29256 /* MWPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E41D18D9BA00E29256 /* MWPresentAnimation.m */; };
@@ -82,6 +84,7 @@
 /* Begin PBXFileReference section */
 		0ED0841BA3C379EE8E77894F /* Pods-iOSLearnListUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		28741EDF4096EB7DBDFFCFA1 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38229377C7FFFE9588D956BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5106ADEF1D26A3D700284022 /* iOSLearnListBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLearnListBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5106ADF11D26A3D700284022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5106ADF81D26A43700284022 /* general_top_icon_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "general_top_icon_back_normal@2x.png"; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
+		C19321041D41FA0900378778 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
+		C19321051D41FA0900378778 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
 		C19D17DD1D18D7B900E29256 /* MWBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseAnimation.h; sourceTree = "<group>"; };
 		C19D17DE1D18D7B900E29256 /* MWBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseAnimation.m; sourceTree = "<group>"; };
 		C19D17E01D18D96200E29256 /* MWBasePresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBasePresentViewController.h; sourceTree = "<group>"; };
@@ -195,6 +200,7 @@
 			files = (
 				D04BC43F229180029CEA3ED6 /* libPods-iOSLearnList.a in Frameworks */,
 				51F5BEF61D28A308000641A7 /* mergedBundleFrame.a in Frameworks */,
+				80AD915D0C5F758F67C592E5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +229,7 @@
 				9D14FFD38BF9B5D89DAC3CAB /* libPods-iOSLearnList.a */,
 				F0BF68F51A69EE826487CB75 /* libPods-iOSLearnListTests.a */,
 				833CEE134107F0083DD15E92 /* libPods-iOSLearnListUITests.a */,
+				38229377C7FFFE9588D956BB /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -502,6 +509,8 @@
 		C1A650881CE99E8C006A117B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C19321041D41FA0900378778 /* MasonryViewController.h */,
+				C19321051D41FA0900378778 /* MasonryViewController.m */,
 				C1A650891CE99E8C006A117B /* SDUIImageViewController.h */,
 				C1A6508A1CE99E8C006A117B /* SDUIImageViewController.m */,
 			);
@@ -588,6 +597,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F68EEA1CDE1905009338D6 /* Build configuration list for PBXNativeTarget "iOSLearnList" */;
 			buildPhases = (
+				A15B5C9585C8D5E6069C64D5 /* Check Pods Manifest.lock */,
 				AF3CDEFB85553BB5393583CE /* 📦 Check Pods Manifest.lock */,
 				51F68EB91CDE1905009338D6 /* Sources */,
 				51F68EBA1CDE1905009338D6 /* Frameworks */,
@@ -596,6 +606,7 @@
 				7EADA77247ED1EE1FE5CF8EC /* 📦 Copy Pods Resources */,
 				C1209B1A1CF53D1500182559 /* Copy configuration */,
 				266D14EA16A5C7CA37C262A7 /* Embed Pods Frameworks */,
+				BFB3C09937A59610BA8C544D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -769,7 +780,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		30BF885AB512E074CA39C99A /* 📦 Check Pods Manifest.lock */ = {
@@ -877,6 +888,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A15B5C9585C8D5E6069C64D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		AF3CDEFB85553BB5393583CE /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -890,6 +916,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BFB3C09937A59610BA8C544D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C1209B1A1CF53D1500182559 /* Copy configuration */ = {
@@ -938,6 +979,7 @@
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
 				C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */,
+				C19321061D41FA0900378778 /* MasonryViewController.m in Sources */,
 				C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
