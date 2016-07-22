@@ -60,8 +60,98 @@
     }];
     
     
+    UIView *centerView = [[UIView alloc] init];
+    centerView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:centerView];
     
-    // Do any additional setup after loading the view.
+    [centerView mas_makeConstraints:^(MASConstraintMaker *maker) {
+//        maker.size.equalTo([NSValue valueWithCGSize:CGSizeMake(100, 100)]);
+        maker.size.mas_equalTo(CGSizeMake(300, 300));
+        maker.center.equalTo(self.view);
+    }];
+    
+    
+    UIView *sv1 = [UIView new];
+    sv1.backgroundColor = [UIColor redColor];
+    [centerView addSubview:sv1];
+    [sv1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(centerView).with.insets(UIEdgeInsetsMake(10, 10, 10, 10));
+    }];
+     
+    
+    UIView *sv = centerView;
+    
+    int padding1 = 10;
+    
+    UIView *sv2 = [UIView new];
+    sv2.backgroundColor = [UIColor blackColor];
+    UIView *sv3 = [UIView new];
+    sv3.backgroundColor = [UIColor blackColor];
+    
+    [sv addSubview:sv2];
+    [sv addSubview:sv3];
+    [sv2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(sv.mas_centerY);
+        make.left.equalTo(sv.mas_left).with.offset(padding1);
+        make.right.equalTo(sv3.mas_left).with.offset(-padding1);
+        make.height.mas_equalTo(@150);
+        make.width.equalTo(sv3);
+    }];
+    [sv3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(sv.mas_centerY);
+        make.left.equalTo(sv2.mas_right).with.offset(padding1);
+        make.right.equalTo(sv.mas_right).with.offset(-padding1);
+        make.height.mas_equalTo(150);
+        make.width.equalTo(sv2);
+    }];
+    
+    {
+        UIScrollView *scrollView = [UIScrollView new];
+        scrollView.backgroundColor = [UIColor whiteColor];
+        [sv addSubview:scrollView];
+        [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(sv).with.insets(UIEdgeInsetsMake(5,5,5,5));
+        }];
+        UIView *container = [UIView new];
+        [scrollView addSubview:container];
+        [container mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(scrollView);
+            make.width.equalTo(scrollView);
+        }];
+        int count = 10;
+        UIView *lastView = nil;
+        for ( int i = 1 ; i <= count ; ++i )
+        {
+            UIView *subv = [UIView new];
+            [container addSubview:subv];
+            subv.backgroundColor = [UIColor colorWithHue:( arc4random() % 256 / 256.0 )
+                                              saturation:( arc4random() % 128 / 256.0 ) + 0.5
+                                              brightness:( arc4random() % 128 / 256.0 ) + 0.5
+                                                   alpha:1];
+            
+            [subv mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.and.right.equalTo(container);
+                make.height.mas_equalTo(@(20*i));
+                
+                if ( lastView )
+                {
+                    make.top.mas_equalTo(lastView.mas_bottom);
+                }
+                else
+                {
+                    make.top.mas_equalTo(container.mas_top);
+                }
+            }];
+            
+            lastView = subv;
+        }
+        [container mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(lastView.mas_bottom);
+        }];
+    }
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
