@@ -11,6 +11,8 @@
 #import "ViewController.h"
 #import "ConfigCommon.h"
 
+#import "BaseMainViewController.h"
+
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
 
@@ -50,8 +52,10 @@
     _advanceCtl = nav;
     
     
-    IndexTableViewController *ivc = [[IndexTableViewController alloc] init];
-    ivc.showData = @[@"autolayoutCellCtl", @"myTableViewController", @"collectionViewController"];
+    IndexTableViewController *ivc = [[BaseMainViewController alloc] init];
+//    ivc.showData = @[@"UIBaseViewController", @"SysBaseViewController", @"ObjBaseViewController"];
+    
+    
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -65,7 +69,7 @@
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _otherCtl = nav;
-   nav.tabBarItem.title = NSLocalizedStringFromTable(@"Other", @"myLanguage", nil);
+//   nav.tabBarItem.title = NSLocalizedStringFromTable(@"Other", @"myLanguage", nil);
     
 }
 

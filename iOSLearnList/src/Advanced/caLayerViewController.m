@@ -70,7 +70,7 @@
     self.maskBtn.layer.shadowColor = [UIColor redColor].CGColor;
     
     //affineTransform 2D变换
-    self.maskBtn.layer.affineTransform = CGAffineTransformMakeRotation(M_PI_4);
+//    self.maskBtn.layer.affineTransform = CGAffineTransformMakeRotation(M_PI_4);
     
     CGAffineTransform t = CGAffineTransformIdentity;
     t = CGAffineTransformRotate(t, M_PI_4);
@@ -117,13 +117,13 @@
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.shapeView.bounds byRoundingCorners:urc cornerRadii:CGSizeMake(10, 10)];
     layer.path = path.CGPath;
     self.shapeView.layer.mask = layer;
-    self.shapeView.layer.anchorPoint = CGPointMake(0, 0);
+    self.shapeView.layer.anchorPoint = CGPointMake(1, 0);
     
-    self.shapeView.layer.affineTransform = CGAffineTransformTranslate(CGAffineTransformIdentity,
-                                                                      -CGRectGetWidth(self.shapeView.bounds)/2,
-                                                                      -CGRectGetHeight(self.shapeView.bounds)/2);
+//    self.shapeView.layer.affineTransform = CGAffineTransformTranslate(CGAffineTransformIdentity,
+//                                                                      -CGRectGetWidth(self.shapeView.bounds)/2,
+//                                                                      -CGRectGetHeight(self.shapeView.bounds)/2);
     self.shapeView.hidden = YES;
-    self.shapeView.center = CGPointMake(_maskBtn.center.x, CGRectGetMaxY(_maskBtn.frame));
+    self.shapeView.center = CGPointMake(_maskBtn.center.x, _maskBtn.center.y);
 }
 
 

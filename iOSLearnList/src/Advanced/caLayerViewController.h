@@ -6,9 +6,9 @@
 //  Copyright © 2016年 fishmwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MWBaseViewController.h"
 
-@interface caLayerViewController : UIViewController
+@interface caLayerViewController : MWBaseViewController
 
 @property (nonatomic, weak) IBOutlet UIView *layerView1;
 @property (nonatomic, weak) IBOutlet UIView *layerView2;

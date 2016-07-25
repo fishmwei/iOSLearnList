@@ -6,9 +6,9 @@
 //  Copyright © 2016年 mingwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MWBaseViewController.h"
 
-@interface downloadController : UIViewController
+@interface downloadController : MWBaseViewController
 
 @property (nonatomic, retain) UIButton *systemBtn;
 @property (nonatomic, retain) UIButton *cancelBtn;

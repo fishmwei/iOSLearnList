@@ -6,8 +6,8 @@
 //  Copyright © 2016年 mingwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MWBaseViewController.h"
 
-@interface Timer_NotificationViewController : UIViewController
+@interface Timer_NotificationViewController : MWBaseViewController
 
 @end

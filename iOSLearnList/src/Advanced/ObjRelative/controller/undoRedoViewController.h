@@ -6,8 +6,8 @@
 //  Copyright © 2016年 mingwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MWBaseViewController.h"
 
-@interface undoRedoViewController : UIViewController
+@interface undoRedoViewController : MWBaseViewController
 
 @end

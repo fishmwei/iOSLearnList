@@ -6,8 +6,9 @@
 //  Copyright © 2016年 mingwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface NSURLConnectionController : UIViewController
+#import "MWBaseViewController.h"
+
+@interface NSURLConnectionController : MWBaseViewController
 
 @end

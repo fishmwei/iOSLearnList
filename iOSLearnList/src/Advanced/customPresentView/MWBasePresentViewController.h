@@ -6,10 +6,10 @@
 //  Copyright © 2016年 fishmwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MWBaseViewController.h"
 
 
-@interface MWBasePresentViewController : UIViewController
+@interface MWBasePresentViewController : MWBaseViewController
 
 @property (nonatomic, assign) CGRect showRect;
 

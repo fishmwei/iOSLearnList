@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MWBaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : MWBaseViewController
 
 
 @end

@@ -6,9 +6,10 @@
 //  Copyright © 2016年 mingwei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MWBaseViewController.h"
 
-@interface defaultNSURLSessionController : UIViewController <NSURLSessionDataDelegate>
+
+@interface defaultNSURLSessionController : MWBaseViewController <NSURLSessionDataDelegate>
 @property (nonatomic, retain) UIButton *systemBtn;
 @property (nonatomic, retain) UIButton *customBtn;
 @property (nonatomic, retain) UITextView *responseView;

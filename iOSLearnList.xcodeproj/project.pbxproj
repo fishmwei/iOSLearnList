@@ -34,6 +34,12 @@
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C14CB7691CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */; };
+		C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15441D45B16C00392D95 /* BaseMainViewController.m */; };
+		C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154A1D45B43E00392D95 /* UIBaseViewController.m */; };
+		C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154D1D45B74D00392D95 /* SysBaseViewController.m */; };
+		C15F15511D45B76100392D95 /* ObjBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15501D45B76100392D95 /* ObjBaseViewController.m */; };
+		C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15531D45B8D700392D95 /* MWBaseViewController.m */; };
+		C15F15571D45C65700392D95 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15561D45C65700392D95 /* KVOViewController.m */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
@@ -140,6 +146,18 @@
 		C1209B201CF53F2900182559 /* ConfigCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigCommon.h; sourceTree = "<group>"; };
 		C1209B211CF53F2900182559 /* ConfigCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCommon.m; sourceTree = "<group>"; };
 		C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "general_top_icon_back_normal@2x.png"; sourceTree = "<group>"; };
+		C15F15431D45B16C00392D95 /* BaseMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMainViewController.h; sourceTree = "<group>"; };
+		C15F15441D45B16C00392D95 /* BaseMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMainViewController.m; sourceTree = "<group>"; };
+		C15F15491D45B43E00392D95 /* UIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseViewController.h; sourceTree = "<group>"; };
+		C15F154A1D45B43E00392D95 /* UIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBaseViewController.m; sourceTree = "<group>"; };
+		C15F154C1D45B74D00392D95 /* SysBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysBaseViewController.h; sourceTree = "<group>"; };
+		C15F154D1D45B74D00392D95 /* SysBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysBaseViewController.m; sourceTree = "<group>"; };
+		C15F154F1D45B76100392D95 /* ObjBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjBaseViewController.h; sourceTree = "<group>"; };
+		C15F15501D45B76100392D95 /* ObjBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjBaseViewController.m; sourceTree = "<group>"; };
+		C15F15521D45B8D700392D95 /* MWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseViewController.h; sourceTree = "<group>"; };
+		C15F15531D45B8D700392D95 /* MWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseViewController.m; sourceTree = "<group>"; };
+		C15F15551D45C65700392D95 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		C15F15561D45C65700392D95 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
@@ -151,8 +169,8 @@
 		C19D17E11D18D96300E29256 /* MWBasePresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBasePresentViewController.m; sourceTree = "<group>"; };
 		C19D17E31D18D9BA00E29256 /* MWPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPresentAnimation.h; sourceTree = "<group>"; };
 		C19D17E41D18D9BA00E29256 /* MWPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPresentAnimation.m; sourceTree = "<group>"; };
-		C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Timer+NotificationViewController.h"; sourceTree = "<group>"; };
-		C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Timer+NotificationViewController.m"; sourceTree = "<group>"; };
+		C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Timer+NotificationViewController.h"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.h"; sourceTree = "<group>"; };
+		C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Timer+NotificationViewController.m"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.m"; sourceTree = "<group>"; };
 		C1A6506E1CE99E75006A117B /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
 		C1A6506F1CE99E75006A117B /* defaultNSURLSessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = defaultNSURLSessionController.m; sourceTree = "<group>"; };
 		C1A650701CE99E75006A117B /* downloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = downloadController.h; sourceTree = "<group>"; };
@@ -169,8 +187,8 @@
 		C1A6507D1CE99E75006A117B /* unRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = unRecognizeViewController.m; sourceTree = "<group>"; };
 		C1A650891CE99E8C006A117B /* SDUIImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDUIImageViewController.h; sourceTree = "<group>"; };
 		C1A6508A1CE99E8C006A117B /* SDUIImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDUIImageViewController.m; sourceTree = "<group>"; };
-		C1A6508C1CE99F42006A117B /* multiThreadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multiThreadController.h; sourceTree = "<group>"; };
-		C1A6508D1CE99F42006A117B /* multiThreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = multiThreadController.m; sourceTree = "<group>"; };
+		C1A6508C1CE99F42006A117B /* multiThreadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = multiThreadController.h; path = ../../../Advanced/iOSSystem/controller/multiThreadController.h; sourceTree = "<group>"; };
+		C1A6508D1CE99F42006A117B /* multiThreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = multiThreadController.m; path = ../../../Advanced/iOSSystem/controller/multiThreadController.m; sourceTree = "<group>"; };
 		C1A6508F1CE99FA1006A117B /* NSObject+autoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+autoCoding.h"; sourceTree = "<group>"; };
 		C1A650901CE99FA1006A117B /* NSObject+autoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+autoCoding.m"; sourceTree = "<group>"; };
 		C1E36FCB1CE4231900445669 /* IndexTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexTableViewController.h; sourceTree = "<group>"; };
@@ -390,6 +408,51 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C15F15421D45B15700392D95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C15F15461D45B42600392D95 /* OC */,
+				C15F15471D45B42600392D95 /* SYS */,
+				C15F15481D45B42600392D95 /* UI */,
+				C15F15431D45B16C00392D95 /* BaseMainViewController.h */,
+				C15F15441D45B16C00392D95 /* BaseMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C15F15461D45B42600392D95 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				C15F154F1D45B76100392D95 /* ObjBaseViewController.h */,
+				C15F15501D45B76100392D95 /* ObjBaseViewController.m */,
+				C15F15551D45C65700392D95 /* KVOViewController.h */,
+				C15F15561D45C65700392D95 /* KVOViewController.m */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		C15F15471D45B42600392D95 /* SYS */ = {
+			isa = PBXGroup;
+			children = (
+				C1A6508C1CE99F42006A117B /* multiThreadController.h */,
+				C1A6508D1CE99F42006A117B /* multiThreadController.m */,
+				C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */,
+				C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */,
+				C15F154C1D45B74D00392D95 /* SysBaseViewController.h */,
+				C15F154D1D45B74D00392D95 /* SysBaseViewController.m */,
+			);
+			path = SYS;
+			sourceTree = "<group>";
+		};
+		C15F15481D45B42600392D95 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C15F15491D45B43E00392D95 /* UIBaseViewController.h */,
+				C15F154A1D45B43E00392D95 /* UIBaseViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		C19D17D91D18CC6000E29256 /* customPresentView */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,10 +493,6 @@
 		C1A650681CE99E75006A117B /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				C1A6508C1CE99F42006A117B /* multiThreadController.h */,
-				C1A6508D1CE99F42006A117B /* multiThreadController.m */,
-				C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */,
-				C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -520,6 +579,7 @@
 		C1E36FCA1CE4230300445669 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C15F15421D45B15700392D95 /* Controller */,
 				519785FB1D0418BB00DF3981 /* View */,
 				C1209B1F1CF53F0500182559 /* Model */,
 				C1E36FCB1CE4231900445669 /* IndexTableViewController.h */,
@@ -542,6 +602,8 @@
 			children = (
 				C1ED596C1CE5B0A200096EC7 /* ExtendMainController.h */,
 				C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */,
+				C15F15521D45B8D700392D95 /* MWBaseViewController.h */,
+				C15F15531D45B8D700392D95 /* MWBaseViewController.m */,
 			);
 			path = Extend;
 			sourceTree = "<group>";
@@ -962,17 +1024,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				51F68EC81CDE1905009338D6 /* ViewController.m in Sources */,
+				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C1A650851CE99E75006A117B /* ReversibleString.m in Sources */,
 				C1A650841CE99E75006A117B /* NSURLConnectionController.m in Sources */,
+				C15F15511D45B76100392D95 /* ObjBaseViewController.m in Sources */,
 				C1209B1E1CF53EED00182559 /* configViewController.m in Sources */,
 				C19D17E51D18D9BA00E29256 /* MWPresentAnimation.m in Sources */,
 				51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
 				519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */,
+				C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */,
 				C1A650831CE99E75006A117B /* FWSessionDelegate.m in Sources */,
 				C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */,
 				C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */,
@@ -985,10 +1050,13 @@
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
 				519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */,
 				C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */,
+				C15F15571D45C65700392D95 /* KVOViewController.m in Sources */,
 				C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */,
+				C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */,
 				C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */,
 				C1A650821CE99E75006A117B /* downloadController.m in Sources */,
 				51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */,
+				C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
