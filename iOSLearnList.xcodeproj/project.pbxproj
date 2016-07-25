@@ -40,6 +40,8 @@
 		C15F15511D45B76100392D95 /* ObjBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15501D45B76100392D95 /* ObjBaseViewController.m */; };
 		C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15531D45B8D700392D95 /* MWBaseViewController.m */; };
 		C15F15571D45C65700392D95 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15561D45C65700392D95 /* KVOViewController.m */; };
+		C15F155A1D45E92300392D95 /* MethodSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15591D45E92300392D95 /* MethodSignatureViewController.m */; };
+		C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155C1D45EB7800392D95 /* OBJModel.m */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
@@ -158,6 +160,10 @@
 		C15F15531D45B8D700392D95 /* MWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseViewController.m; sourceTree = "<group>"; };
 		C15F15551D45C65700392D95 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
 		C15F15561D45C65700392D95 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		C15F15581D45E92300392D95 /* MethodSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSignatureViewController.h; sourceTree = "<group>"; };
+		C15F15591D45E92300392D95 /* MethodSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSignatureViewController.m; sourceTree = "<group>"; };
+		C15F155B1D45EB7800392D95 /* OBJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJModel.h; sourceTree = "<group>"; };
+		C15F155C1D45EB7800392D95 /* OBJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJModel.m; sourceTree = "<group>"; };
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
@@ -427,6 +433,10 @@
 				C15F15501D45B76100392D95 /* ObjBaseViewController.m */,
 				C15F15551D45C65700392D95 /* KVOViewController.h */,
 				C15F15561D45C65700392D95 /* KVOViewController.m */,
+				C15F15581D45E92300392D95 /* MethodSignatureViewController.h */,
+				C15F15591D45E92300392D95 /* MethodSignatureViewController.m */,
+				C15F155B1D45EB7800392D95 /* OBJModel.h */,
+				C15F155C1D45EB7800392D95 /* OBJModel.m */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -1048,12 +1058,14 @@
 				C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
+				C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */,
 				519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */,
 				C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */,
 				C15F15571D45C65700392D95 /* KVOViewController.m in Sources */,
 				C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */,
 				C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */,
 				C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */,
+				C15F155A1D45E92300392D95 /* MethodSignatureViewController.m in Sources */,
 				C1A650821CE99E75006A117B /* downloadController.m in Sources */,
 				51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */,
 				C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */,

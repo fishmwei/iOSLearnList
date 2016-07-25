@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.showData = @[@"multiThreadController", @"Timer_NotificationViewController", @"KVOViewController"];
+    self.showData = @[@"multiThreadController", @"Timer_NotificationViewController"];
     
     
 }

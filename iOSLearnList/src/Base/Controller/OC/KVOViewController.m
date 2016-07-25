@@ -23,8 +23,8 @@
 @synthesize lab = ll;
 
 - (void)dealloc {
-    [ll removeObserver:self forKeyPath:@"text"];
-    
+//    [ll removeObserver:self forKeyPath:@"text"];
+    [self removeObserver:self forKeyPath:@"lab.text"];
 }
 
 

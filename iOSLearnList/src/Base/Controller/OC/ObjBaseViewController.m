@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.showData = @[@"KVOViewController", @"MethodSignatureViewController"];
+    
+    
     // Do any additional setup after loading the view.
 }
 
