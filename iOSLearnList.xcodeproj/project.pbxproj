@@ -42,6 +42,7 @@
 		C15F15571D45C65700392D95 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15561D45C65700392D95 /* KVOViewController.m */; };
 		C15F155A1D45E92300392D95 /* MethodSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15591D45E92300392D95 /* MethodSignatureViewController.m */; };
 		C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155C1D45EB7800392D95 /* OBJModel.m */; };
+		C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155F1D4604CF00392D95 /* SearchBarVC.m */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
@@ -164,6 +165,8 @@
 		C15F15591D45E92300392D95 /* MethodSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSignatureViewController.m; sourceTree = "<group>"; };
 		C15F155B1D45EB7800392D95 /* OBJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJModel.h; sourceTree = "<group>"; };
 		C15F155C1D45EB7800392D95 /* OBJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJModel.m; sourceTree = "<group>"; };
+		C15F155E1D4604CF00392D95 /* SearchBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarVC.h; sourceTree = "<group>"; };
+		C15F155F1D4604CF00392D95 /* SearchBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarVC.m; sourceTree = "<group>"; };
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
@@ -459,6 +462,8 @@
 			children = (
 				C15F15491D45B43E00392D95 /* UIBaseViewController.h */,
 				C15F154A1D45B43E00392D95 /* UIBaseViewController.m */,
+				C15F155E1D4604CF00392D95 /* SearchBarVC.h */,
+				C15F155F1D4604CF00392D95 /* SearchBarVC.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1033,6 +1038,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */,
 				51F68EC81CDE1905009338D6 /* ViewController.m in Sources */,
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,

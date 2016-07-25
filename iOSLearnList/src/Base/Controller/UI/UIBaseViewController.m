@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.showData = @[@"autolayoutCellCtl", @"myTableViewController", @"collectionViewController"];
+    self.showData = @[@"autolayoutCellCtl", @"myTableViewController", @"collectionViewController", @"SearchBarVC"];
 //    self.showData = ;
     // Do any additional setup after loading the view.
 }
