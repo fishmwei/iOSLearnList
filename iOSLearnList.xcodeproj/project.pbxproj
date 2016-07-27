@@ -36,6 +36,7 @@
 		C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */; };
 		C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */; };
 		C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */; };
+		C156DDC51D48B98E004CD422 /* TimerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDC41D48B98E004CD422 /* TimerAnimationViewController.m */; };
 		C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15441D45B16C00392D95 /* BaseMainViewController.m */; };
 		C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154A1D45B43E00392D95 /* UIBaseViewController.m */; };
 		C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154D1D45B74D00392D95 /* SysBaseViewController.m */; };
@@ -157,6 +158,8 @@
 		C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationListViewController.m; sourceTree = "<group>"; };
 		C156DDC01D4899E5004CD422 /* CAMediaTimingFunctionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingFunctionVC.h; sourceTree = "<group>"; };
 		C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingFunctionVC.m; sourceTree = "<group>"; };
+		C156DDC31D48B98E004CD422 /* TimerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerAnimationViewController.h; sourceTree = "<group>"; };
+		C156DDC41D48B98E004CD422 /* TimerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerAnimationViewController.m; sourceTree = "<group>"; };
 		C15F15431D45B16C00392D95 /* BaseMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMainViewController.h; sourceTree = "<group>"; };
 		C15F15441D45B16C00392D95 /* BaseMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMainViewController.m; sourceTree = "<group>"; };
 		C15F15491D45B43E00392D95 /* UIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseViewController.h; sourceTree = "<group>"; };
@@ -434,6 +437,8 @@
 				C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */,
 				C156DDC01D4899E5004CD422 /* CAMediaTimingFunctionVC.h */,
 				C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */,
+				C156DDC31D48B98E004CD422 /* TimerAnimationViewController.h */,
+				C156DDC41D48B98E004CD422 /* TimerAnimationViewController.m */,
 			);
 			path = iOSAnimation;
 			sourceTree = "<group>";
@@ -1079,6 +1084,7 @@
 				C1209B1E1CF53EED00182559 /* configViewController.m in Sources */,
 				C19D17E51D18D9BA00E29256 /* MWPresentAnimation.m in Sources */,
 				51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */,
+				C156DDC51D48B98E004CD422 /* TimerAnimationViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
 				C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */,

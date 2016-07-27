@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     
-    self.showData = @[@"CAMediaTimingFunctionVC"];
+    self.showData = @[@"CAMediaTimingFunctionVC", @"TimerAnimationViewController"];
     
 }
 
