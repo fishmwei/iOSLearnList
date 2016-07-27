@@ -21,7 +21,6 @@
 		51F5BEF61D28A308000641A7 /* mergedBundleFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F5BEF51D28A308000641A7 /* mergedBundleFrame.a */; };
 		51F68EC21CDE1905009338D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC11CDE1905009338D6 /* main.m */; };
 		51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC41CDE1905009338D6 /* AppDelegate.m */; };
-		51F68EC81CDE1905009338D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC71CDE1905009338D6 /* ViewController.m */; };
 		51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F68EC91CDE1905009338D6 /* Main.storyboard */; };
 		51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F68ECC1CDE1905009338D6 /* Assets.xcassets */; };
 		51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F68ECE1CDE1905009338D6 /* LaunchScreen.storyboard */; };
@@ -34,6 +33,9 @@
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C14CB7691CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */; };
+		C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */; };
+		C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */; };
+		C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */; };
 		C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15441D45B16C00392D95 /* BaseMainViewController.m */; };
 		C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154A1D45B43E00392D95 /* UIBaseViewController.m */; };
 		C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154D1D45B74D00392D95 /* SysBaseViewController.m */; };
@@ -122,8 +124,6 @@
 		51F68EC11CDE1905009338D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51F68EC31CDE1905009338D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		51F68EC41CDE1905009338D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		51F68EC61CDE1905009338D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		51F68EC71CDE1905009338D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		51F68ECA1CDE1905009338D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51F68ECC1CDE1905009338D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51F68ECF1CDE1905009338D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -151,6 +151,12 @@
 		C1209B201CF53F2900182559 /* ConfigCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigCommon.h; sourceTree = "<group>"; };
 		C1209B211CF53F2900182559 /* ConfigCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCommon.m; sourceTree = "<group>"; };
 		C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "general_top_icon_back_normal@2x.png"; sourceTree = "<group>"; };
+		C156DDB91D4897CA004CD422 /* AdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
+		C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
+		C156DDBD1D4898FF004CD422 /* AnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationListViewController.h; sourceTree = "<group>"; };
+		C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationListViewController.m; sourceTree = "<group>"; };
+		C156DDC01D4899E5004CD422 /* CAMediaTimingFunctionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingFunctionVC.h; sourceTree = "<group>"; };
+		C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingFunctionVC.m; sourceTree = "<group>"; };
 		C15F15431D45B16C00392D95 /* BaseMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMainViewController.h; sourceTree = "<group>"; };
 		C15F15441D45B16C00392D95 /* BaseMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMainViewController.m; sourceTree = "<group>"; };
 		C15F15491D45B43E00392D95 /* UIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseViewController.h; sourceTree = "<group>"; };
@@ -328,8 +334,6 @@
 				51F68EF81CDE1A06009338D6 /* src */,
 				51F68EC31CDE1905009338D6 /* AppDelegate.h */,
 				51F68EC41CDE1905009338D6 /* AppDelegate.m */,
-				51F68EC61CDE1905009338D6 /* ViewController.h */,
-				51F68EC71CDE1905009338D6 /* ViewController.m */,
 				51F68EC91CDE1905009338D6 /* Main.storyboard */,
 				51F68ECC1CDE1905009338D6 /* Assets.xcassets */,
 				51F68ECE1CDE1905009338D6 /* LaunchScreen.storyboard */,
@@ -423,6 +427,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C156DDBC1D4898B5004CD422 /* iOSAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C156DDBD1D4898FF004CD422 /* AnimationListViewController.h */,
+				C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */,
+				C156DDC01D4899E5004CD422 /* CAMediaTimingFunctionVC.h */,
+				C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */,
+			);
+			path = iOSAnimation;
+			sourceTree = "<group>";
+		};
 		C15F15421D45B15700392D95 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +507,7 @@
 		C1A650661CE99E75006A117B /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				C156DDBC1D4898B5004CD422 /* iOSAnimation */,
 				C19D17D91D18CC6000E29256 /* customPresentView */,
 				C1A650671CE99E75006A117B /* iOSSystem */,
 				C1A6506D1CE99E75006A117B /* NSURLLearn */,
@@ -499,6 +515,8 @@
 				C165B0EE1D33A14500675C94 /* caLayerViewController.h */,
 				C165B0EF1D33A14500675C94 /* caLayerViewController.m */,
 				C165B0F01D33A14500675C94 /* caLayerViewController.xib */,
+				C156DDB91D4897CA004CD422 /* AdvancedViewController.h */,
+				C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -1048,9 +1066,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */,
 				C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */,
-				51F68EC81CDE1905009338D6 /* ViewController.m in Sources */,
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
+				C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
@@ -1086,6 +1105,7 @@
 				C1A650821CE99E75006A117B /* downloadController.m in Sources */,
 				C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */,
 				51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */,
+				C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */,
 				C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

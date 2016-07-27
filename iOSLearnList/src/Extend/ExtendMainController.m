@@ -8,10 +8,10 @@
 
 #import "ExtendMainController.h"
 #import "IndexTableViewController.h"
-#import "ViewController.h"
 #import "ConfigCommon.h"
 
 #import "BaseMainViewController.h"
+#import "AdvancedViewController.h"
 
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
@@ -43,7 +43,7 @@
     //
 //    IndexTableViewController *
     
-    ViewController *vc = [[ViewController alloc] init];
+    AdvancedViewController *vc = [[AdvancedViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

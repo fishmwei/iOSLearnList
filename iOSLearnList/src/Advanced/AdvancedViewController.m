@@ -1,26 +1,26 @@
 //
-//  ViewController.m
+//  AdvancedViewController.m
 //  iOSLearnList
 //
-//  Created by mingwei on 16/5/7.
-//  Copyright © 2016年 mingwei. All rights reserved.
+//  Created by huangmingwei on 16/7/27.
+//  Copyright © 2016年 fishmwei. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AdvancedViewController.h"
 #import "IndexTableViewController.h"
 
 #import "ExtendMainController.h"
 #import "MWBasePresentViewController.h"
 #import "caLayerViewController.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface AdvancedViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, retain) UITableView *tableview;
 @property (nonatomic, retain) NSArray *showData;
 
 @end
 
-@implementation ViewController
+@implementation AdvancedViewController
 
 #pragma mark  Autorotate
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -44,7 +44,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self setTitle:@"分类"];
+    //    [self setTitle:@"分类"];
     [self.navigationItem setTitle:NSLocalizedString(@"Category", nil)];
     [self createData];
     [self createView];
@@ -60,7 +60,7 @@
 
 -(void)createData
 {
-    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample"];
+    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample", @"iOSAnimation"];
     
 }
 
@@ -99,7 +99,7 @@
     
     NSString *subject = [self.showData objectAtIndex:indexPath.row];
     cell.textLabel.text = subject;
-
+    
     return cell;
 }
 
@@ -170,7 +170,18 @@
     [self.navigationController pushViewController:vc animated:YES];
     
     
-//    [CABasicAnimation animationWithKeyPath:@"position"];
+    //    [CABasicAnimation animationWithKeyPath:@"position"];
+}
+
+- (void)gotoiOSAnimation {
+    Class cls = NSClassFromString(@"AnimationListViewController");
+    if (cls) {
+        UIViewController *vc = (UIViewController *)[[cls alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
+    
 }
 
 @end
