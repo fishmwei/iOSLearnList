@@ -8,6 +8,10 @@
 
 #import "SearchBarVC.h"
 
+#import <MBProgressHUD/MBProgressHUD.h>
+
+
+
 @interface SearchBarVC () <UISearchDisplayDelegate,
                             UISearchBarDelegate> {
     UISearchDisplayController *searchController;
@@ -16,6 +20,7 @@
 
 @property (nonatomic, retain) NSMutableArray *showData;
 @property (nonatomic, retain) NSArray *historyData;
+@property (nonatomic, retain) MBProgressHUD *tipHud;
 
 
 @end
@@ -40,7 +45,8 @@
     
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:nil style:UIBarButtonItemStyleDone target:self action:@selector(backBtnPressed)];
     
-    
+    _tipHud = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:_tipHud];
 
     
 }
@@ -57,7 +63,7 @@
     
     searchBar = [[UISearchBar alloc] init];
     [searchBar setShowsCancelButton:YES animated:NO];
-//    searchBar.text = @"aa";
+    searchBar.text = @"aa";
     searchBar.delegate = self;
     [searchBar setBarTintColor:[UIColor blueColor]];
     
@@ -70,9 +76,11 @@
     searchController.searchResultsDataSource = self;
     searchController.searchResultsDelegate = self;
     searchController.displaysSearchBarInNavigationBar = YES;
-    searchController.navigationItem.hidesBackButton = YES;
+    searchController.searchResultsTableView.hidden = YES;
+//    searchController.navigationItem.hidesBackButton = YES;
     
-//    searchController.searchContentsController.view.hidden = YES;
+//    searchController.searchContentsController.view.alpha = 0;
+    
 }
 
 
@@ -83,12 +91,13 @@
 }
 
 -  (void)getData {
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^ {
+    [self showLoadingTips];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^ {
         [self.showData addObjectsFromArray:@[@1, @2, @3]];
 //        self.historyData = self.showData;
         [self.tableView reloadData];
         [searchController setActive:NO animated:YES];
+        [self dismissLoadingTips];
     });
 }
 #pragma mark - Table view data source
@@ -99,7 +108,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == searchController.searchResultsTableView) {
-        return self.historyData.count;
+//        return self.historyData.count;
+        return 0;
     } else if (tableView == self.tableView) {
         return self.showData.count;
     } else {
@@ -200,6 +210,11 @@
 */
 
 #pragma mark - SearchBar delegate
+
+//- ([CATransaction setDisableActions:YES];
+
+//- (BOOL)searchbar
+
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
 
     [self getData];
@@ -211,5 +226,33 @@
 }
 
 
+
+- (void)showTextTips:(NSString *)tips
+{
+    [MBProgressHUD hideHUDForView:self.view animated:NO];
+    [self.view addSubview:_tipHud];
+    [self.view bringSubviewToFront:_tipHud];
+    
+    _tipHud.mode = MBProgressHUDModeText;
+    _tipHud.labelText = tips;
+    [_tipHud show:YES];
+    [_tipHud hide:YES afterDelay:1];
+}
+
+- (void)showLoadingTips
+{
+    [MBProgressHUD hideHUDForView:self.view animated:NO];
+    [self.view addSubview:_tipHud];
+    [self.view bringSubviewToFront:_tipHud];
+    
+    _tipHud.labelText = nil;
+    _tipHud.mode = MBProgressHUDModeIndeterminate;
+    [_tipHud show:YES];
+}
+
+- (void)dismissLoadingTips
+{
+    [_tipHud hide:YES];
+}
 
 @end

@@ -45,6 +45,8 @@
 		C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155F1D4604CF00392D95 /* SearchBarVC.m */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
+		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
+		C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
 		C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17DE1D18D7B900E29256 /* MWBaseAnimation.m */; };
 		C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E11D18D96300E29256 /* MWBasePresentViewController.m */; };
@@ -170,6 +172,10 @@
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
+		C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseCollectionViewController.h; sourceTree = "<group>"; };
+		C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseCollectionViewController.m; sourceTree = "<group>"; };
+		C18F58E41D475AB800F95031 /* testCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCollectionViewController.h; sourceTree = "<group>"; };
+		C18F58E51D475AB800F95031 /* testCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testCollectionViewController.m; sourceTree = "<group>"; };
 		C19321041D41FA0900378778 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
 		C19321051D41FA0900378778 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
 		C19D17DD1D18D7B900E29256 /* MWBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseAnimation.h; sourceTree = "<group>"; };
@@ -464,6 +470,8 @@
 				C15F154A1D45B43E00392D95 /* UIBaseViewController.m */,
 				C15F155E1D4604CF00392D95 /* SearchBarVC.h */,
 				C15F155F1D4604CF00392D95 /* SearchBarVC.m */,
+				C18F58E41D475AB800F95031 /* testCollectionViewController.h */,
+				C18F58E51D475AB800F95031 /* testCollectionViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -617,6 +625,8 @@
 			children = (
 				C1ED596C1CE5B0A200096EC7 /* ExtendMainController.h */,
 				C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */,
+				C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */,
+				C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */,
 				C15F15521D45B8D700392D95 /* MWBaseViewController.h */,
 				C15F15531D45B8D700392D95 /* MWBaseViewController.m */,
 			);
@@ -1052,6 +1062,7 @@
 				51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
+				C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */,
 				519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */,
 				C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */,
 				C1A650831CE99E75006A117B /* FWSessionDelegate.m in Sources */,
@@ -1073,6 +1084,7 @@
 				C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */,
 				C15F155A1D45E92300392D95 /* MethodSignatureViewController.m in Sources */,
 				C1A650821CE99E75006A117B /* downloadController.m in Sources */,
+				C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */,
 				51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */,
 				C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */,
 			);

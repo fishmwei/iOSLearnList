@@ -43,6 +43,11 @@
     
     self.showTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(show:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.showTimer forMode:NSRunLoopCommonModes]; //注释掉在拖动过程中就不能运行啦
+//    [[NSRunLoop currentRunLoop] addTimer:self.showTimer forMode:UITrackingRunLoopMode]; //注释掉在拖动过程中就不能运行啦
+//
+//    [[NSRunLoop currentRunLoop] addTimer:self.showTimer forMode:NSDefaultRunLoopMode]; //注释掉在拖动过程中就不能运行啦
+
+    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showHello:) name:@"testMsg" object:nil];
     
@@ -65,7 +70,6 @@
     NSLog( @"hello xxx ");
     _count++;
     __weak typeof(self) weakSelf = self;
-    
     weakSelf.showLabel.text = [NSString stringWithFormat:@"%ldS", _count];
 }
 
