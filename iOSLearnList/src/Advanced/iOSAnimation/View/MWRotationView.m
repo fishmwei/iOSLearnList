@@ -18,6 +18,10 @@
 @end
 
 @implementation MWRotationView
+- (void)dealloc {
+    [self.timer invalidate];
+    self.timer = nil;
+}
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

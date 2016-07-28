@@ -1,25 +1,30 @@
 //
-//  AnimationListViewController.m
+//  MWDrawingViewController.m
 //  iOSLearnList
 //
-//  Created by huangmingwei on 16/7/27.
+//  Created by huangmingwei on 16/7/28.
 //  Copyright © 2016年 fishmwei. All rights reserved.
 //
 
-#import "AnimationListViewController.h"
+#import "MWDrawingViewController.h"
+#import "MWDrawView.h"
 
-@interface AnimationListViewController ()
+@interface MWDrawingViewController ()
 
 @end
 
-@implementation AnimationListViewController
+@implementation MWDrawingViewController
+
+- (void)loadView {
+    self.view = [[MWDrawView alloc] init];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    self.showData = @[@"CAMediaTimingFunctionVC", @"TimerAnimationViewController", @"CADisplayLinkViewController", @"CAMediaTimingVC", @"MWDrawingViewController"];
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
