@@ -45,8 +45,8 @@
     
     AdvancedViewController *vc = [[AdvancedViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 //    [vc setTitle:@"分类"];
     nav.tabBarItem.title = NSLocalizedStringFromTable(@"Advance", @"myLanguage", nil);
     _advanceCtl = nav;
@@ -57,16 +57,16 @@
     
     
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
-    nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.title = NSLocalizedStringFromTable(@"Base", @"myLanguage", nil);
     _baseCtl = nav;
     
     ivc = [[IndexTableViewController alloc] init];
     ivc.showData = @[@"SDUIImageViewController", @"MasonryViewController"];
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
-    nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _otherCtl = nav;
 //   nav.tabBarItem.title = NSLocalizedStringFromTable(@"Other", @"myLanguage", nil);

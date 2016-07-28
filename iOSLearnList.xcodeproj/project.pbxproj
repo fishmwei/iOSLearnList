@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		09D89A8EC9ED6983BB431658 /* libPods-iOSLearnListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BF68F51A69EE826487CB75 /* libPods-iOSLearnListTests.a */; };
-		5106ADFB1D26A43700284022 /* general_top_icon_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106ADF81D26A43700284022 /* general_top_icon_back_normal@2x.png */; };
-		5106ADFC1D26A43700284022 /* weibo_touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106ADF91D26A43700284022 /* weibo_touch@2x.png */; };
-		5106ADFD1D26A43700284022 /* weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106ADFA1D26A43700284022 /* weibo@2x.png */; };
-		5106AE001D26A46A00284022 /* wait.png in Resources */ = {isa = PBXBuildFile; fileRef = 5106AE021D26A46A00284022 /* wait.png */; };
 		519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785F91D04189A00DF3981 /* autolayoutCellCtl.m */; };
 		519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785FD1D0418E200DF3981 /* autolayoutCell.m */; };
 		519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519785FE1D0418E200DF3981 /* autolayoutCell.xib */; };
@@ -32,7 +28,6 @@
 		9F32092F5F94E768907A6FD5 /* libPods-iOSLearnListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833CEE134107F0083DD15E92 /* libPods-iOSLearnListUITests.a */; };
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
-		C14CB7691CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */; };
 		C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */; };
 		C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */; };
 		C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */; };
@@ -51,7 +46,6 @@
 		C16B6BB81D4995CC00459688 /* CADisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */; };
 		C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BBA1D499D5E00459688 /* CAMediaTimingVC.m */; };
 		C16B6BBF1D49B5EB00459688 /* MWRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BBE1D49B5EB00459688 /* MWRotationView.m */; };
-		C16B6BC11D49DC5200459688 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = C16B6BC01D49DC5200459688 /* lion.png */; };
 		C16B6BC51D49DCEA00459688 /* MWCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BC41D49DCEA00459688 /* MWCommon.m */; };
 		C16B6BC81D49E48C00459688 /* iOSLearnListBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */; };
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
@@ -78,13 +72,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5106ADF61D26A40D00284022 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 51F68EB51CDE1905009338D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5106ADEE1D26A3D700284022;
-			remoteInfo = iOSLearnListBundle;
-		};
 		51F68ED71CDE1905009338D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51F68EB51CDE1905009338D6 /* Project object */;
@@ -105,13 +92,6 @@
 		0ED0841BA3C379EE8E77894F /* Pods-iOSLearnListUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		28741EDF4096EB7DBDFFCFA1 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		38229377C7FFFE9588D956BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5106ADEF1D26A3D700284022 /* iOSLearnListBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLearnListBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5106ADF11D26A3D700284022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5106ADF81D26A43700284022 /* general_top_icon_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "general_top_icon_back_normal@2x.png"; sourceTree = "<group>"; };
-		5106ADF91D26A43700284022 /* weibo_touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo_touch@2x.png"; sourceTree = "<group>"; };
-		5106ADFA1D26A43700284022 /* weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo@2x.png"; sourceTree = "<group>"; };
-		5106AE011D26A46A00284022 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/wait.png; sourceTree = "<group>"; };
-		5106AE031D26A46C00284022 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/wait.png"; sourceTree = "<group>"; };
 		519785F81D04189A00DF3981 /* autolayoutCellCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCellCtl.h; sourceTree = "<group>"; };
 		519785F91D04189A00DF3981 /* autolayoutCellCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autolayoutCellCtl.m; sourceTree = "<group>"; };
 		519785FC1D0418E200DF3981 /* autolayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCell.h; sourceTree = "<group>"; };
@@ -157,7 +137,6 @@
 		C1209B1D1CF53EED00182559 /* configViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = configViewController.m; sourceTree = "<group>"; };
 		C1209B201CF53F2900182559 /* ConfigCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigCommon.h; sourceTree = "<group>"; };
 		C1209B211CF53F2900182559 /* ConfigCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCommon.m; sourceTree = "<group>"; };
-		C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "general_top_icon_back_normal@2x.png"; sourceTree = "<group>"; };
 		C156DDB91D4897CA004CD422 /* AdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
 		C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
 		C156DDBD1D4898FF004CD422 /* AnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationListViewController.h; sourceTree = "<group>"; };
@@ -193,10 +172,10 @@
 		C16B6BBA1D499D5E00459688 /* CAMediaTimingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingVC.m; sourceTree = "<group>"; };
 		C16B6BBD1D49B5EB00459688 /* MWRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWRotationView.h; sourceTree = "<group>"; };
 		C16B6BBE1D49B5EB00459688 /* MWRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWRotationView.m; sourceTree = "<group>"; };
-		C16B6BC01D49DC5200459688 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
 		C16B6BC31D49DCEA00459688 /* MWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCommon.h; sourceTree = "<group>"; };
 		C16B6BC41D49DCEA00459688 /* MWCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCommon.m; sourceTree = "<group>"; };
 		C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iOSLearnListBundle.bundle; sourceTree = "<group>"; };
+		C16B6BC91D49EBE400459688 /* iOSLearnList.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSLearnList.pch; sourceTree = "<group>"; };
 		C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseCollectionViewController.h; sourceTree = "<group>"; };
 		C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseCollectionViewController.m; sourceTree = "<group>"; };
 		C18F58E41D475AB800F95031 /* testCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCollectionViewController.h; sourceTree = "<group>"; };
@@ -245,13 +224,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5106ADEC1D26A3D700284022 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51F68EBA1CDE1905009338D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,12 +267,6 @@
 		5106ADF01D26A3D700284022 /* iOSLearnListBundle */ = {
 			isa = PBXGroup;
 			children = (
-				5106AE021D26A46A00284022 /* wait.png */,
-				C16B6BC01D49DC5200459688 /* lion.png */,
-				5106ADF81D26A43700284022 /* general_top_icon_back_normal@2x.png */,
-				5106ADF91D26A43700284022 /* weibo_touch@2x.png */,
-				5106ADFA1D26A43700284022 /* weibo@2x.png */,
-				5106ADF11D26A3D700284022 /* Info.plist */,
 			);
 			path = iOSLearnListBundle;
 			sourceTree = "<group>";
@@ -310,6 +276,7 @@
 			children = (
 				C16B6BC31D49DCEA00459688 /* MWCommon.h */,
 				C16B6BC41D49DCEA00459688 /* MWCommon.m */,
+				C16B6BC91D49EBE400459688 /* iOSLearnList.pch */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -343,7 +310,6 @@
 				51F68EBD1CDE1905009338D6 /* iOSLearnList.app */,
 				51F68ED61CDE1905009338D6 /* iOSLearnListTests.xctest */,
 				51F68EE11CDE1905009338D6 /* iOSLearnListUITests.xctest */,
-				5106ADEF1D26A3D700284022 /* iOSLearnListBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -672,7 +638,6 @@
 				51FAA2F21CECB5750050E75E /* collectionViewController.m */,
 				C1209B1C1CF53EED00182559 /* configViewController.h */,
 				C1209B1D1CF53EED00182559 /* configViewController.m */,
-				C14CB7681CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -720,23 +685,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5106ADEE1D26A3D700284022 /* iOSLearnListBundle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5106ADF51D26A3D700284022 /* Build configuration list for PBXNativeTarget "iOSLearnListBundle" */;
-			buildPhases = (
-				5106ADEB1D26A3D700284022 /* Sources */,
-				5106ADEC1D26A3D700284022 /* Frameworks */,
-				5106ADED1D26A3D700284022 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iOSLearnListBundle;
-			productName = iOSLearnListBundle;
-			productReference = 5106ADEF1D26A3D700284022 /* iOSLearnListBundle.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		51F68EBC1CDE1905009338D6 /* iOSLearnList */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F68EEA1CDE1905009338D6 /* Build configuration list for PBXNativeTarget "iOSLearnList" */;
@@ -755,7 +703,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				5106ADF71D26A40D00284022 /* PBXTargetDependency */,
 			);
 			name = iOSLearnList;
 			productName = iOSLearnList;
@@ -813,9 +760,6 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = fishmwei;
 				TargetAttributes = {
-					5106ADEE1D26A3D700284022 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
 					51F68EBC1CDE1905009338D6 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = H79W6YY34M;
@@ -847,29 +791,15 @@
 				51F68EBC1CDE1905009338D6 /* iOSLearnList */,
 				51F68ED51CDE1905009338D6 /* iOSLearnListTests */,
 				51F68EE01CDE1905009338D6 /* iOSLearnListUITests */,
-				5106ADEE1D26A3D700284022 /* iOSLearnListBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5106ADED1D26A3D700284022 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5106AE001D26A46A00284022 /* wait.png in Resources */,
-				C16B6BC11D49DC5200459688 /* lion.png in Resources */,
-				5106ADFB1D26A43700284022 /* general_top_icon_back_normal@2x.png in Resources */,
-				5106ADFD1D26A43700284022 /* weibo@2x.png in Resources */,
-				5106ADFC1D26A43700284022 /* weibo_touch@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51F68EBB1CDE1905009338D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C14CB7691CFD8E1900DF9121 /* general_top_icon_back_normal@2x.png in Resources */,
 				C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */,
 				519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,
@@ -1096,13 +1026,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5106ADEB1D26A3D700284022 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		51F68EB91CDE1905009338D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1175,11 +1098,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5106ADF71D26A40D00284022 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5106ADEE1D26A3D700284022 /* iOSLearnListBundle */;
-			targetProxy = 5106ADF61D26A40D00284022 /* PBXContainerItemProxy */;
-		};
 		51F68ED81CDE1905009338D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 51F68EBC1CDE1905009338D6 /* iOSLearnList */;
@@ -1193,15 +1111,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5106AE021D26A46A00284022 /* wait.png */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5106AE011D26A46A00284022 /* en */,
-				5106AE031D26A46C00284022 /* zh-Hans */,
-			);
-			name = wait.png;
-			sourceTree = "<group>";
-		};
 		519EB5B21CE85BCC002CB3AE /* myLanguage.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1250,57 +1159,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5106ADF21D26A3D700284022 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = iOSLearnListBundle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.iOSLearnListBundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		5106ADF31D26A3D700284022 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = iOSLearnListBundle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.iOSLearnListBundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		5106ADF41D26A3D700284022 /* AdHoc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = iOSLearnListBundle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.iOSLearnListBundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = AdHoc;
-		};
 		51F68EE81CDE1905009338D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1392,6 +1250,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1413,6 +1272,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1524,6 +1384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1566,16 +1427,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5106ADF51D26A3D700284022 /* Build configuration list for PBXNativeTarget "iOSLearnListBundle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5106ADF21D26A3D700284022 /* Debug */,
-				5106ADF31D26A3D700284022 /* Release */,
-				5106ADF41D26A3D700284022 /* AdHoc */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		51F68EB81CDE1905009338D6 /* Build configuration list for PBXProject "iOSLearnList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -66,7 +66,7 @@
     
     _showImgView = [[UIImageView  alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(btn.frame), self.view.frame.size.width, self.view.frame.size.height-70-64)];
     [self.view addSubview:_showImgView];
-    _showImgView.image = [UIImage imageNamed:@"wait"];
+    _showImgView.image = [MWCommon imageNamed:@"wait"];
     
 }
 
@@ -83,7 +83,7 @@
     
     NSURL *url = [[NSURL alloc] initWithString:_urlField.text];
     
-    [_showImgView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"wait"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL){
+    [_showImgView sd_setImageWithURL:url placeholderImage:[MWCommon imageNamed:@"wait"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL){
         _showImgView.image = image;
     }];
     
