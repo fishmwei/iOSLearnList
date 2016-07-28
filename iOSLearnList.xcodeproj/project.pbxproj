@@ -48,6 +48,12 @@
 		C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155F1D4604CF00392D95 /* SearchBarVC.m */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
+		C16B6BB81D4995CC00459688 /* CADisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */; };
+		C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BBA1D499D5E00459688 /* CAMediaTimingVC.m */; };
+		C16B6BBF1D49B5EB00459688 /* MWRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BBE1D49B5EB00459688 /* MWRotationView.m */; };
+		C16B6BC11D49DC5200459688 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = C16B6BC01D49DC5200459688 /* lion.png */; };
+		C16B6BC51D49DCEA00459688 /* MWCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BC41D49DCEA00459688 /* MWCommon.m */; };
+		C16B6BC81D49E48C00459688 /* iOSLearnListBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */; };
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
 		C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
@@ -181,6 +187,16 @@
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
+		C16B6BB61D4995CC00459688 /* CADisplayLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLinkViewController.h; sourceTree = "<group>"; };
+		C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLinkViewController.m; sourceTree = "<group>"; };
+		C16B6BB91D499D5E00459688 /* CAMediaTimingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingVC.h; sourceTree = "<group>"; };
+		C16B6BBA1D499D5E00459688 /* CAMediaTimingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAMediaTimingVC.m; sourceTree = "<group>"; };
+		C16B6BBD1D49B5EB00459688 /* MWRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWRotationView.h; sourceTree = "<group>"; };
+		C16B6BBE1D49B5EB00459688 /* MWRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWRotationView.m; sourceTree = "<group>"; };
+		C16B6BC01D49DC5200459688 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		C16B6BC31D49DCEA00459688 /* MWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCommon.h; sourceTree = "<group>"; };
+		C16B6BC41D49DCEA00459688 /* MWCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCommon.m; sourceTree = "<group>"; };
+		C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iOSLearnListBundle.bundle; sourceTree = "<group>"; };
 		C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseCollectionViewController.h; sourceTree = "<group>"; };
 		C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseCollectionViewController.m; sourceTree = "<group>"; };
 		C18F58E41D475AB800F95031 /* testCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCollectionViewController.h; sourceTree = "<group>"; };
@@ -280,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				5106AE021D26A46A00284022 /* wait.png */,
+				C16B6BC01D49DC5200459688 /* lion.png */,
 				5106ADF81D26A43700284022 /* general_top_icon_back_normal@2x.png */,
 				5106ADF91D26A43700284022 /* weibo_touch@2x.png */,
 				5106ADFA1D26A43700284022 /* weibo@2x.png */,
@@ -291,6 +308,8 @@
 		5106AE041D26A50800284022 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				C16B6BC31D49DCEA00459688 /* MWCommon.h */,
+				C16B6BC41D49DCEA00459688 /* MWCommon.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -332,6 +351,7 @@
 		51F68EBF1CDE1905009338D6 /* iOSLearnList */ = {
 			isa = PBXGroup;
 			children = (
+				C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */,
 				5106AE041D26A50800284022 /* common */,
 				C1ED59741CE5D09100096EC7 /* 3rdParty */,
 				51F68EF81CDE1A06009338D6 /* src */,
@@ -433,12 +453,17 @@
 		C156DDBC1D4898B5004CD422 /* iOSAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				C16B6BBC1D49B5D400459688 /* View */,
 				C156DDBD1D4898FF004CD422 /* AnimationListViewController.h */,
 				C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */,
 				C156DDC01D4899E5004CD422 /* CAMediaTimingFunctionVC.h */,
 				C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */,
+				C16B6BB91D499D5E00459688 /* CAMediaTimingVC.h */,
+				C16B6BBA1D499D5E00459688 /* CAMediaTimingVC.m */,
 				C156DDC31D48B98E004CD422 /* TimerAnimationViewController.h */,
 				C156DDC41D48B98E004CD422 /* TimerAnimationViewController.m */,
+				C16B6BB61D4995CC00459688 /* CADisplayLinkViewController.h */,
+				C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */,
 			);
 			path = iOSAnimation;
 			sourceTree = "<group>";
@@ -494,6 +519,15 @@
 				C18F58E51D475AB800F95031 /* testCollectionViewController.m */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		C16B6BBC1D49B5D400459688 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C16B6BBD1D49B5EB00459688 /* MWRotationView.h */,
+				C16B6BBE1D49B5EB00459688 /* MWRotationView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C19D17D91D18CC6000E29256 /* customPresentView */ = {
@@ -824,6 +858,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5106AE001D26A46A00284022 /* wait.png in Resources */,
+				C16B6BC11D49DC5200459688 /* lion.png in Resources */,
 				5106ADFB1D26A43700284022 /* general_top_icon_back_normal@2x.png in Resources */,
 				5106ADFD1D26A43700284022 /* weibo@2x.png in Resources */,
 				5106ADFC1D26A43700284022 /* weibo_touch@2x.png in Resources */,
@@ -842,6 +877,7 @@
 				519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
 				519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */,
+				C16B6BC81D49E48C00459688 /* iOSLearnListBundle.bundle in Resources */,
 				51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1094,11 +1130,13 @@
 				C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */,
 				C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */,
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
+				C16B6BBF1D49B5EB00459688 /* MWRotationView.m in Sources */,
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
 				C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */,
 				C19321061D41FA0900378778 /* MasonryViewController.m in Sources */,
 				C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
+				C16B6BB81D4995CC00459688 /* CADisplayLinkViewController.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
 				C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */,
 				519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */,
@@ -1111,6 +1149,8 @@
 				C1A650821CE99E75006A117B /* downloadController.m in Sources */,
 				C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */,
 				51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */,
+				C16B6BC51D49DCEA00459688 /* MWCommon.m in Sources */,
+				C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */,
 				C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */,
 				C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */,
 			);
