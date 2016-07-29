@@ -28,7 +28,7 @@
 		9F32092F5F94E768907A6FD5 /* libPods-iOSLearnListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833CEE134107F0083DD15E92 /* libPods-iOSLearnListUITests.a */; };
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
-		C12F1EF11D4A166500A2D984 /* MWDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF01D4A166500A2D984 /* MWDrawView.m */; };
+		C12F1EF11D4A166500A2D984 /* MWCAShapeDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF01D4A166500A2D984 /* MWCAShapeDrawView.m */; };
 		C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
 		C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */; };
 		C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */; };
@@ -43,6 +43,7 @@
 		C15F155A1D45E92300392D95 /* MethodSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15591D45E92300392D95 /* MethodSignatureViewController.m */; };
 		C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155C1D45EB7800392D95 /* OBJModel.m */; };
 		C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155F1D4604CF00392D95 /* SearchBarVC.m */; };
+		C16043E81D4AE5B10018B88B /* MWCGDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16043E71D4AE5B10018B88B /* MWCGDrawView.m */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
 		C16B6BB81D4995CC00459688 /* CADisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */; };
@@ -139,8 +140,8 @@
 		C1209B1D1CF53EED00182559 /* configViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = configViewController.m; sourceTree = "<group>"; };
 		C1209B201CF53F2900182559 /* ConfigCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigCommon.h; sourceTree = "<group>"; };
 		C1209B211CF53F2900182559 /* ConfigCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCommon.m; sourceTree = "<group>"; };
-		C12F1EEF1D4A166500A2D984 /* MWDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDrawView.h; sourceTree = "<group>"; };
-		C12F1EF01D4A166500A2D984 /* MWDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDrawView.m; sourceTree = "<group>"; };
+		C12F1EEF1D4A166500A2D984 /* MWCAShapeDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCAShapeDrawView.h; sourceTree = "<group>"; };
+		C12F1EF01D4A166500A2D984 /* MWCAShapeDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCAShapeDrawView.m; sourceTree = "<group>"; };
 		C12F1EF21D4A199400A2D984 /* MWDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDrawingViewController.h; sourceTree = "<group>"; };
 		C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDrawingViewController.m; sourceTree = "<group>"; };
 		C156DDB91D4897CA004CD422 /* AdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
@@ -169,6 +170,8 @@
 		C15F155C1D45EB7800392D95 /* OBJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJModel.m; sourceTree = "<group>"; };
 		C15F155E1D4604CF00392D95 /* SearchBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarVC.h; sourceTree = "<group>"; };
 		C15F155F1D4604CF00392D95 /* SearchBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarVC.m; sourceTree = "<group>"; };
+		C16043E61D4AE5B10018B88B /* MWCGDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCGDrawView.h; sourceTree = "<group>"; };
+		C16043E71D4AE5B10018B88B /* MWCGDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCGDrawView.m; sourceTree = "<group>"; };
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
@@ -500,8 +503,10 @@
 			children = (
 				C16B6BBD1D49B5EB00459688 /* MWRotationView.h */,
 				C16B6BBE1D49B5EB00459688 /* MWRotationView.m */,
-				C12F1EEF1D4A166500A2D984 /* MWDrawView.h */,
-				C12F1EF01D4A166500A2D984 /* MWDrawView.m */,
+				C12F1EEF1D4A166500A2D984 /* MWCAShapeDrawView.h */,
+				C12F1EF01D4A166500A2D984 /* MWCAShapeDrawView.m */,
+				C16043E61D4AE5B10018B88B /* MWCGDrawView.h */,
+				C16043E71D4AE5B10018B88B /* MWCGDrawView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1046,7 +1051,7 @@
 				C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */,
 				C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
-				C12F1EF11D4A166500A2D984 /* MWDrawView.m in Sources */,
+				C12F1EF11D4A166500A2D984 /* MWCAShapeDrawView.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C1A650851CE99E75006A117B /* ReversibleString.m in Sources */,
@@ -1065,6 +1070,7 @@
 				C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */,
 				C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */,
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
+				C16043E81D4AE5B10018B88B /* MWCGDrawView.m in Sources */,
 				C16B6BBF1D49B5EB00459688 /* MWRotationView.m in Sources */,
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
 				C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */,

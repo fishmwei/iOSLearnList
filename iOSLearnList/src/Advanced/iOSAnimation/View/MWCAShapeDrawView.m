@@ -6,16 +6,16 @@
 //  Copyright © 2016年 fishmwei. All rights reserved.
 //
 
-#import "MWDrawView.h"
+#import "MWCAShapeDrawView.h"
 
 
-@interface MWDrawView ()
+@interface MWCAShapeDrawView ()
 
 @property (nonatomic, retain) UIBezierPath *path;
 
 @end
 
-@implementation MWDrawView
+@implementation MWCAShapeDrawView
 
 + (Class)layerClass {
     
@@ -27,6 +27,7 @@
 {
     //create a mutable path
     self.path = [[UIBezierPath alloc] init];
+    
     //configure the layer
     CAShapeLayer *shapeLayer = (CAShapeLayer *)self.layer;
     shapeLayer.strokeColor = [UIColor redColor].CGColor;
