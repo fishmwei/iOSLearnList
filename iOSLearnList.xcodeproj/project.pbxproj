@@ -46,6 +46,8 @@
 		C16043E81D4AE5B10018B88B /* MWCGDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16043E71D4AE5B10018B88B /* MWCGDrawView.m */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
+		C16969041D4EF6BF001A75A9 /* launch4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C16969031D4EF6BF001A75A9 /* launch4@2x.png */; };
+		C16969061D4EF6F3001A75A9 /* lanch5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C16969051D4EF6F3001A75A9 /* lanch5@2x.png */; };
 		C16B6BB81D4995CC00459688 /* CADisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */; };
 		C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BBA1D499D5E00459688 /* CAMediaTimingVC.m */; };
 		C16B6BBF1D49B5EB00459688 /* MWRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BBE1D49B5EB00459688 /* MWRotationView.m */; };
@@ -175,6 +177,8 @@
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
+		C16969031D4EF6BF001A75A9 /* launch4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch4@2x.png"; sourceTree = "<group>"; };
+		C16969051D4EF6F3001A75A9 /* lanch5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lanch5@2x.png"; sourceTree = "<group>"; };
 		C16B6BB61D4995CC00459688 /* CADisplayLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLinkViewController.h; sourceTree = "<group>"; };
 		C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLinkViewController.m; sourceTree = "<group>"; };
 		C16B6BB91D499D5E00459688 /* CAMediaTimingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingVC.h; sourceTree = "<group>"; };
@@ -332,6 +336,8 @@
 				51F68EF81CDE1A06009338D6 /* src */,
 				51F68EC31CDE1905009338D6 /* AppDelegate.h */,
 				51F68EC41CDE1905009338D6 /* AppDelegate.m */,
+				C16969051D4EF6F3001A75A9 /* lanch5@2x.png */,
+				C16969031D4EF6BF001A75A9 /* launch4@2x.png */,
 				51F68EC91CDE1905009338D6 /* Main.storyboard */,
 				51F68ECC1CDE1905009338D6 /* Assets.xcassets */,
 				51F68ECE1CDE1905009338D6 /* LaunchScreen.storyboard */,
@@ -817,12 +823,14 @@
 			files = (
 				C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */,
 				519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */,
+				C16969041D4EF6BF001A75A9 /* launch4@2x.png in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,
 				519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */,
 				519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
 				519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */,
 				C16B6BC81D49E48C00459688 /* iOSLearnListBundle.bundle in Resources */,
+				C16969061D4EF6F3001A75A9 /* lanch5@2x.png in Resources */,
 				51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
