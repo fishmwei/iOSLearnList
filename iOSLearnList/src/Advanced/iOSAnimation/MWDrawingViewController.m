@@ -7,8 +7,8 @@
 //
 
 #import "MWDrawingViewController.h"
-#import "MWCAShapeDrawView.h"
-#import "MWCGDrawView.h"
+#import <MWUITools/MWUITools.h>
+
 
 @interface MWDrawingViewController ()
 
@@ -17,8 +17,13 @@
 @implementation MWDrawingViewController
 
 - (void)loadView {
-    MWCGDrawView *vv = [[MWCGDrawView alloc] init];
-    vv.MWDrawColor = [UIColor blueColor];
+//    MWCGDrawView *vv = [[MWCGDrawView alloc] init];
+//    vv.MWDrawColor = [UIColor blueColor];
+    
+    MWCAShapeDrawView *vv = [[MWCAShapeDrawView alloc] init];
+    vv.strokeColor = [UIColor blueColor];
+    vv.fillColor = [UIColor redColor];
+    
     self.view = vv;
 }
 

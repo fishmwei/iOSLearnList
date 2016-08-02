@@ -3,6 +3,7 @@ PODS:
   - MBProgressHUD (0.9.2)
   - MJRefresh (3.1.0)
   - MWObjTools (0.1.2)
+  - MWUITools (0.1.2)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - MBProgressHUD
   - MJRefresh (= 3.1.0)
   - MWObjTools
+  - MWUITools
   - SDWebImage
 
 SPEC CHECKSUMS:
@@ -19,6 +21,9 @@ SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   MWObjTools: c37cbf4fb3450b9cb76e81ce0f89d8d29b0fcc92
+  MWUITools: c1a5860b14bd16e2e007148d603e4c5739b8bf7e
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 15d1bde1129961e2cbea3c404123145c56a8d416
+
+COCOAPODS: 1.0.1

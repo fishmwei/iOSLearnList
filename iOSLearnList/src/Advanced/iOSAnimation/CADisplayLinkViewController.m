@@ -7,8 +7,9 @@
 //
 
 #import "CADisplayLinkViewController.h"
-#import "MWRotationView.h"
 #import "MWCommon.h"
+
+#import <MWUITools/MWUITools.h>
 
 @interface CADisplayLinkViewController ()
 

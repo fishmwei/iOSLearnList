@@ -11,6 +11,7 @@ target 'iOSLearnList' do
     pod 'SDWebImage'
     pod 'MBProgressHUD'
     pod 'MWObjTools'
+    pod 'MWUITools'
 end
 
 target 'iOSLearnListTests' do
