@@ -42,6 +42,8 @@
 		C15F155A1D45E92300392D95 /* MethodSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15591D45E92300392D95 /* MethodSignatureViewController.m */; };
 		C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155C1D45EB7800392D95 /* OBJModel.m */; };
 		C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155F1D4604CF00392D95 /* SearchBarVC.m */; };
+		C162E35B1D51853B00061311 /* methodSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35A1D51853B00061311 /* methodSelectorViewController.m */; };
+		C162E35E1D51856200061311 /* MWMethodSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35D1D51856200061311 /* MWMethodSelector.m */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
 		C16969041D4EF6BF001A75A9 /* launch4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C16969031D4EF6BF001A75A9 /* launch4@2x.png */; };
@@ -166,6 +168,10 @@
 		C15F155C1D45EB7800392D95 /* OBJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJModel.m; sourceTree = "<group>"; };
 		C15F155E1D4604CF00392D95 /* SearchBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarVC.h; sourceTree = "<group>"; };
 		C15F155F1D4604CF00392D95 /* SearchBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarVC.m; sourceTree = "<group>"; };
+		C162E3591D51853B00061311 /* methodSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = methodSelectorViewController.h; sourceTree = "<group>"; };
+		C162E35A1D51853B00061311 /* methodSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = methodSelectorViewController.m; sourceTree = "<group>"; };
+		C162E35C1D51856200061311 /* MWMethodSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMethodSelector.h; sourceTree = "<group>"; };
+		C162E35D1D51856200061311 /* MWMethodSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWMethodSelector.m; sourceTree = "<group>"; };
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
@@ -601,6 +607,8 @@
 				C1A6507B1CE99E75006A117B /* undoRedoViewController.m */,
 				C1A6507C1CE99E75006A117B /* unRecognizeViewController.h */,
 				C1A6507D1CE99E75006A117B /* unRecognizeViewController.m */,
+				C162E3591D51853B00061311 /* methodSelectorViewController.h */,
+				C162E35A1D51853B00061311 /* methodSelectorViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -610,6 +618,8 @@
 			children = (
 				C1A6508F1CE99FA1006A117B /* NSObject+autoCoding.h */,
 				C1A650901CE99FA1006A117B /* NSObject+autoCoding.m */,
+				C162E35C1D51856200061311 /* MWMethodSelector.h */,
+				C162E35D1D51856200061311 /* MWMethodSelector.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -962,6 +972,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C162E35B1D51853B00061311 /* methodSelectorViewController.m in Sources */,
 				C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */,
 				C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */,
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
@@ -980,6 +991,7 @@
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
 				C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */,
+				C162E35E1D51856200061311 /* MWMethodSelector.m in Sources */,
 				519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */,
 				C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */,
 				C1A650831CE99E75006A117B /* FWSessionDelegate.m in Sources */,

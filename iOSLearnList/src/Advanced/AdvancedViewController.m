@@ -148,7 +148,7 @@
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
-    vc.showData = @[@"undoRedoViewController", @"unRecognizeViewController"];
+    vc.showData = @[@"undoRedoViewController", @"unRecognizeViewController", @"methodSelectorViewController"];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
