@@ -44,10 +44,11 @@
 		C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155F1D4604CF00392D95 /* SearchBarVC.m */; };
 		C162E35B1D51853B00061311 /* methodSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35A1D51853B00061311 /* methodSelectorViewController.m */; };
 		C162E35E1D51856200061311 /* MWMethodSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35D1D51856200061311 /* MWMethodSelector.m */; };
+		C162E3611D51D05500061311 /* lanch5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C162E35F1D51D05500061311 /* lanch5@2x.png */; };
+		C162E3621D51D05600061311 /* launch4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C162E3601D51D05500061311 /* launch4@2x.png */; };
+		C162E3641D51DBE200061311 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162E3631D51DBE200061311 /* SpriteKit.framework */; };
 		C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
 		C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
-		C16969041D4EF6BF001A75A9 /* launch4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C16969031D4EF6BF001A75A9 /* launch4@2x.png */; };
-		C16969061D4EF6F3001A75A9 /* lanch5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C16969051D4EF6F3001A75A9 /* lanch5@2x.png */; };
 		C16B6BB81D4995CC00459688 /* CADisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */; };
 		C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BBA1D499D5E00459688 /* CAMediaTimingVC.m */; };
 		C16B6BC51D49DCEA00459688 /* MWCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BC41D49DCEA00459688 /* MWCommon.m */; };
@@ -172,11 +173,12 @@
 		C162E35A1D51853B00061311 /* methodSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = methodSelectorViewController.m; sourceTree = "<group>"; };
 		C162E35C1D51856200061311 /* MWMethodSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMethodSelector.h; sourceTree = "<group>"; };
 		C162E35D1D51856200061311 /* MWMethodSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWMethodSelector.m; sourceTree = "<group>"; };
+		C162E35F1D51D05500061311 /* lanch5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lanch5@2x.png"; sourceTree = "<group>"; };
+		C162E3601D51D05500061311 /* launch4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch4@2x.png"; sourceTree = "<group>"; };
+		C162E3631D51DBE200061311 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		C165B0EE1D33A14500675C94 /* caLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caLayerViewController.h; sourceTree = "<group>"; };
 		C165B0EF1D33A14500675C94 /* caLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = caLayerViewController.m; sourceTree = "<group>"; };
 		C165B0F01D33A14500675C94 /* caLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = caLayerViewController.xib; sourceTree = "<group>"; };
-		C16969031D4EF6BF001A75A9 /* launch4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch4@2x.png"; sourceTree = "<group>"; };
-		C16969051D4EF6F3001A75A9 /* lanch5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lanch5@2x.png"; sourceTree = "<group>"; };
 		C16B6BB61D4995CC00459688 /* CADisplayLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLinkViewController.h; sourceTree = "<group>"; };
 		C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLinkViewController.m; sourceTree = "<group>"; };
 		C16B6BB91D499D5E00459688 /* CAMediaTimingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingVC.h; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C162E3641D51DBE200061311 /* SpriteKit.framework in Frameworks */,
 				51F5BEF61D28A308000641A7 /* mergedBundleFrame.a in Frameworks */,
 				171D7EE946C215853B29364F /* libPods-iOSLearnList.a in Frameworks */,
 			);
@@ -263,6 +266,7 @@
 		31DFC973CFDBCBD61F0C0EA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C162E3631D51DBE200061311 /* SpriteKit.framework */,
 				63EFAA2436F06E52B0476304 /* libPods-iOSLearnList.a */,
 				291F77B8319A93603B07A0C0 /* libPods-iOSLearnListTests.a */,
 				7778427D6BFE970E4A490F58 /* libPods-iOSLearnListUITests.a */,
@@ -345,8 +349,8 @@
 				51F68EF81CDE1A06009338D6 /* src */,
 				51F68EC31CDE1905009338D6 /* AppDelegate.h */,
 				51F68EC41CDE1905009338D6 /* AppDelegate.m */,
-				C16969051D4EF6F3001A75A9 /* lanch5@2x.png */,
-				C16969031D4EF6BF001A75A9 /* launch4@2x.png */,
+				C162E35F1D51D05500061311 /* lanch5@2x.png */,
+				C162E3601D51D05500061311 /* launch4@2x.png */,
 				51F68EC91CDE1905009338D6 /* Main.storyboard */,
 				51F68ECC1CDE1905009338D6 /* Assets.xcassets */,
 				51F68ECE1CDE1905009338D6 /* LaunchScreen.storyboard */,
@@ -802,15 +806,15 @@
 			files = (
 				C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */,
 				519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */,
-				C16969041D4EF6BF001A75A9 /* launch4@2x.png in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,
 				519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */,
 				519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
+				C162E3621D51D05600061311 /* launch4@2x.png in Resources */,
 				519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */,
 				C16B6BC81D49E48C00459688 /* iOSLearnListBundle.bundle in Resources */,
-				C16969061D4EF6F3001A75A9 /* lanch5@2x.png in Resources */,
 				51F68ECB1CDE1905009338D6 /* Main.storyboard in Resources */,
+				C162E3611D51D05500061311 /* lanch5@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
