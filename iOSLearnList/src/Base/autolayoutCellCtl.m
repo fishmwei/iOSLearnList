@@ -23,7 +23,7 @@
     UINib *cellNib = [UINib nibWithNibName:@"autolayoutCell" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:@"autolayoutCell"];
     
-    self.showData = @[@"1", @"2", @"autolayoutCellautolayoutCellautolayoutCellautolayoutCellautolayoutCell5autolayoutCellautolayoutCellautolayoutCellautolayoutCellautolayoutCell5", @"\n\n\n5"];
+    self.showData = @[@"1", @"2\n2", @"autolayoutCellautolayoutCellautolayoutCellautolayoutCellautolayoutCell5autolayoutCellautolayoutCellautolayoutCellautolayoutCellautolayoutCell5", @"\n\n\n5"];
     
     // Do any additional setup after loading the view.
 }
@@ -37,7 +37,7 @@
 {
     autolayoutCell  *cell = [self.tableView dequeueReusableCellWithIdentifier:@"autolayoutCell"];
     cell.label.text = [self.showData objectAtIndex:indexPath.row];
-    
+    cell.imgVeiw.image = [MWCommon imageNamed:@"lion"];
     
     
     return cell;
