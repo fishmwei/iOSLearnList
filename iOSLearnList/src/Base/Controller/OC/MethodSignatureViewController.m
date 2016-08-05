@@ -26,6 +26,8 @@
     
     om = [[OBJModel alloc] init];
     om.ctl = self;
+    [om methodSw];//test metondSW
+    
     
     [self performSelector:@selector(mehtod1Test)];
     [self performSelector:@selector(mehtod2Test)];

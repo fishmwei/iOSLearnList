@@ -7,35 +7,40 @@
 //
 
 #import "OBJModel.h"
+#import <objc/runtime.h>
 
 @implementation OBJModel
 
++(void)initialize {
+    [[self class] swMethod];
+}
 
 - (void)mehtod1Test {
     NSLog(@"%@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
 
-//
-//-(NSInteger)mehtod2Test
-//
-//{
-//    
-//    NSLog(@"OBJModel method2Test");
-//    
-//    return 1;
-//    
-//}
-//
-//-(id)method3Test:(NSString*)str {
-//    
-//    NSLog(@"OBJModel 参数:%@",str);
-//    
-//    return self.ctl;
-//    
-//}
 
 - (void)unknown {
     NSLog(@"%@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
 
+- (void)methodSw {
+//    [self methodSw];
+    NSLog(@"call methodSw:%@ %@", [self class], NSStringFromSelector(_cmd));
+    
+     [[self class] swMethod];
+}
+
+- (void)methodReplace {
+    NSLog(@"call methodReplace:%@ %@", [self class], NSStringFromSelector(_cmd));
+     [[self class] swMethod];
+}
+
+
++ (void)swMethod {
+    Method Origin = class_getInstanceMethod([self class], @selector(methodSw));
+    Method Swap = class_getInstanceMethod([self class], @selector(methodReplace));
+    
+    method_exchangeImplementations(Origin, Swap);
+}
 @end

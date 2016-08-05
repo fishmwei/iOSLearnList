@@ -13,6 +13,7 @@
 
 @property (nonatomic, weak) id ctl;
 
+- (void)methodSw;
 - (void)unknown;
 
 @end
