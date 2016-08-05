@@ -44,7 +44,6 @@
     
     if (![fm fileExistsAtPath:_filepath]) {
         [fm createFileAtPath:_filepath contents:nil attributes:nil];
-        
     }
     [self.data addObjectsFromArray:[NSArray arrayWithContentsOfFile:_filepath]];
     

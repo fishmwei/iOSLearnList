@@ -35,6 +35,7 @@
     [self createData];
     [self createView];
     
+//    [self setSelectedIndex:1];
 }
 
 
@@ -119,6 +120,11 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setHidden:YES];
+    
+    
+//    [[NSUserDefaults standardUserDefaults] setObject:shortcutItem.type forKey:@"ShortCut"];
+//    [self procShortItem];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -127,9 +133,22 @@
     [self.navigationController.navigationBar setHidden:NO];
 }
 
+- (void)procShortItem : (NSNotification *)notification{
+    NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:@"ShortCut"];
+    if (str.length) {
+        if ([str isEqualToString:@"Base"]) {
+            [self setSelectedIndex:0];
+        } else if ([str isEqualToString:@"Advance"]) {
+            [self setSelectedIndex:1];
+        } else if ([str isEqualToString:@"More"]) {
+            [self setSelectedIndex:2];
+        }
+    }
+}
+
 - (void)createData
 {
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(procShortItem:) name:@"MWShortCutClick" object:nil];
 }
 
 
