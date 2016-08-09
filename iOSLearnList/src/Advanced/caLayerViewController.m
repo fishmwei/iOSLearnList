@@ -7,8 +7,11 @@
 //
 
 #import "caLayerViewController.h"
+#import "MWScrollView.h"
 
 @interface caLayerViewController ()
+
+@property (nonatomic, retain) MWScrollView *scrollView;
 
 @end
 
@@ -16,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.clipsToBounds = YES;
     
     //set the corner radius on our layers
     self.layerView1.layer.cornerRadius = 20.0f;
@@ -107,6 +111,18 @@
     [self drawShapeView];
     
     
+    self.scrollView = [[MWScrollView alloc] init];
+    self.scrollView.frame = CGRectMake(0, 0, 100, 60);
+    self.scrollView.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2, 30);
+    [self.view addSubview:self.scrollView];
+    self.scrollView.backgroundColor = [UIColor blueColor];
+    
+    
+    UIImage *img = [UIImage imageNamed:@"launch4"];
+    CALayer *layer = [[CALayer alloc] init];
+    layer.frame = CGRectMake(0, 0, img.size.width, img.size.height);
+    [self.scrollView.layer addSublayer:layer];
+    layer.contents = (__bridge id)img.CGImage;
 }
 
 - (void)drawShapeView {

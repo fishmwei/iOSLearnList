@@ -71,6 +71,7 @@
 		C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6508A1CE99E8C006A117B /* SDUIImageViewController.m */; };
 		C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6508D1CE99F42006A117B /* multiThreadController.m */; };
 		C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650901CE99FA1006A117B /* NSObject+autoCoding.m */; };
+		C1C8C6AF1D59C96F00059977 /* MWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C8C6AE1D59C96F00059977 /* MWScrollView.m */; };
 		C1E1DBE41D546731007EE5F5 /* ArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E1DBE21D546731007EE5F5 /* ArchiverViewController.m */; };
 		C1E1DBE51D546731007EE5F5 /* ArchiverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E1DBE31D546731007EE5F5 /* ArchiverViewController.xib */; };
 		C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FCC1CE4231900445669 /* IndexTableViewController.m */; };
@@ -225,6 +226,8 @@
 		C1A6508D1CE99F42006A117B /* multiThreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = multiThreadController.m; path = ../../../Advanced/iOSSystem/controller/multiThreadController.m; sourceTree = "<group>"; };
 		C1A6508F1CE99FA1006A117B /* NSObject+autoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+autoCoding.h"; sourceTree = "<group>"; };
 		C1A650901CE99FA1006A117B /* NSObject+autoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+autoCoding.m"; sourceTree = "<group>"; };
+		C1C8C6AD1D59C96F00059977 /* MWScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWScrollView.h; sourceTree = "<group>"; };
+		C1C8C6AE1D59C96F00059977 /* MWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWScrollView.m; sourceTree = "<group>"; };
 		C1E1DBE11D546731007EE5F5 /* ArchiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiverViewController.h; sourceTree = "<group>"; };
 		C1E1DBE21D546731007EE5F5 /* ArchiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchiverViewController.m; sourceTree = "<group>"; };
 		C1E1DBE31D546731007EE5F5 /* ArchiverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArchiverViewController.xib; sourceTree = "<group>"; };
@@ -550,6 +553,8 @@
 				C1A650761CE99E75006A117B /* ObjRelative */,
 				C165B0EE1D33A14500675C94 /* caLayerViewController.h */,
 				C165B0EF1D33A14500675C94 /* caLayerViewController.m */,
+				C1C8C6AD1D59C96F00059977 /* MWScrollView.h */,
+				C1C8C6AE1D59C96F00059977 /* MWScrollView.m */,
 				C165B0F01D33A14500675C94 /* caLayerViewController.xib */,
 				C156DDB91D4897CA004CD422 /* AdvancedViewController.h */,
 				C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */,
@@ -992,6 +997,7 @@
 				C162E35B1D51853B00061311 /* methodSelectorViewController.m in Sources */,
 				C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */,
 				C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */,
+				C1C8C6AF1D59C96F00059977 /* MWScrollView.m in Sources */,
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
 				C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */,
 				C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */,

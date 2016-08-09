@@ -47,7 +47,7 @@
 //    }
     
     if ([launchOptions objectForKey:@"UIApplicationLaunchOptionsShortcutItemKey"]) {
-        return NO;
+//        return NO;
     } else {
         [self addDynamicShortCutItems];
     }

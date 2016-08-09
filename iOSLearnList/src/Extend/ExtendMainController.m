@@ -31,9 +31,10 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     [self createData];
     [self createView];
+    [self procShortItem:nil];
     
 //    [self setSelectedIndex:1];
 }
