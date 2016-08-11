@@ -19,7 +19,8 @@
     
     self.showData = @[@"KVOViewController",
                       @"MethodSignatureViewController",
-                      @"ArchiverViewController"];
+                      @"ArchiverViewController",
+                      @"runtimeViewController"];
     
     
     // Do any additional setup after loading the view.

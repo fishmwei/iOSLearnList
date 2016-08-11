@@ -41,6 +41,8 @@
     Method Origin = class_getInstanceMethod([self class], @selector(methodSw));
     Method Swap = class_getInstanceMethod([self class], @selector(methodReplace));
     
+//    class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+
     method_exchangeImplementations(Origin, Swap);
 }
 @end

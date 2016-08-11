@@ -54,11 +54,11 @@
     self.shadowPathView.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.2f];
     CGPathRelease(circlepath);
     
-    
+    [self.maskBtn setImage:[UIImage imageNamed:@"xiala_2"] forState:UIControlStateNormal];
     self.maskBtn.backgroundColor = [UIColor clearColor];
-    CALayer *bLayer = [CALayer layer];
+    CALayer *bLayer = self.maskBtn.layer;
     bLayer.frame = self.maskBtn.bounds;
-    [self.maskBtn.layer addSublayer:bLayer];
+//    [self.maskBtn.layer addSublayer:bLayer];
     bLayer.backgroundColor = [UIColor greenColor].CGColor;
     
     CALayer *maskLayer = [CALayer layer];
@@ -169,7 +169,7 @@ CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
     } else {
         
         CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-        animation.duration    = 1.0;
+        animation.duration    = 0.3;
         animation.fromValue   = @1;
         animation.toValue     = @0;
         animation.delegate = self;
