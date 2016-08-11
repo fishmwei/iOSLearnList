@@ -58,6 +58,8 @@
 		C172F2441D5C779200A8FECC /* MW_AB.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2431D5C779200A8FECC /* MW_AB.m */; };
 		C172F2471D5C77A200A8FECC /* MW_AC.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2461D5C77A200A8FECC /* MW_AC.m */; };
 		C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2491D5C99AB00A8FECC /* runtimeViewController.m */; };
+		C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */; };
+		C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2501D5CB62300A8FECC /* MWJSPerson.m */; };
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
 		C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
 		C191C7A91D52D15B0060F57A /* common-PullDownRefresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C191C7A81D52D15B0060F57A /* common-PullDownRefresh@2x.png */; };
@@ -207,6 +209,10 @@
 		C172F2461D5C77A200A8FECC /* MW_AC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MW_AC.m; sourceTree = "<group>"; };
 		C172F2481D5C99AB00A8FECC /* runtimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtimeViewController.h; sourceTree = "<group>"; };
 		C172F2491D5C99AB00A8FECC /* runtimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runtimeViewController.m; sourceTree = "<group>"; };
+		C172F24C1D5CAB4000A8FECC /* MWJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWJSViewController.h; sourceTree = "<group>"; };
+		C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSViewController.m; sourceTree = "<group>"; };
+		C172F24F1D5CB62300A8FECC /* MWJSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWJSPerson.h; sourceTree = "<group>"; };
+		C172F2501D5CB62300A8FECC /* MWJSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSPerson.m; sourceTree = "<group>"; };
 		C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseCollectionViewController.h; sourceTree = "<group>"; };
 		C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseCollectionViewController.m; sourceTree = "<group>"; };
 		C18F58E41D475AB800F95031 /* testCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCollectionViewController.h; sourceTree = "<group>"; };
@@ -563,6 +569,17 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		C172F24B1D5CAB2C00A8FECC /* javascript */ = {
+			isa = PBXGroup;
+			children = (
+				C172F24C1D5CAB4000A8FECC /* MWJSViewController.h */,
+				C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */,
+				C172F24F1D5CB62300A8FECC /* MWJSPerson.h */,
+				C172F2501D5CB62300A8FECC /* MWJSPerson.m */,
+			);
+			path = javascript;
+			sourceTree = "<group>";
+		};
 		C19D17D91D18CC6000E29256 /* customPresentView */ = {
 			isa = PBXGroup;
 			children = (
@@ -579,6 +596,7 @@
 		C1A650661CE99E75006A117B /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				C172F24B1D5CAB2C00A8FECC /* javascript */,
 				C156DDBC1D4898B5004CD422 /* iOSAnimation */,
 				C19D17D91D18CC6000E29256 /* customPresentView */,
 				C1A650671CE99E75006A117B /* iOSSystem */,
@@ -1054,6 +1072,7 @@
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
 				C172F2441D5C779200A8FECC /* MW_AB.m in Sources */,
 				C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */,
+				C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */,
 				C162E35E1D51856200061311 /* MWMethodSelector.m in Sources */,
 				519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */,
 				C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */,
@@ -1072,6 +1091,7 @@
 				519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */,
 				C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */,
 				C15F15571D45C65700392D95 /* KVOViewController.m in Sources */,
+				C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */,
 				C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */,
 				C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */,
 				C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */,
