@@ -20,6 +20,8 @@
 @interface MWJSViewController () {
     JSContext *context;
     UILabel *showLabel;
+    
+    JSManagedValue *vTemp;//防止对象被释放 无法访问
 }
 
 @end
@@ -57,6 +59,8 @@
     
     
     [self addProtocolToLabel];
+    
+    [self factorial];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -174,9 +178,41 @@
     context[@"label"] = showLabel;
     [context evaluateScript:@"label.text = 100"];
     
+    
+    [context evaluateScript:@"log(p.urls.ss)"];
+    
+    
+    NSDate *nn = [NSDate date];
+    context[@"nn"] = nn;
+    [context evaluateScript:@"log(nn)"];
+    
 }
 
-
+- (void)factorial  {
+    [context evaluateScript:@"function factorial(n) {\
+        if (n < 0) {\
+            return 0;\
+        }\
+        if (n == 0) {\
+            return 1; \
+        } \
+        \
+        return n * factorial(n-1);\
+     }"];
+//    JSValue *t = nil;
+    @autoreleasepool {
+        JSValue *f = context[@"factorial"];
+        JSValue *t = [f callWithArguments:@[@2]];
+        
+         vTemp = [JSManagedValue managedValueWithValue:t];
+        [context.virtualMachine addManagedReference:vTemp withOwner:self];
+    }
+    NSLog(@"%lu", [[vTemp value] toUInt32]);
+    
+    [context.virtualMachine removeManagedReference:vTemp withOwner:self];
+    
+    
+}
 
 
 @end
