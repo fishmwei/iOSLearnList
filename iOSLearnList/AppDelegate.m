@@ -12,6 +12,30 @@
 #import "myBundleFrame.h"
 
 @interface AppDelegate ()
+@property (nonatomic, retain) NSString *b;
+@end
+
+
+@interface NSObject (A)
+- (void)seta;
+@end
+
+@implementation NSObject (A)
+
+- (void)seta {
+    
+}
+
+@end
+@interface NSObject (B)
+- (void)seta;
+@end
+
+@implementation NSObject (B)
+
+- (void)seta {
+    
+}
 
 @end
 
@@ -35,6 +59,12 @@
     
     
     [[[myBundleFrame alloc] init] showBundleframe];
+    
+    NSString *t = @"aaaaa";
+    self.b = t;
+    t = @"ccc";
+    
+    NSLog(@"%@", self.b);
     
 //    //AD
 //    {

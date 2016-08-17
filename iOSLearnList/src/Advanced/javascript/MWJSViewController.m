@@ -9,6 +9,8 @@
 #import "MWJSViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <objc/runtime.h>
+
+
 #import "MWJSPerson.h"
 
 @protocol MWJSUILabelExport <JSExport>
@@ -17,13 +19,13 @@
 
 @end
 
-@interface MWJSViewController () {
+@interface MWJSViewController () <UIWebViewDelegate> {
     JSContext *context;
     UILabel *showLabel;
     
     JSManagedValue *vTemp;//防止对象被释放 无法访问
 }
-
+@property (nonatomic, retain) UIWebView *wbView;
 @end
 
 @implementation MWJSViewController
@@ -31,7 +33,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.wbView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_wbView];
+    _wbView.delegate = self;
+    
+    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
+    [_wbView loadRequest:req];
+    
     context = [[JSContext alloc] init];
+    [context evaluateScript:@"'use strict'"];
     context[@"log"] = ^() {
         NSArray *args = [JSContext currentArguments];
         for (id obj in args) {
@@ -78,7 +88,9 @@
 }
 
 - (void)printJSArray {
-    [context evaluateScript:@"var arr = [21, 7 , 'iderzheng.com'];"];
+    [context evaluateScript:@"var arr = [21, 7 , 'iderzheng.com']; \
+     log(arr.toString())"];
+    
     JSValue *jsArr = context[@"arr"]; // Get array from JSContext
     
     NSLog(@"JS Array: %@;    Length: %@", jsArr, jsArr[@"length"]);
@@ -92,11 +104,17 @@
 }
 
 - (void)printJSObject {
-    [context evaluateScript:@"var oo = {a:9}; \
+//    [context evaluateScript:@"var oo = {a:9}; \
                             oo.b = 10;\
      "];
+    
+    [context evaluateScript:@"var oo = Object.create({a:9, b:10});\
+     log(oo.toJSON())"];
     JSValue *v = context[@"oo"];
     NSLog(@"oo is %@", [v toDictionary]);
+    
+    
+    //prototype运行属性
 }
 
 
@@ -211,8 +229,23 @@
     
     [context.virtualMachine removeManagedReference:vTemp withOwner:self];
     
+//    [context evaluateScript:@"alert(2222);"];
     
+    [context evaluateScript:@"log('new date:', new Date())"];
+    
+    
+    
+
 }
 
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    //网页加载完成调用此方法
+    //首先创建JSContext 对象（此处通过当前webView的键获取到jscontext）
+    JSContext *xx=[webView valueForKeyPath: @"documentView.webView.mainFrame.javaScriptContext"];
+    NSString *alertJS=@"alert('超哥你好，大河向东流')"; //准备执行的js代码
+    [xx evaluateScript:alertJS];//通过oc方法调用js的alert
+}
 
 @end
