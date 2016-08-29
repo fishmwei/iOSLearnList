@@ -7,8 +7,11 @@
 //
 
 #import "caLayerViewController.h"
+#import "MWScrollView.h"
 
 @interface caLayerViewController ()
+
+@property (nonatomic, retain) MWScrollView *scrollView;
 
 @end
 
@@ -16,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.clipsToBounds = YES;
     
     //set the corner radius on our layers
     self.layerView1.layer.cornerRadius = 20.0f;
@@ -50,11 +54,11 @@
     self.shadowPathView.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.2f];
     CGPathRelease(circlepath);
     
-    
+    [self.maskBtn setImage:[UIImage imageNamed:@"xiala_2"] forState:UIControlStateNormal];
     self.maskBtn.backgroundColor = [UIColor clearColor];
-    CALayer *bLayer = [CALayer layer];
+    CALayer *bLayer = self.maskBtn.layer;
     bLayer.frame = self.maskBtn.bounds;
-    [self.maskBtn.layer addSublayer:bLayer];
+//    [self.maskBtn.layer addSublayer:bLayer];
     bLayer.backgroundColor = [UIColor greenColor].CGColor;
     
     CALayer *maskLayer = [CALayer layer];
@@ -107,6 +111,18 @@
     [self drawShapeView];
     
     
+    self.scrollView = [[MWScrollView alloc] init];
+    self.scrollView.frame = CGRectMake(0, 0, 100, 60);
+    self.scrollView.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2, 30);
+    [self.view addSubview:self.scrollView];
+    self.scrollView.backgroundColor = [UIColor blueColor];
+    
+    
+    UIImage *img = [UIImage imageNamed:@"launch4"];
+    CALayer *layer = [[CALayer alloc] init];
+    layer.frame = CGRectMake(0, 0, img.size.width, img.size.height);
+    [self.scrollView.layer addSublayer:layer];
+    layer.contents = (__bridge id)img.CGImage;
 }
 
 - (void)drawShapeView {
@@ -153,7 +169,7 @@ CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
     } else {
         
         CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-        animation.duration    = 1.0;
+        animation.duration    = 0.3;
         animation.fromValue   = @1;
         animation.toValue     = @0;
         animation.delegate = self;

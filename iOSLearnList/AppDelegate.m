@@ -12,6 +12,30 @@
 #import "myBundleFrame.h"
 
 @interface AppDelegate ()
+@property (nonatomic, retain) NSString *b;
+@end
+
+
+@interface NSObject (A)
+- (void)seta;
+@end
+
+@implementation NSObject (A)
+
+- (void)seta {
+    
+}
+
+@end
+@interface NSObject (B)
+- (void)seta;
+@end
+
+@implementation NSObject (B)
+
+- (void)seta {
+    
+}
 
 @end
 
@@ -20,21 +44,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //AD
-    {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAdDetail:) name:BBLaunchAdDetailDisplayNotification object:nil];
-        NSString *path = @"http://mg.soupingguo.com/bizhi/big/10/258/043/10258043.jpg";
-        [BBLaunchAdMonitor showAdAtPath:path
-                                 onView:self.window.rootViewController.view
-                           timeInterval:5.
-                       detailParameters:@{@"carId":@(12345), @"name":@"奥迪-品质生活"}];
-    }
+
     
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    
     
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -43,10 +58,30 @@
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
     
-    
-    
-    
     [[[myBundleFrame alloc] init] showBundleframe];
+    
+    NSString *t = @"aaaaa";
+    self.b = t;
+    t = @"ccc";
+    
+    NSLog(@"%@", self.b);
+    
+//    //AD
+//    {
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAdDetail:) name:BBLaunchAdDetailDisplayNotification object:nil];
+//        NSString *path = @"http://mg.soupingguo.com/bizhi/big/10/258/043/10258043.jpg";
+//        [BBLaunchAdMonitor showAdAtPath:path
+//                                 onView:self.window.rootViewController.view
+//                           timeInterval:5.
+//                       detailParameters:@{@"carId":@(12345), @"name":@"奥迪-品质生活"}];
+//    }
+    
+    if ([launchOptions objectForKey:@"UIApplicationLaunchOptionsShortcutItemKey"]) {
+//        return NO;
+    } else {
+        [self addDynamicShortCutItems];
+    }
+    
     return YES;
 }
 
@@ -92,6 +127,48 @@
 - (void)showAdDetail:(NSNotification *)noti
 {
     NSLog(@"detail parameters:%@", noti.object);
+}
+
+- (void)addDynamicShortCutItems {
+    
+    NSMutableArray <UIApplicationShortcutItem *> *appShortCutItems = [NSMutableArray arrayWithArray:[[UIApplication sharedApplication] shortcutItems]];
+    if (!appShortCutItems.count) {
+        appShortCutItems = [NSMutableArray array];
+    }
+    
+    UIApplicationShortcutItem *item = [[UIApplicationShortcutItem alloc] initWithType:@"Base" localizedTitle:NSLocalizedStringFromTable(@"Base", @"myLanguage", nil)  localizedSubtitle:NSLocalizedStringFromTable(@"Base", @"myLanguage", nil) icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeHome]  userInfo:nil];
+    [self addSpecialItem:item  toMultableArray:appShortCutItems];
+    
+    
+    item = [[UIApplicationShortcutItem alloc] initWithType:@"Advance" localizedTitle:NSLocalizedStringFromTable(@"Advance", @"myLanguage", nil)  localizedSubtitle:NSLocalizedStringFromTable(@"Advance", @"myLanguage", nil) icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeHome]  userInfo:nil];
+    [self addSpecialItem:item  toMultableArray:appShortCutItems];
+    
+    item = [[UIApplicationShortcutItem alloc] initWithType:@"More" localizedTitle:@"More"  localizedSubtitle:@"More" icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeHome]  userInfo:nil];
+    [self addSpecialItem:item  toMultableArray:appShortCutItems];
+    
+    [[UIApplication sharedApplication] setShortcutItems:appShortCutItems];
+}
+
+
+- (void)addSpecialItem:(UIApplicationShortcutItem *)item toMultableArray:(NSMutableArray *)arr {
+    for (UIApplicationShortcutItem *i in arr) {
+        if ([i.type isEqualToString:item.type]) {
+            return;
+        }
+    }
+    
+    [arr addObject:item];
+}
+
+- (void)removeDynamicShortCutItems {
+    
+}
+
+-(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    
+    [[NSUserDefaults standardUserDefaults] setObject:shortcutItem.type forKey:@"ShortCut"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MWShortCutClick" object:shortcutItem.type];
 }
 
 @end

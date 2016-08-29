@@ -60,7 +60,7 @@
 
 -(void)createData
 {
-    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample", @"iOSAnimation"];
+    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample", @"iOSAnimation", @"javaScript"];
     
 }
 
@@ -183,5 +183,16 @@
     
     
 }
+
+- (void)gotojavaScript {
+    Class cls = NSClassFromString(@"MWJSViewController");
+    if (cls) {
+        UIViewController *vc = (UIViewController *)[[cls alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
+
 
 @end

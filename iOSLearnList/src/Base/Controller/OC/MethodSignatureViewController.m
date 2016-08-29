@@ -10,6 +10,10 @@
 #import "OBJModel.h"
 #import <objc/runtime.h>
 
+
+#import "MW_AB.h"
+#import "MW_AC.h"
+
 @interface MethodSignatureViewController () {
     OBJModel *om;
 }
@@ -26,12 +30,25 @@
     
     om = [[OBJModel alloc] init];
     om.ctl = self;
+    [om methodSw];//test metondSW
+    
     
     [self performSelector:@selector(mehtod1Test)];
     [self performSelector:@selector(mehtod2Test)];
     
     [self performSelector:@selector(mehtod1111Test)];
 //    [self mehtod1Test];
+    
+    
+    
+    
+    
+    MW_AB *ab = [[MW_AB alloc] init];
+    [ab printClassName];
+    [ab ABprintClassName];
+    
+    MW_AC *ac = [[MW_AC alloc] init];
+    [ac printClassName];
 }
 
 - (void)didReceiveMemoryWarning {

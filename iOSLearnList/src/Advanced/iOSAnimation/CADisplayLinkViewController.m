@@ -47,9 +47,9 @@
 - (void)setupRotationView {
     _rotationView = [[MWRotationView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     [self.view addSubview:_rotationView];
-//    _rotationView.backgroundColor = [UIColor redColor];
     
-    _rotationView.layer.contents = (__bridge id)[MWCommon imageNamed:@"lion"].CGImage;
+//    _rotationView.layer.contents = (__bridge id)[MWCommon imageNamed:@"lion"].CGImage;
+    _rotationView.layer.contents = (__bridge id)[UIImage imageNamed:@"common-PullDownRefresh"].CGImage;
     
     UIView *vv = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 10, 10)];
     vv.backgroundColor = [UIColor blueColor];
