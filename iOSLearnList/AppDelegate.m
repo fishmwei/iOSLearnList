@@ -42,6 +42,8 @@
 @implementation AppDelegate
 
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
 
@@ -66,6 +68,8 @@
     
     NSLog(@"%@", self.b);
     
+    [self testShowIdClass:self.window.rootViewController];
+    
 //    //AD
 //    {
 //        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAdDetail:) name:BBLaunchAdDetailDisplayNotification object:nil];
@@ -81,6 +85,12 @@
     } else {
         [self addDynamicShortCutItems];
     }
+    
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//    
+//        @throw @"error";
+//    });
     
     return YES;
 }
@@ -169,6 +179,12 @@
     [[NSUserDefaults standardUserDefaults] setObject:shortcutItem.type forKey:@"ShortCut"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MWShortCutClick" object:shortcutItem.type];
+}
+
+
+#pragma test Method
+- (void)testShowIdClass : (id)testId {
+    NSLog(@"%@ showClass:%@", NSStringFromSelector(_cmd), [(id)testId class]);
 }
 
 @end

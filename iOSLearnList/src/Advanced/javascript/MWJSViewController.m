@@ -71,6 +71,8 @@
     [self addProtocolToLabel];
     
     [self factorial];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -172,6 +174,7 @@
     p.lastName = @"mingwei";
     p.urls = @{@"ss": @"1010.com"};
     
+    [p setValue:@"hello" forKey:@"firstName"];
     
     [context evaluateScript:@"log(p.fullName())"];
     [context evaluateScript:@"log(p)"];

@@ -27,4 +27,9 @@
     [self setLastName:lastName];
 }
 
+
+- (void)setFirstName:(NSString *)firstName {
+    _firstName = firstName;
+}
+
 @end
