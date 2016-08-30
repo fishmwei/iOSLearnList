@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		171D7EE946C215853B29364F /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EFAA2436F06E52B0476304 /* libPods-iOSLearnList.a */; };
+		513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 513EC4B21D53876B00279CA1 /* CACustomScrollView.m */; };
+		513EC4B61D5389D400279CA1 /* CAScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513EC4B51D5389D400279CA1 /* CAScrollViewController.m */; };
 		519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785F91D04189A00DF3981 /* autolayoutCellCtl.m */; };
 		519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785FD1D0418E200DF3981 /* autolayoutCell.m */; };
 		519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519785FE1D0418E200DF3981 /* autolayoutCell.xib */; };
@@ -109,6 +111,10 @@
 		183FB7427D25D872AE632CA9 /* Pods-iOSLearnList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.debug.xcconfig"; sourceTree = "<group>"; };
 		19E1B844205498E3F8F2045F /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		291F77B8319A93603B07A0C0 /* libPods-iOSLearnListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		513EC4B11D53876B00279CA1 /* CACustomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACustomScrollView.h; sourceTree = "<group>"; };
+		513EC4B21D53876B00279CA1 /* CACustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACustomScrollView.m; sourceTree = "<group>"; };
+		513EC4B41D5389D400279CA1 /* CAScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScrollViewController.h; sourceTree = "<group>"; };
+		513EC4B51D5389D400279CA1 /* CAScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScrollViewController.m; sourceTree = "<group>"; };
 		519785F81D04189A00DF3981 /* autolayoutCellCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCellCtl.h; sourceTree = "<group>"; };
 		519785F91D04189A00DF3981 /* autolayoutCellCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autolayoutCellCtl.m; sourceTree = "<group>"; };
 		519785FC1D0418E200DF3981 /* autolayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCell.h; sourceTree = "<group>"; };
@@ -340,6 +346,15 @@
 			path = common;
 			sourceTree = "<group>";
 		};
+		513EC4B01D53873D00279CA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				513EC4B11D53876B00279CA1 /* CACustomScrollView.h */,
+				513EC4B21D53876B00279CA1 /* CACustomScrollView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		519785FB1D0418BB00DF3981 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +495,7 @@
 		C156DDBC1D4898B5004CD422 /* iOSAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				513EC4B01D53873D00279CA1 /* View */,
 				C156DDBD1D4898FF004CD422 /* AnimationListViewController.h */,
 				C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */,
 				C156DDC01D4899E5004CD422 /* CAMediaTimingFunctionVC.h */,
@@ -490,6 +506,8 @@
 				C156DDC41D48B98E004CD422 /* TimerAnimationViewController.m */,
 				C16B6BB61D4995CC00459688 /* CADisplayLinkViewController.h */,
 				C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */,
+				513EC4B41D5389D400279CA1 /* CAScrollViewController.h */,
+				513EC4B51D5389D400279CA1 /* CAScrollViewController.m */,
 				C191C7A81D52D15B0060F57A /* common-PullDownRefresh@2x.png */,
 				C12F1EF21D4A199400A2D984 /* MWDrawingViewController.h */,
 				C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */,
@@ -767,6 +785,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F68EEA1CDE1905009338D6 /* Build configuration list for PBXNativeTarget "iOSLearnList" */;
 			buildPhases = (
+				E1759FB92EAF7D8A1C42BBFF /* 📦 Check Pods Manifest.lock */,
 				A02934184670955787592C2D /* [CP] Check Pods Manifest.lock */,
 				51F68EB91CDE1905009338D6 /* Sources */,
 				51F68EBA1CDE1905009338D6 /* Frameworks */,
@@ -774,6 +793,8 @@
 				C1209B1A1CF53D1500182559 /* Copy configuration */,
 				E25197F303A80174F230FE73 /* [CP] Embed Pods Frameworks */,
 				5C7110CE646CAB5776973391 /* [CP] Copy Pods Resources */,
+				83D39A042551C6032A8805AD /* 📦 Embed Pods Frameworks */,
+				8AA6A4F3512BF609E84A630A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -788,12 +809,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F68EED1CDE1905009338D6 /* Build configuration list for PBXNativeTarget "iOSLearnListTests" */;
 			buildPhases = (
+				D6374B4CB33E7A3389364C25 /* 📦 Check Pods Manifest.lock */,
 				22D4F41000092CBC045D3F38 /* [CP] Check Pods Manifest.lock */,
 				51F68ED21CDE1905009338D6 /* Sources */,
 				51F68ED31CDE1905009338D6 /* Frameworks */,
 				51F68ED41CDE1905009338D6 /* Resources */,
 				78F133BA5424D2243C457EAA /* [CP] Embed Pods Frameworks */,
 				BD87B621CAD92A1CEF9089B0 /* [CP] Copy Pods Resources */,
+				8964C4B51E1DEBE5912271D3 /* 📦 Embed Pods Frameworks */,
+				FD3413A3080D2B2256ECD864 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -809,11 +833,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51F68EF01CDE1905009338D6 /* Build configuration list for PBXNativeTarget "iOSLearnListUITests" */;
 			buildPhases = (
+				76208690460EC2A905A4A36F /* 📦 Check Pods Manifest.lock */,
 				699A855098DF9C3CB144B268 /* [CP] Check Pods Manifest.lock */,
 				51F68EDD1CDE1905009338D6 /* Sources */,
 				51F68EDE1CDE1905009338D6 /* Frameworks */,
 				51F68EDF1CDE1905009338D6 /* Resources */,
 				BA2CC52F836524E803012864 /* [CP] Copy Pods Resources */,
+				D99AF823458EFB165F0ADF81 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -953,6 +979,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		76208690460EC2A905A4A36F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		78F133BA5424D2243C457EAA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -966,6 +1007,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D39A042551C6032A8805AD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8964C4B51E1DEBE5912271D3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AA6A4F3512BF609E84A630A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A02934184670955787592C2D /* [CP] Check Pods Manifest.lock */ = {
@@ -1027,6 +1113,51 @@
 			shellPath = /bin/sh;
 			shellScript = "RESOURCE_PATH=${SRCROOT}/${PRODUCT_NAME}/Configuration/${CONFIGURATION}\n\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\necho \"Copying all files under ${RESOURCE_PATH} to ${BUILD_APP_DIR}\"\n\ncp -v \"${RESOURCE_PATH}/\"* \"${BUILD_APP_DIR}/\"";
 		};
+		D6374B4CB33E7A3389364C25 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D99AF823458EFB165F0ADF81 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1759FB92EAF7D8A1C42BBFF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		E25197F303A80174F230FE73 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1040,6 +1171,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3413A3080D2B2256ECD864 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1103,6 +1249,8 @@
 				C16B6BC51D49DCEA00459688 /* MWCommon.m in Sources */,
 				C1E1DBE41D546731007EE5F5 /* ArchiverViewController.m in Sources */,
 				C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */,
+				513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */,
+				513EC4B61D5389D400279CA1 /* CAScrollViewController.m in Sources */,
 				C16858771D5AD0C80017157D /* UIButton_MWEdge.m in Sources */,
 				C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */,
 				C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */,
