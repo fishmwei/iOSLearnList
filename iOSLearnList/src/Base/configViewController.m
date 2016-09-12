@@ -16,8 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i < 1000; i++) {
+        [array addObject:@(i)];
+    }
+    
+    for (id toDel in [array reverseObjectEnumerator]) {
+        if ([toDel integerValue] % 3 == 0) {
+            [array removeObject:toDel];
+        }
+    }
+    
+    NSLog(@"%@", array);
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

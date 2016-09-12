@@ -8,6 +8,7 @@
 
 #import "myTableViewController.h"
 #import <MWObjTools/MWNumberTools.h>
+#import <MWMarqueeView/MWMarqueeView.h>
 
 @interface myTableViewController ()
 
@@ -58,9 +59,24 @@
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
-        
     }
 
+    
+    MWMarqueeView *systemNoticeView = [[MWMarqueeView alloc] initWithFrame:CGRectMake(0, 0, tableView.width, 40)];
+    //        systemNoticeView.backgroundColor = ColorWithHexValue(0xfff8ca, 0.94f);
+    [cell addSubview:systemNoticeView];
+    
+    systemNoticeView.autoScrollLabel.alwaysScroll = NO;
+    systemNoticeView.autoScrollLabel.scrollSpeed = 30;
+    //        systemNoticeView.marqueeViewDelegate = self;
+    
+    [systemNoticeView setFont:[UIFont systemFontOfSize:14]];
+            systemNoticeView.autoScrollLabel.textColor = [UIColor redColor];
+    
+    //    self.systemNoticeView.hidden = YES;
+    
+    systemNoticeView.autoScrollLabel.text = @"Hello, every body! This is a marquee Demo, Just to use it. It's my pleasure! The animation will stop when you drag the view, resume when you drag end";
+    
     cell.textLabel.text = [MWNumberTools stringOfFloat:43.102901f withDecimal:3];
     
     

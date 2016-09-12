@@ -12,6 +12,7 @@ target 'iOSLearnList' do
     pod 'MBProgressHUD'
     pod 'MWObjTools'
     pod 'MWUITools'
+    pod 'MWMarqueeView'
 end
 
 target 'iOSLearnListTests' do
