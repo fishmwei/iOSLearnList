@@ -17,7 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.showData = @[@"testCollectionViewController", @"autolayoutCellCtl", @"myTableViewController", @"collectionViewController", @"SearchBarVC"];
+    self.showData = @[@"testCollectionViewController",
+                      @"autolayoutCellCtl",
+                      @"myTableViewController",
+                      @"collectionViewController",
+                      @"SearchBarVC",
+                      @"iAdViewController"];
 //    self.showData = ;
     // Do any additional setup after loading the view.
 }
