@@ -22,7 +22,8 @@
                       @"myTableViewController",
                       @"collectionViewController",
                       @"SearchBarVC",
-                      @"iAdViewController"];
+                      @"iAdViewController",
+                      @"DatePickerViewController"];
 //    self.showData = ;
     // Do any additional setup after loading the view.
 }
