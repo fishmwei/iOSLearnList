@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.showData = @[@"multiThreadController", @"Timer_NotificationViewController"];
+    self.showData = @[@"multiThreadController",
+                      @"Timer_NotificationViewController",
+                      @"GCDViewController"];
     
     
 }

@@ -23,6 +23,7 @@
                       @"collectionViewController",
                       @"SearchBarVC",
                       @"iAdViewController",
+                      @"PresentingPopoverViewController",
                       @"DatePickerViewController"];
 //    self.showData = ;
     // Do any additional setup after loading the view.

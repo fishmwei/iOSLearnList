@@ -21,7 +21,8 @@
                       @"MethodSignatureViewController",
                       @"ArchiverViewController",
                       @"runtimeViewController",
-                      @"configViewController"];
+                      @"configViewController",
+                      @"DataStructureViewController"];
     
     
     // Do any additional setup after loading the view.

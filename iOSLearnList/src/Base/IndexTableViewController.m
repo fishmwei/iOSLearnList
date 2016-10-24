@@ -14,6 +14,10 @@
 {
     [super viewDidLoad];
     
+    if (!self.navigationItem.title) {
+        self.navigationItem.title = NSStringFromClass([self class]);
+    }
+        
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
     if ([self.navigationController.viewControllers count] > 1) {
@@ -62,12 +66,14 @@
 {
     NSString *className = [self.showData objectAtIndex:indexPath.row];
     Class cls = NSClassFromString(className);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (cls) {
+            UIViewController *vc = [[cls alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    });
     
-    if (cls) {
-        UIViewController *vc = [[cls alloc] init];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
