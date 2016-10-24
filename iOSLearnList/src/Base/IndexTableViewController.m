@@ -62,12 +62,14 @@
 {
     NSString *className = [self.showData objectAtIndex:indexPath.row];
     Class cls = NSClassFromString(className);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (cls) {
+            UIViewController *vc = [[cls alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    });
     
-    if (cls) {
-        UIViewController *vc = [[cls alloc] init];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

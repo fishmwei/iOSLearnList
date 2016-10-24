@@ -60,6 +60,7 @@
 		C16B6BC81D49E48C00459688 /* iOSLearnListBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */; };
 		C16BB7691D92261900495A88 /* iAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16BB7681D92261900495A88 /* iAdViewController.m */; };
 		C16BB76B1D92264500495A88 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16BB76A1D92264500495A88 /* iAd.framework */; };
+		C170C3541DAB31C2005BE46C /* PresentingPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C170C3531DAB31C2005BE46C /* PresentingPopoverViewController.m */; };
 		C172F2411D5C777C00A8FECC /* MW_A.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2401D5C777C00A8FECC /* MW_A.m */; };
 		C172F2441D5C779200A8FECC /* MW_AB.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2431D5C779200A8FECC /* MW_AB.m */; };
 		C172F2471D5C77A200A8FECC /* MW_AC.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2461D5C77A200A8FECC /* MW_AC.m */; };
@@ -217,6 +218,8 @@
 		C16BB7671D92261900495A88 /* iAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAdViewController.h; sourceTree = "<group>"; };
 		C16BB7681D92261900495A88 /* iAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAdViewController.m; sourceTree = "<group>"; };
 		C16BB76A1D92264500495A88 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		C170C3521DAB31C2005BE46C /* PresentingPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentingPopoverViewController.h; sourceTree = "<group>"; };
+		C170C3531DAB31C2005BE46C /* PresentingPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentingPopoverViewController.m; sourceTree = "<group>"; };
 		C172F23F1D5C777C00A8FECC /* MW_A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MW_A.h; sourceTree = "<group>"; };
 		C172F2401D5C777C00A8FECC /* MW_A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MW_A.m; sourceTree = "<group>"; };
 		C172F2421D5C779200A8FECC /* MW_AB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MW_AB.h; sourceTree = "<group>"; };
@@ -586,6 +589,8 @@
 				C15F155F1D4604CF00392D95 /* SearchBarVC.m */,
 				C18F58E41D475AB800F95031 /* testCollectionViewController.h */,
 				C18F58E51D475AB800F95031 /* testCollectionViewController.m */,
+				C170C3521DAB31C2005BE46C /* PresentingPopoverViewController.h */,
+				C170C3531DAB31C2005BE46C /* PresentingPopoverViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -884,7 +889,7 @@
 				TargetAttributes = {
 					51F68EBC1CDE1905009338D6 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = N4G9ZN8438;
+						DevelopmentTeam = H79W6YY34M;
 					};
 					51F68ED51CDE1905009338D6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1298,6 +1303,7 @@
 				C156DDC51D48B98E004CD422 /* TimerAnimationViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
+				C170C3541DAB31C2005BE46C /* PresentingPopoverViewController.m in Sources */,
 				C172F2441D5C779200A8FECC /* MW_AB.m in Sources */,
 				C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */,
 				C16BB7691D92261900495A88 /* iAdViewController.m in Sources */,
@@ -1520,10 +1526,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSLearnList/3rdParty",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmw.org.reactjs.native.example.AwesomeProject.unity2;
+				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.test.proj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1542,10 +1548,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSLearnList/3rdParty",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmw.org.reactjs.native.example.AwesomeProject.unity2;
+				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.test.proj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1654,10 +1660,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSLearnList/3rdParty",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmw.org.reactjs.native.example.AwesomeProject.unity2;
+				PRODUCT_BUNDLE_IDENTIFIER = fishmwei.test.proj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AdHoc;
 		};

@@ -22,7 +22,8 @@
                       @"myTableViewController",
                       @"collectionViewController",
                       @"SearchBarVC",
-                      @"iAdViewController"];
+                      @"iAdViewController",
+                      @"PresentingPopoverViewController"];
 //    self.showData = ;
     // Do any additional setup after loading the view.
 }
