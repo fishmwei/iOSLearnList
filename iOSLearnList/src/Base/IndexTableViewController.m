@@ -14,6 +14,10 @@
 {
     [super viewDidLoad];
     
+    if (!self.navigationItem.title) {
+        self.navigationItem.title = NSStringFromClass([self class]);
+    }
+        
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
     if ([self.navigationController.viewControllers count] > 1) {
