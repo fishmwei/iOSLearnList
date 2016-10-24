@@ -38,6 +38,7 @@
 		C155798C1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C155798B1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m */; };
 		C155798F1DBE06B800F50CD2 /* dispatch_group_waitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C155798E1DBE06B800F50CD2 /* dispatch_group_waitViewController.m */; };
 		C15579921DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579911DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m */; };
+		C15579951DBE1C2000F50CD2 /* dispatch_queueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579941DBE1C2000F50CD2 /* dispatch_queueViewController.m */; };
 		C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */; };
 		C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */; };
 		C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */; };
@@ -187,6 +188,8 @@
 		C155798E1DBE06B800F50CD2 /* dispatch_group_waitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_group_waitViewController.m; sourceTree = "<group>"; };
 		C15579901DBE16FD00F50CD2 /* dispatch_semaphoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_semaphoreViewController.h; sourceTree = "<group>"; };
 		C15579911DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_semaphoreViewController.m; sourceTree = "<group>"; };
+		C15579931DBE1C2000F50CD2 /* dispatch_queueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_queueViewController.h; sourceTree = "<group>"; };
+		C15579941DBE1C2000F50CD2 /* dispatch_queueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_queueViewController.m; sourceTree = "<group>"; };
 		C156DDB91D4897CA004CD422 /* AdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
 		C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
 		C156DDBD1D4898FF004CD422 /* AnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationListViewController.h; sourceTree = "<group>"; };
@@ -527,6 +530,8 @@
 				C155798E1DBE06B800F50CD2 /* dispatch_group_waitViewController.m */,
 				C15579901DBE16FD00F50CD2 /* dispatch_semaphoreViewController.h */,
 				C15579911DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m */,
+				C15579931DBE1C2000F50CD2 /* dispatch_queueViewController.h */,
+				C15579941DBE1C2000F50CD2 /* dispatch_queueViewController.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -1332,6 +1337,7 @@
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
 				C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */,
 				C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */,
+				C15579951DBE1C2000F50CD2 /* dispatch_queueViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
