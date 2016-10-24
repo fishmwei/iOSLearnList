@@ -16,6 +16,7 @@
 @end
 
 @implementation dispatch_group_notifyViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -35,32 +36,35 @@
     [self.view addSubview:showView];
 //    showView.backgroundColor = [UIColor blueColor];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
+//    dispatch_async(dispatch_get_main_queue(), ^{
+    
         dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
-           
+            [NSThread sleepForTimeInterval:2];
             NSLog(@"dispatch-1");
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self showAppend:@"dispatch-1"];
-            });
+            
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [self showAppend:@"dispatch-1"];
+//            });
         });
         
         dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
+            [NSThread sleepForTimeInterval:4];
             NSLog(@"dispatch-2");
             
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self showAppend:@"dispatch-2"];
-            });
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [self showAppend:@"dispatch-2"];
+//            });
             
         });
         
         dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
+//            [NSThread sleepForTimeInterval:2.0f];
             NSLog(@"end");
                 [self showAppend:@"end"];
             
         });
         
-    });
+//    });
     
 }
 
