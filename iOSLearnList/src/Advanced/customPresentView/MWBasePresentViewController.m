@@ -87,12 +87,7 @@
     {
         self.showRect = self.view.bounds;
     }
-    
-    
-    
-    
-    
-    
+ 
 }
 
 

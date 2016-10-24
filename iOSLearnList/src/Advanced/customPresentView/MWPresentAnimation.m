@@ -36,6 +36,7 @@
         
         //Using autolayout to position the modal view
         modalView.translatesAutoresizingMaskIntoConstraints = YES;
+        modalView.frame = self.modalFrame;
         [containerView addSubview:modalView];
         [containerView bringSubviewToFront:modalView];
         
