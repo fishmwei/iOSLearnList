@@ -12,7 +12,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.showData = @[@"dispatch_barrierViewController",
+    self.showData = @[@"display_applyViewController",
+                      @"dispatch_barrierViewController",
                       @"dispatch_queueViewController",
                       @"dispatch_group_notifyViewController",
                       @"dispatch_group_waitViewController",

@@ -40,6 +40,7 @@
 		C15579921DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579911DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m */; };
 		C15579951DBE1C2000F50CD2 /* dispatch_queueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579941DBE1C2000F50CD2 /* dispatch_queueViewController.m */; };
 		C15579981DBE23C000F50CD2 /* dispatch_barrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579971DBE23C000F50CD2 /* dispatch_barrierViewController.m */; };
+		C155799B1DBE273E00F50CD2 /* display_applyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C155799A1DBE273E00F50CD2 /* display_applyViewController.m */; };
 		C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */; };
 		C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */; };
 		C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */; };
@@ -193,6 +194,8 @@
 		C15579941DBE1C2000F50CD2 /* dispatch_queueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_queueViewController.m; sourceTree = "<group>"; };
 		C15579961DBE23C000F50CD2 /* dispatch_barrierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_barrierViewController.h; sourceTree = "<group>"; };
 		C15579971DBE23C000F50CD2 /* dispatch_barrierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_barrierViewController.m; sourceTree = "<group>"; };
+		C15579991DBE273E00F50CD2 /* display_applyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = display_applyViewController.h; sourceTree = "<group>"; };
+		C155799A1DBE273E00F50CD2 /* display_applyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = display_applyViewController.m; sourceTree = "<group>"; };
 		C156DDB91D4897CA004CD422 /* AdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
 		C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
 		C156DDBD1D4898FF004CD422 /* AnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationListViewController.h; sourceTree = "<group>"; };
@@ -537,6 +540,8 @@
 				C15579941DBE1C2000F50CD2 /* dispatch_queueViewController.m */,
 				C15579961DBE23C000F50CD2 /* dispatch_barrierViewController.h */,
 				C15579971DBE23C000F50CD2 /* dispatch_barrierViewController.m */,
+				C15579991DBE273E00F50CD2 /* display_applyViewController.h */,
+				C155799A1DBE273E00F50CD2 /* display_applyViewController.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -1389,6 +1394,7 @@
 				C15F155A1D45E92300392D95 /* MethodSignatureViewController.m in Sources */,
 				511581381DB2F7A800451657 /* DatePickerViewController.m in Sources */,
 				C1A650821CE99E75006A117B /* downloadController.m in Sources */,
+				C155799B1DBE273E00F50CD2 /* display_applyViewController.m in Sources */,
 				C155798F1DBE06B800F50CD2 /* dispatch_group_waitViewController.m in Sources */,
 				C172F2471D5C77A200A8FECC /* MW_AC.m in Sources */,
 				C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */,
