@@ -31,6 +31,8 @@
 		7544BC52A12FFBF3AB003705 /* libPods-iOSLearnListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE685954D910841F1551DF8F /* libPods-iOSLearnListTests.a */; };
 		C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */; };
 		C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27971DBF63F800FA2955 /* UIControllBlocksKitViewController.m */; };
+		C11D279C1DBF69B100FA2955 /* libextobjcExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D279B1DBF69B100FA2955 /* libextobjcExp.m */; };
+		C11D279F1DBF6A3A00FA2955 /* safeCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D279E1DBF6A3A00FA2955 /* safeCategoriesViewController.m */; };
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
@@ -180,6 +182,10 @@
 		C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayBlockskitViewController.m; sourceTree = "<group>"; };
 		C11D27961DBF63F800FA2955 /* UIControllBlocksKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControllBlocksKitViewController.h; sourceTree = "<group>"; };
 		C11D27971DBF63F800FA2955 /* UIControllBlocksKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIControllBlocksKitViewController.m; sourceTree = "<group>"; };
+		C11D279A1DBF69B100FA2955 /* libextobjcExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libextobjcExp.h; sourceTree = "<group>"; };
+		C11D279B1DBF69B100FA2955 /* libextobjcExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libextobjcExp.m; sourceTree = "<group>"; };
+		C11D279D1DBF6A3A00FA2955 /* safeCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safeCategoriesViewController.h; sourceTree = "<group>"; };
+		C11D279E1DBF6A3A00FA2955 /* safeCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = safeCategoriesViewController.m; sourceTree = "<group>"; };
 		C1209B141CF53C0800182559 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = AdHoc/Configuration.plist; sourceTree = "<group>"; };
 		C1209B161CF53C3000182559 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = Debug/Configuration.plist; sourceTree = "<group>"; };
 		C1209B181CF53C4800182559 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = Release/Configuration.plist; sourceTree = "<group>"; };
@@ -494,6 +500,15 @@
 				C1ED596B1CE5B07900096EC7 /* Extend */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		C11D27991DBF699C00FA2955 /* libextobjc */ = {
+			isa = PBXGroup;
+			children = (
+				C11D279D1DBF6A3A00FA2955 /* safeCategoriesViewController.h */,
+				C11D279E1DBF6A3A00FA2955 /* safeCategoriesViewController.m */,
+			);
+			name = libextobjc;
 			sourceTree = "<group>";
 		};
 		C1209B101CF53B9600182559 /* Configuration */ = {
@@ -837,6 +852,7 @@
 		C1A650881CE99E8C006A117B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C11D27991DBF699C00FA2955 /* libextobjc */,
 				C19DB7CD1DBF5BEE005A43BE /* BlocksKit */,
 				C19321041D41FA0900378778 /* MasonryViewController.h */,
 				C19321051D41FA0900378778 /* MasonryViewController.m */,
@@ -846,6 +862,8 @@
 				C19DB7C81DBF5AF6005A43BE /* SDWebImageViewExp.m */,
 				C19DB7CA1DBF5B7D005A43BE /* MasonryExp.h */,
 				C19DB7CB1DBF5B7E005A43BE /* MasonryExp.m */,
+				C11D279A1DBF69B100FA2955 /* libextobjcExp.h */,
+				C11D279B1DBF69B100FA2955 /* libextobjcExp.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1434,6 +1452,7 @@
 				C19321061D41FA0900378778 /* MasonryViewController.m in Sources */,
 				C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
+				C11D279C1DBF69B100FA2955 /* libextobjcExp.m in Sources */,
 				C16B6BB81D4995CC00459688 /* CADisplayLinkViewController.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
 				C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */,
@@ -1466,6 +1485,7 @@
 				513EC4B61D5389D400279CA1 /* CAScrollViewController.m in Sources */,
 				C16858771D5AD0C80017157D /* UIButton_MWEdge.m in Sources */,
 				C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */,
+				C11D279F1DBF6A3A00FA2955 /* safeCategoriesViewController.m in Sources */,
 				C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */,
 				C15579921DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m in Sources */,
 			);

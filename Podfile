@@ -14,6 +14,7 @@ target 'iOSLearnList' do
     pod 'MWUITools'
     pod 'MWMarqueeView'
     pod 'BlocksKit'
+    pod 'libextobjc'
 end
 
 target 'iOSLearnListTests' do

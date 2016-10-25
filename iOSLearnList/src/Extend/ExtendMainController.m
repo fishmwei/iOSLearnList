@@ -42,9 +42,6 @@
 
 - (void)createViewControllers
 {
-    //
-//    IndexTableViewController *
-    
     AdvancedViewController *vc = [[AdvancedViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -67,14 +64,14 @@
     ivc = [[IndexTableViewController alloc] init];
     ivc.showData = @[@"SDWebImageViewExp",
                      @"MasonryExp",
-                     @"BlocksKitExp"];
+                     @"BlocksKitExp",
+                     @"libextobjcExp"];
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _otherCtl = nav;
-//   nav.tabBarItem.title = NSLocalizedStringFromTable(@"Other", @"myLanguage", nil);
-    
+
 }
 
 
