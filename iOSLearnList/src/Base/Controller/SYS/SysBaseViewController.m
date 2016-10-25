@@ -21,6 +21,9 @@
                       @"Timer_NotificationViewController",
                       @"GCDViewController",
                       @"NSJSONSerializationViewController"];
+
+                      @"ThreadProgramingViewController"];
+
     
     
 }
