@@ -19,7 +19,8 @@
     
     self.showData = @[@"multiThreadController",
                       @"Timer_NotificationViewController",
-                      @"GCDViewController"];
+                      @"GCDViewController",
+                      @"ThreadProgramingViewController"];
     
     
 }

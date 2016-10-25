@@ -29,6 +29,8 @@
 		51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2F21CECB5750050E75E /* collectionViewController.m */; };
 		5BCF3158E52E69B83E560B60 /* libPods-iOSLearnListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 389D00B033713D4FFDBE5F09 /* libPods-iOSLearnListUITests.a */; };
 		7544BC52A12FFBF3AB003705 /* libPods-iOSLearnListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE685954D910841F1551DF8F /* libPods-iOSLearnListTests.a */; };
+		C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */; };
+		C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27971DBF63F800FA2955 /* UIControllBlocksKitViewController.m */; };
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
@@ -81,6 +83,11 @@
 		C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17DE1D18D7B900E29256 /* MWBaseAnimation.m */; };
 		C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E11D18D96300E29256 /* MWBasePresentViewController.m */; };
 		C19D17E51D18D9BA00E29256 /* MWPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E41D18D9BA00E29256 /* MWPresentAnimation.m */; };
+		C19DB7C61DBF0EBD005A43BE /* ThreadProgramingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7C51DBF0EBD005A43BE /* ThreadProgramingViewController.m */; };
+		C19DB7C91DBF5AF6005A43BE /* SDWebImageViewExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7C81DBF5AF6005A43BE /* SDWebImageViewExp.m */; };
+		C19DB7CC1DBF5B7E005A43BE /* MasonryExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7CB1DBF5B7E005A43BE /* MasonryExp.m */; };
+		C19DB7D01DBF5C02005A43BE /* BlocksKitExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7CF1DBF5C02005A43BE /* BlocksKitExp.m */; };
+		C19DB7D31DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7D21DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m */; };
 		C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */; };
 		C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506F1CE99E75006A117B /* defaultNSURLSessionController.m */; };
 		C1A650821CE99E75006A117B /* downloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650711CE99E75006A117B /* downloadController.m */; };
@@ -169,6 +176,10 @@
 		ABC23B17423908A69BD6EA14 /* Pods-iOSLearnList.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.adhoc.xcconfig"; sourceTree = "<group>"; };
 		AFA48CE96FFE175B6D8A742A /* Pods-iOSLearnList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.debug.xcconfig"; sourceTree = "<group>"; };
 		C0CEC6F0F0031DCBA6A0C47F /* Pods-iOSLearnListTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.adhoc.xcconfig"; sourceTree = "<group>"; };
+		C11D27931DBF60C000FA2955 /* arrayBlockskitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayBlockskitViewController.h; sourceTree = "<group>"; };
+		C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayBlockskitViewController.m; sourceTree = "<group>"; };
+		C11D27961DBF63F800FA2955 /* UIControllBlocksKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControllBlocksKitViewController.h; sourceTree = "<group>"; };
+		C11D27971DBF63F800FA2955 /* UIControllBlocksKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIControllBlocksKitViewController.m; sourceTree = "<group>"; };
 		C1209B141CF53C0800182559 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = AdHoc/Configuration.plist; sourceTree = "<group>"; };
 		C1209B161CF53C3000182559 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = Debug/Configuration.plist; sourceTree = "<group>"; };
 		C1209B181CF53C4800182559 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Configuration.plist; path = Release/Configuration.plist; sourceTree = "<group>"; };
@@ -271,6 +282,16 @@
 		C19D17E11D18D96300E29256 /* MWBasePresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBasePresentViewController.m; sourceTree = "<group>"; };
 		C19D17E31D18D9BA00E29256 /* MWPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPresentAnimation.h; sourceTree = "<group>"; };
 		C19D17E41D18D9BA00E29256 /* MWPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPresentAnimation.m; sourceTree = "<group>"; };
+		C19DB7C41DBF0EBD005A43BE /* ThreadProgramingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadProgramingViewController.h; sourceTree = "<group>"; };
+		C19DB7C51DBF0EBD005A43BE /* ThreadProgramingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadProgramingViewController.m; sourceTree = "<group>"; };
+		C19DB7C71DBF5AF6005A43BE /* SDWebImageViewExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewExp.h; sourceTree = "<group>"; };
+		C19DB7C81DBF5AF6005A43BE /* SDWebImageViewExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageViewExp.m; sourceTree = "<group>"; };
+		C19DB7CA1DBF5B7D005A43BE /* MasonryExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryExp.h; sourceTree = "<group>"; };
+		C19DB7CB1DBF5B7E005A43BE /* MasonryExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryExp.m; sourceTree = "<group>"; };
+		C19DB7CE1DBF5C02005A43BE /* BlocksKitExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksKitExp.h; sourceTree = "<group>"; };
+		C19DB7CF1DBF5C02005A43BE /* BlocksKitExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksKitExp.m; sourceTree = "<group>"; };
+		C19DB7D11DBF5C3D005A43BE /* UIVIewBlocksKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVIewBlocksKitViewController.h; sourceTree = "<group>"; };
+		C19DB7D21DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVIewBlocksKitViewController.m; sourceTree = "<group>"; };
 		C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Timer+NotificationViewController.h"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.h"; sourceTree = "<group>"; };
 		C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Timer+NotificationViewController.m"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.m"; sourceTree = "<group>"; };
 		C1A6506E1CE99E75006A117B /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
@@ -605,6 +626,7 @@
 		C15F15471D45B42600392D95 /* SYS */ = {
 			isa = PBXGroup;
 			children = (
+				C19DB7C31DBF0E94005A43BE /* ThreadPrograming */,
 				C15579891DBDFB9800F50CD2 /* GCD */,
 				C1A6508C1CE99F42006A117B /* multiThreadController.h */,
 				C1A6508D1CE99F42006A117B /* multiThreadController.m */,
@@ -674,6 +696,30 @@
 				C19D17E41D18D9BA00E29256 /* MWPresentAnimation.m */,
 			);
 			path = customPresentView;
+			sourceTree = "<group>";
+		};
+		C19DB7C31DBF0E94005A43BE /* ThreadPrograming */ = {
+			isa = PBXGroup;
+			children = (
+				C19DB7C41DBF0EBD005A43BE /* ThreadProgramingViewController.h */,
+				C19DB7C51DBF0EBD005A43BE /* ThreadProgramingViewController.m */,
+			);
+			path = ThreadPrograming;
+			sourceTree = "<group>";
+		};
+		C19DB7CD1DBF5BEE005A43BE /* BlocksKit */ = {
+			isa = PBXGroup;
+			children = (
+				C19DB7CE1DBF5C02005A43BE /* BlocksKitExp.h */,
+				C19DB7CF1DBF5C02005A43BE /* BlocksKitExp.m */,
+				C11D27961DBF63F800FA2955 /* UIControllBlocksKitViewController.h */,
+				C11D27971DBF63F800FA2955 /* UIControllBlocksKitViewController.m */,
+				C19DB7D11DBF5C3D005A43BE /* UIVIewBlocksKitViewController.h */,
+				C19DB7D21DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m */,
+				C11D27931DBF60C000FA2955 /* arrayBlockskitViewController.h */,
+				C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */,
+			);
+			name = BlocksKit;
 			sourceTree = "<group>";
 		};
 		C1A650661CE99E75006A117B /* Advanced */ = {
@@ -791,10 +837,15 @@
 		C1A650881CE99E8C006A117B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C19DB7CD1DBF5BEE005A43BE /* BlocksKit */,
 				C19321041D41FA0900378778 /* MasonryViewController.h */,
 				C19321051D41FA0900378778 /* MasonryViewController.m */,
 				C1A650891CE99E8C006A117B /* SDUIImageViewController.h */,
 				C1A6508A1CE99E8C006A117B /* SDUIImageViewController.m */,
+				C19DB7C71DBF5AF6005A43BE /* SDWebImageViewExp.h */,
+				C19DB7C81DBF5AF6005A43BE /* SDWebImageViewExp.m */,
+				C19DB7CA1DBF5B7D005A43BE /* MasonryExp.h */,
+				C19DB7CB1DBF5B7E005A43BE /* MasonryExp.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1343,6 +1394,7 @@
 				C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */,
 				C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */,
 				C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */,
+				C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */,
 				C1C8C6AF1D59C96F00059977 /* MWScrollView.m in Sources */,
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
 				C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */,
@@ -1363,6 +1415,8 @@
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
 				C170C3541DAB31C2005BE46C /* PresentingPopoverViewController.m in Sources */,
+				C19DB7D31DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m in Sources */,
+				C19DB7C61DBF0EBD005A43BE /* ThreadProgramingViewController.m in Sources */,
 				C172F2441D5C779200A8FECC /* MW_AB.m in Sources */,
 				C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */,
 				C16BB7691D92261900495A88 /* iAdViewController.m in Sources */,
@@ -1387,8 +1441,11 @@
 				C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */,
 				C15F15571D45C65700392D95 /* KVOViewController.m in Sources */,
 				C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */,
+				C19DB7C91DBF5AF6005A43BE /* SDWebImageViewExp.m in Sources */,
 				C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */,
+				C19DB7CC1DBF5B7E005A43BE /* MasonryExp.m in Sources */,
 				C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */,
+				C19DB7D01DBF5C02005A43BE /* BlocksKitExp.m in Sources */,
 				C15579881DBDFA4A00F50CD2 /* GCDViewController.m in Sources */,
 				C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */,
 				C15F155A1D45E92300392D95 /* MethodSignatureViewController.m in Sources */,
@@ -1404,6 +1461,7 @@
 				C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */,
 				C1E1DBE41D546731007EE5F5 /* ArchiverViewController.m in Sources */,
 				C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */,
+				C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */,
 				513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */,
 				513EC4B61D5389D400279CA1 /* CAScrollViewController.m in Sources */,
 				C16858771D5AD0C80017157D /* UIButton_MWEdge.m in Sources */,

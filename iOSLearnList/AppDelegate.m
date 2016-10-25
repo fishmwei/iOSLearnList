@@ -46,8 +46,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSNumber *isAlreadyRunning = [[NSUserDefaults standardUserDefaults] objectForKey:@"isAlreadyRunning"];
+    if (isAlreadyRunning) {
+        NSLog(@"isAlreadyRunning YES");
+    } else {
+        NSLog(@"isAlreadyRunning NO");
+        [[NSUserDefaults standardUserDefaults] setObject:@1 forKey:@"isAlreadyRunning"];
+    }
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    // app版本
+    NSString *app_Version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    NSLog(@"app_Version %@", app_Version);
 
-    
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
     
