@@ -16,8 +16,8 @@
     MWMtlObject *mw = [[MWMtlObject alloc] init];
     mw.name = @"fishmwei";
     mw.age = @(25);
+    mw.saveTime = [NSDate date];
     
-//    NSString *jsonStr = [MTLJSONAdapter ]
     NSDictionary *dict = [MTLJSONAdapter  JSONDictionaryFromModel:mw error:nil];
     NSLog(@"dict : %@", dict);
     

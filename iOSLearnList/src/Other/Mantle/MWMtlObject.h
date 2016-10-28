@@ -13,5 +13,5 @@
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, retain) NSNumber *age;
-
+@property (nonatomic, retain) NSDate *saveTime;
 @end

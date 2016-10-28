@@ -9,13 +9,31 @@
 #import "MWMtlObject.h"
 
 @implementation MWMtlObject
+
+static NSDateFormatter *datefmt;
+
++ (void)initialize {
+    static dispatch_once_t p;
+    dispatch_once(&p, ^{
+        datefmt = [[NSDateFormatter alloc] init];
+        datefmt.locale = [NSLocale currentLocale];
+    });
+}
+
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     
     return @{
         @"name":@"name",
-        @"age":@"age"};
+        @"age":@"age",
+        @"saveTime":@"saveTime"};
 }
 
-
++ (NSValueTransformer *)saveTimeJSONTransformerForKey:(NSString *)key {
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *dateString, BOOL *success, NSError *__autoreleasing *error) {
+        return [datefmt dateFromString:dateString];
+    } reverseBlock:^id(NSDate *date, BOOL *success, NSError *__autoreleasing *error) {
+        return [datefmt stringFromDate:date];
+    }];
+}
 
 @end
