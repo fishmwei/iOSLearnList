@@ -28,7 +28,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    countTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(addCount) userInfo:nil repeats:YES];
+    countTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(addCount) userInfo:nil repeats:YES];
 
 }
 
@@ -67,14 +67,7 @@
     dispatch_resume(timer);
     isRunning = YES;
     
-    textSender = dispatch_source_create(DISPATCH_SOURCE_TYPE_READ, 0, 0, self.concurrentQueue);
-    dispatch_source_set_event_handler(textSender, ^{
-        size_t estimated = dispatch_source_get_data(textSender);
-        
-        
-        
-    });
-    dispatch_resume(textSender);
+ 
 }
 
 - (void)setupUI {

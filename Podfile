@@ -16,6 +16,7 @@ target 'iOSLearnList' do
     pod 'BlocksKit'
     pod 'libextobjc'
     pod 'YTKKeyValueStore'
+    pod 'Mantle'
 end
 
 target 'iOSLearnListTests' do

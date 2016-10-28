@@ -112,6 +112,9 @@
 		C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */; };
 		C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */; };
 		C1F7DCB51DC2F5CD00C29808 /* dispatch_sourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCB41DC2F5CD00C29808 /* dispatch_sourceViewController.m */; };
+		C1F7DCDF1DC3532E00C29808 /* MantleExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCDE1DC3532E00C29808 /* MantleExp.m */; };
+		C1F7DCE21DC353A100C29808 /* MantleObjectModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCE11DC353A100C29808 /* MantleObjectModelViewController.m */; };
+		C1F7DCE51DC3542B00C29808 /* MWMtlObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCE41DC3542B00C29808 /* MWMtlObject.m */; };
 		E1370AAFA76050C31157CDC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 311E2F01AD2D5D8B4518D665 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -344,6 +347,12 @@
 		C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLaunchAdMonitor.m; sourceTree = "<group>"; };
 		C1F7DCB31DC2F5CD00C29808 /* dispatch_sourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_sourceViewController.h; sourceTree = "<group>"; };
 		C1F7DCB41DC2F5CD00C29808 /* dispatch_sourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_sourceViewController.m; sourceTree = "<group>"; };
+		C1F7DCDD1DC3532E00C29808 /* MantleExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MantleExp.h; sourceTree = "<group>"; };
+		C1F7DCDE1DC3532E00C29808 /* MantleExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MantleExp.m; sourceTree = "<group>"; };
+		C1F7DCE01DC353A100C29808 /* MantleObjectModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MantleObjectModelViewController.h; sourceTree = "<group>"; };
+		C1F7DCE11DC353A100C29808 /* MantleObjectModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MantleObjectModelViewController.m; sourceTree = "<group>"; };
+		C1F7DCE31DC3542B00C29808 /* MWMtlObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMtlObject.h; sourceTree = "<group>"; };
+		C1F7DCE41DC3542B00C29808 /* MWMtlObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWMtlObject.m; sourceTree = "<group>"; };
 		E6FAE4EC682D0B6D0CA6A321 /* Pods-iOSLearnListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA7621FCB3F5C4E40C421651 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE685954D910841F1551DF8F /* libPods-iOSLearnListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -885,6 +894,7 @@
 		C1A650881CE99E8C006A117B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C1F7DCDC1DC352CF00C29808 /* Mantle */,
 				C15C2C831DC0CB8800EE1B72 /* YTKKeyValueStore */,
 				C11D27991DBF699C00FA2955 /* libextobjc */,
 				C19DB7CD1DBF5BEE005A43BE /* BlocksKit */,
@@ -900,6 +910,8 @@
 				C11D279B1DBF69B100FA2955 /* libextobjcExp.m */,
 				C15C2C841DC0CBA000EE1B72 /* YTKKeyValueStoreExp.h */,
 				C15C2C851DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m */,
+				C1F7DCDD1DC3532E00C29808 /* MantleExp.h */,
+				C1F7DCDE1DC3532E00C29808 /* MantleExp.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -946,6 +958,17 @@
 				C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */,
 			);
 			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		C1F7DCDC1DC352CF00C29808 /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7DCE01DC353A100C29808 /* MantleObjectModelViewController.h */,
+				C1F7DCE11DC353A100C29808 /* MantleObjectModelViewController.m */,
+				C1F7DCE31DC3542B00C29808 /* MWMtlObject.h */,
+				C1F7DCE41DC3542B00C29808 /* MWMtlObject.m */,
+			);
+			path = Mantle;
 			sourceTree = "<group>";
 		};
 		E5BC0B7A413623970CBF296D /* Pods */ = {
@@ -1466,6 +1489,7 @@
 				C1209B1E1CF53EED00182559 /* configViewController.m in Sources */,
 				C19D17E51D18D9BA00E29256 /* MWPresentAnimation.m in Sources */,
 				51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */,
+				C1F7DCE21DC353A100C29808 /* MantleObjectModelViewController.m in Sources */,
 				C156DDC51D48B98E004CD422 /* TimerAnimationViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
@@ -1484,6 +1508,7 @@
 				C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */,
 				C15C2C861DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m in Sources */,
 				C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */,
+				C1F7DCE51DC3542B00C29808 /* MWMtlObject.m in Sources */,
 				C15C2C8D1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.m in Sources */,
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
@@ -1499,6 +1524,7 @@
 				C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */,
 				C15F15571D45C65700392D95 /* KVOViewController.m in Sources */,
 				C15C2C8A1DC0CCBF00EE1B72 /* MWTextButtonCell.m in Sources */,
+				C1F7DCDF1DC3532E00C29808 /* MantleExp.m in Sources */,
 				C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */,
 				C19DB7C91DBF5AF6005A43BE /* SDWebImageViewExp.m in Sources */,
 				C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */,
