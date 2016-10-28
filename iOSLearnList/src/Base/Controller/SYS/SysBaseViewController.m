@@ -20,11 +20,9 @@
     self.showData = @[@"multiThreadController",
                       @"Timer_NotificationViewController",
                       @"GCDViewController",
-                      @"NSJSONSerializationViewController"];
-
+                      @"NSJSONSerializationViewController",
                       @"ThreadProgramingViewController"];
 
-    
     
 }
 
