@@ -111,6 +111,7 @@
 		C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FCC1CE4231900445669 /* IndexTableViewController.m */; };
 		C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */; };
 		C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */; };
+		C1F7DCB51DC2F5CD00C29808 /* dispatch_sourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCB41DC2F5CD00C29808 /* dispatch_sourceViewController.m */; };
 		E1370AAFA76050C31157CDC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 311E2F01AD2D5D8B4518D665 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -341,6 +342,8 @@
 		C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMainController.m; sourceTree = "<group>"; };
 		C1ED59751CE5D09100096EC7 /* BBLaunchAdMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLaunchAdMonitor.h; sourceTree = "<group>"; };
 		C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLaunchAdMonitor.m; sourceTree = "<group>"; };
+		C1F7DCB31DC2F5CD00C29808 /* dispatch_sourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_sourceViewController.h; sourceTree = "<group>"; };
+		C1F7DCB41DC2F5CD00C29808 /* dispatch_sourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_sourceViewController.m; sourceTree = "<group>"; };
 		E6FAE4EC682D0B6D0CA6A321 /* Pods-iOSLearnListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA7621FCB3F5C4E40C421651 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE685954D910841F1551DF8F /* libPods-iOSLearnListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -587,6 +590,8 @@
 				C15579971DBE23C000F50CD2 /* dispatch_barrierViewController.m */,
 				C15579991DBE273E00F50CD2 /* display_applyViewController.h */,
 				C155799A1DBE273E00F50CD2 /* display_applyViewController.m */,
+				C1F7DCB31DC2F5CD00C29808 /* dispatch_sourceViewController.h */,
+				C1F7DCB41DC2F5CD00C29808 /* dispatch_sourceViewController.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -1444,6 +1449,7 @@
 				C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */,
 				C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */,
 				C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */,
+				C1F7DCB51DC2F5CD00C29808 /* dispatch_sourceViewController.m in Sources */,
 				C1C8C6AF1D59C96F00059977 /* MWScrollView.m in Sources */,
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
 				C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */,

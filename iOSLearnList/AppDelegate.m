@@ -46,6 +46,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSString *componentID = nil;
+        NSString *st = componentID ?: @"public";
+    NSLog(@"%@", st);
+    
     NSNumber *isAlreadyRunning = [[NSUserDefaults standardUserDefaults] objectForKey:@"isAlreadyRunning"];
     if (isAlreadyRunning) {
         NSLog(@"isAlreadyRunning YES");

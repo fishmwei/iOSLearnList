@@ -59,7 +59,7 @@
         });
         
         dispatch_barrier_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-            NSLog(@"global LOW, barrier");
+            NSLog(@"global HIGH, barrier");
         });
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
