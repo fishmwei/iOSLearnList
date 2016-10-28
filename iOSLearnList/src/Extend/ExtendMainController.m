@@ -65,7 +65,9 @@
     ivc.showData = @[@"SDWebImageViewExp",
                      @"MasonryExp",
                      @"BlocksKitExp",
-                     @"libextobjcExp"];
+                     @"libextobjcExp",
+                     @"YTKKeyValueStoreExp",
+                     @"MantleExp"];
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

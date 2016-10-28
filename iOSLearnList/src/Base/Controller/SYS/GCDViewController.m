@@ -17,6 +17,7 @@
                       @"dispatch_queueViewController",
                       @"dispatch_group_notifyViewController",
                       @"dispatch_group_waitViewController",
-                      @"dispatch_semaphoreViewController"];
+                      @"dispatch_semaphoreViewController",
+                      @"dispatch_sourceViewController"];
 }
 @end
