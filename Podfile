@@ -17,6 +17,7 @@ target 'iOSLearnList' do
     pod 'libextobjc'
     pod 'YTKKeyValueStore'
     pod 'Mantle'
+#    pod 'CocoaLumberjack'
 end
 
 target 'iOSLearnListTests' do

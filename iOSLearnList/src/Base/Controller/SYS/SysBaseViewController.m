@@ -22,7 +22,8 @@
                       @"GCDViewController",
                       @"NSJSONSerializationViewController",
                       @"ThreadProgramingViewController",
-                      @"RunLoopsExp"];
+                      @"RunLoopsExp",
+                      @"SynchronizationExp"];
 
     
 }

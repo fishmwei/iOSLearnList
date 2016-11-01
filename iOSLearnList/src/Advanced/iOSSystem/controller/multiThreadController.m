@@ -56,7 +56,14 @@
         
         [NSThread sleepForTimeInterval:1];
         [self performSelectorOnMainThread:@selector(printInfo:) withObject:threadInfo waitUntilDone:YES];
+        
+        if (totalCount % 10 == 0) {
+            NSLog(@"I am out");
+//            [[NSThread currentThread] cancel];
+        }
     }
+    
+    
     
     NSLog(@"thread exit");
 }
