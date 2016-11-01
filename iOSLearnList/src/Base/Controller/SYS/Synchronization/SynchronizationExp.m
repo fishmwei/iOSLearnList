@@ -12,6 +12,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.showData = @[@"NSConditionLockViewController",
-                      @"NSRecursiveLockViewController"];
+                      @"NSRecursiveLockViewController",
+                      @"synchronizedViewController",
+                      @"NSLockViewController",
+                      @"pthread_mutexViewController",
+                      @"NSConditionViewController"];
 }
 @end

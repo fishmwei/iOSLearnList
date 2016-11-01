@@ -82,6 +82,10 @@
 		C16D84531DC87CDA00D7F062 /* SynchronizationExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84521DC87CDA00D7F062 /* SynchronizationExp.m */; };
 		C16D84561DC87D1D00D7F062 /* NSConditionLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84551DC87D1D00D7F062 /* NSConditionLockViewController.m */; };
 		C16D84591DC8844C00D7F062 /* NSRecursiveLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84581DC8844C00D7F062 /* NSRecursiveLockViewController.m */; };
+		C16D845C1DC8874500D7F062 /* synchronizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D845B1DC8874500D7F062 /* synchronizedViewController.m */; };
+		C16D845F1DC88B5A00D7F062 /* NSLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D845E1DC88B5A00D7F062 /* NSLockViewController.m */; };
+		C16D84621DC88CC300D7F062 /* pthread_mutexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84611DC88CC300D7F062 /* pthread_mutexViewController.m */; };
+		C16D84651DC8956D00D7F062 /* NSConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84641DC8956D00D7F062 /* NSConditionViewController.m */; };
 		C170C3541DAB31C2005BE46C /* PresentingPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C170C3531DAB31C2005BE46C /* PresentingPopoverViewController.m */; };
 		C172F2411D5C777C00A8FECC /* MW_A.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2401D5C777C00A8FECC /* MW_A.m */; };
 		C172F2441D5C779200A8FECC /* MW_AB.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2431D5C779200A8FECC /* MW_AB.m */; };
@@ -294,6 +298,14 @@
 		C16D84551DC87D1D00D7F062 /* NSConditionLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockViewController.m; sourceTree = "<group>"; };
 		C16D84571DC8844C00D7F062 /* NSRecursiveLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockViewController.h; sourceTree = "<group>"; };
 		C16D84581DC8844C00D7F062 /* NSRecursiveLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockViewController.m; sourceTree = "<group>"; };
+		C16D845A1DC8874500D7F062 /* synchronizedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = synchronizedViewController.h; sourceTree = "<group>"; };
+		C16D845B1DC8874500D7F062 /* synchronizedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = synchronizedViewController.m; sourceTree = "<group>"; };
+		C16D845D1DC88B5A00D7F062 /* NSLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLockViewController.h; sourceTree = "<group>"; };
+		C16D845E1DC88B5A00D7F062 /* NSLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLockViewController.m; sourceTree = "<group>"; };
+		C16D84601DC88CC300D7F062 /* pthread_mutexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pthread_mutexViewController.h; sourceTree = "<group>"; };
+		C16D84611DC88CC300D7F062 /* pthread_mutexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pthread_mutexViewController.m; sourceTree = "<group>"; };
+		C16D84631DC8956D00D7F062 /* NSConditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSConditionViewController.h; sourceTree = "<group>"; };
+		C16D84641DC8956D00D7F062 /* NSConditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSConditionViewController.m; sourceTree = "<group>"; };
 		C170C3521DAB31C2005BE46C /* PresentingPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentingPopoverViewController.h; sourceTree = "<group>"; };
 		C170C3531DAB31C2005BE46C /* PresentingPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentingPopoverViewController.m; sourceTree = "<group>"; };
 		C172F23F1D5C777C00A8FECC /* MW_A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MW_A.h; sourceTree = "<group>"; };
@@ -771,6 +783,14 @@
 				C16D84551DC87D1D00D7F062 /* NSConditionLockViewController.m */,
 				C16D84571DC8844C00D7F062 /* NSRecursiveLockViewController.h */,
 				C16D84581DC8844C00D7F062 /* NSRecursiveLockViewController.m */,
+				C16D845A1DC8874500D7F062 /* synchronizedViewController.h */,
+				C16D845B1DC8874500D7F062 /* synchronizedViewController.m */,
+				C16D845D1DC88B5A00D7F062 /* NSLockViewController.h */,
+				C16D845E1DC88B5A00D7F062 /* NSLockViewController.m */,
+				C16D84601DC88CC300D7F062 /* pthread_mutexViewController.h */,
+				C16D84611DC88CC300D7F062 /* pthread_mutexViewController.m */,
+				C16D84631DC8956D00D7F062 /* NSConditionViewController.h */,
+				C16D84641DC8956D00D7F062 /* NSConditionViewController.m */,
 			);
 			path = Synchronization;
 			sourceTree = "<group>";
@@ -1406,6 +1426,7 @@
 				C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */,
 				C15579951DBE1C2000F50CD2 /* dispatch_queueViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
+				C16D84651DC8956D00D7F062 /* NSConditionViewController.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */,
@@ -1441,6 +1462,7 @@
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
 				C1B8EE6A1DC6E98A008FF1C6 /* StartRunLoopViewController.m in Sources */,
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
+				C16D845F1DC88B5A00D7F062 /* NSLockViewController.m in Sources */,
 				C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */,
 				516928021DBE486B00DA92D7 /* NSJSONSerializationViewController.m in Sources */,
 				C19321061D41FA0900378778 /* MasonryViewController.m in Sources */,
@@ -1461,6 +1483,7 @@
 				C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */,
 				C19DB7CC1DBF5B7E005A43BE /* MasonryExp.m in Sources */,
 				C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */,
+				C16D845C1DC8874500D7F062 /* synchronizedViewController.m in Sources */,
 				C19DB7D01DBF5C02005A43BE /* BlocksKitExp.m in Sources */,
 				C15579881DBDFA4A00F50CD2 /* GCDViewController.m in Sources */,
 				C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */,
@@ -1472,6 +1495,7 @@
 				C155798F1DBE06B800F50CD2 /* dispatch_group_waitViewController.m in Sources */,
 				C172F2471D5C77A200A8FECC /* MW_AC.m in Sources */,
 				C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */,
+				C16D84621DC88CC300D7F062 /* pthread_mutexViewController.m in Sources */,
 				51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */,
 				C16B6BC51D49DCEA00459688 /* MWCommon.m in Sources */,
 				C155798C1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m in Sources */,
