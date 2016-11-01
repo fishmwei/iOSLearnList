@@ -12,7 +12,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.showData = @[@"StartRunLoopViewController" ];
+    self.showData = @[@"StartRunLoopViewController",
+                      @"customRunLoopViewController"];
     
     
 }

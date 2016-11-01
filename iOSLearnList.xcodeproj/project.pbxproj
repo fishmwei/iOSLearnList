@@ -86,6 +86,7 @@
 		C16D845F1DC88B5A00D7F062 /* NSLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D845E1DC88B5A00D7F062 /* NSLockViewController.m */; };
 		C16D84621DC88CC300D7F062 /* pthread_mutexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84611DC88CC300D7F062 /* pthread_mutexViewController.m */; };
 		C16D84651DC8956D00D7F062 /* NSConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84641DC8956D00D7F062 /* NSConditionViewController.m */; };
+		C16D84681DC8A85000D7F062 /* customRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84671DC8A85000D7F062 /* customRunLoopViewController.m */; };
 		C170C3541DAB31C2005BE46C /* PresentingPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C170C3531DAB31C2005BE46C /* PresentingPopoverViewController.m */; };
 		C172F2411D5C777C00A8FECC /* MW_A.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2401D5C777C00A8FECC /* MW_A.m */; };
 		C172F2441D5C779200A8FECC /* MW_AB.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2431D5C779200A8FECC /* MW_AB.m */; };
@@ -306,6 +307,8 @@
 		C16D84611DC88CC300D7F062 /* pthread_mutexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pthread_mutexViewController.m; sourceTree = "<group>"; };
 		C16D84631DC8956D00D7F062 /* NSConditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSConditionViewController.h; sourceTree = "<group>"; };
 		C16D84641DC8956D00D7F062 /* NSConditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSConditionViewController.m; sourceTree = "<group>"; };
+		C16D84661DC8A85000D7F062 /* customRunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customRunLoopViewController.h; sourceTree = "<group>"; };
+		C16D84671DC8A85000D7F062 /* customRunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customRunLoopViewController.m; sourceTree = "<group>"; };
 		C170C3521DAB31C2005BE46C /* PresentingPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentingPopoverViewController.h; sourceTree = "<group>"; };
 		C170C3531DAB31C2005BE46C /* PresentingPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentingPopoverViewController.m; sourceTree = "<group>"; };
 		C172F23F1D5C777C00A8FECC /* MW_A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MW_A.h; sourceTree = "<group>"; };
@@ -1002,6 +1005,8 @@
 				C1B8EE661DC6E94F008FF1C6 /* RunLoopsExp.m */,
 				C1B8EE681DC6E98A008FF1C6 /* StartRunLoopViewController.h */,
 				C1B8EE691DC6E98A008FF1C6 /* StartRunLoopViewController.m */,
+				C16D84661DC8A85000D7F062 /* customRunLoopViewController.h */,
+				C16D84671DC8A85000D7F062 /* customRunLoopViewController.m */,
 			);
 			path = RunLoops;
 			sourceTree = "<group>";
@@ -1470,6 +1475,7 @@
 				C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				C11D279C1DBF69B100FA2955 /* libextobjcExp.m in Sources */,
+				C16D84681DC8A85000D7F062 /* customRunLoopViewController.m in Sources */,
 				C16B6BB81D4995CC00459688 /* CADisplayLinkViewController.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
 				C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */,
