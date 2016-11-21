@@ -129,7 +129,7 @@
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
-    vc.showData = @[@"defaultNSURLSessionController", @"downloadController", @"NSURLConnectionController"];
+    vc.showData = @[@"NSURLParseViewController",@"defaultNSURLSessionController", @"downloadController", @"NSURLConnectionController"];
     
     [self.navigationController pushViewController:vc animated:YES];
 }

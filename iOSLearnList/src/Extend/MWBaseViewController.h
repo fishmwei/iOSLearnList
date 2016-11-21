@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MWBaseViewController : UIViewController
+@interface MWBaseViewController : UIViewController {
+    CGFloat screenWidth;
+}
 
 - (void)showTextTips:(NSString *)tips;
 

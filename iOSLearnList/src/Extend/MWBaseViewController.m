@@ -31,6 +31,7 @@
     _tipHud = [[MBProgressHUD alloc] initWithView:self.view];
     [self.view addSubview:_tipHud];
     
+    screenWidth = CGRectGetWidth([UIScreen mainScreen].bounds);
 }
 
 - (void)didReceiveMemoryWarning {
