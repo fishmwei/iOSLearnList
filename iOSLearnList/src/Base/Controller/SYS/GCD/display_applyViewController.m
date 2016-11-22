@@ -39,13 +39,17 @@
     showView.layer.borderWidth = 1;
     showView.layer.borderColor = [UIColor blueColor].CGColor;
     
-    NSArray *array = @[@"0", @"1", @"2", @"3", @"4"];
+    NSMutableArray *array = [NSMutableArray array];
+    for (NSInteger i = 0; i < 10000; i++) {
+        [array addObject:[NSString stringWithFormat:@"%ld", i]];
+    }
+//    NSArray *array = @[@"0", @"1", @"2", @"3", @"4"];
     
-    dispatch_sync(seralQueue, ^{
+    dispatch_async(concurrentQueue, ^{
         NSLog(@"excute in serial Queue");
         
         dispatch_apply(array.count, concurrentQueue, ^(size_t t){
-            NSLog(@"data is %@", array[t]);
+            NSLog(@"data is %@, thread %@", array[t], [NSThread currentThread]);
         });
         
         NSLog(@"excute in serial Queue Done");

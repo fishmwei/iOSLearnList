@@ -67,7 +67,8 @@
                      @"BlocksKitExp",
                      @"libextobjcExp",
                      @"YTKKeyValueStoreExp",
-                     @"MantleExp"];
+                     @"MantleExp",
+                     @"M13OrderedDictionaryExp"];
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

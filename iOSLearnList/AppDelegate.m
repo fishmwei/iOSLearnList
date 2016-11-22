@@ -74,7 +74,7 @@
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
     
-    [[[myBundleFrame alloc] init] showBundleframe];
+//    [[[myBundleFrame alloc] init] showBundleframe];
     
     NSString *t = @"aaaaa";
     self.b = t;
