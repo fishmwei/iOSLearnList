@@ -21,7 +21,7 @@ target 'iOSLearnList' do
 end
 
 target 'iOSLearnListTests' do
-	pod 'MJRefresh', '3.1.0'
+    pod 'OCMock'
 end
 
 target 'iOSLearnListUITests' do

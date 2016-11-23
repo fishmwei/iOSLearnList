@@ -7,7 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-
+#import <OCMock/OCMock.h>
+ // TODO: http://ocmock.org/
 @interface iOSLearnListTests : XCTestCase
 
 @end
@@ -16,6 +17,12 @@
 
 - (void)setUp {
     [super setUp];
+    
+    id userDefaultsMock = OCMClassMock([NSUserDefaults class]);
+    OCMStub([userDefaultsMock stringForKey:@"MyAppURLKey"]).andReturn(@"http://testurl");
+    OCMStub([userDefaultsMock stringForKey:[OCMArg any]]).andReturn(@"http://testurl");
+    OCMStub([userDefaultsMock standardUserDefaults]).andReturn(userDefaultsMock);
+    
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -25,11 +32,9 @@
 }
 
 - (void)testExample {
+    NSString *value = [[NSUserDefaults standardUserDefaults] stringForKey:@"key"];
+    XCTAssertTrue([value isEqualToString:@"http://testurl"]);
     
-    
-    
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
 - (void)testPerformanceExample {
