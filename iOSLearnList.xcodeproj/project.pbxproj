@@ -97,6 +97,8 @@
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
 		C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
+		C19726C11DEBC48C00B062FE /* blockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19726C01DEBC48C00B062FE /* blockViewController.m */; };
+		C19726C41DEBC4B600B062FE /* blockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C19726C31DEBC4B600B062FE /* blockObject.m */; };
 		C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17DE1D18D7B900E29256 /* MWBaseAnimation.m */; };
 		C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E11D18D96300E29256 /* MWBasePresentViewController.m */; };
 		C19D17E51D18D9BA00E29256 /* MWPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E41D18D9BA00E29256 /* MWPresentAnimation.m */; };
@@ -331,6 +333,10 @@
 		C18F58E51D475AB800F95031 /* testCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testCollectionViewController.m; sourceTree = "<group>"; };
 		C19321041D41FA0900378778 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
 		C19321051D41FA0900378778 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
+		C19726BF1DEBC48C00B062FE /* blockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blockViewController.h; sourceTree = "<group>"; };
+		C19726C01DEBC48C00B062FE /* blockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blockViewController.m; sourceTree = "<group>"; };
+		C19726C21DEBC4B600B062FE /* blockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blockObject.h; sourceTree = "<group>"; };
+		C19726C31DEBC4B600B062FE /* blockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blockObject.m; sourceTree = "<group>"; };
 		C19D17DD1D18D7B900E29256 /* MWBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseAnimation.h; sourceTree = "<group>"; };
 		C19D17DE1D18D7B900E29256 /* MWBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseAnimation.m; sourceTree = "<group>"; };
 		C19D17E01D18D96200E29256 /* MWBasePresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBasePresentViewController.h; sourceTree = "<group>"; };
@@ -735,6 +741,8 @@
 				C1E1DBE31D546731007EE5F5 /* ArchiverViewController.xib */,
 				C172F2481D5C99AB00A8FECC /* runtimeViewController.h */,
 				C172F2491D5C99AB00A8FECC /* runtimeViewController.m */,
+				C19726BF1DEBC48C00B062FE /* blockViewController.h */,
+				C19726C01DEBC48C00B062FE /* blockViewController.m */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -811,6 +819,8 @@
 				C172F2461D5C77A200A8FECC /* MW_AC.m */,
 				C13D8B111D879EFB008BE3B9 /* TimerObject.h */,
 				C13D8B121D879EFB008BE3B9 /* TimerObject.m */,
+				C19726C21DEBC4B600B062FE /* blockObject.h */,
+				C19726C31DEBC4B600B062FE /* blockObject.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1385,6 +1395,7 @@
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */,
+				C19726C11DEBC48C00B062FE /* blockViewController.m in Sources */,
 				C1A650851CE99E75006A117B /* ReversibleString.m in Sources */,
 				C1A650841CE99E75006A117B /* NSURLConnectionController.m in Sources */,
 				C15F15511D45B76100392D95 /* ObjBaseViewController.m in Sources */,
@@ -1395,6 +1406,7 @@
 				C1F7DCE21DC353A100C29808 /* MantleObjectModelViewController.m in Sources */,
 				C156DDC51D48B98E004CD422 /* TimerAnimationViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
+				C19726C41DEBC4B600B062FE /* blockObject.m in Sources */,
 				51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */,
 				C170C3541DAB31C2005BE46C /* PresentingPopoverViewController.m in Sources */,
 				C19DB7D31DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m in Sources */,
