@@ -25,7 +25,8 @@
                       @"iAdViewController",
                       @"PresentingPopoverViewController",
                       @"DatePickerViewController",
-                      @"blockViewController"];
+                      @"blockViewController",
+                      @"WebViewController"];
 //    self.showData = ;
     // Do any additional setup after loading the view.
 }

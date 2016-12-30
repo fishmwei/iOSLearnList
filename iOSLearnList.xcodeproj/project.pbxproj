@@ -18,6 +18,7 @@
 		519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B21CE85BCC002CB3AE /* myLanguage.strings */; };
 		519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B81CE85C03002CB3AE /* InfoPlist.strings */; };
 		519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5BE1CE85C88002CB3AE /* Localizable.strings */; };
+		51A67F0D1E16B76600FA723F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A67F0C1E16B76600FA723F /* WebViewController.m */; };
 		51F5BEF61D28A308000641A7 /* mergedBundleFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F5BEF51D28A308000641A7 /* mergedBundleFrame.a */; };
 		51F68EC21CDE1905009338D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC11CDE1905009338D6 /* main.m */; };
 		51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC41CDE1905009338D6 /* AppDelegate.m */; };
@@ -176,6 +177,8 @@
 		519EB5B91CE85C05002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		519EB5BD1CE85C88002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		519EB5BF1CE85C8A002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		51A67F0B1E16B76600FA723F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		51A67F0C1E16B76600FA723F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		51F5BEF41D28A28C000641A7 /* myBundleFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myBundleFrame.h; sourceTree = "<group>"; };
 		51F5BEF51D28A308000641A7 /* mergedBundleFrame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = mergedBundleFrame.a; sourceTree = "<group>"; };
 		51F68EBD1CDE1905009338D6 /* iOSLearnList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -783,6 +786,8 @@
 				C170C3531DAB31C2005BE46C /* PresentingPopoverViewController.m */,
 				511581361DB2F7A800451657 /* DatePickerViewController.h */,
 				511581371DB2F7A800451657 /* DatePickerViewController.m */,
+				51A67F0B1E16B76600FA723F /* WebViewController.h */,
+				51A67F0C1E16B76600FA723F /* WebViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1389,6 +1394,7 @@
 				C1B8EE671DC6E94F008FF1C6 /* RunLoopsExp.m in Sources */,
 				C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */,
 				C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */,
+				51A67F0D1E16B76600FA723F /* WebViewController.m in Sources */,
 				C15579951DBE1C2000F50CD2 /* dispatch_queueViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
 				C16D84651DC8956D00D7F062 /* NSConditionViewController.m in Sources */,
