@@ -18,12 +18,7 @@
 - (void)setUp {
     [super setUp];
     
-    id userDefaultsMock = OCMClassMock([NSUserDefaults class]);
-    OCMStub([userDefaultsMock stringForKey:@"MyAppURLKey"]).andReturn(@"http://testurl");
-    OCMStub([userDefaultsMock stringForKey:[OCMArg any]]).andReturn(@"http://testurl");
-    OCMStub([userDefaultsMock standardUserDefaults]).andReturn(userDefaultsMock);
     
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
@@ -32,6 +27,13 @@
 }
 
 - (void)testExample {
+    id userDefaultsMock = OCMClassMock([NSUserDefaults class]);
+    OCMStub([userDefaultsMock stringForKey:@"MyAppURLKey"]).andReturn(@"http://testurl");
+    OCMStub([userDefaultsMock stringForKey:[OCMArg any]]).andReturn(@"http://testurl");
+    OCMStub([userDefaultsMock standardUserDefaults]).andReturn(userDefaultsMock);
+    
+    NSLog(@"value is %@", [[NSUserDefaults standardUserDefaults] stringForKey:@"a"]);
+    
     NSString *value = [[NSUserDefaults standardUserDefaults] stringForKey:@"key"];
     XCTAssertTrue([value isEqualToString:@"http://testurl"]);
     
