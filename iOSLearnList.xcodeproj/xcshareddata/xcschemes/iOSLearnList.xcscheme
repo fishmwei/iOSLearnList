@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "51F68ED51CDE1905009338D6"
+               BlueprintIdentifier = "C1ECDDF41E3849E3007A5C05"
                BuildableName = "iOSLearnListTests.xctest"
                BlueprintName = "iOSLearnListTests"
                ReferencedContainer = "container:iOSLearnList.xcodeproj">

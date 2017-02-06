@@ -11,7 +11,6 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 
 
-
 @interface SearchBarVC () <UISearchDisplayDelegate,
                             UISearchBarDelegate> {
     UISearchDisplayController *searchController;

@@ -3,29 +3,31 @@ platform :ios, '7.0'
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
+project 'iOSLearnList'
 
 pod 'Masonry'
+pod 'MJRefresh', '3.1.0'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'MWObjTools'
+pod 'MWUITools'
+pod 'MWMarqueeView'
+pod 'BlocksKit'
+pod 'libextobjc'
+pod 'YTKKeyValueStore'
+pod 'Mantle'
+pod 'M13OrderedDictionary'
 
 target 'iOSLearnList' do
-	pod 'MJRefresh', '3.1.0'
-    pod 'SDWebImage'
-    pod 'MBProgressHUD'
-    pod 'MWObjTools'
-    pod 'MWUITools'
-    pod 'MWMarqueeView'
-    pod 'BlocksKit'
-    pod 'libextobjc'
-    pod 'YTKKeyValueStore'
-    pod 'Mantle'
-    pod 'M13OrderedDictionary'
+    
 end
 
 target 'iOSLearnListTests' do
+
     pod 'OCMock'
 end
 
-target 'iOSLearnListUITests' do
-	pod 'MJRefresh', '3.1.0'
-end
 
-workspace 'iOSLearnList'
+
+
+
