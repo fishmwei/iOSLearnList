@@ -14,6 +14,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - FBRetainCycleDetector (0.1.3)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -59,6 +60,8 @@ PODS:
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.0)
+  - MLeaksFinder (0.2.1):
+    - FBRetainCycleDetector
   - MWMarqueeView (1.0.1)
   - MWObjTools (0.1.3)
   - MWUITools (1.0.0)
@@ -77,6 +80,7 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD
   - MJRefresh (= 3.1.0)
+  - MLeaksFinder
   - MWMarqueeView
   - MWObjTools
   - MWUITools
@@ -86,6 +90,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   M13OrderedDictionary: 6e157fe9c82aa6b3cd7198f5c5c30c7a6834c4a6
@@ -93,6 +98,7 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  MLeaksFinder: 0850e2f2abc7227adc4d4e2d1992b431264eb4d5
   MWMarqueeView: c3f20bd6919a81134b2d431ed23bcb3361e94444
   MWObjTools: 23bf0d73c5b0f38f844656927583b3d91520e826
   MWUITools: 721ec6c24e8b21f7930b3426924b1a501661469a
@@ -100,6 +106,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
 
-PODFILE CHECKSUM: 68bbd87f582d94cf2343e0e66e2919a6bfa86b0b
+PODFILE CHECKSUM: 3e329ffcc276b53282e387afffb0c86137d7fcfa
 
 COCOAPODS: 1.0.1

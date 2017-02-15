@@ -17,6 +17,7 @@ pod 'libextobjc'
 pod 'YTKKeyValueStore'
 pod 'Mantle'
 pod 'M13OrderedDictionary'
+pod 'MLeaksFinder'
 
 target 'iOSLearnList' do
     
