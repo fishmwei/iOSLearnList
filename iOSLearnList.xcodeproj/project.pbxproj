@@ -36,6 +36,8 @@
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
 		C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C13D8B121D879EFB008BE3B9 /* TimerObject.m */; };
+		C144F9E61E9DC77700EAA011 /* HideNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */; };
+		C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */; };
 		C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */; };
 		C15579881DBDFA4A00F50CD2 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579871DBDFA4A00F50CD2 /* GCDViewController.m */; };
 		C155798C1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C155798B1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m */; };
@@ -210,6 +212,10 @@
 		C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDrawingViewController.m; sourceTree = "<group>"; };
 		C13D8B111D879EFB008BE3B9 /* TimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerObject.h; sourceTree = "<group>"; };
 		C13D8B121D879EFB008BE3B9 /* TimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerObject.m; sourceTree = "<group>"; };
+		C144F9E41E9DC77700EAA011 /* HideNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideNavigatorViewController.h; sourceTree = "<group>"; };
+		C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavigatorViewController.m; sourceTree = "<group>"; };
+		C144F9E71E9DCA8C00EAA011 /* MWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNavigationController.h; sourceTree = "<group>"; };
+		C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWNavigationController.m; sourceTree = "<group>"; };
 		C15579831DBDDB9700F50CD2 /* DataStructureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructureViewController.h; sourceTree = "<group>"; };
 		C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStructureViewController.m; sourceTree = "<group>"; };
 		C15579861DBDFA4A00F50CD2 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
@@ -754,6 +760,8 @@
 				511581371DB2F7A800451657 /* DatePickerViewController.m */,
 				51A67F0B1E16B76600FA723F /* WebViewController.h */,
 				51A67F0C1E16B76600FA723F /* WebViewController.m */,
+				C144F9E41E9DC77700EAA011 /* HideNavigatorViewController.h */,
+				C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1041,6 +1049,8 @@
 			children = (
 				C1ED596C1CE5B0A200096EC7 /* ExtendMainController.h */,
 				C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */,
+				C144F9E71E9DCA8C00EAA011 /* MWNavigationController.h */,
+				C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */,
 				C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */,
 				C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */,
 				C15F15521D45B8D700392D95 /* MWBaseViewController.h */,
@@ -1208,7 +1218,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		2E2481FDEB3C7F3E68B0CE43 /* [CP] Embed Pods Frameworks */ = {
@@ -1253,7 +1263,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		86E2FB9E16D39780954CE367 /* [CP] Copy Pods Resources */ = {
@@ -1371,6 +1381,7 @@
 				C11D279C1DBF69B100FA2955 /* libextobjcExp.m in Sources */,
 				C16D84681DC8A85000D7F062 /* customRunLoopViewController.m in Sources */,
 				C16B6BB81D4995CC00459688 /* CADisplayLinkViewController.m in Sources */,
+				C144F9E61E9DC77700EAA011 /* HideNavigatorViewController.m in Sources */,
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
 				C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */,
 				519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */,
@@ -1405,6 +1416,7 @@
 				C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */,
 				C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */,
 				513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */,
+				C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */,
 				513EC4B61D5389D400279CA1 /* CAScrollViewController.m in Sources */,
 				C16858771D5AD0C80017157D /* UIButton_MWEdge.m in Sources */,
 				C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */,
