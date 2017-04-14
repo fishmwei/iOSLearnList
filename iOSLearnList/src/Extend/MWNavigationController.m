@@ -17,12 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    id target = self.interactivePopGestureRecognizer.delegate;
+    self.interactivePopGestureRecognizer.enabled = YES;
+//    self.interactivePopGestureRecognizer.delegate = self;
     
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
-    pan.delegate = self;
-    [self.view addGestureRecognizer:pan];
-    self.interactivePopGestureRecognizer.enabled = NO;
+//    id target = self.interactivePopGestureRecognizer.delegate;
+//    
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+//    pan.delegate = self;
+//    [self.view addGestureRecognizer:pan];
+//    self.interactivePopGestureRecognizer.enabled = NO;
     
     // Do any additional setup after loading the view.
 }

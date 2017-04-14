@@ -32,6 +32,8 @@
     [self.view addSubview:_tipHud];
     
     screenWidth = CGRectGetWidth([UIScreen mainScreen].bounds);
+    
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 
 - (void)didReceiveMemoryWarning {
