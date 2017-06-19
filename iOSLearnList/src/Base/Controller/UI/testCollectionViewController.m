@@ -17,13 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithTitle:@"添加"
+    [self setTitle:@"test"];
+    UIBarButtonItem *btnItem0 = [[UIBarButtonItem alloc] initWithTitle:@"添加"
                                                                 style:UIBarButtonItemStylePlain
                                                                target:self
                                                                action:@selector(addItemBtnClick:)];
+    UIBarButtonItem *btnItem1 = [[UIBarButtonItem alloc] initWithTitle:@"添加"
+                                                                style:UIBarButtonItemStylePlain
+                                                               target:self
+                                                               action:@selector(addItemBtnClick:)];
+ 
+//    self.navigationItem.rightBarButtonItem = btnItem;
     
-    self.navigationItem.rightBarButtonItem = btnItem;
-    
+    self.navigationItem.rightBarButtonItems = @[btnItem0];
     // Do any additional setup after loading the view.
 }
 

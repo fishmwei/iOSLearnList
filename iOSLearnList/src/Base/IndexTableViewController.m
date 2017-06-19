@@ -20,9 +20,9 @@
         
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
-    if ([self.navigationController.viewControllers count] > 1) {
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[MWCommon imageNamed:@"general_top_icon_back_normal"] style:UIBarButtonItemStyleDone target:self action:@selector(backBtnPressed)];
-    }
+//    if ([self.navigationController.viewControllers count] > 1) {
+//        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[MWCommon imageNamed:@"general_top_icon_back_normal"] style:UIBarButtonItemStyleDone target:self action:@selector(backBtnPressed)];
+//    }
     
     
 }
