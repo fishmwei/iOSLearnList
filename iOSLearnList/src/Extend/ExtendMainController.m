@@ -12,6 +12,7 @@
 
 #import "BaseMainViewController.h"
 #import "AdvancedViewController.h"
+#import "MWNavigationController.h"
 
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
@@ -20,8 +21,6 @@
 @property (nonatomic, retain) UIViewController *advanceCtl;
 @property (nonatomic, retain) UIViewController *baseCtl;
 @property (nonatomic, retain) UIViewController *otherCtl;
-
-
 
 
 @end
@@ -55,7 +54,7 @@
 //    ivc.showData = @[@"UIBaseViewController", @"SysBaseViewController", @"ObjBaseViewController"];
     
     
-    nav = [[UINavigationController alloc] initWithRootViewController:ivc];
+    nav = [[MWNavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.title = NSLocalizedStringFromTable(@"Base", @"myLanguage", nil);

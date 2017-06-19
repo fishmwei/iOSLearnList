@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
-    self.showData = @[@"testCollectionViewController",
+    self.showData = @[@"HideNavigatorViewController",
+                      @"testCollectionViewController",
                       @"autolayoutCellCtl",
                       @"myTableViewController",
                       @"collectionViewController",
