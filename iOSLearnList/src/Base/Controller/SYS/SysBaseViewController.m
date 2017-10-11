@@ -23,7 +23,8 @@
                       @"NSJSONSerializationViewController",
                       @"ThreadProgramingViewController",
                       @"RunLoopsExp",
-                      @"SynchronizationExp"];
+                      @"SynchronizationExp",
+                      @"InvocationBlockViewController"];
 
     
 }

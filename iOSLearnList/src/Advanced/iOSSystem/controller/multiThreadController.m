@@ -44,7 +44,7 @@
 
 - (void)createThread
 {
-    [NSThread detachNewThreadSelector:@selector(threadWithMaxNumber:) toTarget:self withObject:@(100)];
+    [NSThread detachNewThreadSelector:@selector(threadWithMaxNumber:) toTarget:self withObject:@(10)];
 }
 
 
