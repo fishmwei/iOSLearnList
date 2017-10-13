@@ -21,7 +21,7 @@
 @property (nonatomic, retain) UIViewController *advanceCtl;
 @property (nonatomic, retain) UIViewController *baseCtl;
 @property (nonatomic, retain) UIViewController *otherCtl;
-
+@property (nonatomic, retain) UIViewController *testCtl;
 
 @end
 
@@ -73,7 +73,16 @@
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _otherCtl = nav;
-
+    
+    ivc = [[IndexTableViewController alloc] init];
+    ivc.showData = @[@"TestCreateObjectAsync"];
+    
+    nav = [[UINavigationController alloc] initWithRootViewController:ivc];
+    nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [ivc setTitle:@"Test"];
+    _testCtl = nav;
+    
 }
 
 
@@ -85,7 +94,7 @@
     
     [self createViewControllers];
     
-    self.bottomItems = @[_baseCtl, _advanceCtl, _otherCtl];
+    self.bottomItems = @[_testCtl, _baseCtl, _advanceCtl, _otherCtl];
     
 //    NSMutableArray *bottomControllers = [NSMutableArray array];
 //    for (NSUInteger i = 0; i < self.bottomItems.count; i++) {

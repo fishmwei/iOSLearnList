@@ -28,6 +28,9 @@
 		51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2F21CECB5750050E75E /* collectionViewController.m */; };
 		71BC9BDE2B7D9BDEE3B07A8F /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833BD4455DD575B15500BA9D /* libPods-iOSLearnList.a */; };
 		7AD6E4B3A1FF81BC36F4B3D0 /* libPods-iOSLearnListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E30031823BFCBF8BFCE8165F /* libPods-iOSLearnListTests.a */; };
+		C1040B761F90A6B50027EE09 /* TestCreateObjectAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B751F90A6B50027EE09 /* TestCreateObjectAsync.m */; };
+		C1040B7A1F90A7B30027EE09 /* TestObjectFacotry.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B791F90A7B30027EE09 /* TestObjectFacotry.m */; };
+		C1040B7E1F90ACB90027EE09 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B7D1F90ACB90027EE09 /* TestObject.m */; };
 		C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */; };
 		C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27971DBF63F800FA2955 /* UIControllBlocksKitViewController.m */; };
 		C11D279C1DBF69B100FA2955 /* libextobjcExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D279B1DBF69B100FA2955 /* libextobjcExp.m */; };
@@ -195,6 +198,14 @@
 		976E1D446B14B1765DCA593D /* Pods-iOSLearnList.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.adhoc.xcconfig"; sourceTree = "<group>"; };
 		9ECE5D8CD86363F385503074 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A12E5D16B183CE4FD8876995 /* Pods-iOSLearnListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1040B741F90A6B50027EE09 /* TestCreateObjectAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCreateObjectAsync.h; sourceTree = "<group>"; };
+		C1040B751F90A6B50027EE09 /* TestCreateObjectAsync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCreateObjectAsync.m; sourceTree = "<group>"; };
+		C1040B781F90A7B30027EE09 /* TestObjectFacotry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectFacotry.h; sourceTree = "<group>"; };
+		C1040B791F90A7B30027EE09 /* TestObjectFacotry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectFacotry.m; sourceTree = "<group>"; };
+		C1040B7B1F90AC930027EE09 /* ObjectSaveProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectSaveProtocol.h; sourceTree = "<group>"; };
+		C1040B7C1F90ACB90027EE09 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		C1040B7D1F90ACB90027EE09 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		C1040B7F1F90B1540027EE09 /* TestObjectSellerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectSellerProtocol.h; sourceTree = "<group>"; };
 		C11D27931DBF60C000FA2955 /* arrayBlockskitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayBlockskitViewController.h; sourceTree = "<group>"; };
 		C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayBlockskitViewController.m; sourceTree = "<group>"; };
 		C11D27961DBF63F800FA2955 /* UIControllBlocksKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControllBlocksKitViewController.h; sourceTree = "<group>"; };
@@ -545,6 +556,7 @@
 		51F68EF81CDE1A06009338D6 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C1040B731F90A5770027EE09 /* Test */,
 				C1A650881CE99E8C006A117B /* Other */,
 				C1A650661CE99E75006A117B /* Advanced */,
 				C1E36FCA1CE4230300445669 /* Base */,
@@ -567,6 +579,29 @@
 				976E1D446B14B1765DCA593D /* Pods-iOSLearnList.adhoc.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1040B731F90A5770027EE09 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				C1040B771F90A6BE0027EE09 /* CreateObjectAsync */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		C1040B771F90A6BE0027EE09 /* CreateObjectAsync */ = {
+			isa = PBXGroup;
+			children = (
+				C1040B7B1F90AC930027EE09 /* ObjectSaveProtocol.h */,
+				C1040B781F90A7B30027EE09 /* TestObjectFacotry.h */,
+				C1040B791F90A7B30027EE09 /* TestObjectFacotry.m */,
+				C1040B7F1F90B1540027EE09 /* TestObjectSellerProtocol.h */,
+				C1040B7C1F90ACB90027EE09 /* TestObject.h */,
+				C1040B7D1F90ACB90027EE09 /* TestObject.m */,
+				C1040B751F90A6B50027EE09 /* TestCreateObjectAsync.m */,
+				C1040B741F90A6B50027EE09 /* TestCreateObjectAsync.h */,
+			);
+			name = CreateObjectAsync;
 			sourceTree = "<group>";
 		};
 		C11D27991DBF699C00FA2955 /* libextobjc */ = {
@@ -1353,6 +1388,7 @@
 				C16D84651DC8956D00D7F062 /* NSConditionViewController.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
+				C1040B761F90A6B50027EE09 /* TestCreateObjectAsync.m in Sources */,
 				C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */,
 				C19726C11DEBC48C00B062FE /* blockViewController.m in Sources */,
 				C1A650851CE99E75006A117B /* ReversibleString.m in Sources */,
@@ -1383,6 +1419,7 @@
 				C15579981DBE23C000F50CD2 /* dispatch_barrierViewController.m in Sources */,
 				C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */,
 				C15C2C861DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m in Sources */,
+				C1040B7A1F90A7B30027EE09 /* TestObjectFacotry.m in Sources */,
 				C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */,
 				C1F7DCE51DC3542B00C29808 /* MWMtlObject.m in Sources */,
 				C16D84591DC8844C00D7F062 /* NSRecursiveLockViewController.m in Sources */,
@@ -1433,6 +1470,7 @@
 				C155798C1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m in Sources */,
 				C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */,
 				C1E1DBE41D546731007EE5F5 /* ArchiverViewController.m in Sources */,
+				C1040B7E1F90ACB90027EE09 /* TestObject.m in Sources */,
 				C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */,
 				C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */,
 				513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */,

@@ -24,7 +24,7 @@
 //        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[MWCommon imageNamed:@"general_top_icon_back_normal"] style:UIBarButtonItemStyleDone target:self action:@selector(backBtnPressed)];
 //    }
     
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+//    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 -(void)backBtnPressed
