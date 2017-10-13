@@ -50,8 +50,9 @@
     NSLog(@"==== init ======");
     TestObject *testObject = [[TestObject alloc] initWithConsumer:self];
     testObject.number = self.number++;
-    [self.rawObjectPool addObject:testObject];
-    NSLog(@"==== %ld raw object, add ======", self.rawObjectPool.count);
+    
+//    [self.rawObjectPool addObject:testObject];
+//    NSLog(@"==== %ld raw object, add ======", self.rawObjectPool.count);
 }
 
 - (void)addListener:(id<TestObjectSellerProtocol>)listener {
@@ -63,6 +64,9 @@
         NSLog(@"==== consumer imediate ======");
         [listener receiveObject:testObject];
         
+        if (self.objectPool.count == 0) {
+            [self createTestObject];
+        }
         
         return;
     }
@@ -75,7 +79,7 @@
 }
 
 - (void)saveObject:(id)object {
-    [self.rawObjectPool removeObject:object];
+//    [self.rawObjectPool removeObject:object];
     NSLog(@"==== %ld raw object, remove ======", self.rawObjectPool.count);
     
     if (self.listeners.count > 0) {
@@ -87,8 +91,8 @@
         return;
     }
     
-    NSLog(@"==== %ld object save ======", self.objectPool.count);
     [self.objectPool addObject:object];
+    NSLog(@"==== %ld object save ======", self.objectPool.count);
 }
 
 

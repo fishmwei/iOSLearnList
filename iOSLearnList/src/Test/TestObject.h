@@ -14,4 +14,5 @@
 - (instancetype)initWithConsumer:(id<ObjectSaveProtocol>)consumer;
 @property (nonatomic, assign) NSInteger number;
 
+
 @end
