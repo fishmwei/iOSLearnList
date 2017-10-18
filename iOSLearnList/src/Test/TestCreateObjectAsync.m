@@ -65,7 +65,7 @@ static NSInteger gseq = 0;
 }
 
 - (void)add {
-    for (int i = 0; i < 3; i++)
+//    for (int i = 0; i < 3; i++)
     [[TestObjectFacotry sharedInstance] addListener:[TestSeller new]];
 }
 
