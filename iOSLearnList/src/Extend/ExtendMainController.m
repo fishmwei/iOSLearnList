@@ -75,7 +75,7 @@
     _otherCtl = nav;
     
     ivc = [[IndexTableViewController alloc] init];
-    ivc.showData = @[@"TestCreateObjectAsync"];
+    ivc.showData = @[@"TestCreateObjectAsync", @"AdaptIOS11ViewController"];
     
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

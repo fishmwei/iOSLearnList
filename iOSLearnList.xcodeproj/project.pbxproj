@@ -11,6 +11,7 @@
 		513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 513EC4B21D53876B00279CA1 /* CACustomScrollView.m */; };
 		513EC4B61D5389D400279CA1 /* CAScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513EC4B51D5389D400279CA1 /* CAScrollViewController.m */; };
 		516928021DBE486B00DA92D7 /* NSJSONSerializationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516928011DBE486B00DA92D7 /* NSJSONSerializationViewController.m */; };
+		517CA8901FE4EF9F00A6A82F /* AdaptIOS11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517CA88F1FE4EF9F00A6A82F /* AdaptIOS11ViewController.m */; };
 		519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785F91D04189A00DF3981 /* autolayoutCellCtl.m */; };
 		519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785FD1D0418E200DF3981 /* autolayoutCell.m */; };
 		519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519785FE1D0418E200DF3981 /* autolayoutCell.xib */; };
@@ -163,6 +164,8 @@
 		513EC4B51D5389D400279CA1 /* CAScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScrollViewController.m; sourceTree = "<group>"; };
 		516928001DBE486B00DA92D7 /* NSJSONSerializationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSJSONSerializationViewController.h; sourceTree = "<group>"; };
 		516928011DBE486B00DA92D7 /* NSJSONSerializationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSJSONSerializationViewController.m; sourceTree = "<group>"; };
+		517CA88E1FE4EF9F00A6A82F /* AdaptIOS11ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdaptIOS11ViewController.h; sourceTree = "<group>"; };
+		517CA88F1FE4EF9F00A6A82F /* AdaptIOS11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdaptIOS11ViewController.m; sourceTree = "<group>"; };
 		519785F81D04189A00DF3981 /* autolayoutCellCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCellCtl.h; sourceTree = "<group>"; };
 		519785F91D04189A00DF3981 /* autolayoutCellCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autolayoutCellCtl.m; sourceTree = "<group>"; };
 		519785FC1D0418E200DF3981 /* autolayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCell.h; sourceTree = "<group>"; };
@@ -489,6 +492,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		517CA88D1FE4EF5100A6A82F /* iOS11 */ = {
+			isa = PBXGroup;
+			children = (
+				517CA88E1FE4EF9F00A6A82F /* AdaptIOS11ViewController.h */,
+				517CA88F1FE4EF9F00A6A82F /* AdaptIOS11ViewController.m */,
+			);
+			name = iOS11;
+			sourceTree = "<group>";
+		};
 		519785FB1D0418BB00DF3981 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +596,7 @@
 		C1040B731F90A5770027EE09 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				517CA88D1FE4EF5100A6A82F /* iOS11 */,
 				C1040B771F90A6BE0027EE09 /* CreateObjectAsync */,
 			);
 			path = Test;
@@ -1413,6 +1426,7 @@
 				C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */,
 				C162E35E1D51856200061311 /* MWMethodSelector.m in Sources */,
 				519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */,
+				517CA8901FE4EF9F00A6A82F /* AdaptIOS11ViewController.m in Sources */,
 				C1DD3A431DE4535800EE50A0 /* M13OrderedDictionaryExp.m in Sources */,
 				C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */,
 				C1A650831CE99E75006A117B /* FWSessionDelegate.m in Sources */,

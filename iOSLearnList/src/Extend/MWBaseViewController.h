@@ -19,4 +19,8 @@
 
 - (void)dismissLoadingTips;
 
+- (void) setRightPanPopCtrlEnabled:(BOOL)isEnabled;
+
+@property (nonatomic, assign) BOOL hideNavigationbar;
+
 @end

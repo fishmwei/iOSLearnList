@@ -116,7 +116,7 @@
         [scrollView addSubview:container];
         [container mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(scrollView);
-            make.width.equalTo(scrollView);
+            make.width.equalTo(scrollView).offset(-5);
         }];
         int count = 10;
         UIView *lastView = nil;
