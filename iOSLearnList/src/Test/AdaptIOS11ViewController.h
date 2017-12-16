@@ -9,5 +9,5 @@
 #import "MWBaseViewController.h"
 
 @interface AdaptIOS11ViewController : MWBaseViewController
-
+@property (nonatomic, assign) BOOL translucentNav;
 @end

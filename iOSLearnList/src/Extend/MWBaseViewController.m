@@ -26,7 +26,7 @@
 {
     self = [super init];
     if (self) {
-        self.hidesBottomBarWhenPushed = YES;
+//        self.hidesBottomBarWhenPushed = YES;
         _isOriginalNavigationBarHidden = YES;
         _isNextNavigationBarHidden = NO;
         _isFirstInto = YES;
@@ -76,7 +76,7 @@
 }
 
 #pragma mark 设置手势右滑后退
-- (void) setRightPanPopCtrlEnabled:(BOOL)isEnabled
+-(void) setRightPanPopCtrlEnabled:(BOOL)isEnabled
 {
     //禁用滑动后退
     self.navigationController.interactivePopGestureRecognizer.enabled = isEnabled;
@@ -93,7 +93,7 @@
 #ifdef __IPHONE_7_0
     {
         self.edgesForExtendedLayout = UIRectEdgeBottom;
-//        self.automaticallyAdjustsScrollViewInsets = NO;
+        self.automaticallyAdjustsScrollViewInsets = NO;
     }
 #endif
     

@@ -41,7 +41,7 @@
 
 - (void)createViewControllers
 {
-    AdvancedViewController *vc = [[AdvancedViewController alloc] init];
+    UIViewController *vc = [[AdvancedViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
