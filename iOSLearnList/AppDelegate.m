@@ -41,10 +41,14 @@
 
 @implementation AppDelegate
 
-
-
+- (void)setAppearence {
+    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTitle:@"取消"];
+    
+//    [[UIBarButtonItem appearanceWhenContainedIn: [UISearchBar class], nil] setTitle:@"取消"];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self setAppearence];
     
     NSString *componentID = nil;
         NSString *st = componentID ?: @"public";

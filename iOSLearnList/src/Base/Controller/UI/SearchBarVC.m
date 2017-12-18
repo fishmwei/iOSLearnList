@@ -38,6 +38,9 @@
     
     [self setupMyData];
     [self setupMyUI];
+    
+    
+   
 //    self.navigationItem.hidesBackButton = YES;
     
 //    self.navigationItem.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:NULL];
@@ -62,9 +65,11 @@
     
     searchBar = [[UISearchBar alloc] init];
     [searchBar setShowsCancelButton:YES animated:NO];
+    searchBar.showsCancelButton = YES;
     searchBar.text = @"aa";
     searchBar.delegate = self;
     [searchBar setBarTintColor:[UIColor blueColor]];
+    [searchBar setValue:@"取消" forKey:@"cancelButtonText"];
     
     //    [self.tableView setTableHeaderView:searchBar];
     
@@ -79,6 +84,9 @@
 //    searchController.navigationItem.hidesBackButton = YES;
     
 //    searchController.searchContentsController.view.alpha = 0;
+    
+ 
+    
     
 }
 
