@@ -65,9 +65,11 @@
     
     searchBar = [[UISearchBar alloc] init];
     [searchBar setShowsCancelButton:YES animated:NO];
+    searchBar.showsCancelButton = YES;
     searchBar.text = @"aa";
     searchBar.delegate = self;
     [searchBar setBarTintColor:[UIColor blueColor]];
+    [searchBar setValue:@"取消" forKey:@"cancelButtonText"];
     
     //    [self.tableView setTableHeaderView:searchBar];
     
@@ -83,8 +85,7 @@
     
 //    searchController.searchContentsController.view.alpha = 0;
     
-    [searchController.searchBar setValue:@"取消" forKey:@"cancelButtonText"];
-    
+ 
     
     
 }
