@@ -63,7 +63,7 @@
     NSLog(@"app_Version %@", app_Version);
 
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     

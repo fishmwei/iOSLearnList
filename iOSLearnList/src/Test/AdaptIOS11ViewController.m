@@ -50,8 +50,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.hideNavigationbar = YES;
-    self.edgesForExtendedLayout = UIRectEdgeAll;
+    self.hideNavigationbar = YES;
+    self.edgesForExtendedLayout = UIRectEdgeBottom;
     
     
     self.view.backgroundColor = [UIColor lightGrayColor];
@@ -60,16 +60,15 @@
     
     [self.view addSubview:scrollView];
     
-    self.automaticallyAdjustsScrollViewInsets = YES;
     if (@available(iOS 11.0, *)) {
 //        scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         
-        self.additionalSafeAreaInsets = UIEdgeInsetsMake(-64, 0, 0, 0);
+//        self.additionalSafeAreaInsets = UIEdgeInsetsMake(64, 0, 0, 0);
     }
     
-//    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(5,5,5,5));
-//    }];
+    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.insets(self.view.safeAreaInsets);
+    }];
     
     scrollView.backgroundColor = [UIColor redColor];
     
@@ -117,6 +116,12 @@
 - (void)viewSafeAreaInsetsDidChange {
     [super viewSafeAreaInsetsDidChange];
     
+    UIEdgeInsets padding = self.view.safeAreaInsets;
+    [self.scrollView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.insets(padding);
+    }];
+
+    NSLog(@"%@",NSStringFromUIEdgeInsets(self.view.safeAreaInsets));
     
 }
 
