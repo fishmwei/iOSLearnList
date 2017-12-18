@@ -38,6 +38,9 @@
     
     [self setupMyData];
     [self setupMyUI];
+    
+    
+   
 //    self.navigationItem.hidesBackButton = YES;
     
 //    self.navigationItem.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:NULL];
@@ -79,6 +82,10 @@
 //    searchController.navigationItem.hidesBackButton = YES;
     
 //    searchController.searchContentsController.view.alpha = 0;
+    
+    [searchController.searchBar setValue:@"取消" forKey:@"cancelButtonText"];
+    
+    
     
 }
 
