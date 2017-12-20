@@ -41,7 +41,8 @@
 
 - (void)createViewControllers
 {
-    UIViewController *vc = [[AdvancedViewController alloc] init];
+    AdvancedViewController *vc = [[AdvancedViewController alloc] init];
+    vc.hideNavigationbar = YES;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -75,7 +76,8 @@
     _otherCtl = nav;
     
     ivc = [[IndexTableViewController alloc] init];
-    ivc.showData = @[@"TestCreateObjectAsync", @"AdaptIOS11ViewController"];
+    ivc.showData = @[@"TestCreateObjectAsync", @"AdaptIOS11ViewController",
+                     @"AutoSizeViewController"];
     
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
