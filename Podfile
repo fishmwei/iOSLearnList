@@ -18,6 +18,7 @@ pod 'YTKKeyValueStore'
 pod 'Mantle'
 pod 'M13OrderedDictionary'
 pod 'MLeaksFinder'
+pod 'CSNotificationView'
 
 target 'iOSLearnList' do
     

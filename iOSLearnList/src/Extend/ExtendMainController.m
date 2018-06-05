@@ -77,7 +77,7 @@
     
     ivc = [[IndexTableViewController alloc] init];
     ivc.showData = @[@"TestCreateObjectAsync", @"AdaptIOS11ViewController",
-                     @"AutoSizeViewController"];
+                     @"AutoSizeViewController", @"RunTimeViewController"];
     
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

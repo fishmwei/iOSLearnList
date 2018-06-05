@@ -44,6 +44,7 @@
 		C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C13D8B121D879EFB008BE3B9 /* TimerObject.m */; };
 		C144F9E61E9DC77700EAA011 /* HideNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */; };
 		C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */; };
+		C145D0DA20C63FF000EBC8E5 /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C145D0D920C63FF000EBC8E5 /* RunTimeViewController.m */; };
 		C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */; };
 		C15579881DBDFA4A00F50CD2 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579871DBDFA4A00F50CD2 /* GCDViewController.m */; };
 		C155798C1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C155798B1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m */; };
@@ -237,6 +238,8 @@
 		C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavigatorViewController.m; sourceTree = "<group>"; };
 		C144F9E71E9DCA8C00EAA011 /* MWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNavigationController.h; sourceTree = "<group>"; };
 		C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWNavigationController.m; sourceTree = "<group>"; };
+		C145D0D820C63FF000EBC8E5 /* RunTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
+		C145D0D920C63FF000EBC8E5 /* RunTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
 		C15579831DBDDB9700F50CD2 /* DataStructureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructureViewController.h; sourceTree = "<group>"; };
 		C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStructureViewController.m; sourceTree = "<group>"; };
 		C15579861DBDFA4A00F50CD2 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
@@ -603,6 +606,8 @@
 				C1040B771F90A6BE0027EE09 /* CreateObjectAsync */,
 				5107762E1FE66E9000169CED /* AutoSizeViewController.h */,
 				5107762F1FE66E9000169CED /* AutoSizeViewController.m */,
+				C145D0D820C63FF000EBC8E5 /* RunTimeViewController.h */,
+				C145D0D920C63FF000EBC8E5 /* RunTimeViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1173,7 +1178,6 @@
 				51F68EBA1CDE1905009338D6 /* Frameworks */,
 				51F68EBB1CDE1905009338D6 /* Resources */,
 				C1209B1A1CF53D1500182559 /* Copy configuration */,
-				31A1638E16C5F3A376839CED /* [CP] Embed Pods Frameworks */,
 				976012E5720C53C6F39C441B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1193,7 +1197,6 @@
 				C1ECDDF11E3849E3007A5C05 /* Sources */,
 				C1ECDDF21E3849E3007A5C05 /* Frameworks */,
 				C1ECDDF31E3849E3007A5C05 /* Resources */,
-				2E2481FDEB3C7F3E68B0CE43 /* [CP] Embed Pods Frameworks */,
 				86E2FB9E16D39780954CE367 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1283,43 +1286,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLearnListTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2E2481FDEB3C7F3E68B0CE43 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		31A1638E16C5F3A376839CED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77E2DAAB79F29D0A9A310118 /* [CP] Check Pods Manifest.lock */ = {
@@ -1328,13 +1304,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLearnList-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		86E2FB9E16D39780954CE367 /* [CP] Copy Pods Resources */ = {
@@ -1343,9 +1322,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/CSNotificationView/CSNotificationView.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSNotificationView.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1358,9 +1342,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/CSNotificationView/CSNotificationView.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSNotificationView.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1429,6 +1418,7 @@
 				C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */,
 				C16BB7691D92261900495A88 /* iAdViewController.m in Sources */,
 				C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */,
+				C145D0DA20C63FF000EBC8E5 /* RunTimeViewController.m in Sources */,
 				C162E35E1D51856200061311 /* MWMethodSelector.m in Sources */,
 				519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */,
 				517CA8901FE4EF9F00A6A82F /* AdaptIOS11ViewController.m in Sources */,
