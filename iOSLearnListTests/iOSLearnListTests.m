@@ -37,6 +37,9 @@
     NSString *value = [[NSUserDefaults standardUserDefaults] stringForKey:@"key"];
     XCTAssertTrue([value isEqualToString:@"http://testurl"]);
     
+    
+    
+    
 }
 
 - (void)testPerformanceExample {

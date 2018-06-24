@@ -28,20 +28,44 @@
     [super tearDown];
 }
 
+- (BOOL)showStubForParam:(NSNumber *)param {
+    return [param integerValue] < 100;
+}
+
 - (void)testExample {
     ocmA *a = [[ocmA alloc] init];
     
-    id stubB = OCMClassMock([ocmB class]);
-    a.b = stubB;
+//    ocmB *b = [ocmB new];
+ 
+    id stubB = OCMPartialMock(a.b);
+    
+//    id stubB = OCMClassMock([ocmB class]);
     OCMStub([stubB name]).andReturn(@"test stub name");
+    OCMStub([stubB parseInt:100]).andReturn(@"value:100");
+    OCMStub([stubB isValidNumber:[OCMArg checkWithSelector:@selector(showStubForParam:) onObject:self]]).andReturn(NO);
+    
     
     NSString *ret = [a name];
     XCTAssertTrue([ret isEqualToString:@"test stub name"]);
+    
+    ret = [a.b parseInt:100]; // 只对100打桩
+    XCTAssertTrue([ret isEqualToString:@"value:100"]);
+    
+    BOOL isValid = [a.b isValidNumber:@1];
+    XCTAssertTrue(!isValid);
+    
     [stubB stopMocking];
-//    ret = [a name];
-//    XCTAssertFalse([ret isEqualToString:@"test stub name"]);
 }
 
+- (void)testClassMethod {
+    id stubB = OCMClassMock([ocmB class]);
+    OCMStub([stubB getEntryName]).andReturn(@"stub");
+    
+    NSString *ret = [ocmB getEntryName];
+    XCTAssertTrue([@"stub" isEqualToString:ret]);
+    [stubB stopMocking];
+    
+}
 - (void)testVerify {
     ocmA *a = [[ocmA alloc] init];
     
