@@ -26,8 +26,8 @@ PODS:
     - libextobjc/EXTScope (= 0.4.1)
     - libextobjc/EXTSelectorChecking (= 0.4.1)
     - libextobjc/EXTSynthesize (= 0.4.1)
-    - libextobjc/NSInvocation+EXT (= 0.4.1)
-    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - "libextobjc/NSInvocation+EXT (= 0.4.1)"
+    - "libextobjc/NSMethodSignature+EXT (= 0.4.1)"
     - libextobjc/RuntimeExtensions (= 0.4.1)
     - libextobjc/UmbrellaHeader (= 0.4.1)
   - libextobjc/EXTADT (0.4.1):
@@ -46,9 +46,9 @@ PODS:
     - libextobjc/RuntimeExtensions
   - libextobjc/EXTSynthesize (0.4.1):
     - libextobjc/RuntimeExtensions
-  - libextobjc/NSInvocation+EXT (0.4.1):
+  - "libextobjc/NSInvocation+EXT (0.4.1)":
     - libextobjc/RuntimeExtensions
-  - libextobjc/NSMethodSignature+EXT (0.4.1):
+  - "libextobjc/NSMethodSignature+EXT (0.4.1)":
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4.1)
   - libextobjc/UmbrellaHeader (0.4.1)
@@ -84,6 +84,23 @@ DEPENDENCIES:
   - SDWebImage
   - YTKKeyValueStore
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BlocksKit
+    - FMDB
+    - libextobjc
+    - M13OrderedDictionary
+    - Mantle
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MWMarqueeView
+    - MWObjTools
+    - MWUITools
+    - OCMock
+    - SDWebImage
+    - YTKKeyValueStore
+
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
@@ -102,4 +119,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b218b35d2edb923e197dfe0e93a27cb4d1ddc25c
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.5.0

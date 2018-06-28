@@ -15,4 +15,9 @@
     return [self.b name];
 }
 
+- (NSString *)showInt:(NSUInteger)intValue {
+//    NSLog(@"");
+    return [NSString stringWithFormat:@"%@", intValue];
+}
+
 @end

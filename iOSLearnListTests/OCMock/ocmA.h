@@ -14,4 +14,6 @@
 
 - (NSString*)name;
 
+- (NSString *)showInt:(NSNumber *)intValue;
+
 @end

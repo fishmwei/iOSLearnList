@@ -28,6 +28,20 @@
     [super tearDown];
 }
 
+- (void)testArgument {
+    
+    id mocka = OCMClassMock([ocmA class]);
+    
+//    [[[mocka stub] ignoringNonObjectArgs] showInt:1000];
+    OCMExpect([mocka showInt:[OCMArg any]]).andReturn(@"1000");
+    
+//    ocmA *a = [[ocmA alloc] init];
+    
+    NSString *result = [mocka showInt:@999];
+    XCTAssertNotNil(result);
+    OCMVerifyAll(mocka);
+}
+
 - (void)testExample {
     ocmA *a = [[ocmA alloc] init];
     

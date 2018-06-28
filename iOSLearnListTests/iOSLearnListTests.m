@@ -36,6 +36,18 @@
     
     NSString *value = [[NSUserDefaults standardUserDefaults] stringForKey:@"key"];
     XCTAssertTrue([value isEqualToString:@"http://testurl"]);
+    [userDefaultsMock stopMocking];
+}
+
+- (void)testExampleReference {
+    id userDefaultsMock = OCMClassMock([NSUserDefaults class]);
+    NSString *key= @"hello";
+//    OCMStub([userDefaultsMock stringForKey:[OCMArg setTo:@"hello"]]);
+    
+    
+    
+    NSString *value = [[NSUserDefaults standardUserDefaults] stringForKey:key];
+    XCTAssertTrue([value isEqualToString:@"http://testurl"]);
     
 }
 
