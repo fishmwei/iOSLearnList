@@ -12,4 +12,17 @@
 - (NSString*)name {
     return @"ocmB";
 }
+
+- (NSString *)parseInt:(NSUInteger)value {
+    return [NSString stringWithFormat:@"%lu", value];
+}
+
+- (BOOL)isValidNumber:(NSNumber *)num {
+    return [num integerValue] < 5;
+}
+
++ (NSString *)getEntryName {
+    return NSStringFromClass([self class]);
+}
+
 @end

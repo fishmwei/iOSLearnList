@@ -11,6 +11,16 @@
 
 
 @implementation ocmA
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.b = [ocmB new];
+    }
+    
+    return self;
+}
+
 - (NSString*)name {
     return [self.b name];
 }

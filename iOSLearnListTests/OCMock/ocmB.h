@@ -11,4 +11,10 @@
 @interface ocmB : NSObject
 - (NSString*)name;
 
+- (NSString *)parseInt:(NSUInteger)value;
+
+- (BOOL)isValidNumber:(NSNumber *)num;
+
++ (NSString *)getEntryName;
+
 @end
