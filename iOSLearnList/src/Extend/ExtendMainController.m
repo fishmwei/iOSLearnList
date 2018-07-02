@@ -12,6 +12,7 @@
 
 #import "BaseMainViewController.h"
 #import "AdvancedViewController.h"
+#import "TabAnimation.h"
 
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
@@ -31,7 +32,8 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    self.delegate = self;
     [self createData];
     [self createView];
     [self procShortItem:nil];
@@ -158,5 +160,24 @@
 -(void)popBack
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - UITabBarControllerDelegate
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController
+                     animationControllerForTransitionFromViewController:(UIViewController *)fromVC
+                                                       toViewController:(UIViewController *)toVC    {
+    
+    TabAnimation *animation = [TabAnimation new];
+    
+    animation.start = [self.viewControllers indexOfObject:fromVC];
+    animation.end = [self.viewControllers indexOfObject:toVC];
+    
+    return animation;
+}
+
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    
 }
 @end

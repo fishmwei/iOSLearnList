@@ -131,6 +131,7 @@
 		C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FCC1CE4231900445669 /* IndexTableViewController.m */; };
 		C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */; };
 		C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */; };
+		C1F0E18B20EA589D002752CD /* TabAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F0E18A20EA589D002752CD /* TabAnimation.m */; };
 		C1F7DCB51DC2F5CD00C29808 /* dispatch_sourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCB41DC2F5CD00C29808 /* dispatch_sourceViewController.m */; };
 		C1F7DCDF1DC3532E00C29808 /* MantleExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCDE1DC3532E00C29808 /* MantleExp.m */; };
 		C1F7DCE21DC353A100C29808 /* MantleObjectModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCE11DC353A100C29808 /* MantleObjectModelViewController.m */; };
@@ -400,6 +401,8 @@
 		C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendMainController.m; sourceTree = "<group>"; };
 		C1ED59751CE5D09100096EC7 /* BBLaunchAdMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLaunchAdMonitor.h; sourceTree = "<group>"; };
 		C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLaunchAdMonitor.m; sourceTree = "<group>"; };
+		C1F0E18920EA589D002752CD /* TabAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabAnimation.h; sourceTree = "<group>"; };
+		C1F0E18A20EA589D002752CD /* TabAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabAnimation.m; sourceTree = "<group>"; };
 		C1F7DCB31DC2F5CD00C29808 /* dispatch_sourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_sourceViewController.h; sourceTree = "<group>"; };
 		C1F7DCB41DC2F5CD00C29808 /* dispatch_sourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_sourceViewController.m; sourceTree = "<group>"; };
 		C1F7DCDD1DC3532E00C29808 /* MantleExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MantleExp.h; sourceTree = "<group>"; };
@@ -1076,6 +1079,7 @@
 		C1ED596B1CE5B07900096EC7 /* Extend */ = {
 			isa = PBXGroup;
 			children = (
+				C1F0E18820EA5885002752CD /* TabAnimation */,
 				C1ED596C1CE5B0A200096EC7 /* ExtendMainController.h */,
 				C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */,
 				C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */,
@@ -1095,6 +1099,15 @@
 				C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */,
 			);
 			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		C1F0E18820EA5885002752CD /* TabAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C1F0E18920EA589D002752CD /* TabAnimation.h */,
+				C1F0E18A20EA589D002752CD /* TabAnimation.m */,
+			);
+			path = TabAnimation;
 			sourceTree = "<group>";
 		};
 		C1F7DCDC1DC352CF00C29808 /* Mantle */ = {
@@ -1284,7 +1297,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BCC7D32EF8EC4C742E088F43 /* [CP] Copy Pods Resources */ = {
@@ -1334,23 +1347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EBCE906990247DDE803BB67B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1360,6 +1357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F0E18B20EA589D002752CD /* TabAnimation.m in Sources */,
 				C162E35B1D51853B00061311 /* methodSelectorViewController.m in Sources */,
 				C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */,
 				C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */,
