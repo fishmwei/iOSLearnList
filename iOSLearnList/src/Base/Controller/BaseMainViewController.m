@@ -18,7 +18,10 @@
     [super viewDidLoad];
     
     [self.navigationController.navigationBar.topItem setTitle:@"BaseVC"];
-    self.showData = @[@"UIBaseViewController", @"SysBaseViewController", @"ObjBaseViewController"];
+    self.showData = @[@"UIBaseViewController",
+                      @"SysBaseViewController",
+                      @"ObjBaseViewController",
+                      @"CustomTableViewController"];
     // Do any additional setup after loading the view.
 }
 

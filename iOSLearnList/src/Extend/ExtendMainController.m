@@ -38,6 +38,8 @@
     [self createView];
     [self procShortItem:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(SwitchToAdvance) name:@"Advance" object:nil];
+    
 //    [self setSelectedIndex:1];
 }
 
@@ -160,6 +162,10 @@
 -(void)popBack
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)SwitchToAdvance {
+    [self setSelectedIndex:1];
 }
 
 #pragma mark - UITabBarControllerDelegate

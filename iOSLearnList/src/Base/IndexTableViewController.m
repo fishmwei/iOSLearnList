@@ -65,6 +65,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *className = [self.showData objectAtIndex:indexPath.row];
+    
+//    if ([className isEqualToString:@"UIBaseViewController"]) {
+//        if (!self.tabBarController.tabBar.hidden) {
+//            self.tabBarController.tabBar.hidden = YES;
+//            self.hidesBottomBarWhenPushed = YES;
+//        }
+//    }
+//    
+//    if ([className isEqualToString:@"SysBaseViewController"]) {
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"Advance" object:nil];
+//        return;
+//    }
+    
     Class cls = NSClassFromString(className);
     dispatch_async(dispatch_get_main_queue(), ^{
         if (cls) {
