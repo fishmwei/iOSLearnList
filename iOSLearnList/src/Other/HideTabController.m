@@ -12,12 +12,16 @@
 
 @interface HideTabController ()
 @property (nonatomic, assign) BOOL isHidden;
+
+@property (nonatomic, assign) BOOL isTopPage;
 @end
 
 @implementation HideTabController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.isTopPage = self.tabBarController && self.navigationController && [self isEqual:self.navigationController.viewControllers[0]];
     
     self.isHidden = NO;
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 44)];
@@ -56,12 +60,20 @@
 
 
 - (void)hideTabbar {
+    if (!self.isTopPage) {
+        return;
+    }
+    
     self.hidesBottomBarWhenPushed = YES;
     self.tabBarController.tabBar.hidden = YES;
     self.isHidden = YES;
 }
 
 - (void)showTabbar {
+    if (!self.isTopPage) {
+        return;
+    }
+    
     self.hidesBottomBarWhenPushed = NO;
     self.tabBarController.tabBar.hidden = NO;
     self.isHidden = NO;
@@ -75,7 +87,7 @@
 }
 
 - (void)push {
-    MWBaseViewController *vc = [MWBaseViewController new];
+    HideTabController *vc = [HideTabController new];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
