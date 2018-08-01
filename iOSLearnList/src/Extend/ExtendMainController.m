@@ -14,6 +14,8 @@
 #import "AdvancedViewController.h"
 #import "MWNavigationController.h"
 
+#import "HideTabController.h"
+
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
 
@@ -22,6 +24,7 @@
 @property (nonatomic, retain) UIViewController *baseCtl;
 @property (nonatomic, retain) UIViewController *otherCtl;
 
+@property (nonatomic, retain) UIViewController *hideVc;
 
 @end
 
@@ -73,7 +76,13 @@
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _otherCtl = nav;
-
+ 
+    nav = [[UINavigationController alloc] initWithRootViewController:[[HideTabController alloc] init]];
+    nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.title = @"hideTab";
+    [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
+    _hideVc = nav;
 }
 
 
@@ -85,37 +94,11 @@
     
     [self createViewControllers];
     
-    self.bottomItems = @[_baseCtl, _advanceCtl, _otherCtl];
+    self.bottomItems = @[_baseCtl, _hideVc, _advanceCtl, _otherCtl];
     
-//    NSMutableArray *bottomControllers = [NSMutableArray array];
-//    for (NSUInteger i = 0; i < self.bottomItems.count; i++) {
-//        NSString *str = [self.bottomItems objectAtIndex:i];
-//        Class cls = NSClassFromString(str);
-//        if (cls) {
-//            id vc = [[cls alloc] init];
-//            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-//            nav.tabBarItem.image = [[UIImage imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//            nav.tabBarItem.selectedImage = [[UIImage imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//            
-//            
-//            
-//            [vc setTitle:str];
-//            nav.title = @"aaa";
-////            [vc setTitle:str];
-//            [bottomControllers addObject:nav];
-//        }
-//    }
     
     self.viewControllers = self.bottomItems ;
-    
-    
-//    [self.navigationController.navigationBar setHidden:YES];
-//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 20, 20)];
-//    [btn setBackgroundColor:[UIColor blueColor]];
-//    [self.view addSubview:btn];
-//    [btn addTarget:self action:@selector(popBack) forControlEvents:UIControlEventTouchUpInside];
-    
-//    [self.tabBar setTintColor:[UIColor clearColor]];
+ 
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -158,4 +141,5 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 @end

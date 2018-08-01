@@ -18,6 +18,8 @@
 		519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B81CE85C03002CB3AE /* InfoPlist.strings */; };
 		519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5BE1CE85C88002CB3AE /* Localizable.strings */; };
 		51A67F0D1E16B76600FA723F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A67F0C1E16B76600FA723F /* WebViewController.m */; };
+		51A76D66211203810067493A /* HideTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A76D65211203810067493A /* HideTabController.m */; };
+		51A76D6921120DED0067493A /* MyPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A76D6821120DED0067493A /* MyPresentViewController.m */; };
 		51F5BEF61D28A308000641A7 /* mergedBundleFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F5BEF51D28A308000641A7 /* mergedBundleFrame.a */; };
 		51F68EC21CDE1905009338D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC11CDE1905009338D6 /* main.m */; };
 		51F68EC51CDE1905009338D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC41CDE1905009338D6 /* AppDelegate.m */; };
@@ -173,6 +175,10 @@
 		519EB5BF1CE85C8A002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		51A67F0B1E16B76600FA723F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		51A67F0C1E16B76600FA723F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		51A76D64211203810067493A /* HideTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HideTabController.h; sourceTree = "<group>"; };
+		51A76D65211203810067493A /* HideTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HideTabController.m; sourceTree = "<group>"; };
+		51A76D6721120DED0067493A /* MyPresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPresentViewController.h; sourceTree = "<group>"; };
+		51A76D6821120DED0067493A /* MyPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPresentViewController.m; sourceTree = "<group>"; };
 		51F5BEF41D28A28C000641A7 /* myBundleFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myBundleFrame.h; sourceTree = "<group>"; };
 		51F5BEF51D28A308000641A7 /* mergedBundleFrame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = mergedBundleFrame.a; sourceTree = "<group>"; };
 		51F68EBD1CDE1905009338D6 /* iOSLearnList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -988,6 +994,10 @@
 				C15C2C851DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m */,
 				C1F7DCDD1DC3532E00C29808 /* MantleExp.h */,
 				C1F7DCDE1DC3532E00C29808 /* MantleExp.m */,
+				51A76D64211203810067493A /* HideTabController.h */,
+				51A76D65211203810067493A /* HideTabController.m */,
+				51A76D6721120DED0067493A /* MyPresentViewController.h */,
+				51A76D6821120DED0067493A /* MyPresentViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1327,6 +1337,7 @@
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
 				C1B8EE671DC6E94F008FF1C6 /* RunLoopsExp.m in Sources */,
 				C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */,
+				51A76D6921120DED0067493A /* MyPresentViewController.m in Sources */,
 				C156DDBF1D4898FF004CD422 /* AnimationListViewController.m in Sources */,
 				51A67F0D1E16B76600FA723F /* WebViewController.m in Sources */,
 				C15579951DBE1C2000F50CD2 /* dispatch_queueViewController.m in Sources */,
@@ -1400,6 +1411,7 @@
 				C17091751DE296F80032C75D /* NSURLParseViewController.m in Sources */,
 				C1E36FCD1CE4231900445669 /* IndexTableViewController.m in Sources */,
 				C15F155A1D45E92300392D95 /* MethodSignatureViewController.m in Sources */,
+				51A76D66211203810067493A /* HideTabController.m in Sources */,
 				511581381DB2F7A800451657 /* DatePickerViewController.m in Sources */,
 				C1A650821CE99E75006A117B /* downloadController.m in Sources */,
 				C16D84531DC87CDA00D7F062 /* SynchronizationExp.m in Sources */,
