@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NSObject_autoCoding : NSObject <NSCoding>
 
 - (NSArray *)propertyNames;

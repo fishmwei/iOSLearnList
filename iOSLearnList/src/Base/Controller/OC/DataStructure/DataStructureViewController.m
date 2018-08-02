@@ -8,17 +8,12 @@
 
 #import "DataStructureViewController.h"
 
-@implementation DataStructureViewController
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    
-    
-    
-    
-    
-}
 
+@implementation DataStructureViewController
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+}
 
 
 @end

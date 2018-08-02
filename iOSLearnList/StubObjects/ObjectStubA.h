@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface ObjectStubA : NSObject
 
 + (id)stubA:(NSString *)name;

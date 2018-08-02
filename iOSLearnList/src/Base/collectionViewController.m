@@ -8,9 +8,11 @@
 
 #import "collectionViewController.h"
 
+
 @interface collectionViewController ()
 
 @end
+
 
 @implementation collectionViewController
 
@@ -21,27 +23,27 @@
     layout.minimumLineSpacing = 40;
     layout.minimumInteritemSpacing = 20;
     layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
-    
+
     return [self initWithCollectionViewLayout:layout];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     // 注意:  self.collectionView != self.view
-    
+
     self.collectionView.backgroundColor = [UIColor whiteColor];
-    
+
     // 注册cell
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
-
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 
 #pragma mark UIColloectionDataSource
@@ -55,10 +57,10 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    
+
     cell.backgroundColor = [UIColor redColor];
 
-    
+
     return cell;
 }
 /*

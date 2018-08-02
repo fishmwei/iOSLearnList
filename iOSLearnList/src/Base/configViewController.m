@@ -8,31 +8,35 @@
 
 #import "configViewController.h"
 
+
 @interface configViewController ()
 
 @end
 
+
 @implementation configViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     NSMutableArray *array = [NSMutableArray array];
     for (int i = 0; i < 1000; i++) {
         [array addObject:@(i)];
     }
-    
+
     for (id toDel in [array reverseObjectEnumerator]) {
         if ([toDel integerValue] % 3 == 0) {
             [array removeObject:toDel];
         }
     }
-    
+
     NSLog(@"%@", array);
 }
 
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

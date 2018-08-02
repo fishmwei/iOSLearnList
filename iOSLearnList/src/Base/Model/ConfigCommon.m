@@ -8,15 +8,18 @@
 
 #import "ConfigCommon.h"
 
-@interface ConfigCommon()
+
+@interface ConfigCommon ()
 {
     NSDictionary *dict;
 }
 
 @end
+
+
 @implementation ConfigCommon
 
-+(id)shareInstance
++ (id)shareInstance
 {
     static ConfigCommon *instance = nil;
     static dispatch_once_t onceToken;
@@ -24,17 +27,16 @@
         instance = [[ConfigCommon alloc] init];
         [instance readData];
     });
-    
+
     return instance;
 }
 
-#pragma  mark - private
+#pragma mark - private
 - (void)readData
 {
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *path = [bundle pathForResource:@"Configuration" ofType:@"plist"];
     dict = [NSDictionary dictionaryWithContentsOfFile:path];
-    
 }
 
 - (NSString *)currentConfig

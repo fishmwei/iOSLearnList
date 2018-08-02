@@ -8,7 +8,9 @@
 
 #import "display_applyViewController.h"
 
-@interface display_applyViewController () {
+
+@interface display_applyViewController ()
+{
     dispatch_queue_t seralQueue;
     dispatch_queue_t concurrentQueue;
     dispatch_group_t dispatchGroup;
@@ -16,51 +18,53 @@
 }
 @end
 
+
 @implementation display_applyViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     [self setupData];
-    
+
     [self setupUI];
-    
 }
 
-- (void)setupData {
+- (void)setupData
+{
     seralQueue = dispatch_queue_create(NSStringFromClass([self class]).UTF8String, DISPATCH_QUEUE_SERIAL);
     concurrentQueue = dispatch_queue_create(NSStringFromClass([self class]).UTF8String, DISPATCH_QUEUE_CONCURRENT);
 }
 
-- (void)setupUI {
-    
+- (void)setupUI
+{
     showView = [[UITextView alloc] initWithFrame:CGRectMake(0, 100, 200, 300)];
     [self.view addSubview:showView];
     showView.layer.borderWidth = 1;
     showView.layer.borderColor = [UIColor blueColor].CGColor;
-    
+
     NSMutableArray *array = [NSMutableArray array];
     for (NSInteger i = 0; i < 10000; i++) {
         [array addObject:[NSString stringWithFormat:@"%ld", i]];
     }
-//    NSArray *array = @[@"0", @"1", @"2", @"3", @"4"];
-    
+    //    NSArray *array = @[@"0", @"1", @"2", @"3", @"4"];
+
     dispatch_async(concurrentQueue, ^{
         NSLog(@"excute in serial Queue");
-        
-        dispatch_apply(array.count, concurrentQueue, ^(size_t t){
+
+        dispatch_apply(array.count, concurrentQueue, ^(size_t t) {
             NSLog(@"data is %@, thread %@", array[t], [NSThread currentThread]);
         });
-        
+
         NSLog(@"excute in serial Queue Done");
     });
-    
+
     NSLog(@"excute in main Queue");
 }
 
-- (void)showAppend:(NSString *)str {
+- (void)showAppend:(NSString *)str
+{
     NSString *text = showView.text;
     showView.text = [text stringByAppendingString:[NSString stringWithFormat:@"%@\n", str]];
-    
 }
 @end

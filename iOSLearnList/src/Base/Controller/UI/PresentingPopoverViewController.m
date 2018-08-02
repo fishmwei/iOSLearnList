@@ -8,14 +8,18 @@
 
 #import "PresentingPopoverViewController.h"
 
+
 @interface PresentingPopoverViewController () <UIPopoverPresentationControllerDelegate>
 @property (nonatomic, retain) UIViewController *popViewController;
 @property (nonatomic, retain) UIButton *btn;
 @end
+
+
 @implementation PresentingPopoverViewController
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     self.view.backgroundColor = [UIColor whiteColor];
     self.btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:self.btn];
@@ -25,32 +29,33 @@
     [self.btn addTarget:self action:@selector(btnPressed) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)btnPressed {
-//    UIViewController *myPopoverViewController = [[UIViewController alloc] init];
-//    myPopoverViewController.preferredContentSize = CGSizeMake(100, 200);
-////    myPopoverViewController.view.backgroundColor = [UIColor blueColor];
-//    
-//    // Present the view controller using the popover style.
-//    myPopoverViewController.modalPresentationStyle = UIModalPresentationPopover;
-//    
-//    
-//    // Get the popover presentation controller and configure it.
-//    UIPopoverPresentationController *presentationController =
-//    [myPopoverViewController popoverPresentationController];
-//    presentationController.delegate = self;
-//    presentationController.backgroundColor = [UIColor whiteColor];
-//    presentationController.permittedArrowDirections =
-//    UIPopoverArrowDirectionLeft | UIPopoverArrowDirectionRight;
-//    presentationController.sourceView = self.btn;
-//    presentationController.sourceRect = self.btn.bounds;
-//    
-//    [self presentViewController:myPopoverViewController animated: YES completion: nil];
-    
-    
+- (void)btnPressed
+{
+    //    UIViewController *myPopoverViewController = [[UIViewController alloc] init];
+    //    myPopoverViewController.preferredContentSize = CGSizeMake(100, 200);
+    ////    myPopoverViewController.view.backgroundColor = [UIColor blueColor];
+    //
+    //    // Present the view controller using the popover style.
+    //    myPopoverViewController.modalPresentationStyle = UIModalPresentationPopover;
+    //
+    //
+    //    // Get the popover presentation controller and configure it.
+    //    UIPopoverPresentationController *presentationController =
+    //    [myPopoverViewController popoverPresentationController];
+    //    presentationController.delegate = self;
+    //    presentationController.backgroundColor = [UIColor whiteColor];
+    //    presentationController.permittedArrowDirections =
+    //    UIPopoverArrowDirectionLeft | UIPopoverArrowDirectionRight;
+    //    presentationController.sourceView = self.btn;
+    //    presentationController.sourceRect = self.btn.bounds;
+    //
+    //    [self presentViewController:myPopoverViewController animated: YES completion: nil];
+
+
     UIViewController *firstVC = [[UIViewController alloc] init];
     firstVC.modalPresentationStyle = UIModalPresentationPopover;
-    firstVC.popoverPresentationController.sourceView = self.btn;  //rect参数是以view的左上角为坐标原点（0，0）
-    firstVC.popoverPresentationController.sourceRect = self.btn.bounds; //指定箭头所指区域的矩形框范围（位置和尺寸），以view的左上角为坐标原点
+    firstVC.popoverPresentationController.sourceView = self.btn;                                //rect参数是以view的左上角为坐标原点（0，0）
+    firstVC.popoverPresentationController.sourceRect = self.btn.bounds;                         //指定箭头所指区域的矩形框范围（位置和尺寸），以view的左上角为坐标原点
     firstVC.popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirectionUp; //箭头方向
     firstVC.popoverPresentationController.delegate = self;
     firstVC.preferredContentSize = CGSizeMake(100, 200);
@@ -58,10 +63,10 @@
 }
 
 
-- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller {
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller
+{
     return UIModalPresentationNone;
 }
-
 
 
 @end

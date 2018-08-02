@@ -22,9 +22,8 @@ typedef void (^CompletionHandlerType)();
 @property NSMutableDictionary *completionHandlerDictionary;
 #endif
 
-- (void) addCompletionHandler: (CompletionHandlerType) handler forSession: (NSString *)identifier;
-- (void) callCompletionHandlerForSession: (NSString *)identifier;
-
+- (void)addCompletionHandler:(CompletionHandlerType)handler forSession:(NSString *)identifier;
+- (void)callCompletionHandlerForSession:(NSString *)identifier;
 
 
 @end

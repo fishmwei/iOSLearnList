@@ -12,7 +12,8 @@
 
 
 @interface SearchBarVC () <UISearchDisplayDelegate,
-                            UISearchBarDelegate> {
+                           UISearchBarDelegate>
+{
     UISearchDisplayController *searchController;
     UISearchBar *searchBar;
 }
@@ -24,76 +25,81 @@
 
 @end
 
+
 @implementation SearchBarVC
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated
+{
     [super viewDidAppear:animated];
-//    self.navigationItem.hidesBackButton = YES;
+    //    self.navigationItem.hidesBackButton = YES;
 }
 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
+
     [self setupMyData];
     [self setupMyUI];
-//    self.navigationItem.hidesBackButton = YES;
-    
-//    self.navigationItem.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:NULL];
-    
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:nil style:UIBarButtonItemStyleDone target:self action:@selector(backBtnPressed)];
-    
+    //    self.navigationItem.hidesBackButton = YES;
+
+    //    self.navigationItem.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:NULL];
+
+    //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:nil style:UIBarButtonItemStyleDone target:self action:@selector(backBtnPressed)];
+
     _tipHud = [[MBProgressHUD alloc] initWithView:self.view];
     [self.view addSubview:_tipHud];
-
-    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
 #pragma mark - UI
-- (void)setupMyUI {
+- (void)setupMyUI
+{
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-    
+
     searchBar = [[UISearchBar alloc] init];
     [searchBar setShowsCancelButton:YES animated:NO];
     searchBar.text = @"aa";
     searchBar.delegate = self;
     [searchBar setBarTintColor:[UIColor blueColor]];
-    
+
     //    [self.tableView setTableHeaderView:searchBar];
-    
-    
+
+
     searchController = [[UISearchDisplayController alloc]
-                        initWithSearchBar:searchBar contentsController:self];
+         initWithSearchBar:searchBar
+        contentsController:self];
     searchController.delegate = self;
     searchController.searchResultsDataSource = self;
     searchController.searchResultsDelegate = self;
     searchController.displaysSearchBarInNavigationBar = YES;
     searchController.searchResultsTableView.hidden = YES;
-//    searchController.navigationItem.hidesBackButton = YES;
-    
-//    searchController.searchContentsController.view.alpha = 0;
-    
+    //    searchController.navigationItem.hidesBackButton = YES;
+
+    //    searchController.searchContentsController.view.alpha = 0;
 }
 
 
 #pragma mark - Data
-- (void)setupMyData {
-    self.showData = [NSMutableArray arrayWithArray:@[@"1", @"2", @"3"]];
-    self.historyData = @[@"H0", @"H1", @"H2", @"H3"];
+- (void)setupMyData
+{
+    self.showData = [NSMutableArray arrayWithArray:@[ @"1", @"2", @"3" ]];
+    self.historyData = @[ @"H0", @"H1", @"H2", @"H3" ];
 }
 
--  (void)getData {
+- (void)getData
+{
     [self showLoadingTips];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^ {
-        [self.showData addObjectsFromArray:@[@1, @2, @3]];
-//        self.historyData = self.showData;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self.showData addObjectsFromArray:@[ @1, @2, @3 ]];
+        //        self.historyData = self.showData;
         [self.tableView reloadData];
         [searchController setActive:NO animated:YES];
         [self dismissLoadingTips];
@@ -101,65 +107,65 @@
 }
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     if (tableView == searchController.searchResultsTableView) {
-//        return self.historyData.count;
+        //        return self.historyData.count;
         return 0;
     } else if (tableView == self.tableView) {
         return self.showData.count;
     } else {
         return 0;
     }
-    
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (tableView == searchController.searchResultsTableView) {
-//        static NSString *cellId = @"ReuseIdHistory";
-//        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-//        if (!cell) {
-//            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-//        }
-//        
-//        cell.textLabel.text = [self.historyData objectAtIndex:indexPath.row];
-//        return cell;
+        //        static NSString *cellId = @"ReuseIdHistory";
+        //        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+        //        if (!cell) {
+        //            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        //        }
+        //
+        //        cell.textLabel.text = [self.historyData objectAtIndex:indexPath.row];
+        //        return cell;
         UITableViewCell *cell = [[UITableViewCell alloc] init];
         cell.backgroundColor = [UIColor blueColor];
         return cell;
     } else if (tableView == self.tableView) {
-//        static NSString *cellId = @"ReuseIdHistory";
-//        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-//        if (!cell) {
-//            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-//        }
-//        cell.textLabel.text = [self.showData objectAtIndex:indexPath.row];
-//        return cell;
+        //        static NSString *cellId = @"ReuseIdHistory";
+        //        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+        //        if (!cell) {
+        //            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        //        }
+        //        cell.textLabel.text = [self.showData objectAtIndex:indexPath.row];
+        //        return cell;
         UITableViewCell *cell = [[UITableViewCell alloc] init];
         cell.backgroundColor = [UIColor redColor];
         return cell;
     } else {
         return [[UITableViewCell alloc] init];
     }
-    
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return 44;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+
     if (tableView == searchController.searchResultsTableView) {
         [self getData];
-//        [self.navigationController pushViewController:[[UIViewController alloc] init] animated:YES];
-        
+        //        [self.navigationController pushViewController:[[UIViewController alloc] init] animated:YES];
     }
 }
 
@@ -214,16 +220,15 @@
 
 //- (BOOL)searchbar
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
     [self getData];
-    
 }
 
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
     [self.navigationController popViewControllerAnimated:YES];
 }
-
 
 
 - (void)showTextTips:(NSString *)tips
@@ -231,7 +236,7 @@
     [MBProgressHUD hideHUDForView:self.view animated:NO];
     [self.view addSubview:_tipHud];
     [self.view bringSubviewToFront:_tipHud];
-    
+
     _tipHud.mode = MBProgressHUDModeText;
     _tipHud.labelText = tips;
     [_tipHud show:YES];
@@ -243,7 +248,7 @@
     [MBProgressHUD hideHUDForView:self.view animated:NO];
     [self.view addSubview:_tipHud];
     [self.view bringSubviewToFront:_tipHud];
-    
+
     _tipHud.labelText = nil;
     _tipHud.mode = MBProgressHUDModeIndeterminate;
     [_tipHud show:YES];

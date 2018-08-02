@@ -15,6 +15,6 @@
 
 
 @interface MWCommon : NSObject
-+(UIImage *)imageNamed:(NSString *)imageName;
++ (UIImage *)imageNamed:(NSString *)imageName;
 
 @end

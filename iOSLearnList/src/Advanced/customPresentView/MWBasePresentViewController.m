@@ -9,7 +9,9 @@
 #import "MWBasePresentViewController.h"
 #import "MWPresentAnimation.h"
 
-@interface MWBasePresentViewController () <UIViewControllerTransitioningDelegate> {
+
+@interface MWBasePresentViewController () <UIViewControllerTransitioningDelegate>
+{
     UILabel *titleLabel;
     UIView *bottomView;
 }
@@ -17,51 +19,58 @@
 @property (nonatomic, retain) MWPresentAnimation *presentAnimation;
 @end
 
+
 @implementation MWBasePresentViewController
 
 #pragma mark - UI
-#pragma mark  Autorotate
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+#pragma mark Autorotate
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
     return (interfaceOrientation == UIDeviceOrientationPortrait);
 }
 
-- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0) {
+- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0)
+{
     return UIInterfaceOrientationMaskPortrait;
     //UIInterfaceOrientationMaskPortrait
 }
 
--(BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0) {
+- (BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0)
+{
     return YES;
 }
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
     return UIInterfaceOrientationPortrait;
 }
 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self setupMyData];
-//    [self setupMyUI];
-    
+    //    [self setupMyUI];
+
     self.view.backgroundColor = [UIColor whiteColor];
     self.view.layer.masksToBounds = YES;
     self.view.layer.cornerRadius = 10;
-    
-    
+
+
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
     btn.backgroundColor = [UIColor orangeColor];
     btn.center = self.view.center;
     [self.view addSubview:btn];
     [btn setTitle:@"Dismiss" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnPressed:) forControlEvents:UIControlEventTouchUpInside];
-    
-    
+
+
     // Do any additional setup after loading the view.
 }
 
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -75,7 +84,7 @@
         self.modalPresentationStyle = UIModalPresentationCustom;
         self.showRect = CGRectZero;
     }
-    
+
     return self;
 }
 
@@ -83,28 +92,26 @@
 #pragma mark -Data
 - (void)setupMyData
 {
-    if (CGRectEqualToRect(self.showRect, CGRectZero))
-    {
+    if (CGRectEqualToRect(self.showRect, CGRectZero)) {
         self.showRect = self.view.bounds;
     }
- 
 }
 
 
 #pragma mark UIViewControllerTransitioningDelegate
-- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+- (nullable id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
     self.presentAnimation.type = MWAnimationPresent;
     self.presentAnimation.modalFrame = self.showRect;
-    
+
     return self.presentAnimation;
 }
 
-- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+- (nullable id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
     self.presentAnimation.type = MWAnimationDismiss;
     self.presentAnimation.modalFrame = self.showRect;
-    
+
     return self.presentAnimation;
 }
 

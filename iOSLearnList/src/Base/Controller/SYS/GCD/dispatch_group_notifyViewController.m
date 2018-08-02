@@ -8,70 +8,73 @@
 
 #import "dispatch_group_notifyViewController.h"
 
-@interface dispatch_group_notifyViewController () {
+
+@interface dispatch_group_notifyViewController ()
+{
     dispatch_queue_t dispatchQueue;
     dispatch_group_t dispatchGroup;
     UITextView *showView;
 }
 @end
 
+
 @implementation dispatch_group_notifyViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     [self setupData];
     [self setupUI];
-
 }
 
-- (void)setupData {
+- (void)setupData
+{
     dispatchQueue = dispatch_queue_create(NSStringFromClass([self class]).UTF8String, DISPATCH_QUEUE_CONCURRENT);
     dispatchGroup = dispatch_group_create();
 }
 
-- (void)setupUI {
-    
+- (void)setupUI
+{
     showView = [[UITextView alloc] initWithFrame:CGRectMake(0, 100, 200, 300)];
     [self.view addSubview:showView];
-//    showView.backgroundColor = [UIColor blueColor];
-    
-//    dispatch_async(dispatch_get_main_queue(), ^{
-    
-        dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
-            [NSThread sleepForTimeInterval:2];
-            NSLog(@"dispatch-1");
-            
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                [self showAppend:@"dispatch-1"];
-//            });
-        });
-        
-        dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
-            [NSThread sleepForTimeInterval:4];
-            NSLog(@"dispatch-2");
-            
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                [self showAppend:@"dispatch-2"];
-//            });
-            
-        });
-        
-        dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
-//            [NSThread sleepForTimeInterval:2.0f];
-            NSLog(@"end");
-                [self showAppend:@"end"];
-            
-        });
-        
-//    });
-    
+    //    showView.backgroundColor = [UIColor blueColor];
+
+    //    dispatch_async(dispatch_get_main_queue(), ^{
+
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^() {
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"dispatch-1");
+
+        //            dispatch_async(dispatch_get_main_queue(), ^{
+        //                [self showAppend:@"dispatch-1"];
+        //            });
+    });
+
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^() {
+        [NSThread sleepForTimeInterval:4];
+        NSLog(@"dispatch-2");
+
+        //            dispatch_async(dispatch_get_main_queue(), ^{
+        //                [self showAppend:@"dispatch-2"];
+        //            });
+
+    });
+
+    dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^() {
+        //            [NSThread sleepForTimeInterval:2.0f];
+        NSLog(@"end");
+        [self showAppend:@"end"];
+
+    });
+
+    //    });
 }
 
-- (void)showAppend:(NSString *)str {
+- (void)showAppend:(NSString *)str
+{
     NSString *text = showView.text;
     showView.text = [text stringByAppendingString:[NSString stringWithFormat:@"%@\n", str]];
-    
 }
 
 @end

@@ -8,29 +8,33 @@
 
 #import "MWNavigationController.h"
 
+
 @interface MWNavigationController () <UIGestureRecognizerDelegate>
 
 @end
 
+
 @implementation MWNavigationController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     self.interactivePopGestureRecognizer.enabled = YES;
-//    self.interactivePopGestureRecognizer.delegate = self;
-    
-//    id target = self.interactivePopGestureRecognizer.delegate;
-//    
-//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
-//    pan.delegate = self;
-//    [self.view addGestureRecognizer:pan];
-//    self.interactivePopGestureRecognizer.enabled = NO;
-    
+    //    self.interactivePopGestureRecognizer.delegate = self;
+
+    //    id target = self.interactivePopGestureRecognizer.delegate;
+    //
+    //    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+    //    pan.delegate = self;
+    //    [self.view addGestureRecognizer:pan];
+    //    self.interactivePopGestureRecognizer.enabled = NO;
+
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

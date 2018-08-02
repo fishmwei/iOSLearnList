@@ -8,8 +8,10 @@
 
 #import "MW_A.h"
 
+
 @implementation MW_A
-- (void)printClassName {
+- (void)printClassName
+{
     NSLog(@"class name in MW_A %@ in %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
 

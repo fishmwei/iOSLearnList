@@ -8,27 +8,34 @@
 
 #import "ObjectStubA.h"
 
-@interface ObjectStubA() {
+
+@interface ObjectStubA ()
+{
     NSString *_name;
 }
 
 @end
+
+
 @implementation ObjectStubA
 
-+ (id)stubA:(NSString *)name {
++ (id)stubA:(NSString *)name
+{
     return [[ObjectStubA alloc] initWithName:name];
 }
 
--(id)initWithName:(NSString *)name {
+- (id)initWithName:(NSString *)name
+{
     self = [super init];
     if (self) {
         _name = name;
     }
-    
+
     return self;
 }
 
-- (void)showName {
+- (void)showName
+{
     NSLog(@"name is %@", _name);
 }
 

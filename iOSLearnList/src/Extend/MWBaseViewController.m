@@ -9,34 +9,38 @@
 #import "MWBaseViewController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
+
 @interface MWBaseViewController ()
 
 @property (nonatomic, retain) MBProgressHUD *tipHud;
 
 @end
 
+
 @implementation MWBaseViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
+
 #ifdef __IPHONE_7_0
     {
         self.edgesForExtendedLayout = UIRectEdgeBottom;
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
 #endif
-    
+
     _tipHud = [[MBProgressHUD alloc] initWithView:self.view];
     [self.view addSubview:_tipHud];
-    
+
     screenWidth = CGRectGetWidth([UIScreen mainScreen].bounds);
-    
+
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -46,7 +50,7 @@
     [MBProgressHUD hideHUDForView:self.view animated:NO];
     [self.view addSubview:_tipHud];
     [self.view bringSubviewToFront:_tipHud];
-    
+
     _tipHud.mode = MBProgressHUDModeText;
     _tipHud.labelText = tips;
     [_tipHud show:YES];
@@ -58,7 +62,7 @@
     [MBProgressHUD hideHUDForView:self.view animated:NO];
     [self.view addSubview:_tipHud];
     [self.view bringSubviewToFront:_tipHud];
-    
+
     _tipHud.labelText = nil;
     _tipHud.mode = MBProgressHUDModeIndeterminate;
     [_tipHud show:YES];

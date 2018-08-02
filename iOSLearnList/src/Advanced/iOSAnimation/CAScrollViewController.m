@@ -9,23 +9,27 @@
 #import "CAScrollViewController.h"
 #import "CACustomScrollView.h"
 
+
 @interface CAScrollViewController ()
 
 @end
 
+
 @implementation CAScrollViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     CACustomScrollView *vv = [[CACustomScrollView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     vv.layer.frame = CGRectMake(0, 0, 200, 200);
-    
+
     [self.view addSubview:vv];
     vv.layer.contents = (__bridge id)[UIImage imageNamed:@"launch4"].CGImage;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

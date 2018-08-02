@@ -9,39 +9,46 @@
 #import "OBJModel.h"
 #import <objc/runtime.h>
 
+
 @implementation OBJModel
 
-+(void)initialize {
++ (void)initialize
+{
     [[self class] swMethod];
 }
 
-- (void)mehtod1Test {
+- (void)mehtod1Test
+{
     NSLog(@"%@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
 
 
-- (void)unknown {
+- (void)unknown
+{
     NSLog(@"%@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
 
-- (void)methodSw {
-//    [self methodSw];
+- (void)methodSw
+{
+    //    [self methodSw];
     NSLog(@"call methodSw:%@ %@", [self class], NSStringFromSelector(_cmd));
-    
-     [[self class] swMethod];
+
+    [[self class] swMethod];
 }
 
-- (void)methodReplace {
+- (void)methodReplace
+{
     NSLog(@"call methodReplace:%@ %@", [self class], NSStringFromSelector(_cmd));
-     [[self class] swMethod];
+    [[self class] swMethod];
 }
 
 
-+ (void)swMethod {
++ (void)swMethod
+{
     Method Origin = class_getInstanceMethod([self class], @selector(methodSw));
     Method Swap = class_getInstanceMethod([self class], @selector(methodReplace));
-    
-//    class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+
+    //    class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
 
     method_exchangeImplementations(Origin, Swap);
 }

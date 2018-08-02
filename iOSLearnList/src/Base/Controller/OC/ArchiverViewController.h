@@ -8,6 +8,7 @@
 
 #import "MWBaseViewController.h"
 
+
 @interface ArchiverViewController : MWBaseViewController
 
 @property (nonatomic, weak) IBOutlet UITextView *showView;
@@ -16,7 +17,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *saveBtn;
 
 
--(IBAction)addBtnPressed:(id)sender;
--(IBAction)saveBtnPressed:(id)sender;
+- (IBAction)addBtnPressed:(id)sender;
+- (IBAction)saveBtnPressed:(id)sender;
 
 @end

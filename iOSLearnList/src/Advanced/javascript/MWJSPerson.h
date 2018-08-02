@@ -14,10 +14,13 @@
 - (NSString *)fullName;
 //- (void)setFirstName:(NSString *)firstName lastName:(NSString *)lastName; // longFunc
 
-JSExportAs(setPersonFullName, - (void)setFirstName:(NSString *)firstName lastName:(NSString *)lastName); //shortname
+JSExportAs(setPersonFullName, -(void)setFirstName
+           : (NSString *)firstName lastName
+           : (NSString *)lastName); //shortname
 
 
 @end
+
 
 @interface MWJSPerson : NSObject <MWJSPersonProtocol>
 @property (nonatomic, retain) NSString *firstName;

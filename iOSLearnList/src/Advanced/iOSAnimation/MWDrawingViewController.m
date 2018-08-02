@@ -14,28 +14,32 @@
 
 @end
 
+
 @implementation MWDrawingViewController
 
-- (void)loadView {
-//    MWCGDrawView *vv = [[MWCGDrawView alloc] init];
-//    vv.MWDrawColor = [UIColor blueColor];
-    
+- (void)loadView
+{
+    //    MWCGDrawView *vv = [[MWCGDrawView alloc] init];
+    //    vv.MWDrawColor = [UIColor blueColor];
+
     MWCAShapeDrawView *vv = [[MWCAShapeDrawView alloc] init];
     vv.strokeColor = [UIColor blueColor];
     vv.fillColor = [UIColor redColor];
-    
+
     self.view = vv;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     self.view.backgroundColor = [UIColor whiteColor];
-    
+
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

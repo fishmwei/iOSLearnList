@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface HideNavigatorViewController : UIViewController
 
 @property (nonatomic, assign) BOOL isOriginalNavigationBarHidden;

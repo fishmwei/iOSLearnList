@@ -8,16 +8,18 @@
 
 #import "GCDViewController.h"
 
+
 @implementation GCDViewController
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    self.showData = @[@"display_applyViewController",
-                      @"dispatch_barrierViewController",
-                      @"dispatch_queueViewController",
-                      @"dispatch_group_notifyViewController",
-                      @"dispatch_group_waitViewController",
-                      @"dispatch_semaphoreViewController",
-                      @"dispatch_sourceViewController"];
+
+    self.showData = @[ @"display_applyViewController",
+                       @"dispatch_barrierViewController",
+                       @"dispatch_queueViewController",
+                       @"dispatch_group_notifyViewController",
+                       @"dispatch_group_waitViewController",
+                       @"dispatch_semaphoreViewController",
+                       @"dispatch_sourceViewController" ];
 }
 @end

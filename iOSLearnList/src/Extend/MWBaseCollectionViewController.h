@@ -8,13 +8,13 @@
 
 #import "MWBaseViewController.h"
 
+
 @interface MWBaseCollectionViewController : MWBaseViewController
 
 
 @property (nonatomic, retain) UICollectionView *collectionView;
 @property (nonatomic, retain) UICollectionViewFlowLayout *customLayout;
 @property (nonatomic, retain) NSMutableArray *section0Array;
-
 
 
 @end

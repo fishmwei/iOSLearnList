@@ -8,9 +8,11 @@
 
 #import "MantleExp.h"
 
+
 @implementation MantleExp
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    self.showData = @[@"MantleObjectModelViewController"];
+    self.showData = @[ @"MantleObjectModelViewController" ];
 }
 @end

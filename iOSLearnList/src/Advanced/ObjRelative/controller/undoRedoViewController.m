@@ -8,6 +8,7 @@
 
 #import "undoRedoViewController.h"
 
+
 @interface undoRedoViewController ()
 {
     NSUndoManager *undoMnt;
@@ -18,79 +19,82 @@
 
 @end
 
+
 @implementation undoRedoViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    undoMnt  = [[NSUndoManager alloc] init];
-    
+
+    undoMnt = [[NSUndoManager alloc] init];
+
     self.view.backgroundColor = [UIColor grayColor];
-    
-    
+
+
     self.showLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, self.view.bounds.size.width, 20)];
     [self.view addSubview:self.showLabel];
     self.showLabel.backgroundColor = [UIColor whiteColor];
-    self.showLabel.textAlignment  = NSTextAlignmentCenter;
-    
-    
+    self.showLabel.textAlignment = NSTextAlignmentCenter;
+
+
     [self updateShowLabel];
-    
-    
+
+
     CGFloat offsetX = 10;
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(offsetX, CGRectGetMaxY(self.showLabel.frame), 50, 20)];
-    
+
     [btn setTitle:@"add" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(add) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    
-    
+
+
     offsetX += 60;
     btn = [[UIButton alloc] initWithFrame:CGRectMake(offsetX, CGRectGetMaxY(self.showLabel.frame), 50, 20)];
-    
+
     [btn setTitle:@"del" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(del) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    
+
     offsetX += 60;
     btn = [[UIButton alloc] initWithFrame:CGRectMake(offsetX, CGRectGetMaxY(self.showLabel.frame), 50, 20)];
-    
+
     [btn setTitle:@"undo" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(undo) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    
-    
+
+
     offsetX += 60;
     btn = [[UIButton alloc] initWithFrame:CGRectMake(offsetX, CGRectGetMaxY(self.showLabel.frame), 50, 20)];
-    
+
     [btn setTitle:@"redo" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(redo) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    
+
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
--(void)updateShowLabel
+- (void)updateShowLabel
 {
     self.showLabel.text = [NSString stringWithFormat:@"%ld", self.count];
 }
 
 
--(void)add
+- (void)add
 {
     self.count += 1;
     [self updateShowLabel];
-    
+
     [undoMnt registerUndoWithTarget:self selector:@selector(del) object:nil];
 }
 
--(void)del
+- (void)del
 {
     self.count -= 1;
     [self updateShowLabel];
@@ -98,12 +102,12 @@
 }
 
 
--(void)undo
+- (void)undo
 {
     [undoMnt undo];
 }
 
--(void)redo
+- (void)redo
 {
     [undoMnt redo];
 }

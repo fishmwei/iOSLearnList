@@ -8,6 +8,7 @@
 
 #import "NSRecursiveLockViewController.h"
 
+
 @interface NSRecursiveLockViewController ()
 
 @property (nonatomic, assign) NSInteger totalCount;
@@ -18,14 +19,15 @@
 
 
 @implementation NSRecursiveLockViewController
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     self.countLock = [[NSRecursiveLock alloc] init];
-    
+
     self.showLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 300, 30)];
     [self.view addSubview:self.showLabel];
-    
+
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:btn];
     btn.frame = CGRectMake(0, 200, 100, 30);
@@ -37,8 +39,8 @@
 }
 
 
-
-- (void)ShowCount {
+- (void)ShowCount
+{
     static NSInteger n = 0;
     n++;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -50,18 +52,18 @@
         });
         [self.countLock unlock];
     });
-    
 }
 
-- (NSInteger)calculateFromZeroTo:(NSInteger)count {
+- (NSInteger)calculateFromZeroTo:(NSInteger)count
+{
     [self.countLock lock];
     if (count == 1) {
         [self.countLock unlock];
         return 1;
     }
-    
-    
-    NSInteger ret = count + [self calculateFromZeroTo:count-1];
+
+
+    NSInteger ret = count + [self calculateFromZeroTo:count - 1];
     [self.countLock unlock];
     return ret;
 }

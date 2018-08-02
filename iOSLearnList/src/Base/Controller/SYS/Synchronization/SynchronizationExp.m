@@ -8,14 +8,16 @@
 
 #import "SynchronizationExp.h"
 
+
 @implementation SynchronizationExp
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    self.showData = @[@"NSConditionLockViewController",
-                      @"NSRecursiveLockViewController",
-                      @"synchronizedViewController",
-                      @"NSLockViewController",
-                      @"pthread_mutexViewController",
-                      @"NSConditionViewController"];
+    self.showData = @[ @"NSConditionLockViewController",
+                       @"NSRecursiveLockViewController",
+                       @"synchronizedViewController",
+                       @"NSLockViewController",
+                       @"pthread_mutexViewController",
+                       @"NSConditionViewController" ];
 }
 @end

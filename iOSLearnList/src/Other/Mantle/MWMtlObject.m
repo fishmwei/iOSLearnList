@@ -8,11 +8,13 @@
 
 #import "MWMtlObject.h"
 
+
 @implementation MWMtlObject
 
 static NSDateFormatter *datefmt;
 
-+ (void)initialize {
++ (void)initialize
+{
     static dispatch_once_t p;
     dispatch_once(&p, ^{
         datefmt = [[NSDateFormatter alloc] init];
@@ -20,12 +22,13 @@ static NSDateFormatter *datefmt;
     });
 }
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey {
-    
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
     return @{
-        @"name":@"name",
-        @"age":@"age",
-        @"saveTime":@"saveTime"};
+        @"name" : @"name",
+        @"age" : @"age",
+        @"saveTime" : @"saveTime"
+    };
 }
 
 //+ (NSValueTransformer *)saveTimeJSONTransformerForKey:(NSString *)key {
@@ -36,7 +39,8 @@ static NSDateFormatter *datefmt;
 //    }];
 //}
 
-+ (NSDateFormatter *)dateFormatter {
++ (NSDateFormatter *)dateFormatter
+{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     NSLocale *enUSPOSIXLocale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
     [dateFormatter setLocale:enUSPOSIXLocale];
@@ -44,25 +48,26 @@ static NSDateFormatter *datefmt;
     return dateFormatter;
 }
 
-+ (NSValueTransformer *)saveTimeJSONTransformer {
-//    return [MTLValueTransformer transformerUsingForwardBlock:^id(id value, BOOL *success, NSError **error) {
-//        if ([value isKindOfClass:[NSString class]]) {
-//            NSString *time = (NSString *)value;
-//            NSDate *date = [self.dateFormatter dateFromString:time];
-//            return @([date timeIntervalSince1970]);
-//        } else if ([value isKindOfClass:[NSNumber class]]) {
-//            return (NSNumber *)value;
-//        }
-//        return nil;
-//    }];
-    
++ (NSValueTransformer *)saveTimeJSONTransformer
+{
+    //    return [MTLValueTransformer transformerUsingForwardBlock:^id(id value, BOOL *success, NSError **error) {
+    //        if ([value isKindOfClass:[NSString class]]) {
+    //            NSString *time = (NSString *)value;
+    //            NSDate *date = [self.dateFormatter dateFromString:time];
+    //            return @([date timeIntervalSince1970]);
+    //        } else if ([value isKindOfClass:[NSNumber class]]) {
+    //            return (NSNumber *)value;
+    //        }
+    //        return nil;
+    //    }];
+
     return [MTLValueTransformer transformerUsingForwardBlock:^id(id value, BOOL *success, NSError **error) {
         NSNumber *dateNum = (NSNumber *)value;
-        
+
         return [NSDate dateWithTimeIntervalSince1970:dateNum.floatValue];
     } reverseBlock:^id(id value, BOOL *success, NSError **error) {
         NSDate *numDate = (NSDate *)value;
-        
+
         return [NSString stringWithFormat:@"%f", [numDate timeIntervalSince1970]];
     }];
 }

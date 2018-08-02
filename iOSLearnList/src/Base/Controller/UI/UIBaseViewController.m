@@ -8,42 +8,48 @@
 
 #import "UIBaseViewController.h"
 
+
 @interface UIBaseViewController ()
 
 @end
 
+
 @implementation UIBaseViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    self.showData = @[@"HideNavigatorViewController",
-                      @"testCollectionViewController",
-                      @"autolayoutCellCtl",
-                      @"myTableViewController",
-                      @"collectionViewController",
-                      @"SearchBarVC",
-                      @"iAdViewController",
-                      @"PresentingPopoverViewController",
-                      @"DatePickerViewController",
-                      @"blockViewController",
-                      @"WebViewController"];
-//    self.showData = ;
+
+    self.showData = @[ @"HideNavigatorViewController",
+                       @"testCollectionViewController",
+                       @"autolayoutCellCtl",
+                       @"myTableViewController",
+                       @"collectionViewController",
+                       @"SearchBarVC",
+                       @"iAdViewController",
+                       @"PresentingPopoverViewController",
+                       @"DatePickerViewController",
+                       @"blockViewController",
+                       @"WebViewController" ];
+    //    self.showData = ;
     // Do any additional setup after loading the view.
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated
+{
     [super viewWillAppear:animated];
-    
+
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)viewWillDisappear:(BOOL)animated
+{
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

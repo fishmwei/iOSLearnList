@@ -8,6 +8,7 @@
 
 #import "NSConditionLockViewController.h"
 
+
 @interface NSConditionLockViewController ()
 @property (nonatomic, assign) NSInteger count;
 @property (nonatomic, retain) NSConditionLock *countLock;
@@ -16,18 +17,20 @@
 @property (nonatomic, retain) UILabel *showLabel;
 @end
 
+
 @implementation NSConditionLockViewController
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     self.count = 0;
     self.countLock = [[NSConditionLock alloc] initWithCondition:0];
     self.readShow = [[NSThread alloc] initWithTarget:self selector:@selector(showCountThread) object:nil];
     [self.readShow start];
-    
+
     self.showLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 300, 30)];
     [self.view addSubview:self.showLabel];
-    
+
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:btn];
     btn.frame = CGRectMake(0, 200, 100, 30);
@@ -38,7 +41,8 @@
     [btn setExclusiveTouch:YES];
 }
 
-- (void)showCountThread {
+- (void)showCountThread
+{
     while (true) {
         [self.countLock lockWhenCondition:1];
         [NSThread sleepForTimeInterval:3];
@@ -50,13 +54,13 @@
     }
 }
 
-- (void)ShowCount {
+- (void)ShowCount
+{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
+
         [self.countLock lockWhenCondition:0];
         self.count++;
         [self.countLock unlockWithCondition:1];
     });
-    
 }
 @end

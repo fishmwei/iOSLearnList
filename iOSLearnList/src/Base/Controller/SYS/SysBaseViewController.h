@@ -8,6 +8,7 @@
 
 #import "IndexTableViewController.h"
 
+
 @interface SysBaseViewController : IndexTableViewController
 
 @end

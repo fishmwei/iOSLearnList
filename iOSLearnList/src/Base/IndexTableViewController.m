@@ -8,27 +8,26 @@
 
 #import "IndexTableViewController.h"
 
+
 @implementation IndexTableViewController
 
--(void)viewDidLoad
+- (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     if (!self.navigationItem.title) {
         self.navigationItem.title = NSStringFromClass([self class]);
     }
-        
+
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-    
+
     self.hidesBottomBarWhenPushed = NO;
-//    if ([self.navigationController.viewControllers count] > 1) {
-//        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[MWCommon imageNamed:@"general_top_icon_back_normal"] style:UIBarButtonItemStyleDone target:self action:@selector(backBtnPressed)];
-//    }
-    
-    
+    //    if ([self.navigationController.viewControllers count] > 1) {
+    //        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[MWCommon imageNamed:@"general_top_icon_back_normal"] style:UIBarButtonItemStyleDone target:self action:@selector(backBtnPressed)];
+    //    }
 }
 
--(void)backBtnPressed
+- (void)backBtnPressed
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -49,11 +48,10 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    
+
     cell.textLabel.text = [self.showData objectAtIndex:indexPath.row];
-    
-    
-    
+
+
     return cell;
 }
 
@@ -71,16 +69,15 @@
         if (cls) {
             UIViewController *vc = [[cls alloc] init];
             vc.hidesBottomBarWhenPushed = YES;
-            
-            if ([vc respondsToSelector:@selector(setIsOriginalNavigationBarHidden:)]
-                && self.navigationController) {
+
+            if ([vc respondsToSelector:@selector(setIsOriginalNavigationBarHidden:)] && self.navigationController) {
                 [vc performSelector:@selector(setIsOriginalNavigationBarHidden:) withObject:@(self.navigationController.navigationBarHidden)];
             }
             [self.navigationController pushViewController:vc animated:YES];
         }
     });
-    
-    
+
+
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

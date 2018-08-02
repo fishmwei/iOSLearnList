@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface ReversibleString : NSObject
 {
     NSString *content;
 }
 
--(id)initWithString:(NSString *)string;
+- (id)initWithString:(NSString *)string;
 
--(id)reversedString;
+- (id)reversedString;
 
 @end

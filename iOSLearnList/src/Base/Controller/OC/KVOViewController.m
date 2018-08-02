@@ -9,7 +9,9 @@
 #import "KVOViewController.h"
 #import <Masonry/Masonry.h>
 
-@interface KVOViewController () {
+
+@interface KVOViewController ()
+{
     UILabel *ll;
 }
 
@@ -18,37 +20,40 @@
 
 @end
 
+
 @implementation KVOViewController
 
 @synthesize lab = ll;
 
-- (void)dealloc {
-//    [ll removeObserver:self forKeyPath:@"text"];
+- (void)dealloc
+{
+    //    [ll removeObserver:self forKeyPath:@"text"];
     [self removeObserver:self forKeyPath:@"lab.text"];
 }
 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    
+
+
     ll = [[UILabel alloc] init];
     [self.view addSubview:ll];
     ll.backgroundColor = [UIColor blueColor];
     ll.textColor = [UIColor whiteColor];
-    
+
     [ll mas_makeConstraints:^(MASConstraintMaker *mk) {
         mk.width.mas_equalTo(self.view);
         mk.height.mas_equalTo(20);
         mk.top.mas_equalTo(20);
     }];
-    
-    
+
+
     [self addObserver:self forKeyPath:@"lab.text" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
-//    [ll addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
-    
-    
-    UIButton *btn = [[UIButton alloc]  init];
+    //    [ll addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:NULL];
+
+
+    UIButton *btn = [[UIButton alloc] init];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(btnPressed) forControlEvents:UIControlEventTouchUpInside];
     btn.backgroundColor = [UIColor orangeColor];
@@ -58,20 +63,22 @@
         mk.centerX.mas_equalTo(self.view);
         mk.height.mas_equalTo(30);
     }];
-    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)btnPressed {
+- (void)btnPressed
+{
     ll.text = @"hello";
 }
 
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *, id> *)change context:(void *)context
+{
     if ([object isEqual:ll]) {
         [self showTextTips:@"change ll"];
     } else if ([keyPath isEqualToString:@"lab.text"]) {
