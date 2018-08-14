@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeAll;
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
     self.isHidden = NO;
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 44)];
@@ -51,20 +53,60 @@
     [self.view addSubview:btn];
     [btn setTitle:@"present" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(present) forControlEvents:UIControlEventTouchUpInside];
+    
+    btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 550, 100, 44)];
+    btn.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:btn];
+    [btn setTitle:@"close" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
+    
+    btn = [[UIButton alloc] initWithFrame:CGRectMake(210, 550, 100, 44)];
+    btn.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:btn];
+    [btn setTitle:@"calcute" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(calcute) forControlEvents:UIControlEventTouchUpInside];
 }
 
-
+- (void)calcute {
+    NSString *string = @"plugin://plugin/test";
+    NSURL *url = [NSURL URLWithString:string];
+    NSString *host = url.host;
+    NSString *scheme = url.scheme;
+    
+//    NSError *error = NULL;
+//    NSRegularExpression *exp = [NSRegularExpression regularExpressionWithPattern:host options:0 error:&error];
+//
+//
+//    NSRange range = [exp rangeOfFirstMatchInString:string
+//                                           options:0
+//                                             range:NSMakeRange(scheme.length, string.length-scheme.length)];
+    
+    NSRange range = [string rangeOfString:host options:0 range:NSMakeRange(scheme.length, string.length - scheme.length)];
+    NSLog(@"%@", NSStringFromRange(range));
+    NSString *replaceString = [@"hello.prefix" stringByAppendingPathExtension:host];
+    NSString *result = [string stringByReplacingCharactersInRange:range withString:replaceString ];
+    
+    NSLog(@"%@", result);
+    // 正则匹配， 获取首个
+    
+}
 
 - (void)hideTabbar {
     self.hidesBottomBarWhenPushed = YES;
     self.tabBarController.tabBar.hidden = YES;
     self.isHidden = YES;
+//    self.edgesForExtendedLayout = UIRectEdgeAll;
+//    [self.view setNeedsLayout];
+    
+    
 }
 
 - (void)showTabbar {
     self.hidesBottomBarWhenPushed = NO;
     self.tabBarController.tabBar.hidden = NO;
     self.isHidden = NO;
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    [self.view setNeedsLayout];
 }
 
 - (void)goFirst {
@@ -81,8 +123,10 @@
 }
 
 - (void)present {
-    MyPresentViewController *vc = [MyPresentViewController new];
-    [self.navigationController presentViewController:vc animated:YES completion:nil];
+    HideTabController *vc = [HideTabController new];
+//    [self.navigationController presentViewController:vc animated:YES completion:nil];
+    
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -94,6 +138,17 @@
     }
 }
 
+- (void)close {
+    if (self.navigationController) {
+        if (self.navigationController.viewControllers.count > 1) {
+            [self.navigationController popViewControllerAnimated:YES];
+        } else {
+            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        }
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
 
 
 - (void)viewWillDisappear:(BOOL)animated {

@@ -20,8 +20,8 @@
     self.btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:self.btn];
     self.btn.backgroundColor = [UIColor orangeColor];
-    self.btn.frame = CGRectMake(0, 0, 200, 44);
-    self.btn.center = self.view.center;
+    self.btn.frame = CGRectMake(0, 64, 200, 44);
+//    self.btn.center = self.view.center;
     [self.btn addTarget:self action:@selector(btnPressed) forControlEvents:UIControlEventTouchUpInside];
 }
 

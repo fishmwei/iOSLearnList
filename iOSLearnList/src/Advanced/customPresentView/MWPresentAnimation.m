@@ -32,11 +32,12 @@
         } else {
             _coverView.frame = containerView.frame;
         }
-        [containerView addSubview:_coverView];
+//        [containerView addSubview:_coverView];
         
         //Using autolayout to position the modal view
         modalView.translatesAutoresizingMaskIntoConstraints = YES;
-        modalView.frame = self.modalFrame;
+//        modalView.frame = self.modalFrame;
+        modalView.frame = containerView.bounds;
         [containerView addSubview:modalView];
         [containerView bringSubviewToFront:modalView];
         
