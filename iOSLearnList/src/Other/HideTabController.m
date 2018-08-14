@@ -23,15 +23,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-<<<<<<< HEAD
+
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.view.backgroundColor = [UIColor lightGrayColor];
     
-=======
 
     self.isTopPage = self.tabBarController && self.navigationController && [self isEqual:self.navigationController.viewControllers[0]];
 
->>>>>>> 022d92b608df388f2253d50b0d97ed5e8b01e8cb
     self.isHidden = NO;
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 44)];
     btn.backgroundColor = [UIColor orangeColor];
@@ -78,7 +76,7 @@
     [btn addTarget:self action:@selector(calcute) forControlEvents:UIControlEventTouchUpInside];
 }
 
-<<<<<<< HEAD
+
 - (void)calcute {
     NSString *string = @"plugin://plugin/test";
     NSURL *url = [NSURL URLWithString:string];
@@ -102,15 +100,13 @@
     // 正则匹配， 获取首个
     
 }
-=======
 
 - (void)hideTabbar
 {
     if (!self.isTopPage) {
         return;
     }
->>>>>>> 022d92b608df388f2253d50b0d97ed5e8b01e8cb
-
+ 
     self.hidesBottomBarWhenPushed = YES;
     self.tabBarController.tabBar.hidden = YES;
     self.isHidden = YES;
@@ -148,18 +144,12 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-<<<<<<< HEAD
+
 - (void)present {
     HideTabController *vc = [HideTabController new];
 //    [self.navigationController presentViewController:vc animated:YES completion:nil];
     
     [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
-=======
-- (void)present
-{
-    MyPresentViewController *vc = [MyPresentViewController new];
-    [self.navigationController presentViewController:vc animated:YES completion:nil];
->>>>>>> 022d92b608df388f2253d50b0d97ed5e8b01e8cb
 }
 
 - (void)viewWillAppear:(BOOL)animated
