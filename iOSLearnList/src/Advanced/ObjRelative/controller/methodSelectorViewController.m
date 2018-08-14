@@ -9,36 +9,36 @@
 #import "methodSelectorViewController.h"
 #import "MWMethodSelector.h"
 
+
 @implementation methodSelectorViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     NSMutableArray *target = [NSMutableArray array];
     for (NSUInteger i = 0; i < 1000; i++) {
         MWMethodSelector *oo = [[MWMethodSelector alloc] init];
-        
+
         [target addObject:oo];
     }
 
-    
-    void (*setter)(id, SEL, NSString*);
-    
+
+    void (*setter)(id, SEL, NSString *);
+
     NSUInteger t = 0;
     for (MWMethodSelector *oo in target) {
-//        [oo setTagStr:[NSString stringWithFormat:@"%@", @(t++)]];
-        setter = (void (*)(id, SEL, NSString*))[oo methodForSelector:@selector(setTagStr:)];
+        //        [oo setTagStr:[NSString stringWithFormat:@"%@", @(t++)]];
+        setter = (void (*)(id, SEL, NSString *))[oo methodForSelector:@selector(setTagStr:)];
         setter(oo, @selector(setTagStr:), [NSString stringWithFormat:@"%@", @(t++)]);
     }
-    
-    
+
+
     void (*print)(id, SEL);
-    
+
     for (MWMethodSelector *oo in target) {
         print = (void (*)(id, SEL))[oo methodForSelector:@selector(printTag)];
         print(oo, @selector(printTag));
     }
-    
-    
 }
 @end

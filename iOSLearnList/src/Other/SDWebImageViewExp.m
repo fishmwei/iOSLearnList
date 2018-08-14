@@ -8,12 +8,13 @@
 
 #import "SDWebImageViewExp.h"
 
-@implementation SDWebImageViewExp
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.showData = @[@"SDUIImageViewController"];
-}
 
+@implementation SDWebImageViewExp
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.showData = @[ @"SDUIImageViewController" ];
+}
 
 
 @end

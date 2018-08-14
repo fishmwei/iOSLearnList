@@ -11,6 +11,7 @@
 
 pthread_mutex_t mutex;
 
+
 @interface pthread_mutexViewController ()
 @property (nonatomic, assign) NSInteger count;
 @property (nonatomic, retain) NSThread *readShow;
@@ -18,34 +19,37 @@ pthread_mutex_t mutex;
 @property (nonatomic, retain) UILabel *showLabel;
 @end
 
+
 @implementation pthread_mutexViewController
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)viewWillDisappear:(BOOL)animated
+{
     [super viewWillDisappear:animated];
     [self.readShow cancel];
     [self.readShow1 cancel];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         pthread_mutex_init(&mutex, NULL);
     });
-    
+
     self.count = 0;
     self.readShow = [[NSThread alloc] initWithTarget:self selector:@selector(showCountThread) object:nil];
     [self.readShow start];
-    
-    
+
+
     self.readShow1 = [[NSThread alloc] initWithTarget:self selector:@selector(showCountThread) object:nil];
     [self.readShow1 start];
-    
-    
-    self.showLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100,CGRectGetWidth(self.view.bounds), 30)];
+
+
+    self.showLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.bounds), 30)];
     [self.view addSubview:self.showLabel];
-    
+
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:btn];
     btn.frame = CGRectMake(0, 200, 100, 30);
@@ -57,19 +61,20 @@ pthread_mutex_t mutex;
 }
 
 //不可重入代码
-- (void)showCountThread {
+- (void)showCountThread
+{
     while (true) {
         pthread_mutex_lock(&mutex);
         {
             [NSThread sleepForTimeInterval:1];
-            NSString *t = [NSString stringWithFormat:@"%@ count is %lu",[NSThread currentThread], self.count++];
-            NSLog(@"%@",t);
+            NSString *t = [NSString stringWithFormat:@"%@ count is %lu", [NSThread currentThread], self.count++];
+            NSLog(@"%@", t);
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.showLabel.text = t;
             });
         }
         pthread_mutex_unlock(&mutex);
-        
+
         if ([[NSThread currentThread] isCancelled]) {
             NSLog(@"thread break");
             break;
@@ -77,20 +82,20 @@ pthread_mutex_t mutex;
     }
 }
 
-- (void)ShowCount {
+- (void)ShowCount
+{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         pthread_mutex_lock(&mutex);
         {
             [NSThread sleepForTimeInterval:1];
-            NSString *t = [NSString stringWithFormat:@"%@ count is %lu",[NSThread currentThread], self.count++];
-            NSLog(@"%@",t);
+            NSString *t = [NSString stringWithFormat:@"%@ count is %lu", [NSThread currentThread], self.count++];
+            NSLog(@"%@", t);
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.showLabel.text = t;
             });
         }
         pthread_mutex_unlock(&mutex);
-        
+
     });
-    
 }
 @end

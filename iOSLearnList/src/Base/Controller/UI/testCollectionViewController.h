@@ -8,6 +8,7 @@
 
 #import "MWBaseCollectionViewController.h"
 
+
 @interface testCollectionViewController : MWBaseCollectionViewController
 
 @end

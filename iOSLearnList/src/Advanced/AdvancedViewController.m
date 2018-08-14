@@ -13,69 +13,76 @@
 #import "MWBasePresentViewController.h"
 #import "caLayerViewController.h"
 
-@interface AdvancedViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@interface AdvancedViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, retain) UITableView *tableview;
 @property (nonatomic, retain) NSArray *showData;
 
 @end
 
+
 @implementation AdvancedViewController
 
-#pragma mark  Autorotate
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+#pragma mark Autorotate
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
     return (interfaceOrientation == UIDeviceOrientationPortrait);
 }
 
-- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0) {
+- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0)
+{
     return UIInterfaceOrientationMaskPortrait;
     //UIInterfaceOrientationMaskPortrait
 }
 
--(BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0) {
+- (BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0)
+{
     return YES;
 }
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
     return UIInterfaceOrientationPortrait;
 }
 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     //    [self setTitle:@"分类"];
     [self.navigationItem setTitle:NSLocalizedString(@"Category", nil)];
     [self createData];
     [self createView];
-    
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
--(void)createData
+- (void)createData
 {
-    self.showData = @[@"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample", @"iOSAnimation", @"javaScript"];
-    
+    self.showData = @[ @"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample", @"iOSAnimation", @"javaScript" ];
 }
 
--(void)createView
+- (void)createView
 {
     self.tabBarController.tabBar.hidden = NO;
     self.tableview = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    
+
     self.tableview.dataSource = self;
     self.tableview.delegate = self;
     //    [self.tableview setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
+
     //没有数据不显示分割线
     [self.tableview setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-    
+
     [self.view addSubview:self.tableview];
 }
 
@@ -96,10 +103,10 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    
+
     NSString *subject = [self.showData objectAtIndex:indexPath.row];
     cell.textLabel.text = subject;
-    
+
     return cell;
 }
 
@@ -112,79 +119,79 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *subject = [self.showData objectAtIndex:indexPath.row];
-    
+
     NSString *selectorStr = [@"goto" stringByAppendingString:subject];
     SEL selector = NSSelectorFromString(selectorStr);
     if ([self respondsToSelector:selector]) {
         [self performSelectorOnMainThread:selector withObject:nil waitUntilDone:YES];
     }
-    
+
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 
-#pragma  mark - goto Function
+#pragma mark - goto Function
 
--(void)gotoNSURLLearn
+- (void)gotoNSURLLearn
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
-    vc.showData = @[@"NSURLParseViewController",@"defaultNSURLSessionController", @"downloadController", @"NSURLConnectionController"];
-    
+    vc.showData = @[ @"NSURLParseViewController", @"defaultNSURLSessionController", @"downloadController", @"NSURLConnectionController" ];
+
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 
--(void)gotoiOSSystem
+- (void)gotoiOSSystem
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
-    vc.showData = @[@"Timer_NotificationViewController", @"multiThreadController"];
-    
+    vc.showData = @[ @"Timer_NotificationViewController", @"multiThreadController" ];
+
     [self.navigationController pushViewController:vc animated:YES];
 }
 
--(void)gotoObjRelative
+- (void)gotoObjRelative
 {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
-    vc.showData = @[@"undoRedoViewController", @"unRecognizeViewController", @"methodSelectorViewController"];
-    
+    vc.showData = @[ @"undoRedoViewController", @"unRecognizeViewController", @"methodSelectorViewController" ];
+
     [self.navigationController pushViewController:vc animated:YES];
 }
-
 
 
 - (void)gotoCustomPresentView
 {
     MWBasePresentViewController *vc = [[MWBasePresentViewController alloc] init];
-    
-    vc.showRect = CGRectMake(60, 60, CGRectGetWidth(self.view.bounds)-120, CGRectGetHeight(self.view.bounds)-120);
-    
+
+    vc.showRect = CGRectMake(60, 60, CGRectGetWidth(self.view.bounds) - 120, CGRectGetHeight(self.view.bounds) - 120);
+
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (void) gotoCALayerSample {
+- (void)gotoCALayerSample
+{
     caLayerViewController *vc = [[caLayerViewController alloc] initWithNibName:@"caLayerViewController" bundle:[NSBundle mainBundle]];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
-    
-    
+
+
     //    [CABasicAnimation animationWithKeyPath:@"position"];
 }
 
-- (void)gotoiOSAnimation {
+- (void)gotoiOSAnimation
+{
     Class cls = NSClassFromString(@"AnimationListViewController");
     if (cls) {
         UIViewController *vc = (UIViewController *)[[cls alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
-    
-    
 }
 
-- (void)gotojavaScript {
+- (void)gotojavaScript
+{
     Class cls = NSClassFromString(@"MWJSViewController");
     if (cls) {
         UIViewController *vc = (UIViewController *)[[cls alloc] init];
@@ -192,7 +199,6 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
-
 
 
 @end

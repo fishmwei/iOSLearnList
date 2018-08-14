@@ -16,6 +16,7 @@
 
 #import "HideTabController.h"
 
+
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
 
@@ -28,17 +29,18 @@
 
 @end
 
+
 @implementation ExtendMainController
 
--(void)viewDidLoad
+- (void)viewDidLoad
 {
     [super viewDidLoad];
 
     [self createData];
     [self createView];
     [self procShortItem:nil];
-    
-//    [self setSelectedIndex:1];
+
+    //    [self setSelectedIndex:1];
 }
 
 
@@ -48,35 +50,35 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-//    [vc setTitle:@"分类"];
+    //    [vc setTitle:@"分类"];
     nav.tabBarItem.title = NSLocalizedStringFromTable(@"Advance", @"myLanguage", nil);
     _advanceCtl = nav;
-    
-    
+
+
     IndexTableViewController *ivc = [[BaseMainViewController alloc] init];
-//    ivc.showData = @[@"UIBaseViewController", @"SysBaseViewController", @"ObjBaseViewController"];
-    
-    
+    //    ivc.showData = @[@"UIBaseViewController", @"SysBaseViewController", @"ObjBaseViewController"];
+
+
     nav = [[MWNavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.title = NSLocalizedStringFromTable(@"Base", @"myLanguage", nil);
     _baseCtl = nav;
-    
+
     ivc = [[IndexTableViewController alloc] init];
-    ivc.showData = @[@"SDWebImageViewExp",
-                     @"MasonryExp",
-                     @"BlocksKitExp",
-                     @"libextobjcExp",
-                     @"YTKKeyValueStoreExp",
-                     @"MantleExp",
-                     @"M13OrderedDictionaryExp"];
+    ivc.showData = @[ @"SDWebImageViewExp",
+                      @"MasonryExp",
+                      @"BlocksKitExp",
+                      @"libextobjcExp",
+                      @"YTKKeyValueStoreExp",
+                      @"MantleExp",
+                      @"M13OrderedDictionaryExp" ];
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _otherCtl = nav;
- 
+
     nav = [[UINavigationController alloc] initWithRootViewController:[[HideTabController alloc] init]];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -86,30 +88,26 @@
 }
 
 
-
-
 - (void)createView
 {
     self.view.backgroundColor = [UIColor whiteColor];
-    
+
     [self createViewControllers];
-    
-    self.bottomItems = @[_baseCtl, _hideVc, _advanceCtl, _otherCtl];
-    
-    
-    self.viewControllers = self.bottomItems ;
- 
+
+    self.bottomItems = @[ _baseCtl, _hideVc, _advanceCtl, _otherCtl ];
+
+
+    self.viewControllers = self.bottomItems;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setHidden:YES];
-    
-    
-//    [[NSUserDefaults standardUserDefaults] setObject:shortcutItem.type forKey:@"ShortCut"];
-//    [self procShortItem];
-    
+
+
+    //    [[NSUserDefaults standardUserDefaults] setObject:shortcutItem.type forKey:@"ShortCut"];
+    //    [self procShortItem];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -118,7 +116,8 @@
     [self.navigationController.navigationBar setHidden:NO];
 }
 
-- (void)procShortItem : (NSNotification *)notification{
+- (void)procShortItem:(NSNotification *)notification
+{
     NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:@"ShortCut"];
     if (str.length) {
         if ([str isEqualToString:@"Base"]) {
@@ -137,7 +136,7 @@
 }
 
 
--(void)popBack
+- (void)popBack
 {
     [self.navigationController popViewControllerAnimated:YES];
 }

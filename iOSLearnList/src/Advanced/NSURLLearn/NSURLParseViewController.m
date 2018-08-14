@@ -8,6 +8,7 @@
 
 #import "NSURLParseViewController.h"
 
+
 @interface NSURLParseViewController () <UITextFieldDelegate>
 
 @property (nonatomic, retain) UITextField *urlField;
@@ -19,23 +20,24 @@
 @property (nonatomic, retain) UILabel *queryLabel;
 @end
 
+
 @implementation NSURLParseViewController
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     [self setupUI];
-    
-    
 }
 
-- (void)setupData {
-    
+- (void)setupData
+{
 }
 
-- (void)setupUI {
+- (void)setupUI
+{
     CGFloat offsetX = 0;
     CGFloat offsetY = 100;
-    
+
     _urlField = [[UITextField alloc] initWithFrame:CGRectMake(offsetX, offsetY, screenWidth, 30)];
     [self.view addSubview:_urlField];
     _urlField.placeholder = @"place holder";
@@ -45,7 +47,7 @@
     _urlField.layer.borderWidth = 1;
     _urlField.layer.borderColor = [UIColor orangeColor].CGColor;
     offsetY += 30;
-    
+
     _schemeLabel = [self labelWithFrame:CGRectMake(offsetX, offsetY, screenWidth, 20)];
     offsetY += 20;
     _hosteLabel = [self labelWithFrame:CGRectMake(offsetX, offsetY, screenWidth, 20)];
@@ -58,19 +60,19 @@
     offsetY += 20;
     _queryLabel = [self labelWithFrame:CGRectMake(offsetX, offsetY, screenWidth, 20)];
     offsetY += 20;
-    
 }
 
-- (UILabel *)labelWithFrame:(CGRect)frame {
+- (UILabel *)labelWithFrame:(CGRect)frame
+{
     UILabel *label = [[UILabel alloc] initWithFrame:frame];
     label.layer.borderWidth = 1;
     label.layer.borderColor = [UIColor orangeColor].CGColor;
     [self.view addSubview:label];
-    
+
     return label;
 }
 
--(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     if ([string isEqualToString:@"\n"]) {
         [textField resignFirstResponder];
@@ -78,21 +80,23 @@
     }
     return YES;
 }
--(BOOL)textFieldShouldReturn:(UITextField *)textField
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     return YES;
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField {
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
     [self fillData:textField.text];
 }
 
-- (void)fillData:(NSString *)text {
+- (void)fillData:(NSString *)text
+{
     if (!text.length) {
         return;
     }
-    
+
     NSURL *url = [NSURL URLWithString:text];
     _schemeLabel.text = [NSString stringWithFormat:@"scheme: %@", url.scheme];
     _hosteLabel.text = [NSString stringWithFormat:@"host: %@", url.host];
@@ -100,8 +104,6 @@
     _pathLabel.text = [NSString stringWithFormat:@"path: %@", url.path];
     _lastComponentLabel.text = [NSString stringWithFormat:@"lastComponent: %@", url.lastPathComponent];
     _queryLabel.text = [NSString stringWithFormat:@"query: %@", url.query];
-    
-    
 }
 
 @end

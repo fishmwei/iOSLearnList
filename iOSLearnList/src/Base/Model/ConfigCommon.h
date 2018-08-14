@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface ConfigCommon : NSObject
-+(id)shareInstance;
++ (id)shareInstance;
 - (NSString *)currentConfig;
 @end

@@ -8,27 +8,31 @@
 
 #import "ObjBaseViewController.h"
 
+
 @interface ObjBaseViewController ()
 
 @end
 
+
 @implementation ObjBaseViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    self.showData = @[@"KVOViewController",
-                      @"MethodSignatureViewController",
-                      @"ArchiverViewController",
-                      @"runtimeViewController",
-                      @"configViewController",
-                      @"DataStructureViewController"];
-    
-    
+
+    self.showData = @[ @"KVOViewController",
+                       @"MethodSignatureViewController",
+                       @"ArchiverViewController",
+                       @"runtimeViewController",
+                       @"configViewController",
+                       @"DataStructureViewController" ];
+
+
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

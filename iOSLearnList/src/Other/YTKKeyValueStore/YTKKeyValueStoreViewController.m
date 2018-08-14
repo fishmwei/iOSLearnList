@@ -13,46 +13,52 @@
 
 #import <YTKKeyValueStore/YTKKeyValueStore.h>
 
-@interface YTKKeyValueStoreViewController () <MWTextButtonCell_Delegate> {
+
+@interface YTKKeyValueStoreViewController () <MWTextButtonCell_Delegate>
+{
     YTKKeyValueStore *store;
 }
 
 @end
 
+
 @implementation YTKKeyValueStoreViewController
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     @weakify(self);
     [self.tableView bk_whenTapped:^{
         @strongify(self);
         [self.view endEditing:YES];
     }];
     [self.tableView registerClass:[MWTextButtonCell class] forCellReuseIdentifier:@"MWTextButtonCell"];
-    
+
     store = [[YTKKeyValueStore alloc] initDBWithName:@"test.db"];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     MWTextButtonCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MWTextButtonCell" forIndexPath:indexPath];
     [cell settitle:@"x" btnTitle:@"Press"];
     cell.cellDelegate = self;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
+
     return cell;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return 100;
 }
 
-- (void)btnPressed:(NSString *)content {
+- (void)btnPressed:(NSString *)content
+{
     if (content.length) {
         [store createTableWithName:[NSString stringWithFormat:@"'%@'", content]];
         [store putString:[NSString stringWithFormat:@"'%@'", content] withId:[NSString stringWithFormat:@"'%@'", content] intoTable:[NSString stringWithFormat:@"'%@'", content]];
         NSLog(@"get value:%@", [store getStringById:[NSString stringWithFormat:@"'%@'", content] fromTable:[NSString stringWithFormat:@"'%@'", content]]);
     }
-    
 }
 
 @end

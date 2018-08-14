@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface MWMethodSelector : NSObject
 @property (nonatomic, retain) NSString *tagStr;
 

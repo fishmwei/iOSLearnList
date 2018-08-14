@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
 
-@interface iAdViewController : UIViewController <ADBannerViewDelegate> {
+
+@interface iAdViewController : UIViewController <ADBannerViewDelegate>
+{
     ADBannerView *bannerView;
 }
 

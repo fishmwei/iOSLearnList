@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SearchBarVC : UITableViewController
 - (void)showTextTips:(NSString *)tips;
 

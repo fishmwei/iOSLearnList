@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface autolayoutCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imgVeiw;
 @property (weak, nonatomic) IBOutlet UILabel *label;

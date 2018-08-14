@@ -18,8 +18,8 @@
 
 typedef NS_ENUM(NSInteger, BBLaunchAdProcess) {
     BBLaunchAdProcessFailed = -1,
-    BBLaunchAdProcessNone ,
-    BBLaunchAdProcessLoading ,
+    BBLaunchAdProcessNone,
+    BBLaunchAdProcessLoading,
     BBLaunchAdProcessSuccess
 };
 
@@ -27,9 +27,9 @@ NSString *BBLaunchAdDetailDisplayNotification = @"BBShowLaunchAdDetailNotificati
 
 static BBLaunchAdMonitor *monitor = nil;
 
-@interface BBLaunchAdMonitor()<NSURLConnectionDataDelegate, NSURLConnectionDelegate>
+
+@interface BBLaunchAdMonitor () <NSURLConnectionDataDelegate, NSURLConnectionDelegate>
 {
-    
 }
 
 //@property (nonatomic, assign) BOOL imgLoaded;
@@ -48,25 +48,26 @@ static BBLaunchAdMonitor *monitor = nil;
 + (void)showAdAtPath:(NSString *)path onView:(UIView *)container timeInterval:(NSTimeInterval)interval detailParameters:(NSDictionary *)param
 {
     if (![self validatePath:path]) {
-        return ;
+        return;
     }
-    
+
     [[self defaultMonitor] loadImageAtPath:path];
-    while ((monitor.process != BBLaunchAdProcessFailed) && (monitor.process != BBLaunchAdProcessSuccess) ) {
+    while ((monitor.process != BBLaunchAdProcessFailed) && (monitor.process != BBLaunchAdProcessSuccess)) {
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
                                  beforeDate:[NSDate distantFuture]];
     }
     [monitor.detailParam removeAllObjects];
     [monitor.detailParam addEntriesFromDictionary:param];
     if (monitor.process == BBLaunchAdProcessFailed) {
-        return ;
+        return;
     }
     [self showImageOnView:container forTime:interval];
 }
 
 + (instancetype)defaultMonitor
 {
-    @synchronized (self) {
+    @synchronized(self)
+    {
         if (!monitor) {
             monitor = [[BBLaunchAdMonitor alloc] init];
             monitor.detailParam = [NSMutableDictionary dictionary];
@@ -87,7 +88,7 @@ static BBLaunchAdMonitor *monitor = nil;
     NSLog(@"screen size:%@", NSStringFromCGRect(f));
     UIView *v = [[UIView alloc] initWithFrame:f];
     v.backgroundColor = [UIColor whiteColor];
-    
+
     f.size.height -= 50;
     UIImageView *iv = [[UIImageView alloc] initWithFrame:f];
     iv.image = [UIImage imageWithData:monitor.imgData];
@@ -96,10 +97,10 @@ static BBLaunchAdMonitor *monitor = nil;
     iv.contentMode = UIViewContentModeScaleAspectFill;
     iv.clipsToBounds = YES;
     [v addSubview:iv];
-    
+
     [container addSubview:v];
     [container bringSubviewToFront:v];
-    
+
     UIButton *showDetailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [showDetailBtn setTitle:@"详情>>" forState:UIControlStateNormal];
     [showDetailBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -111,7 +112,7 @@ static BBLaunchAdMonitor *monitor = nil;
     showDetailBtn.layer.cornerRadius = 3.0f;
     [showDetailBtn addTarget:self action:@selector(showAdDetail:) forControlEvents:UIControlEventTouchUpInside];
     [v addSubview:showDetailBtn];
-    
+
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, f.size.height + 10, f.size.width - 20, 30)];
     label.backgroundColor = [UIColor clearColor];
     label.text = @"©2015 iXcoder. All Rights Reserved";
@@ -119,18 +120,18 @@ static BBLaunchAdMonitor *monitor = nil;
     label.font = [UIFont systemFontOfSize:15];
     [v addSubview:label];
     label = nil;
-    
+
     [container addSubview:v];
-    
+
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         v.userInteractionEnabled = NO;
         [UIView animateWithDuration:.25
-                         animations:^{
-                             v.alpha = 0.0f;
-                         }
-                         completion:^(BOOL finished) {
-                             [v removeFromSuperview];
-                         }];
+            animations:^{
+                v.alpha = 0.0f;
+            }
+            completion:^(BOOL finished) {
+                [v removeFromSuperview];
+            }];
     });
 }
 
@@ -139,16 +140,15 @@ static BBLaunchAdMonitor *monitor = nil;
     UIView *sup = [(UIButton *)sender superview];
     sup.userInteractionEnabled = NO;
     [UIView animateWithDuration:.25
-                     animations:^{
-                         sup.alpha = 0.0f;
-                     }
-                     completion:^(BOOL finished) {
-                         [sup removeFromSuperview];
-                         [[NSNotificationCenter defaultCenter] postNotificationName:BBLaunchAdDetailDisplayNotification
-                                                                             object:monitor.detailParam];
-                         [monitor.detailParam removeAllObjects];
-                     }];
-    
+        animations:^{
+            sup.alpha = 0.0f;
+        }
+        completion:^(BOOL finished) {
+            [sup removeFromSuperview];
+            [[NSNotificationCenter defaultCenter] postNotificationName:BBLaunchAdDetailDisplayNotification
+                                                                object:monitor.detailParam];
+            [monitor.detailParam removeAllObjects];
+        }];
 }
 
 - (void)loadImageAtPath:(NSString *)path
@@ -168,9 +168,9 @@ static BBLaunchAdMonitor *monitor = nil;
 {
     NSHTTPURLResponse *resp = (NSHTTPURLResponse *)response;
     if (resp.statusCode != 200) {
-//        self.imgLoaded = YES;
+        //        self.imgLoaded = YES;
         self.process = BBLaunchAdProcessFailed;
-        return ;
+        return;
     }
     self.imgData = [NSMutableData data];
 }
@@ -182,16 +182,15 @@ static BBLaunchAdMonitor *monitor = nil;
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-//    self.imgLoaded = YES;
+    //    self.imgLoaded = YES;
     self.process = BBLaunchAdProcessSuccess;
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     NSLog(@"图片数据获取失败");
-//    self.imgLoaded = YES;
+    //    self.imgLoaded = YES;
     self.process = BBLaunchAdProcessFailed;
 }
 
 @end
-

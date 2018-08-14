@@ -8,21 +8,24 @@
 
 #import "AnimationListViewController.h"
 
+
 @interface AnimationListViewController ()
 
 @end
 
+
 @implementation AnimationListViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    
-    self.showData = @[@"CAMediaTimingFunctionVC", @"TimerAnimationViewController", @"CADisplayLinkViewController", @"CAMediaTimingVC", @"MWDrawingViewController"];
-    
+
+
+    self.showData = @[ @"CAMediaTimingFunctionVC", @"TimerAnimationViewController", @"CADisplayLinkViewController", @"CAMediaTimingVC", @"MWDrawingViewController" ];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

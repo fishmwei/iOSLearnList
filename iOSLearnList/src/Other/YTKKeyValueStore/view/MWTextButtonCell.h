@@ -13,9 +13,11 @@
 - (void)btnPressed:(NSString *)content;
 
 @end
+
+
 @interface MWTextButtonCell : UITableViewCell
 
-@property (nonatomic, weak) id <MWTextButtonCell_Delegate> cellDelegate;
+@property (nonatomic, weak) id<MWTextButtonCell_Delegate> cellDelegate;
 
 - (void)settitle:(NSString *)title btnTitle:(NSString *)btnTitle;
 

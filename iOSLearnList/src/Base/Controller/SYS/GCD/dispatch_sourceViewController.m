@@ -8,12 +8,14 @@
 
 #import "dispatch_sourceViewController.h"
 
-@interface dispatch_sourceViewController () {
+
+@interface dispatch_sourceViewController ()
+{
     dispatch_source_t timer;
     dispatch_source_t textSender;
     NSInteger count;
     NSTimer *countTimer;
-    
+
     UITextField *textField;
     UIButton *btn;
     BOOL isRunning;
@@ -23,67 +25,69 @@
 
 //例子  http://blog.csdn.net/nogodoss/article/details/31346207
 
+
 @implementation dispatch_sourceViewController
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated
+{
     [super viewWillAppear:animated];
-    
-    countTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(addCount) userInfo:nil repeats:YES];
 
+    countTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(addCount) userInfo:nil repeats:YES];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)viewWillDisappear:(BOOL)animated
+{
     [super viewWillDisappear:animated];
     [countTimer invalidate];
     countTimer = nil;
 }
 
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     [self setupData];
-    
+
     [self setupUI];
-    
 }
 
-- (void)addCount {
+- (void)addCount
+{
     count++;
 }
 
-- (void)setupData {
-    
+- (void)setupData
+{
     self.concurrentQueue = dispatch_queue_create(NSStringFromClass([self class]).UTF8String, DISPATCH_QUEUE_CONCURRENT);
-  
-    
-    timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,  self.concurrentQueue);
+
+
+    timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, self.concurrentQueue);
     dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0.5 * NSEC_PER_SEC);
     dispatch_source_set_event_handler(timer, ^{
-//        [NSThread sleepForTimeInterval:3];
+        //        [NSThread sleepForTimeInterval:3];
 
         NSLog(@"count %ld", count);
     });
     dispatch_resume(timer);
     isRunning = YES;
-    
- 
 }
 
-- (void)setupUI {
+- (void)setupUI
+{
     textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 100, 200, 50)];
     textField.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:textField];
-    
+
     btn = [UIButton buttonWithType:UIButtonTypeSystem];
     btn.frame = CGRectMake(0, 300, 200, 44);
     [btn setTitle:@"ToSuspend" forState:UIControlStateNormal];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(btnPressed) forControlEvents:UIControlEventTouchUpInside];
-    
 }
 
-- (void)btnPressed {
+- (void)btnPressed
+{
     if (isRunning) {
         dispatch_suspend(timer);
         [btn setTitle:@"ToResume" forState:UIControlStateNormal];

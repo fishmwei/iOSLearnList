@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface blockObject : NSObject
 @property (nonatomic, assign) NSInteger a;
 @property (nonatomic, assign) NSInteger b;

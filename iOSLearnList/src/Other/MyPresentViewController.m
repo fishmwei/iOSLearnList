@@ -8,30 +8,35 @@
 
 #import "MyPresentViewController.h"
 
+
 @interface MyPresentViewController ()
 
 @end
 
+
 @implementation MyPresentViewController
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-  
+
+
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 44)];
     btn.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:btn];
     [btn setTitle:@"close" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
-    
-    
+
+
     // Do any additional setup after loading the view.
 }
 
-- (void)close {
+- (void)close
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
