@@ -23,8 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.edgesForExtendedLayout = UIRectEdgeAll;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+//    self.edgesForExtendedLayout = UIRectEdgeAll;
     self.view.backgroundColor = [UIColor lightGrayColor];
     
 
@@ -74,8 +74,22 @@
     [self.view addSubview:btn];
     [btn setTitle:@"calcute" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(calcute) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    btn = [[UIButton alloc] initWithFrame:CGRectMake(260, 550, 100, 44)];
+    btn.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:btn];
+    [btn setTitle:@"crash" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(crash) forControlEvents:UIControlEventTouchUpInside];
+    
+    
 }
 
+- (void)crash {
+    NSMutableArray *total = [NSMutableArray array];
+    NSObject *item = nil;
+    [total addObject:item];
+}
 
 - (void)calcute {
     NSString *string = @"plugin://plugin/test";
@@ -125,6 +139,8 @@
     self.hidesBottomBarWhenPushed = NO;
     self.tabBarController.tabBar.hidden = NO;
     self.isHidden = NO;
+    
+    [self setNeedsFocusUpdate];
 //    self.edgesForExtendedLayout = UIRectEdgeNone;
 //    [self.view setNeedsLayout];
 }
@@ -155,11 +171,11 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    if (self.isHidden) {
-        [self hideTabbar];
-    } else {
-        [self showTabbar];
-    }
+//    if (self.isHidden) {
+//        [self hideTabbar];
+//    } else {
+//        [self showTabbar];
+//    }
 }
 
 - (void)close {

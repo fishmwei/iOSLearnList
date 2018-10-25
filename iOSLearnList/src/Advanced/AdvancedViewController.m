@@ -12,7 +12,7 @@
 #import "ExtendMainController.h"
 #import "MWBasePresentViewController.h"
 #import "caLayerViewController.h"
-
+#import "GLKOpenGLController.h"
 
 @interface AdvancedViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -68,7 +68,7 @@
 
 - (void)createData
 {
-    self.showData = @[ @"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample", @"iOSAnimation", @"javaScript" ];
+    self.showData = @[ @"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample", @"iOSAnimation", @"javaScript", @"OpenGL" ];
 }
 
 - (void)createView
@@ -200,5 +200,10 @@
     }
 }
 
+- (void)gotoOpenGL {
+    GLKOpenGLController *vc = [GLKOpenGLController new];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

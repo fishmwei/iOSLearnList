@@ -96,6 +96,8 @@
 		C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2491D5C99AB00A8FECC /* runtimeViewController.m */; };
 		C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */; };
 		C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2501D5CB62300A8FECC /* MWJSPerson.m */; };
+		C1791E89215F1742006DA265 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1791E88215F1742006DA265 /* GLKit.framework */; };
+		C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1791E8B215F176F006DA265 /* GLKOpenGLController.m */; };
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
 		C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
@@ -327,6 +329,9 @@
 		C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSViewController.m; sourceTree = "<group>"; };
 		C172F24F1D5CB62300A8FECC /* MWJSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWJSPerson.h; sourceTree = "<group>"; };
 		C172F2501D5CB62300A8FECC /* MWJSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSPerson.m; sourceTree = "<group>"; };
+		C1791E88215F1742006DA265 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C1791E8A215F176F006DA265 /* GLKOpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKOpenGLController.h; sourceTree = "<group>"; };
+		C1791E8B215F176F006DA265 /* GLKOpenGLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKOpenGLController.m; sourceTree = "<group>"; };
 		C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseCollectionViewController.h; sourceTree = "<group>"; };
 		C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseCollectionViewController.m; sourceTree = "<group>"; };
 		C18F58E41D475AB800F95031 /* testCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCollectionViewController.h; sourceTree = "<group>"; };
@@ -418,6 +423,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1791E89215F1742006DA265 /* GLKit.framework in Frameworks */,
 				C16D84491DC8480D00D7F062 /* Foundation.framework in Frameworks */,
 				C16D84471DC8480500D7F062 /* UIKit.framework in Frameworks */,
 				C16BB76B1D92264500495A88 /* iAd.framework in Frameworks */,
@@ -441,6 +447,7 @@
 		31DFC973CFDBCBD61F0C0EA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1791E88215F1742006DA265 /* GLKit.framework */,
 				C16D84481DC8480D00D7F062 /* Foundation.framework */,
 				C16D84461DC8480500D7F062 /* UIKit.framework */,
 				C16BB76A1D92264500495A88 /* iAd.framework */,
@@ -821,6 +828,15 @@
 			path = javascript;
 			sourceTree = "<group>";
 		};
+		C1791E87215F172C006DA265 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				C1791E8A215F176F006DA265 /* GLKOpenGLController.h */,
+				C1791E8B215F176F006DA265 /* GLKOpenGLController.m */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
 		C19D17D91D18CC6000E29256 /* customPresentView */ = {
 			isa = PBXGroup;
 			children = (
@@ -861,6 +877,7 @@
 		C1A650661CE99E75006A117B /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				C1791E87215F172C006DA265 /* OpenGL */,
 				C172F24B1D5CAB2C00A8FECC /* javascript */,
 				C156DDBC1D4898B5004CD422 /* iOSAnimation */,
 				C19D17D91D18CC6000E29256 /* customPresentView */,
@@ -1362,6 +1379,7 @@
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
 				C1B8EE6A1DC6E98A008FF1C6 /* StartRunLoopViewController.m in Sources */,
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
+				C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */,
 				C16D845F1DC88B5A00D7F062 /* NSLockViewController.m in Sources */,
 				C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */,
 				516928021DBE486B00DA92D7 /* NSJSONSerializationViewController.m in Sources */,
