@@ -96,6 +96,7 @@
 		C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2491D5C99AB00A8FECC /* runtimeViewController.m */; };
 		C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */; };
 		C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2501D5CB62300A8FECC /* MWJSPerson.m */; };
+		C176293A21CCFE7D002ED848 /* RotateTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C176293921CCFE7D002ED848 /* RotateTestViewController.m */; };
 		C1791E89215F1742006DA265 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1791E88215F1742006DA265 /* GLKit.framework */; };
 		C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1791E8B215F176F006DA265 /* GLKOpenGLController.m */; };
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
@@ -329,6 +330,8 @@
 		C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSViewController.m; sourceTree = "<group>"; };
 		C172F24F1D5CB62300A8FECC /* MWJSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWJSPerson.h; sourceTree = "<group>"; };
 		C172F2501D5CB62300A8FECC /* MWJSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSPerson.m; sourceTree = "<group>"; };
+		C176293821CCFE7D002ED848 /* RotateTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateTestViewController.h; sourceTree = "<group>"; };
+		C176293921CCFE7D002ED848 /* RotateTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateTestViewController.m; sourceTree = "<group>"; };
 		C1791E88215F1742006DA265 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		C1791E8A215F176F006DA265 /* GLKOpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKOpenGLController.h; sourceTree = "<group>"; };
 		C1791E8B215F176F006DA265 /* GLKOpenGLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKOpenGLController.m; sourceTree = "<group>"; };
@@ -670,6 +673,8 @@
 				C16B6BBA1D499D5E00459688 /* CAMediaTimingVC.m */,
 				C156DDC31D48B98E004CD422 /* TimerAnimationViewController.h */,
 				C156DDC41D48B98E004CD422 /* TimerAnimationViewController.m */,
+				C176293821CCFE7D002ED848 /* RotateTestViewController.h */,
+				C176293921CCFE7D002ED848 /* RotateTestViewController.m */,
 				C16B6BB61D4995CC00459688 /* CADisplayLinkViewController.h */,
 				C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */,
 				513EC4B41D5389D400279CA1 /* CAScrollViewController.h */,
@@ -1171,7 +1176,7 @@
 				TargetAttributes = {
 					51F68EBC1CDE1905009338D6 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = N4G9ZN8438;
+						ProvisioningStyle = Manual;
 					};
 					C1ECDDF41E3849E3007A5C05 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1351,6 +1356,7 @@
 				C1209B1E1CF53EED00182559 /* configViewController.m in Sources */,
 				C19D17E51D18D9BA00E29256 /* MWPresentAnimation.m in Sources */,
 				51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */,
+				C176293A21CCFE7D002ED848 /* RotateTestViewController.m in Sources */,
 				C1F7DCE21DC353A100C29808 /* MantleObjectModelViewController.m in Sources */,
 				C156DDC51D48B98E004CD422 /* TimerAnimationViewController.m in Sources */,
 				C1A650861CE99E75006A117B /* undoRedoViewController.m in Sources */,
@@ -1597,9 +1603,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1608,6 +1616,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.test.proj1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1619,9 +1628,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1630,6 +1641,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.test.proj1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1682,9 +1694,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1693,6 +1707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.test.proj1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AdHoc;

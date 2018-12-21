@@ -22,7 +22,7 @@
 @property (nonatomic, retain) id fromValue;
 @property (nonatomic, retain) id toValue;
 
-
+@property (nonatomic, retain) UIButton *stopBtn;
 @property (nonatomic, retain) MWRotationView *rotationView;
 
 
@@ -39,6 +39,13 @@
 
     [self setupBallView];
     [self setupRotationView];
+    
+    self.stopBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.view addSubview:self.stopBtn];
+    self.stopBtn.frame = CGRectMake(10, 60, 50, 50);
+    [self.stopBtn addTarget:self action:@selector(stopRotate) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.stopBtn setTitle:@"Stop" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,8 +59,9 @@
     _rotationView = [[MWRotationView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     [self.view addSubview:_rotationView];
 
-    //    _rotationView.layer.contents = (__bridge id)[MWCommon imageNamed:@"lion"].CGImage;
-    _rotationView.layer.contents = (__bridge id)[UIImage imageNamed:@"common-PullDownRefresh"].CGImage;
+    _rotationView.duration = 1;
+        _rotationView.layer.contents = (__bridge id)[MWCommon imageNamed:@"lion"].CGImage;
+//    _rotationView.layer.contents = (__bridge id)[UIImage imageNamed:@"common-PullDownRefresh"].CGImage;
 
     UIView *vv = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 10, 10)];
     vv.backgroundColor = [UIColor blueColor];
@@ -86,6 +94,16 @@
     self.lastStep = CACurrentMediaTime();
     self.timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(step:)];
     [self.timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+}
+
+- (void)stopRotate {
+    if ([self.rotationView isStop]) {
+        
+        [self.rotationView start];
+    } else {
+        
+        [self.rotationView stop];
+    }
 }
 
 - (void)step:(CADisplayLink *)timer

@@ -21,7 +21,13 @@
     [super viewDidLoad];
 
 
-    self.showData = @[ @"CAMediaTimingFunctionVC", @"TimerAnimationViewController", @"CADisplayLinkViewController", @"CAMediaTimingVC", @"MWDrawingViewController" ];
+    self.showData = @[
+                      @"CAMediaTimingFunctionVC",
+                      @"TimerAnimationViewController",
+                      @"CADisplayLinkViewController",
+                      @"CAMediaTimingVC",
+                      @"MWDrawingViewController",
+                      @"RotateTestViewController" ];
 }
 
 - (void)didReceiveMemoryWarning
