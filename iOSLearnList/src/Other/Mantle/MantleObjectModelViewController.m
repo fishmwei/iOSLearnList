@@ -24,8 +24,7 @@
     NSLog(@"dict : %@", dict);
 
     MWMtlObject *obj = [MTLJSONAdapter modelOfClass:[MWMtlObject class] fromJSONDictionary:dict error:nil];
-    NSLog(@"name: %@, age :%@", obj.name, obj.age);
+    NSLog(@"name: %@, age :%@ saveTime %@", obj.name, obj.age, obj.saveTime);
 }
-
 
 @end

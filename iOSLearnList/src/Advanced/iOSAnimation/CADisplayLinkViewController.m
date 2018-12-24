@@ -30,7 +30,15 @@
 
 
 @implementation CADisplayLinkViewController
-
+- (void)dealloc {
+    if (self.timer) {
+        [self.timer removeFromRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+    
+    [_rotationView stop];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -82,6 +90,12 @@
 
 - (void)animateAction
 {
+    if (self.timer) {
+        [self.timer removeFromRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+    
     CGFloat toY = [_fromValue CGPointValue].y + 300;
     toY = toY > CGRectGetMaxY(self.view.bounds) ? CGRectGetMaxY(self.view.bounds) : toY;
 
@@ -155,7 +169,7 @@
 }
 
 
-- (float)interpolate:(float)from:(float)to:(float)time
+- (float)interpolate:(float)from :(float)to :(float)time
 {
     return (to - from) * time + from;
 }
