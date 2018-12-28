@@ -14,6 +14,16 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>iOSLearnListEnv.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>iOSLearnListTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>iOSLearnListTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +48,16 @@
 			<true/>
 		</dict>
 		<key>51F68EE01CDE1905009338D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C189E55D21D5C218002AABBE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C189E5EE21D5C946002AABBE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
