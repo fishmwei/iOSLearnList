@@ -78,7 +78,7 @@
     
     
 //    [[[myBundleFrame alloc] init] showBundleframe];
-    
+#ifdef TEST_ENV
     NSString *t = @"aaaaa";
     self.b = t;
     t = @"ccc";
@@ -86,6 +86,7 @@
     NSLog(@"%@", self.b);
     
     [self testShowIdClass:self.window.rootViewController];
+#endif
     
 //    //AD
 //    {

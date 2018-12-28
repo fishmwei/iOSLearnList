@@ -23,6 +23,10 @@ target 'iOSLearnList' do
     
 end
 
+target 'iOSLearnListEnv' do
+    
+end
+
 target 'iOSLearnListTests' do
 
     pod 'OCMock'

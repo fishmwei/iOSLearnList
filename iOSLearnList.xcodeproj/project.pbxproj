@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CBA2B9896EF757D6C8402E4 /* libPods-iOSLearnListEnv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD4F71C8E87908E0AD61CD0 /* libPods-iOSLearnListEnv.a */; };
 		510776301FE66E9000169CED /* AutoSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5107762F1FE66E9000169CED /* AutoSizeViewController.m */; };
 		511581381DB2F7A800451657 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511581371DB2F7A800451657 /* DatePickerViewController.m */; };
 		513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 513EC4B21D53876B00279CA1 /* CACustomScrollView.m */; };
@@ -100,6 +101,138 @@
 		C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2491D5C99AB00A8FECC /* runtimeViewController.m */; };
 		C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */; };
 		C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2501D5CB62300A8FECC /* MWJSPerson.m */; };
+		C189E5F121D5C946002AABBE /* methodSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35A1D51853B00061311 /* methodSelectorViewController.m */; };
+		C189E5F221D5C946002AABBE /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */; };
+		C189E5F321D5C946002AABBE /* DataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */; };
+		C189E5F421D5C946002AABBE /* SearchBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155F1D4604CF00392D95 /* SearchBarVC.m */; };
+		C189E5F521D5C946002AABBE /* UIControllBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27971DBF63F800FA2955 /* UIControllBlocksKitViewController.m */; };
+		C189E5F621D5C946002AABBE /* dispatch_sourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCB41DC2F5CD00C29808 /* dispatch_sourceViewController.m */; };
+		C189E5F721D5C946002AABBE /* MWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C8C6AE1D59C96F00059977 /* MWScrollView.m */; };
+		C189E5F821D5C946002AABBE /* BaseMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15441D45B16C00392D95 /* BaseMainViewController.m */; };
+		C189E5F921D5C946002AABBE /* ILSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1206FFF1EF7C37C0020D208 /* ILSearchViewController.m */; };
+		C189E5FA21D5C946002AABBE /* RunLoopsExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B8EE661DC6E94F008FF1C6 /* RunLoopsExp.m */; };
+		C189E5FB21D5C946002AABBE /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
+		C189E5FC21D5C946002AABBE /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBE1D4898FF004CD422 /* AnimationListViewController.m */; };
+		C189E5FD21D5C946002AABBE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A67F0C1E16B76600FA723F /* WebViewController.m */; };
+		C189E5FE21D5C946002AABBE /* dispatch_queueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579941DBE1C2000F50CD2 /* dispatch_queueViewController.m */; };
+		C189E5FF21D5C946002AABBE /* ExtendMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */; };
+		C189E60021D5C946002AABBE /* NSConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84641DC8956D00D7F062 /* NSConditionViewController.m */; };
+		C189E60121D5C946002AABBE /* SDUIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6508A1CE99E8C006A117B /* SDUIImageViewController.m */; };
+		C189E60221D5C946002AABBE /* unRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6507D1CE99E75006A117B /* unRecognizeViewController.m */; };
+		C189E60321D5C946002AABBE /* TestCreateObjectAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B751F90A6B50027EE09 /* TestCreateObjectAsync.m */; };
+		C189E60421D5C946002AABBE /* runtimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2491D5C99AB00A8FECC /* runtimeViewController.m */; };
+		C189E60521D5C946002AABBE /* blockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19726C01DEBC48C00B062FE /* blockViewController.m */; };
+		C189E60621D5C946002AABBE /* ReversibleString.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650791CE99E75006A117B /* ReversibleString.m */; };
+		C189E60721D5C946002AABBE /* NSURLConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650751CE99E75006A117B /* NSURLConnectionController.m */; };
+		C189E60821D5C946002AABBE /* ObjBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15501D45B76100392D95 /* ObjBaseViewController.m */; };
+		C189E60921D5C946002AABBE /* MW_A.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2401D5C777C00A8FECC /* MW_A.m */; };
+		C189E60A21D5C946002AABBE /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
+		C189E60B21D5C946002AABBE /* MWPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E41D18D9BA00E29256 /* MWPresentAnimation.m */; };
+		C189E60C21D5C946002AABBE /* collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2F21CECB5750050E75E /* collectionViewController.m */; };
+		C189E60D21D5C946002AABBE /* MantleObjectModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCE11DC353A100C29808 /* MantleObjectModelViewController.m */; };
+		C189E60E21D5C946002AABBE /* TimerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDC41D48B98E004CD422 /* TimerAnimationViewController.m */; };
+		C189E60F21D5C946002AABBE /* undoRedoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6507B1CE99E75006A117B /* undoRedoViewController.m */; };
+		C189E61021D5C946002AABBE /* blockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C19726C31DEBC4B600B062FE /* blockObject.m */; };
+		C189E61121D5C946002AABBE /* ObjectStubA.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FD40CF1E45B6E6008B85D7 /* ObjectStubA.m */; };
+		C189E61221D5C946002AABBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC41CDE1905009338D6 /* AppDelegate.m */; };
+		C189E61321D5C946002AABBE /* PresentingPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C170C3531DAB31C2005BE46C /* PresentingPopoverViewController.m */; };
+		C189E61421D5C946002AABBE /* UIVIewBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7D21DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m */; };
+		C189E61521D5C946002AABBE /* ThreadProgramingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7C51DBF0EBD005A43BE /* ThreadProgramingViewController.m */; };
+		C189E61621D5C946002AABBE /* MW_AB.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2431D5C779200A8FECC /* MW_AB.m */; };
+		C189E61721D5C946002AABBE /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
+		C189E61821D5C946002AABBE /* iAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16BB7681D92261900495A88 /* iAdViewController.m */; };
+		C189E61921D5C946002AABBE /* MWJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */; };
+		C189E61A21D5C946002AABBE /* MWMethodSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35D1D51856200061311 /* MWMethodSelector.m */; };
+		C189E61B21D5C946002AABBE /* autolayoutCellCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785F91D04189A00DF3981 /* autolayoutCellCtl.m */; };
+		C189E61C21D5C946002AABBE /* AdaptIOS11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517CA88F1FE4EF9F00A6A82F /* AdaptIOS11ViewController.m */; };
+		C189E61D21D5C946002AABBE /* M13OrderedDictionaryExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD3A421DE4535800EE50A0 /* M13OrderedDictionaryExp.m */; };
+		C189E61E21D5C946002AABBE /* SysBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154D1D45B74D00392D95 /* SysBaseViewController.m */; };
+		C189E61F21D5C946002AABBE /* FWSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650731CE99E75006A117B /* FWSessionDelegate.m */; };
+		C189E62021D5C946002AABBE /* dispatch_barrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579971DBE23C000F50CD2 /* dispatch_barrierViewController.m */; };
+		C189E62121D5C946002AABBE /* MWBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17DE1D18D7B900E29256 /* MWBaseAnimation.m */; };
+		C189E62221D5C946002AABBE /* YTKKeyValueStoreExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C2C851DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m */; };
+		C189E62321D5C946002AABBE /* TestObjectFacotry.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B791F90A7B30027EE09 /* TestObjectFacotry.m */; };
+		C189E62421D5C946002AABBE /* multiThreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6508D1CE99F42006A117B /* multiThreadController.m */; };
+		C189E62521D5C946002AABBE /* MWMtlObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCE41DC3542B00C29808 /* MWMtlObject.m */; };
+		C189E62621D5C946002AABBE /* AutoSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5107762F1FE66E9000169CED /* AutoSizeViewController.m */; };
+		C189E62721D5C946002AABBE /* NSRecursiveLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84581DC8844C00D7F062 /* NSRecursiveLockViewController.m */; };
+		C189E62821D5C946002AABBE /* YTKKeyValueStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C2C8C1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.m */; };
+		C189E62921D5C946002AABBE /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */; };
+		C189E62A21D5C946002AABBE /* StartRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B8EE691DC6E98A008FF1C6 /* StartRunLoopViewController.m */; };
+		C189E62B21D5C946002AABBE /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
+		C189E62C21D5C946002AABBE /* NSLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D845E1DC88B5A00D7F062 /* NSLockViewController.m */; };
+		C189E62D21D5C946002AABBE /* caLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C165B0EF1D33A14500675C94 /* caLayerViewController.m */; };
+		C189E62E21D5C946002AABBE /* NSJSONSerializationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516928011DBE486B00DA92D7 /* NSJSONSerializationViewController.m */; };
+		C189E62F21D5C946002AABBE /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
+		C189E63021D5C946002AABBE /* NSConditionLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84551DC87D1D00D7F062 /* NSConditionLockViewController.m */; };
+		C189E63121D5C946002AABBE /* MWBasePresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D17E11D18D96300E29256 /* MWBasePresentViewController.m */; };
+		C189E63221D5C946002AABBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F68EC11CDE1905009338D6 /* main.m */; };
+		C189E63321D5C946002AABBE /* libextobjcExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D279B1DBF69B100FA2955 /* libextobjcExp.m */; };
+		C189E63421D5C946002AABBE /* customRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84671DC8A85000D7F062 /* customRunLoopViewController.m */; };
+		C189E63521D5C946002AABBE /* CADisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BB71D4995CC00459688 /* CADisplayLinkViewController.m */; };
+		C189E63621D5C946002AABBE /* HideNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */; };
+		C189E63721D5C946002AABBE /* BBLaunchAdMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ED59761CE5D09100096EC7 /* BBLaunchAdMonitor.m */; };
+		C189E63821D5C946002AABBE /* OBJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F155C1D45EB7800392D95 /* OBJModel.m */; };
+		C189E63921D5C946002AABBE /* autolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785FD1D0418E200DF3981 /* autolayoutCell.m */; };
+		C189E63A21D5C946002AABBE /* defaultNSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506F1CE99E75006A117B /* defaultNSURLSessionController.m */; };
+		C189E63B21D5C946002AABBE /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15561D45C65700392D95 /* KVOViewController.m */; };
+		C189E63C21D5C946002AABBE /* MWTextButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C2C891DC0CCBF00EE1B72 /* MWTextButtonCell.m */; };
+		C189E63D21D5C946002AABBE /* MantleExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCDE1DC3532E00C29808 /* MantleExp.m */; };
+		C189E63E21D5C946002AABBE /* MWJSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2501D5CB62300A8FECC /* MWJSPerson.m */; };
+		C189E63F21D5C946002AABBE /* SDWebImageViewExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7C81DBF5AF6005A43BE /* SDWebImageViewExp.m */; };
+		C189E64021D5C946002AABBE /* NSObject+autoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650901CE99FA1006A117B /* NSObject+autoCoding.m */; };
+		C189E64121D5C946002AABBE /* MasonryExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7CB1DBF5B7E005A43BE /* MasonryExp.m */; };
+		C189E64221D5C946002AABBE /* MWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15531D45B8D700392D95 /* MWBaseViewController.m */; };
+		C189E64321D5C946002AABBE /* synchronizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D845B1DC8874500D7F062 /* synchronizedViewController.m */; };
+		C189E64421D5C946002AABBE /* BlocksKitExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7CF1DBF5C02005A43BE /* BlocksKitExp.m */; };
+		C189E64521D5C946002AABBE /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579871DBDFA4A00F50CD2 /* GCDViewController.m */; };
+		C189E64621D5C946002AABBE /* NSURLParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C17091741DE296F80032C75D /* NSURLParseViewController.m */; };
+		C189E64721D5C946002AABBE /* IndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E36FCC1CE4231900445669 /* IndexTableViewController.m */; };
+		C189E64821D5C946002AABBE /* MethodSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15591D45E92300392D95 /* MethodSignatureViewController.m */; };
+		C189E64921D5C946002AABBE /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511581371DB2F7A800451657 /* DatePickerViewController.m */; };
+		C189E64A21D5C946002AABBE /* downloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650711CE99E75006A117B /* downloadController.m */; };
+		C189E64B21D5C946002AABBE /* SynchronizationExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84521DC87CDA00D7F062 /* SynchronizationExp.m */; };
+		C189E64C21D5C946002AABBE /* display_applyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C155799A1DBE273E00F50CD2 /* display_applyViewController.m */; };
+		C189E64D21D5C946002AABBE /* dispatch_group_waitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C155798E1DBE06B800F50CD2 /* dispatch_group_waitViewController.m */; };
+		C189E64E21D5C946002AABBE /* MW_AC.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2461D5C77A200A8FECC /* MW_AC.m */; };
+		C189E64F21D5C946002AABBE /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
+		C189E65021D5C946002AABBE /* pthread_mutexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84611DC88CC300D7F062 /* pthread_mutexViewController.m */; };
+		C189E65121D5C946002AABBE /* myTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2EF1CECB49A0050E75E /* myTableViewController.m */; };
+		C189E65221D5C946002AABBE /* MWCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BC41D49DCEA00459688 /* MWCommon.m */; };
+		C189E65321D5C946002AABBE /* InvocationBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CC169F1F8E23A200267354 /* InvocationBlockViewController.m */; };
+		C189E65421D5C946002AABBE /* dispatch_group_notifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C155798B1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m */; };
+		C189E65521D5C946002AABBE /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C13D8B121D879EFB008BE3B9 /* TimerObject.m */; };
+		C189E65621D5C946002AABBE /* ArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E1DBE21D546731007EE5F5 /* ArchiverViewController.m */; };
+		C189E65721D5C946002AABBE /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B7D1F90ACB90027EE09 /* TestObject.m */; };
+		C189E65821D5C946002AABBE /* CAMediaTimingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C16B6BBA1D499D5E00459688 /* CAMediaTimingVC.m */; };
+		C189E65921D5C946002AABBE /* arrayBlockskitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */; };
+		C189E65A21D5C946002AABBE /* CACustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 513EC4B21D53876B00279CA1 /* CACustomScrollView.m */; };
+		C189E65B21D5C946002AABBE /* MWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */; };
+		C189E65C21D5C946002AABBE /* CAScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513EC4B51D5389D400279CA1 /* CAScrollViewController.m */; };
+		C189E65D21D5C946002AABBE /* UIButton_MWEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = C16858761D5AD0C80017157D /* UIButton_MWEdge.m */; };
+		C189E65E21D5C946002AABBE /* CAMediaTimingFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDC11D4899E5004CD422 /* CAMediaTimingFunctionVC.m */; };
+		C189E65F21D5C946002AABBE /* safeCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D279E1DBF6A3A00FA2955 /* safeCategoriesViewController.m */; };
+		C189E66021D5C946002AABBE /* UIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154A1D45B43E00392D95 /* UIBaseViewController.m */; };
+		C189E66121D5C946002AABBE /* dispatch_semaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579911DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m */; };
+		C189E66321D5C946002AABBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16D84481DC8480D00D7F062 /* Foundation.framework */; };
+		C189E66421D5C946002AABBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16D84461DC8480500D7F062 /* UIKit.framework */; };
+		C189E66521D5C946002AABBE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16BB76A1D92264500495A88 /* iAd.framework */; };
+		C189E66621D5C946002AABBE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162E3631D51DBE200061311 /* SpriteKit.framework */; };
+		C189E66721D5C946002AABBE /* mergedBundleFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F5BEF51D28A308000641A7 /* mergedBundleFrame.a */; };
+		C189E66821D5C946002AABBE /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833BD4455DD575B15500BA9D /* libPods-iOSLearnList.a */; };
+		C189E66A21D5C946002AABBE /* xiala_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C8C6B01D59DCF900059977 /* xiala_2@2x.png */; };
+		C189E66B21D5C946002AABBE /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
+		C189E66C21D5C946002AABBE /* ArchiverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E1DBE31D546731007EE5F5 /* ArchiverViewController.xib */; };
+		C189E66D21D5C946002AABBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B81CE85C03002CB3AE /* InfoPlist.strings */; };
+		C189E66E21D5C946002AABBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F68ECE1CDE1905009338D6 /* LaunchScreen.storyboard */; };
+		C189E66F21D5C946002AABBE /* myLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B21CE85BCC002CB3AE /* myLanguage.strings */; };
+		C189E67021D5C946002AABBE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5BE1CE85C88002CB3AE /* Localizable.strings */; };
+		C189E67121D5C946002AABBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F68ECC1CDE1905009338D6 /* Assets.xcassets */; };
+		C189E67221D5C946002AABBE /* launch4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C162E3601D51D05500061311 /* launch4@2x.png */; };
+		C189E67321D5C946002AABBE /* autolayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519785FE1D0418E200DF3981 /* autolayoutCell.xib */; };
+		C189E67421D5C946002AABBE /* iOSLearnListBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */; };
+		C189E67521D5C946002AABBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F68EC91CDE1905009338D6 /* Main.storyboard */; };
+		C189E67621D5C946002AABBE /* lanch5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C162E35F1D51D05500061311 /* lanch5@2x.png */; };
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
 		C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
@@ -155,7 +288,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03C4F686A2CEE05A7499C86C /* libPods-iOSLearnListTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13430BB8A32729831AC84106 /* Pods-iOSLearnListEnv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListEnv.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv.debug.xcconfig"; sourceTree = "<group>"; };
 		24FC80A02FD2D64262943026 /* libPods-iOSLearnListUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD4F71C8E87908E0AD61CD0 /* libPods-iOSLearnListEnv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListEnv.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34514118386D2F5D3F362A0A /* Pods-iOSLearnListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5107762E1FE66E9000169CED /* AutoSizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoSizeViewController.h; sourceTree = "<group>"; };
 		5107762F1FE66E9000169CED /* AutoSizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoSizeViewController.m; sourceTree = "<group>"; };
@@ -199,9 +335,11 @@
 		51FAA2F11CECB5750050E75E /* collectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionViewController.h; sourceTree = "<group>"; };
 		51FAA2F21CECB5750050E75E /* collectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionViewController.m; sourceTree = "<group>"; };
 		5AB57DD133BDA8E1660D7CF2 /* Pods-iOSLearnList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.release.xcconfig"; sourceTree = "<group>"; };
+		70B3FBDC4BE59422D21BE7DF /* Pods-iOSLearnListEnv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListEnv.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv.release.xcconfig"; sourceTree = "<group>"; };
 		833BD4455DD575B15500BA9D /* libPods-iOSLearnList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6AEB92408A69B5BDC22BA4 /* Pods-iOSLearnListUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		976E1D446B14B1765DCA593D /* Pods-iOSLearnList.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.adhoc.xcconfig"; sourceTree = "<group>"; };
+		9E11869B73308523AED5C2DA /* Pods-iOSLearnListTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTest/Pods-iOSLearnListTest.debug.xcconfig"; sourceTree = "<group>"; };
 		9ECE5D8CD86363F385503074 /* Pods-iOSLearnListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A12E5D16B183CE4FD8876995 /* Pods-iOSLearnListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1040B741F90A6B50027EE09 /* TestCreateObjectAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCreateObjectAsync.h; sourceTree = "<group>"; };
@@ -342,6 +480,9 @@
 		C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSViewController.m; sourceTree = "<group>"; };
 		C172F24F1D5CB62300A8FECC /* MWJSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWJSPerson.h; sourceTree = "<group>"; };
 		C172F2501D5CB62300A8FECC /* MWJSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSPerson.m; sourceTree = "<group>"; };
+		C189E5ED21D5C218002AABBE /* iOSLearnList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSLearnList copy-Info.plist"; path = "/Users/huangmingwei/Documents/GitHubCode/iOSLearnList/iOSLearnList copy-Info.plist"; sourceTree = "<absolute>"; };
+		C189E67D21D5C946002AABBE /* iOSLearnListEnv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnListEnv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C189E67E21D5C946002AABBE /* iOSLearnList copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSLearnList copy2-Info.plist"; path = "/Users/huangmingwei/Documents/GitHubCode/iOSLearnList/iOSLearnList copy2-Info.plist"; sourceTree = "<absolute>"; };
 		C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseCollectionViewController.h; sourceTree = "<group>"; };
 		C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseCollectionViewController.m; sourceTree = "<group>"; };
 		C18F58E41D475AB800F95031 /* testCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCollectionViewController.h; sourceTree = "<group>"; };
@@ -424,10 +565,13 @@
 		C1FD40CE1E45B6E6008B85D7 /* ObjectStubA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectStubA.h; sourceTree = "<group>"; };
 		C1FD40CF1E45B6E6008B85D7 /* ObjectStubA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectStubA.m; sourceTree = "<group>"; };
 		C1FD40D11E45B796008B85D7 /* ObjectStubATests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectStubATests.m; sourceTree = "<group>"; };
+		C8D270C478E9FA5456D18551 /* Pods-iOSLearnListTest.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTest.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTest/Pods-iOSLearnListTest.adhoc.xcconfig"; sourceTree = "<group>"; };
 		E30031823BFCBF8BFCE8165F /* libPods-iOSLearnListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E832F15429DDC9D8A7C9CEF6 /* Pods-iOSLearnList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.debug.xcconfig"; sourceTree = "<group>"; };
+		E978E0365582DB58806B78C2 /* Pods-iOSLearnListTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTest/Pods-iOSLearnListTest.release.xcconfig"; sourceTree = "<group>"; };
 		F15FAAB9C28D14B851BA63C5 /* Pods-iOSLearnListTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		FB184D60AD379EDFD797687E /* Pods-iOSLearnListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE86B9F0704AFD6944560F7A /* Pods-iOSLearnListEnv.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListEnv.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +585,20 @@
 				C162E3641D51DBE200061311 /* SpriteKit.framework in Frameworks */,
 				51F5BEF61D28A308000641A7 /* mergedBundleFrame.a in Frameworks */,
 				71BC9BDE2B7D9BDEE3B07A8F /* libPods-iOSLearnList.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C189E66221D5C946002AABBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C189E66321D5C946002AABBE /* Foundation.framework in Frameworks */,
+				C189E66421D5C946002AABBE /* UIKit.framework in Frameworks */,
+				C189E66521D5C946002AABBE /* iAd.framework in Frameworks */,
+				C189E66621D5C946002AABBE /* SpriteKit.framework in Frameworks */,
+				C189E66721D5C946002AABBE /* mergedBundleFrame.a in Frameworks */,
+				C189E66821D5C946002AABBE /* libPods-iOSLearnList.a in Frameworks */,
+				3CBA2B9896EF757D6C8402E4 /* libPods-iOSLearnListEnv.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +623,8 @@
 				833BD4455DD575B15500BA9D /* libPods-iOSLearnList.a */,
 				E30031823BFCBF8BFCE8165F /* libPods-iOSLearnListTests.a */,
 				24FC80A02FD2D64262943026 /* libPods-iOSLearnListUITests.a */,
+				03C4F686A2CEE05A7499C86C /* libPods-iOSLearnListTest.a */,
+				2BD4F71C8E87908E0AD61CD0 /* libPods-iOSLearnListEnv.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -523,6 +683,8 @@
 				51F68EBE1CDE1905009338D6 /* Products */,
 				31DFC973CFDBCBD61F0C0EA0 /* Frameworks */,
 				863AE7EF8C12459E0FFD01E2 /* Pods */,
+				C189E5ED21D5C218002AABBE /* iOSLearnList copy-Info.plist */,
+				C189E67E21D5C946002AABBE /* iOSLearnList copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -531,6 +693,7 @@
 			children = (
 				51F68EBD1CDE1905009338D6 /* iOSLearnList.app */,
 				C1ECDDF51E3849E3007A5C05 /* iOSLearnListTests.xctest */,
+				C189E67D21D5C946002AABBE /* iOSLearnListEnv.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -592,6 +755,12 @@
 				E832F15429DDC9D8A7C9CEF6 /* Pods-iOSLearnList.debug.xcconfig */,
 				5AB57DD133BDA8E1660D7CF2 /* Pods-iOSLearnList.release.xcconfig */,
 				976E1D446B14B1765DCA593D /* Pods-iOSLearnList.adhoc.xcconfig */,
+				9E11869B73308523AED5C2DA /* Pods-iOSLearnListTest.debug.xcconfig */,
+				E978E0365582DB58806B78C2 /* Pods-iOSLearnListTest.release.xcconfig */,
+				C8D270C478E9FA5456D18551 /* Pods-iOSLearnListTest.adhoc.xcconfig */,
+				13430BB8A32729831AC84106 /* Pods-iOSLearnListEnv.debug.xcconfig */,
+				70B3FBDC4BE59422D21BE7DF /* Pods-iOSLearnListEnv.release.xcconfig */,
+				FE86B9F0704AFD6944560F7A /* Pods-iOSLearnListEnv.adhoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1173,7 +1342,6 @@
 				51F68EBA1CDE1905009338D6 /* Frameworks */,
 				51F68EBB1CDE1905009338D6 /* Resources */,
 				C1209B1A1CF53D1500182559 /* Copy configuration */,
-				31A1638E16C5F3A376839CED /* [CP] Embed Pods Frameworks */,
 				976012E5720C53C6F39C441B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1185,6 +1353,25 @@
 			productReference = 51F68EBD1CDE1905009338D6 /* iOSLearnList.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C189E5EE21D5C946002AABBE /* iOSLearnListEnv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C189E67921D5C946002AABBE /* Build configuration list for PBXNativeTarget "iOSLearnListEnv" */;
+			buildPhases = (
+				C189E5EF21D5C946002AABBE /* [CP] Check Pods Manifest.lock */,
+				C189E5F021D5C946002AABBE /* Sources */,
+				C189E66221D5C946002AABBE /* Frameworks */,
+				C189E66921D5C946002AABBE /* Resources */,
+				C189E67821D5C946002AABBE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSLearnListEnv;
+			productName = iOSLearnList;
+			productReference = C189E67D21D5C946002AABBE /* iOSLearnListEnv.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C1ECDDF41E3849E3007A5C05 /* iOSLearnListTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1ECDDFC1E3849E3007A5C05 /* Build configuration list for PBXNativeTarget "iOSLearnListTests" */;
@@ -1193,7 +1380,6 @@
 				C1ECDDF11E3849E3007A5C05 /* Sources */,
 				C1ECDDF21E3849E3007A5C05 /* Frameworks */,
 				C1ECDDF31E3849E3007A5C05 /* Resources */,
-				2E2481FDEB3C7F3E68B0CE43 /* [CP] Embed Pods Frameworks */,
 				86E2FB9E16D39780954CE367 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1242,6 +1428,7 @@
 			targets = (
 				51F68EBC1CDE1905009338D6 /* iOSLearnList */,
 				C1ECDDF41E3849E3007A5C05 /* iOSLearnListTests */,
+				C189E5EE21D5C946002AABBE /* iOSLearnListEnv */,
 			);
 		};
 /* End PBXProject section */
@@ -1267,6 +1454,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C189E66921D5C946002AABBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C189E66A21D5C946002AABBE /* xiala_2@2x.png in Resources */,
+				C189E66B21D5C946002AABBE /* caLayerViewController.xib in Resources */,
+				C189E66C21D5C946002AABBE /* ArchiverViewController.xib in Resources */,
+				C189E66D21D5C946002AABBE /* InfoPlist.strings in Resources */,
+				C189E66E21D5C946002AABBE /* LaunchScreen.storyboard in Resources */,
+				C189E66F21D5C946002AABBE /* myLanguage.strings in Resources */,
+				C189E67021D5C946002AABBE /* Localizable.strings in Resources */,
+				C189E67121D5C946002AABBE /* Assets.xcassets in Resources */,
+				C189E67221D5C946002AABBE /* launch4@2x.png in Resources */,
+				C189E67321D5C946002AABBE /* autolayoutCell.xib in Resources */,
+				C189E67421D5C946002AABBE /* iOSLearnListBundle.bundle in Resources */,
+				C189E67521D5C946002AABBE /* Main.storyboard in Resources */,
+				C189E67621D5C946002AABBE /* lanch5@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1ECDDF31E3849E3007A5C05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1283,43 +1490,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLearnListTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2E2481FDEB3C7F3E68B0CE43 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		31A1638E16C5F3A376839CED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77E2DAAB79F29D0A9A310118 /* [CP] Check Pods Manifest.lock */ = {
@@ -1328,13 +1508,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLearnList-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		86E2FB9E16D39780954CE367 /* [CP] Copy Pods Resources */ = {
@@ -1343,9 +1526,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1358,9 +1544,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1380,6 +1569,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "RESOURCE_PATH=${SRCROOT}/${PRODUCT_NAME}/Configuration/${CONFIGURATION}\n\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\necho \"Copying all files under ${RESOURCE_PATH} to ${BUILD_APP_DIR}\"\n\ncp -v \"${RESOURCE_PATH}/\"* \"${BUILD_APP_DIR}/\"";
+		};
+		C189E5EF21D5C946002AABBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLearnListEnv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C189E67821D5C946002AABBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1501,6 +1726,126 @@
 				C11D279F1DBF6A3A00FA2955 /* safeCategoriesViewController.m in Sources */,
 				C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */,
 				C15579921DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C189E5F021D5C946002AABBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C189E5F121D5C946002AABBE /* methodSelectorViewController.m in Sources */,
+				C189E5F221D5C946002AABBE /* AdvancedViewController.m in Sources */,
+				C189E5F321D5C946002AABBE /* DataStructureViewController.m in Sources */,
+				C189E5F421D5C946002AABBE /* SearchBarVC.m in Sources */,
+				C189E5F521D5C946002AABBE /* UIControllBlocksKitViewController.m in Sources */,
+				C189E5F621D5C946002AABBE /* dispatch_sourceViewController.m in Sources */,
+				C189E5F721D5C946002AABBE /* MWScrollView.m in Sources */,
+				C189E5F821D5C946002AABBE /* BaseMainViewController.m in Sources */,
+				C189E5F921D5C946002AABBE /* ILSearchViewController.m in Sources */,
+				C189E5FA21D5C946002AABBE /* RunLoopsExp.m in Sources */,
+				C189E5FB21D5C946002AABBE /* MWDrawingViewController.m in Sources */,
+				C189E5FC21D5C946002AABBE /* AnimationListViewController.m in Sources */,
+				C189E5FD21D5C946002AABBE /* WebViewController.m in Sources */,
+				C189E5FE21D5C946002AABBE /* dispatch_queueViewController.m in Sources */,
+				C189E5FF21D5C946002AABBE /* ExtendMainController.m in Sources */,
+				C189E60021D5C946002AABBE /* NSConditionViewController.m in Sources */,
+				C189E60121D5C946002AABBE /* SDUIImageViewController.m in Sources */,
+				C189E60221D5C946002AABBE /* unRecognizeViewController.m in Sources */,
+				C189E60321D5C946002AABBE /* TestCreateObjectAsync.m in Sources */,
+				C189E60421D5C946002AABBE /* runtimeViewController.m in Sources */,
+				C189E60521D5C946002AABBE /* blockViewController.m in Sources */,
+				C189E60621D5C946002AABBE /* ReversibleString.m in Sources */,
+				C189E60721D5C946002AABBE /* NSURLConnectionController.m in Sources */,
+				C189E60821D5C946002AABBE /* ObjBaseViewController.m in Sources */,
+				C189E60921D5C946002AABBE /* MW_A.m in Sources */,
+				C189E60A21D5C946002AABBE /* configViewController.m in Sources */,
+				C189E60B21D5C946002AABBE /* MWPresentAnimation.m in Sources */,
+				C189E60C21D5C946002AABBE /* collectionViewController.m in Sources */,
+				C189E60D21D5C946002AABBE /* MantleObjectModelViewController.m in Sources */,
+				C189E60E21D5C946002AABBE /* TimerAnimationViewController.m in Sources */,
+				C189E60F21D5C946002AABBE /* undoRedoViewController.m in Sources */,
+				C189E61021D5C946002AABBE /* blockObject.m in Sources */,
+				C189E61121D5C946002AABBE /* ObjectStubA.m in Sources */,
+				C189E61221D5C946002AABBE /* AppDelegate.m in Sources */,
+				C189E61321D5C946002AABBE /* PresentingPopoverViewController.m in Sources */,
+				C189E61421D5C946002AABBE /* UIVIewBlocksKitViewController.m in Sources */,
+				C189E61521D5C946002AABBE /* ThreadProgramingViewController.m in Sources */,
+				C189E61621D5C946002AABBE /* MW_AB.m in Sources */,
+				C189E61721D5C946002AABBE /* MWBaseCollectionViewController.m in Sources */,
+				C189E61821D5C946002AABBE /* iAdViewController.m in Sources */,
+				C189E61921D5C946002AABBE /* MWJSViewController.m in Sources */,
+				C189E61A21D5C946002AABBE /* MWMethodSelector.m in Sources */,
+				C189E61B21D5C946002AABBE /* autolayoutCellCtl.m in Sources */,
+				C189E61C21D5C946002AABBE /* AdaptIOS11ViewController.m in Sources */,
+				C189E61D21D5C946002AABBE /* M13OrderedDictionaryExp.m in Sources */,
+				C189E61E21D5C946002AABBE /* SysBaseViewController.m in Sources */,
+				C189E61F21D5C946002AABBE /* FWSessionDelegate.m in Sources */,
+				C189E62021D5C946002AABBE /* dispatch_barrierViewController.m in Sources */,
+				C189E62121D5C946002AABBE /* MWBaseAnimation.m in Sources */,
+				C189E62221D5C946002AABBE /* YTKKeyValueStoreExp.m in Sources */,
+				C189E62321D5C946002AABBE /* TestObjectFacotry.m in Sources */,
+				C189E62421D5C946002AABBE /* multiThreadController.m in Sources */,
+				C189E62521D5C946002AABBE /* MWMtlObject.m in Sources */,
+				C189E62621D5C946002AABBE /* AutoSizeViewController.m in Sources */,
+				C189E62721D5C946002AABBE /* NSRecursiveLockViewController.m in Sources */,
+				C189E62821D5C946002AABBE /* YTKKeyValueStoreViewController.m in Sources */,
+				C189E62921D5C946002AABBE /* Timer+NotificationViewController.m in Sources */,
+				C189E62A21D5C946002AABBE /* StartRunLoopViewController.m in Sources */,
+				C189E62B21D5C946002AABBE /* ConfigCommon.m in Sources */,
+				C189E62C21D5C946002AABBE /* NSLockViewController.m in Sources */,
+				C189E62D21D5C946002AABBE /* caLayerViewController.m in Sources */,
+				C189E62E21D5C946002AABBE /* NSJSONSerializationViewController.m in Sources */,
+				C189E62F21D5C946002AABBE /* MasonryViewController.m in Sources */,
+				C189E63021D5C946002AABBE /* NSConditionLockViewController.m in Sources */,
+				C189E63121D5C946002AABBE /* MWBasePresentViewController.m in Sources */,
+				C189E63221D5C946002AABBE /* main.m in Sources */,
+				C189E63321D5C946002AABBE /* libextobjcExp.m in Sources */,
+				C189E63421D5C946002AABBE /* customRunLoopViewController.m in Sources */,
+				C189E63521D5C946002AABBE /* CADisplayLinkViewController.m in Sources */,
+				C189E63621D5C946002AABBE /* HideNavigatorViewController.m in Sources */,
+				C189E63721D5C946002AABBE /* BBLaunchAdMonitor.m in Sources */,
+				C189E63821D5C946002AABBE /* OBJModel.m in Sources */,
+				C189E63921D5C946002AABBE /* autolayoutCell.m in Sources */,
+				C189E63A21D5C946002AABBE /* defaultNSURLSessionController.m in Sources */,
+				C189E63B21D5C946002AABBE /* KVOViewController.m in Sources */,
+				C189E63C21D5C946002AABBE /* MWTextButtonCell.m in Sources */,
+				C189E63D21D5C946002AABBE /* MantleExp.m in Sources */,
+				C189E63E21D5C946002AABBE /* MWJSPerson.m in Sources */,
+				C189E63F21D5C946002AABBE /* SDWebImageViewExp.m in Sources */,
+				C189E64021D5C946002AABBE /* NSObject+autoCoding.m in Sources */,
+				C189E64121D5C946002AABBE /* MasonryExp.m in Sources */,
+				C189E64221D5C946002AABBE /* MWBaseViewController.m in Sources */,
+				C189E64321D5C946002AABBE /* synchronizedViewController.m in Sources */,
+				C189E64421D5C946002AABBE /* BlocksKitExp.m in Sources */,
+				C189E64521D5C946002AABBE /* GCDViewController.m in Sources */,
+				C189E64621D5C946002AABBE /* NSURLParseViewController.m in Sources */,
+				C189E64721D5C946002AABBE /* IndexTableViewController.m in Sources */,
+				C189E64821D5C946002AABBE /* MethodSignatureViewController.m in Sources */,
+				C189E64921D5C946002AABBE /* DatePickerViewController.m in Sources */,
+				C189E64A21D5C946002AABBE /* downloadController.m in Sources */,
+				C189E64B21D5C946002AABBE /* SynchronizationExp.m in Sources */,
+				C189E64C21D5C946002AABBE /* display_applyViewController.m in Sources */,
+				C189E64D21D5C946002AABBE /* dispatch_group_waitViewController.m in Sources */,
+				C189E64E21D5C946002AABBE /* MW_AC.m in Sources */,
+				C189E64F21D5C946002AABBE /* testCollectionViewController.m in Sources */,
+				C189E65021D5C946002AABBE /* pthread_mutexViewController.m in Sources */,
+				C189E65121D5C946002AABBE /* myTableViewController.m in Sources */,
+				C189E65221D5C946002AABBE /* MWCommon.m in Sources */,
+				C189E65321D5C946002AABBE /* InvocationBlockViewController.m in Sources */,
+				C189E65421D5C946002AABBE /* dispatch_group_notifyViewController.m in Sources */,
+				C189E65521D5C946002AABBE /* TimerObject.m in Sources */,
+				C189E65621D5C946002AABBE /* ArchiverViewController.m in Sources */,
+				C189E65721D5C946002AABBE /* TestObject.m in Sources */,
+				C189E65821D5C946002AABBE /* CAMediaTimingVC.m in Sources */,
+				C189E65921D5C946002AABBE /* arrayBlockskitViewController.m in Sources */,
+				C189E65A21D5C946002AABBE /* CACustomScrollView.m in Sources */,
+				C189E65B21D5C946002AABBE /* MWNavigationController.m in Sources */,
+				C189E65C21D5C946002AABBE /* CAScrollViewController.m in Sources */,
+				C189E65D21D5C946002AABBE /* UIButton_MWEdge.m in Sources */,
+				C189E65E21D5C946002AABBE /* CAMediaTimingFunctionVC.m in Sources */,
+				C189E65F21D5C946002AABBE /* safeCategoriesViewController.m in Sources */,
+				C189E66021D5C946002AABBE /* UIBaseViewController.m in Sources */,
+				C189E66121D5C946002AABBE /* dispatch_semaphoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1765,6 +2110,87 @@
 			};
 			name = AdHoc;
 		};
+		C189E67A21D5C946002AABBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13430BB8A32729831AC84106 /* Pods-iOSLearnListEnv.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TEST_ENV=1",
+				);
+				INFOPLIST_FILE = "iOSLearnList copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSLearnList/3rdParty",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.test.proj1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C189E67B21D5C946002AABBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B3FBDC4BE59422D21BE7DF /* Pods-iOSLearnListEnv.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TEST_ENV=1",
+				);
+				INFOPLIST_FILE = "iOSLearnList copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSLearnList/3rdParty",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.test.proj1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C189E67C21D5C946002AABBE /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE86B9F0704AFD6944560F7A /* Pods-iOSLearnListEnv.adhoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TEST_ENV=1",
+				);
+				INFOPLIST_FILE = "iOSLearnList copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSLearnList/3rdParty",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.test.proj1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc;
+		};
 		C1ECDDFD1E3849E3007A5C05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34514118386D2F5D3F362A0A /* Pods-iOSLearnListTests.debug.xcconfig */;
@@ -1827,6 +2253,16 @@
 				51F68EEB1CDE1905009338D6 /* Debug */,
 				51F68EEC1CDE1905009338D6 /* Release */,
 				C1209B0D1CF53B0200182559 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C189E67921D5C946002AABBE /* Build configuration list for PBXNativeTarget "iOSLearnListEnv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C189E67A21D5C946002AABBE /* Debug */,
+				C189E67B21D5C946002AABBE /* Release */,
+				C189E67C21D5C946002AABBE /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
