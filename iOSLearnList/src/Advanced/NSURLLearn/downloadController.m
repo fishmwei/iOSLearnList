@@ -26,8 +26,7 @@
 
 @implementation downloadController
 
-- (NSString *)uuidString
-{
+- (NSString *)uuidString {
     CFUUIDRef uuid_ref = CFUUIDCreate(NULL);
     CFStringRef uuid_string_ref = CFUUIDCreateString(NULL, uuid_ref);
     NSString *uuid = [NSString stringWithString:(__bridge NSString *)uuid_string_ref];
@@ -36,13 +35,11 @@
     return [uuid lowercaseString];
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [self.downloadSession invalidateAndCancel];
     self.downloadSession = nil;
 }
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
@@ -51,8 +48,7 @@
     [self createData];
 }
 
-- (void)createView
-{
+- (void)createView {
     _systemBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 64 + 5, 200, 44)];
     [_systemBtn setTitle:@"Request" forState:UIControlStateNormal];
     [_systemBtn addTarget:self action:@selector(startDownloadFile:) forControlEvents:UIControlEventTouchUpInside];
@@ -86,8 +82,7 @@
     [self.view addSubview:showImageView];
 }
 
-- (void)createData
-{
+- (void)createData {
     //Create Session
     NSURLSessionConfiguration *cfg = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:[self uuidString]];
     cfg.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
@@ -99,8 +94,7 @@
 }
 
 
-- (void)cancelDownloadFile:(id)sender
-{
+- (void)cancelDownloadFile:(id)sender {
     if (downloadTask) {
         [downloadTask cancel];
         downloadTask = nil;
@@ -108,8 +102,7 @@
 }
 
 
-- (void)startDownloadFile:(id)sender
-{
+- (void)startDownloadFile:(id)sender {
     UIButton *btn = (UIButton *)sender;
     btn.enabled = NO;
     btn.userInteractionEnabled = NO;
@@ -138,16 +131,14 @@
 #pragma mark - NSURLSessionDownloadDelegate
 
 #pragma mark 下载完成
-- (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error
-{
+- (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error {
     [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }
 
 
 #pragma mark 下载成功
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)task
-    didFinishDownloadingToURL:(NSURL *)location
-{
+    didFinishDownloadingToURL:(NSURL *)location {
     NSLog(@"Session %@ download task %@ finished downloading to URL %@\n",
           session, task, location);
 
@@ -245,8 +236,7 @@
 
 
 #pragma mark - 下载进度
-- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
-{
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
     double currentProgress = totalBytesWritten / (double)totalBytesExpectedToWrite;
 
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -262,16 +252,14 @@
 }
 
 #pragma mark - 恢复下载
-- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes
-{
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes {
     NSLog(@"Session %@ download task %@ resumed at offset %lld bytes out of an expected %lld bytes.\n",
           session, downloadTask, fileOffset, expectedTotalBytes);
 }
 
 //Session 后台下载完成 事件
 
-- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)session
-{
+- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)session {
     NSLog(@"Background URL session %@ finished events.\n", session);
 
     //    if (session.configuration.identifier)
@@ -299,13 +287,11 @@
 //    }
 //}
 
-- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
-{
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
     downloadTask = nil;
 }
 
-- (void)hudWasHidden:(MBProgressHUD *)hud
-{
+- (void)hudWasHidden:(MBProgressHUD *)hud {
     myhud = nil;
 }
 

@@ -24,17 +24,16 @@
 
 
 @implementation MWBaseViewController
--(id)init
-{
+- (id)init {
     self = [super init];
     if (self) {
-//        self.hidesBottomBarWhenPushed = YES;
+        //        self.hidesBottomBarWhenPushed = YES;
         _isOriginalNavigationBarHidden = YES;
         _isNextNavigationBarHidden = NO;
         _isFirstInto = YES;
         _hideNavigationbar = NO;
     }
-    
+
     return self;
 }
 
@@ -46,51 +45,46 @@
     } else {
         [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:animated];
     }
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:NO];
-    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    
     [super viewWillDisappear:animated];
-    
+
     //Pop
     if (self.isMovingFromParentViewController) {
         [self.navigationController setNavigationBarHidden:_isOriginalNavigationBarHidden animated:YES];
         self.navigationController.interactivePopGestureRecognizer.enabled = YES;
         return;
     }
-    
+
     if (self.isBeingDismissed) {
         return;
     }
-    
+
     if ([self isEqual:self.navigationController.topViewController]) {
         return;
     }
-    
+
     [self.navigationController setNavigationBarHidden:_isNextNavigationBarHidden animated:animated];
 }
 
 #pragma mark 设置手势右滑后退
--(void) setRightPanPopCtrlEnabled:(BOOL)isEnabled
-{
+- (void)setRightPanPopCtrlEnabled:(BOOL)isEnabled {
     //禁用滑动后退
     self.navigationController.interactivePopGestureRecognizer.enabled = isEnabled;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.navigationController.interactivePopGestureRecognizer.delegate=(id)self;
-    
-    
+
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+
+
     self.view.backgroundColor = [UIColor whiteColor];
 
 #ifdef __IPHONE_7_0
@@ -108,14 +102,12 @@
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)showTextTips:(NSString *)tips
-{
+- (void)showTextTips:(NSString *)tips {
     [MBProgressHUD hideHUDForView:self.view animated:NO];
     [self.view addSubview:_tipHud];
     [self.view bringSubviewToFront:_tipHud];
@@ -126,8 +118,7 @@
     [_tipHud hide:YES afterDelay:1];
 }
 
-- (void)showLoadingTips
-{
+- (void)showLoadingTips {
     [MBProgressHUD hideHUDForView:self.view animated:NO];
     [self.view addSubview:_tipHud];
     [self.view bringSubviewToFront:_tipHud];
@@ -137,8 +128,7 @@
     [_tipHud show:YES];
 }
 
-- (void)dismissLoadingTips
-{
+- (void)dismissLoadingTips {
     [_tipHud hide:YES];
 }
 

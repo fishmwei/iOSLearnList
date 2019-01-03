@@ -25,15 +25,13 @@
 
 @synthesize lab = ll;
 
-- (void)dealloc
-{
+- (void)dealloc {
     //    [ll removeObserver:self forKeyPath:@"text"];
     [self removeObserver:self forKeyPath:@"lab.text"];
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
 
@@ -65,20 +63,17 @@
     }];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)btnPressed
-{
+- (void)btnPressed {
     ll.text = @"hello";
 }
 
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *, id> *)change context:(void *)context
-{
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *, id> *)change context:(void *)context {
     if ([object isEqual:ll]) {
         [self showTextTips:@"change ll"];
     } else if ([keyPath isEqualToString:@"lab.text"]) {

@@ -10,8 +10,7 @@
 
 
 @implementation YTKKeyValueStoreExp
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.showData = @[ @"YTKKeyValueStoreViewController" ];
 }

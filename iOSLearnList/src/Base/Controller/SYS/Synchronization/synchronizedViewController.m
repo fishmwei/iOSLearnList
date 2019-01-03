@@ -20,15 +20,13 @@
 
 @implementation synchronizedViewController
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.readShow cancel];
     [self.readShow1 cancel];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.count = 0;
@@ -54,11 +52,9 @@
 }
 
 //不可重入代码
-- (void)showCountThread
-{
+- (void)showCountThread {
     while (true) {
-        @synchronized(self)
-        {
+        @synchronized(self) {
             [NSThread sleepForTimeInterval:1];
             NSString *t = [NSString stringWithFormat:@"%@ count is %lu", [NSThread currentThread], self.count++];
             NSLog(@"%@", t);
@@ -74,11 +70,9 @@
     }
 }
 
-- (void)ShowCount
-{
+- (void)ShowCount {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        @synchronized(self)
-        {
+        @synchronized(self) {
             [NSThread sleepForTimeInterval:3];
             NSLog(@"count is %lu", self.count++);
             dispatch_async(dispatch_get_main_queue(), ^{

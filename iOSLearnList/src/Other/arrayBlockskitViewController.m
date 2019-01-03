@@ -11,16 +11,14 @@
 
 
 @implementation arrayBlockskitViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self setupData];
     [self setupUI];
 }
 
-- (void)setupData
-{
+- (void)setupData {
     NSArray *numArray = @[ @1, @2, @3 ];
     NSArray *strArray = @[ @"1", @"2", @"3" ];
 
@@ -50,8 +48,7 @@
     }];
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
 }
 
 @end

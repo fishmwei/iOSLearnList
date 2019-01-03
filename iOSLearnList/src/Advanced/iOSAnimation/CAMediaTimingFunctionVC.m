@@ -21,8 +21,7 @@
 
 @implementation CAMediaTimingFunctionVC
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     //create a red layer
@@ -51,14 +50,12 @@
     [self.view.layer addSublayer:_ballLayer];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     //configure the transaction
     [CATransaction begin];
     [CATransaction setAnimationDuration:0.25f];
@@ -74,19 +71,16 @@
 }
 
 
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     CGPoint point = [[touches anyObject] locationInView:self.view];
     _ballLayer.position = point;
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self animate];
 }
 
-- (void)changeColor
-{
+- (void)changeColor {
     //create a keyframe animation
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"backgroundColor";
@@ -106,13 +100,11 @@
 }
 
 //functionWithControlPoints
-float interpolate(float from, float to, float time)
-{
+float interpolate(float from, float to, float time) {
     return (to - from) * time + from;
 }
 
-- (id)interpolateFromValue:(id)fromValue toValue:(id)toValue time:(float)time
-{
+- (id)interpolateFromValue:(id)fromValue toValue:(id)toValue time:(float)time {
     if ([fromValue isKindOfClass:[NSValue class]]) {
         //get type
         const char *type = [fromValue objCType];
@@ -127,8 +119,7 @@ float interpolate(float from, float to, float time)
     return (time < 0.5) ? fromValue : toValue;
 }
 
-- (void)animate
-{
+- (void)animate {
     //create keyframe animation
     //    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     //    animation.keyPath = @"position";

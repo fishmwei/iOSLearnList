@@ -13,8 +13,7 @@
 
 static NSDateFormatter *datefmt;
 
-+ (void)initialize
-{
++ (void)initialize {
     static dispatch_once_t p;
     dispatch_once(&p, ^{
         datefmt = [[NSDateFormatter alloc] init];
@@ -22,8 +21,7 @@ static NSDateFormatter *datefmt;
     });
 }
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey
-{
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
         @"name" : @"name",
         @"age" : @"age",
@@ -39,8 +37,7 @@ static NSDateFormatter *datefmt;
 //    }];
 //}
 
-+ (NSDateFormatter *)dateFormatter
-{
++ (NSDateFormatter *)dateFormatter {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     NSLocale *enUSPOSIXLocale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
     [dateFormatter setLocale:enUSPOSIXLocale];
@@ -48,8 +45,7 @@ static NSDateFormatter *datefmt;
     return dateFormatter;
 }
 
-+ (NSValueTransformer *)saveTimeJSONTransformer
-{
++ (NSValueTransformer *)saveTimeJSONTransformer {
     //    return [MTLValueTransformer transformerUsingForwardBlock:^id(id value, BOOL *success, NSError **error) {
     //        if ([value isKindOfClass:[NSString class]]) {
     //            NSString *time = (NSString *)value;

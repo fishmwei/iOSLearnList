@@ -17,8 +17,7 @@
 
 @implementation CAScrollViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     CACustomScrollView *vv = [[CACustomScrollView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
@@ -28,8 +27,7 @@
     vv.layer.contents = (__bridge id)[UIImage imageNamed:@"launch4"].CGImage;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

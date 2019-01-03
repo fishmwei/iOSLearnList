@@ -24,16 +24,14 @@
 
 @implementation NSURLConnectionController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     //    [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setTitle:@"Deprecated iOS9 or later"];
     [self createView];
 }
 
-- (void)createData
-{
+- (void)createData {
     // Create the request.
     NSURLRequest *theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com/"]
                                                 cachePolicy:NSURLRequestUseProtocolCachePolicy
@@ -57,8 +55,7 @@
     [_requestConnection start];
 }
 
-- (void)createView
-{
+- (void)createView {
     _systemBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 64 + 5, self.view.frame.size.width / 2, 44)];
     [_systemBtn setTitle:@"system" forState:UIControlStateNormal];
     [_systemBtn addTarget:self action:@selector(requestSystemDelegateData) forControlEvents:UIControlEventTouchUpInside];
@@ -78,14 +75,12 @@
     [self.view addSubview:_responseView];
 }
 
-- (void)requestSystemDelegateData
-{
+- (void)requestSystemDelegateData {
     [self createData];
 }
 
 
-- (void)requestCustomDelegateData
-{
+- (void)requestCustomDelegateData {
     [self createData];
 }
 
@@ -118,8 +113,7 @@
 }
 
 #pragma mark error
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
-{
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     //    NSLog(@"get error %@", error);
     _requestConnection = nil;
     _receiveData = nil;
@@ -130,8 +124,7 @@
           [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
 }
 #pragma mark 成功
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
-{
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     // This method is called when the server has determined that it
     // has enough information to create the NSURLResponse object.
 
@@ -145,8 +138,7 @@
 }
 
 #pragma mark 分段接收数据
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     // Append the new data to receivedData.
     // receivedData is an instance variable declared elsewhere.
     [_receiveData appendData:data];

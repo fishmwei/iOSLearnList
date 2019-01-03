@@ -19,8 +19,7 @@
 
 @implementation multiThreadController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 70, 200, 30)];
@@ -43,14 +42,12 @@
     showLabel.layer.cornerRadius = 2;
 }
 
-- (void)createThread
-{
+- (void)createThread {
     [NSThread detachNewThreadSelector:@selector(threadWithMaxNumber:) toTarget:self withObject:@(10)];
 }
 
 
-- (void)threadWithMaxNumber:(id)maxNumber
-{
+- (void)threadWithMaxNumber:(id)maxNumber {
     for (; totalCount < [maxNumber unsignedIntegerValue];) {
         totalCount++;
         NSString *threadInfo = [NSString stringWithFormat:@"currentThread:%@", [NSThread currentThread]];
@@ -68,8 +65,7 @@
     NSLog(@"thread exit");
 }
 
-- (void)printInfo:(id)object
-{
+- (void)printInfo:(id)object {
     NSString *showStr = [NSString stringWithFormat:@"total:%ld, %@", totalCount, object];
 
     NSLog(@"%@", showStr);

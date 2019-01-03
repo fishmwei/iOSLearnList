@@ -13,8 +13,7 @@
 
 //http://cocoadocs.org/docsets/BlocksKit/2.2.5/Categories/NSArray+BlocksKit.html#//api/name/bk_any:
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.showData = @[ @"UIVIewBlocksKitViewController",
                        @"arrayBlockskitViewController",

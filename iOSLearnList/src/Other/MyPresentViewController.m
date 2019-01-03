@@ -15,8 +15,7 @@
 
 
 @implementation MyPresentViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
 
@@ -30,13 +29,11 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)close
-{
+- (void)close {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

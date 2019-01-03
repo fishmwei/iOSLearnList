@@ -19,8 +19,7 @@
 
 @implementation SDUIImageViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self createView];
 
@@ -28,15 +27,13 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
-- (void)createView
-{
+- (void)createView {
     self.view.backgroundColor = [UIColor lightGrayColor];
 
     self.automaticallyAdjustsScrollViewInsets = YES;
@@ -73,13 +70,11 @@
 
 
 #pragma mark Action
-- (void)clickView
-{
+- (void)clickView {
     [self.view endEditing:YES];
 }
 
-- (void)showImage
-{
+- (void)showImage {
     NSURL *url = [[NSURL alloc] initWithString:_urlField.text];
 
     [_showImgView sd_setImageWithURL:url placeholderImage:[MWCommon imageNamed:@"wait"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
@@ -94,8 +89,7 @@
     [self.view endEditing:YES];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     //返回一个BOOL值，指明是否允许在按下回车键时结束编辑
     //如果允许要调用resignFirstResponder 方法，这回导致结束编辑，而键盘会被收起
     [textField resignFirstResponder]; //查一下resign这个单词的意思就明白这个方法了

@@ -19,23 +19,20 @@
 
 @implementation Timer_NotificationViewController
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
     self.showTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(show:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.showTimer forMode:NSRunLoopCommonModes]; //注释掉在拖动过程中就不能运行啦
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.showTimer invalidate];
     self.showTimer = nil;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
@@ -65,27 +62,23 @@
 }
 
 
-- (void)show:(NSTimer *)timer
-{
+- (void)show:(NSTimer *)timer {
     NSLog(@"hello xxx ");
     _count++;
     self.showLabel.text = [NSString stringWithFormat:@"%ldS", _count];
 }
 
-- (void)sendMsg
-{
+- (void)sendMsg {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"testMsg" object:nil];
 }
 
-- (void)showHello:(NSNotification *)notification
-{
+- (void)showHello:(NSNotification *)notification {
     UIAlertView *al = [[UIAlertView alloc] initWithTitle:@"hello" message:@"recv msg" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
     [al show];
 }
 
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

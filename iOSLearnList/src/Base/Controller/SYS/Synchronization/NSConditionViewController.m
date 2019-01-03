@@ -20,14 +20,12 @@
 
 @implementation NSConditionViewController
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.readShow cancel];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
 
@@ -52,8 +50,7 @@
 }
 
 //不可重入代码
-- (void)showCountThread
-{
+- (void)showCountThread {
     while (true) {
         [self.cocoaCodition lock];
         while (!self.canShow) {
@@ -78,8 +75,7 @@
     }
 }
 
-- (void)ShowCount
-{
+- (void)ShowCount {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self.cocoaCodition lock];
         _canShow = YES;

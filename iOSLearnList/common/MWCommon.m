@@ -10,8 +10,7 @@
 
 
 @implementation MWCommon
-+ (UIImage *)imageNamed:(NSString *)imageName
-{
++ (UIImage *)imageNamed:(NSString *)imageName {
     //    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"iOSLearnListBundle" ofType:@"bundle"]];
     //
     //    return [[UIImage imageWithContentsOfFile:[bundle pathForResource:imageName ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];

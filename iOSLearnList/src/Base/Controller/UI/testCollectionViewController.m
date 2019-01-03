@@ -16,8 +16,7 @@
 
 @implementation testCollectionViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self setTitle:@"test"];
@@ -36,15 +35,13 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
-- (void)addItemBtnClick:(id)sender
-{
+- (void)addItemBtnClick:(id)sender {
     [self.collectionView performBatchUpdates:^{
         // 构造一个indexPath
         NSIndexPath *indePath = [NSIndexPath indexPathForItem:self.section0Array.count inSection:0];

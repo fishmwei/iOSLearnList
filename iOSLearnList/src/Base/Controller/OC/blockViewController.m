@@ -17,8 +17,7 @@
 
 
 @implementation blockViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:btn];
@@ -29,8 +28,7 @@
     [btn addTarget:self action:@selector(btnPressed) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)btnPressed
-{
+- (void)btnPressed {
     blockObject *obj = [[blockObject alloc] init];
     dispatch_semaphore_t sem = dispatch_semaphore_create(0);
     NSLog(@"1");
@@ -47,8 +45,7 @@
     NSLog(@"8");
 }
 
-- (void)testCallBack:(void (^)())test
-{
+- (void)testCallBack:(void (^)())test {
     NSLog(@"2");
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSLog(@"4");

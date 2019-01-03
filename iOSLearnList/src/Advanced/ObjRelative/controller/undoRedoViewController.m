@@ -22,8 +22,7 @@
 
 @implementation undoRedoViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     undoMnt = [[NSUndoManager alloc] init];
@@ -73,42 +72,36 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
-- (void)updateShowLabel
-{
+- (void)updateShowLabel {
     self.showLabel.text = [NSString stringWithFormat:@"%ld", self.count];
 }
 
 
-- (void)add
-{
+- (void)add {
     self.count += 1;
     [self updateShowLabel];
 
     [undoMnt registerUndoWithTarget:self selector:@selector(del) object:nil];
 }
 
-- (void)del
-{
+- (void)del {
     self.count -= 1;
     [self updateShowLabel];
     [undoMnt registerUndoWithTarget:self selector:@selector(add) object:nil];
 }
 
 
-- (void)undo
-{
+- (void)undo {
     [undoMnt undo];
 }
 
-- (void)redo
-{
+- (void)redo {
     [undoMnt redo];
 }
 

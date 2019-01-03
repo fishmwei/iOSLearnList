@@ -11,8 +11,7 @@
 
 @implementation dispatch_group_waitViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     dispatch_queue_t dispatchQueue = dispatch_queue_create(NSStringFromClass([self class]).UTF8String, DISPATCH_QUEUE_CONCURRENT);
@@ -22,8 +21,7 @@
     });
 }
 
-- (void)setupData
-{
+- (void)setupData {
     dispatch_group_t dispatchGroup = dispatch_group_create();
 
     {

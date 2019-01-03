@@ -22,15 +22,13 @@ pthread_mutex_t mutex;
 
 @implementation pthread_mutexViewController
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.readShow cancel];
     [self.readShow1 cancel];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     static dispatch_once_t onceToken;
@@ -61,8 +59,7 @@ pthread_mutex_t mutex;
 }
 
 //不可重入代码
-- (void)showCountThread
-{
+- (void)showCountThread {
     while (true) {
         pthread_mutex_lock(&mutex);
         {
@@ -82,8 +79,7 @@ pthread_mutex_t mutex;
     }
 }
 
-- (void)ShowCount
-{
+- (void)ShowCount {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         pthread_mutex_lock(&mutex);
         {

@@ -9,9 +9,11 @@
 #import "AutoSizeViewController.h"
 #import <Masonry/Masonry.h>
 
+
 @interface AutoSizeViewController ()
 
 @end
+
 
 @implementation AutoSizeViewController
 
@@ -20,16 +22,16 @@
     UIView *sV = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
     sV.backgroundColor = [UIColor redColor];
     [self.view addSubview:sV];
-    
+
     UIView *subV = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 50, 200)];
     subV.backgroundColor = [UIColor yellowColor];
-    
+
     [sV addSubview:subV];
-    [subV mas_makeConstraints:^(MASConstraintMaker * maker) {
+    [subV mas_makeConstraints:^(MASConstraintMaker *maker) {
         maker.edges.equalTo(sV).insets(UIEdgeInsetsMake(0, 0, 0, 3));
     }];
-    
-    
+
+
     [sV sizeToFit];
     // Do any additional setup after loading the view.
 }

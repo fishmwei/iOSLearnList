@@ -17,8 +17,7 @@
 
 
 @implementation DatePickerViewController
-- (void)dealloc
-{
+- (void)dealloc {
     NSDate *date = self.datePicker.date;
     NSDate *time = self.timePicker.date;
 
@@ -27,20 +26,17 @@
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self setupData];
     [self setupUI];
 }
 
-- (void)setupData
-{
+- (void)setupData {
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
     UILabel *l0 = [[UILabel alloc] init];
     [self.view addSubview:l0];
     l0.frame = CGRectMake(0, 64, 200, 20);
@@ -89,8 +85,7 @@
     }];
 }
 
-- (UIDatePicker *)datePicker
-{
+- (UIDatePicker *)datePicker {
     if (!_datePicker) {
         _datePicker = [[UIDatePicker alloc] init];
         _datePicker.datePickerMode = UIDatePickerModeDate;
@@ -100,8 +95,7 @@
     return _datePicker;
 }
 
-- (UIDatePicker *)timePicker
-{
+- (UIDatePicker *)timePicker {
     if (!_timePicker) {
         _timePicker = [[UIDatePicker alloc] init];
         _timePicker.datePickerMode = UIDatePickerModeTime;
@@ -112,8 +106,7 @@
     return _timePicker;
 }
 
-- (void)dateValueChanged:(id)sender
-{
+- (void)dateValueChanged:(id)sender {
     if ([self.datePicker isEqual:sender]) {
         self.timePicker.date = self.datePicker.date;
     } else {

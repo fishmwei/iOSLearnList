@@ -19,8 +19,7 @@
 
 
 @implementation NSConditionLockViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.count = 0;
@@ -41,8 +40,7 @@
     [btn setExclusiveTouch:YES];
 }
 
-- (void)showCountThread
-{
+- (void)showCountThread {
     while (true) {
         [self.countLock lockWhenCondition:1];
         [NSThread sleepForTimeInterval:3];
@@ -54,8 +52,7 @@
     }
 }
 
-- (void)ShowCount
-{
+- (void)ShowCount {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 
         [self.countLock lockWhenCondition:0];

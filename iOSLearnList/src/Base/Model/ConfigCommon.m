@@ -19,8 +19,7 @@
 
 @implementation ConfigCommon
 
-+ (id)shareInstance
-{
++ (id)shareInstance {
     static ConfigCommon *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -32,15 +31,13 @@
 }
 
 #pragma mark - private
-- (void)readData
-{
+- (void)readData {
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *path = [bundle pathForResource:@"Configuration" ofType:@"plist"];
     dict = [NSDictionary dictionaryWithContentsOfFile:path];
 }
 
-- (NSString *)currentConfig
-{
+- (NSString *)currentConfig {
     return [dict objectForKey:@"CurrentConfig"];
 }
 

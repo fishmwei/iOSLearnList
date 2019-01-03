@@ -22,19 +22,16 @@
 
 
 @implementation NSURLParseViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self setupUI];
 }
 
-- (void)setupData
-{
+- (void)setupData {
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
     CGFloat offsetX = 0;
     CGFloat offsetY = 100;
 
@@ -62,8 +59,7 @@
     offsetY += 20;
 }
 
-- (UILabel *)labelWithFrame:(CGRect)frame
-{
+- (UILabel *)labelWithFrame:(CGRect)frame {
     UILabel *label = [[UILabel alloc] initWithFrame:frame];
     label.layer.borderWidth = 1;
     label.layer.borderColor = [UIColor orangeColor].CGColor;
@@ -72,27 +68,23 @@
     return label;
 }
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-{
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     if ([string isEqualToString:@"\n"]) {
         [textField resignFirstResponder];
         return NO;
     }
     return YES;
 }
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
+- (void)textFieldDidEndEditing:(UITextField *)textField {
     [self fillData:textField.text];
 }
 
-- (void)fillData:(NSString *)text
-{
+- (void)fillData:(NSString *)text {
     if (!text.length) {
         return;
     }

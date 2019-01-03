@@ -17,18 +17,15 @@
 
 #pragma mark - UIViewControllerAnimatedTransitioning
 
-- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
-{
+- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     NSAssert(NO, @"animateTransition: should be handled by subclass of BaseAnimation");
 }
 
-- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
-{
+- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
     return 0.5;
 }
 
-- (void)handlePinch:(UIPinchGestureRecognizer *)pinch
-{
+- (void)handlePinch:(UIPinchGestureRecognizer *)pinch {
     NSAssert(NO, @"handlePinch: should be handled by a subclass of BaseAnimation");
 }
 

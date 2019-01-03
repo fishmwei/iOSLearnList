@@ -26,8 +26,7 @@
 
 @implementation HideNavigatorViewController
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.isFirstInto = YES;
@@ -40,8 +39,7 @@
     return self;
 }
 
-- (void)loadView
-{
+- (void)loadView {
     [super loadView];
 
     UIButton *prev = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 44)];
@@ -63,27 +61,23 @@
     [nextShow addTarget:self action:@selector(goNextShow) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)goBack
-{
+- (void)goBack {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)goNextHide
-{
+- (void)goNextHide {
     HideNavigatorViewController *VC = [[HideNavigatorViewController alloc] init];
     VC.isOriginalNavigationBarHidden = self.navigationController.navigationBarHidden;
 
     [self.navigationController pushViewController:VC animated:YES];
 }
 
-- (void)goNextShow
-{
+- (void)goNextShow {
     UIViewController *next = [[UIViewController alloc] init];
     [self.navigationController pushViewController:next animated:YES];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     if (self.isFirstInto) {
         self.isFirstInto = NO;
@@ -93,8 +87,7 @@
     }
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 
     if (self.movingFromParentViewController) {
@@ -106,12 +99,10 @@
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
+- (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
 }
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
@@ -126,8 +117,7 @@
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
-{
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     // µ±µ±Ç°¿ØÖÆÆ÷ÊÇ¸ù¿ØÖÆÆ÷Ê±£¬²»¿ÉÒÔ²à»¬·µ»Ø£¬ËùÒÔ²»ÄÜÊ¹Æä´¥·¢ÊÖÊÆ
     if (self.navigationController.childViewControllers.count == 1) {
         return NO;
@@ -136,8 +126,7 @@
     return YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

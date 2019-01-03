@@ -21,8 +21,7 @@
 
 @implementation dispatch_barrierViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self setupData];
@@ -30,14 +29,12 @@
     [self setupUI];
 }
 
-- (void)setupData
-{
+- (void)setupData {
     seralQueue = dispatch_queue_create(NSStringFromClass([self class]).UTF8String, DISPATCH_QUEUE_SERIAL);
     concurrentQueue = dispatch_queue_create(NSStringFromClass([self class]).UTF8String, DISPATCH_QUEUE_CONCURRENT);
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
     showView = [[UITextView alloc] initWithFrame:CGRectMake(0, 100, 200, 300)];
     [self.view addSubview:showView];
     showView.layer.borderWidth = 1;
@@ -125,8 +122,7 @@
     NSLog(@"excute in main Queue");
 }
 
-- (void)showAppend:(NSString *)str
-{
+- (void)showAppend:(NSString *)str {
     NSString *text = showView.text;
     showView.text = [text stringByAppendingString:[NSString stringWithFormat:@"%@\n", str]];
 }

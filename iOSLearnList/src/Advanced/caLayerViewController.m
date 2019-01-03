@@ -19,8 +19,7 @@
 
 @implementation caLayerViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.view.clipsToBounds = YES;
 
@@ -126,8 +125,7 @@
     layer.contents = (__bridge id)img.CGImage;
 }
 
-- (void)drawShapeView
-{
+- (void)drawShapeView {
     //Shape View
     CAShapeLayer *layer = [CAShapeLayer layer];
 
@@ -145,8 +143,7 @@
 }
 
 
-CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
-{
+CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y) {
     CGAffineTransform transform = CGAffineTransformIdentity;
     transform.c = -x;
     transform.b = y;
@@ -154,15 +151,13 @@ CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
 }
 
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
-- (IBAction)maskBtnPressed:(id)sender
-{
+- (IBAction)maskBtnPressed:(id)sender {
     if (self.shapeView.hidden) {
         self.shapeView.hidden = NO;
     } else {
@@ -177,8 +172,7 @@ CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
 }
 
 
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
-{
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     self.shapeView.hidden = YES;
 }
 

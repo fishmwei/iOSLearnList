@@ -10,8 +10,7 @@
 
 
 @implementation MasonryExp
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.showData = @[ @"MasonryViewController" ];
 }

@@ -10,13 +10,11 @@
 
 
 @implementation TimerObject
-- (void)dealloc
-{
+- (void)dealloc {
     [self cleanTimer];
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         __weak typeof(self) weakSelf = self;
@@ -25,13 +23,11 @@
     return self;
 }
 
-- (void)timerDoAction:(id)sender
-{
+- (void)timerDoAction:(id)sender {
     NSLog(@"timerDoAction ...");
 }
 
-- (void)cleanTimer
-{
+- (void)cleanTimer {
     [_timer invalidate];
     _timer = nil;
 }

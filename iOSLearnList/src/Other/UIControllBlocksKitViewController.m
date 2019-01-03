@@ -12,8 +12,7 @@
 
 
 @implementation UIControllBlocksKitViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 100, 20)];

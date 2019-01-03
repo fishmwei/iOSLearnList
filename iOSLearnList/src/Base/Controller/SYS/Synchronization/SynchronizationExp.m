@@ -10,8 +10,7 @@
 
 
 @implementation SynchronizationExp
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.showData = @[ @"NSConditionLockViewController",
                        @"NSRecursiveLockViewController",

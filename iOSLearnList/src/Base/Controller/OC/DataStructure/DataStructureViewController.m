@@ -10,8 +10,7 @@
 
 
 @implementation DataStructureViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 }
 

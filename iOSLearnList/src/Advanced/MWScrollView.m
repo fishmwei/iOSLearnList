@@ -11,13 +11,11 @@
 
 @implementation MWScrollView
 
-+ (Class)layerClass
-{
++ (Class)layerClass {
     return [CAScrollLayer class];
 }
 
-- (void)setUp
-{
+- (void)setUp {
     self.layer.masksToBounds = YES;
 
     UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
@@ -25,8 +23,7 @@
 }
 
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame {
     //this is called when view is created in code
     if ((self = [super initWithFrame:frame])) {
         [self setUp];
@@ -35,14 +32,12 @@
     return self;
 }
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
     //this is called when view is created from a nib
     [self setUp];
 }
 
-- (void)pan:(UIPanGestureRecognizer *)recognizer
-{
+- (void)pan:(UIPanGestureRecognizer *)recognizer {
     //get the offset by subtracting the pan gesture
     //translation from the current bounds origin
     CGPoint offset = self.bounds.origin;

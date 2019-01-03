@@ -20,8 +20,7 @@
 
 
 @implementation MWTextButtonCell
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self initBaseUI];
@@ -30,8 +29,7 @@
     return self;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         [self initBaseUI];
@@ -40,8 +38,7 @@
     return self;
 }
 
-- (void)initBaseUI
-{
+- (void)initBaseUI {
     self.textView = [[UITextField alloc] init];
     self.textView.backgroundColor = [UIColor orangeColor];
 
@@ -72,8 +69,7 @@
     } forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)settitle:(NSString *)title btnTitle:(NSString *)btnTitle
-{
+- (void)settitle:(NSString *)title btnTitle:(NSString *)btnTitle {
     [self.btn setTitle:btnTitle forState:UIControlStateNormal];
 }
 

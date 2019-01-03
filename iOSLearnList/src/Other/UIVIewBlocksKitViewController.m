@@ -11,8 +11,7 @@
 
 
 @implementation UIVIewBlocksKitViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     //    self.showData = @[@"UIVIewBlocksKitViewController"];
 
@@ -20,8 +19,7 @@
     [self setupUI];
 }
 
-- (void)setupData
-{
+- (void)setupData {
     __weak typeof(self) weakSelf = self;
     [self.view bk_whenTapped:^{
         [weakSelf.view endEditing:YES];
@@ -34,8 +32,7 @@
     }];
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
     for (int i = 0; i < 3; i++) {
         UIView *v = [[UIView alloc] init];
         v.frame = CGRectMake(0, 80 * i, 60, 60);

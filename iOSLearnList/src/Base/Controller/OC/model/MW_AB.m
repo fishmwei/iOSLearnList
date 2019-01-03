@@ -12,18 +12,15 @@
 
 @implementation MW_AB
 
-+ (void)load
-{
++ (void)load {
     [[self class] swMethod];
 }
 
-- (void)ABprintClassName
-{
+- (void)ABprintClassName {
     NSLog(@"class name in MW_AB %@ in %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
 
-+ (void)swMethod
-{
++ (void)swMethod {
     Method Origin = class_getInstanceMethod([self class], @selector(printClassName));
     Method Swap = class_getInstanceMethod([self class], @selector(ABprintClassName));
 

@@ -45,8 +45,7 @@ static BBLaunchAdMonitor *monitor = nil;
 
 @implementation BBLaunchAdMonitor
 
-+ (void)showAdAtPath:(NSString *)path onView:(UIView *)container timeInterval:(NSTimeInterval)interval detailParameters:(NSDictionary *)param
-{
++ (void)showAdAtPath:(NSString *)path onView:(UIView *)container timeInterval:(NSTimeInterval)interval detailParameters:(NSDictionary *)param {
     if (![self validatePath:path]) {
         return;
     }
@@ -64,10 +63,8 @@ static BBLaunchAdMonitor *monitor = nil;
     [self showImageOnView:container forTime:interval];
 }
 
-+ (instancetype)defaultMonitor
-{
-    @synchronized(self)
-    {
++ (instancetype)defaultMonitor {
+    @synchronized(self) {
         if (!monitor) {
             monitor = [[BBLaunchAdMonitor alloc] init];
             monitor.detailParam = [NSMutableDictionary dictionary];
@@ -76,14 +73,12 @@ static BBLaunchAdMonitor *monitor = nil;
     }
 }
 
-+ (BOOL)validatePath:(NSString *)path
-{
++ (BOOL)validatePath:(NSString *)path {
     NSURL *url = [NSURL URLWithString:path];
     return url != nil;
 }
 
-+ (void)showImageOnView:(UIView *)container forTime:(NSTimeInterval)time
-{
++ (void)showImageOnView:(UIView *)container forTime:(NSTimeInterval)time {
     CGRect f = [UIScreen mainScreen].bounds;
     NSLog(@"screen size:%@", NSStringFromCGRect(f));
     UIView *v = [[UIView alloc] initWithFrame:f];
@@ -135,8 +130,7 @@ static BBLaunchAdMonitor *monitor = nil;
     });
 }
 
-+ (void)showAdDetail:(id)sender
-{
++ (void)showAdDetail:(id)sender {
     UIView *sup = [(UIButton *)sender superview];
     sup.userInteractionEnabled = NO;
     [UIView animateWithDuration:.25
@@ -151,8 +145,7 @@ static BBLaunchAdMonitor *monitor = nil;
         }];
 }
 
-- (void)loadImageAtPath:(NSString *)path
-{
+- (void)loadImageAtPath:(NSString *)path {
     NSURL *URL = [NSURL URLWithString:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     request = [NSURLRequest requestWithURL:URL cachePolicy:0 timeoutInterval:10.];
@@ -164,8 +157,7 @@ static BBLaunchAdMonitor *monitor = nil;
 }
 
 #pragma mark - NSURLConnectionDataDelegate method
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
-{
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     NSHTTPURLResponse *resp = (NSHTTPURLResponse *)response;
     if (resp.statusCode != 200) {
         //        self.imgLoaded = YES;
@@ -175,19 +167,16 @@ static BBLaunchAdMonitor *monitor = nil;
     self.imgData = [NSMutableData data];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     [self.imgData appendData:data];
 }
 
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     //    self.imgLoaded = YES;
     self.process = BBLaunchAdProcessSuccess;
 }
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
-{
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     NSLog(@"图片数据获取失败");
     //    self.imgLoaded = YES;
     self.process = BBLaunchAdProcessFailed;

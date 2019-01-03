@@ -16,8 +16,7 @@
 
 
 @implementation PresentingPopoverViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
@@ -25,12 +24,11 @@
     [self.view addSubview:self.btn];
     self.btn.backgroundColor = [UIColor orangeColor];
     self.btn.frame = CGRectMake(0, 64, 200, 44);
-//    self.btn.center = self.view.center;
+    //    self.btn.center = self.view.center;
     [self.btn addTarget:self action:@selector(btnPressed) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)btnPressed
-{
+- (void)btnPressed {
     //    UIViewController *myPopoverViewController = [[UIViewController alloc] init];
     //    myPopoverViewController.preferredContentSize = CGSizeMake(100, 200);
     ////    myPopoverViewController.view.backgroundColor = [UIColor blueColor];
@@ -63,8 +61,7 @@
 }
 
 
-- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller
-{
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller {
     return UIModalPresentationNone;
 }
 

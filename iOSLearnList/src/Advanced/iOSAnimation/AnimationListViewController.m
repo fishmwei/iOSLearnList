@@ -16,22 +16,21 @@
 
 @implementation AnimationListViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
 
     self.showData = @[
-                      @"CAMediaTimingFunctionVC",
-                      @"TimerAnimationViewController",
-                      @"CADisplayLinkViewController",
-                      @"CAMediaTimingVC",
-                      @"MWDrawingViewController",
-                      @"RotateTestViewController" ];
+        @"CAMediaTimingFunctionVC",
+        @"TimerAnimationViewController",
+        @"CADisplayLinkViewController",
+        @"CAMediaTimingVC",
+        @"MWDrawingViewController",
+        @"RotateTestViewController"
+    ];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

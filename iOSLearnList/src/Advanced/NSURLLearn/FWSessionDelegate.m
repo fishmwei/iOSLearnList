@@ -11,8 +11,7 @@
 
 @implementation FWSessionDelegate
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         [self createData];
@@ -22,8 +21,7 @@
 }
 
 
-- (void)createData
-{
+- (void)createData {
 #if TARGET_OS_IPHONE
     self.completionHandlerDictionary = [NSMutableDictionary dictionaryWithCapacity:0];
 #endif

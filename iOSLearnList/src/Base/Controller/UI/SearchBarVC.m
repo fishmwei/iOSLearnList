@@ -28,15 +28,13 @@
 
 @implementation SearchBarVC
 
-- (void)viewDidAppear:(BOOL)animated
-{
+- (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     //    self.navigationItem.hidesBackButton = YES;
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
@@ -47,16 +45,14 @@
     [self.view addSubview:_tipHud];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
 #pragma mark - UI
-- (void)setupMyUI
-{
+- (void)setupMyUI {
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
 
     searchBar = [[UISearchBar alloc] init];
@@ -65,9 +61,8 @@
     searchBar.text = @"aa";
     searchBar.delegate = self;
     [searchBar setBarTintColor:[UIColor blueColor]];
- 
-    [searchBar setValue:@"取消" forKey:@"cancelButtonText"];
 
+    [searchBar setValue:@"取消" forKey:@"cancelButtonText"];
 
 
     searchController = [[UISearchDisplayController alloc]
@@ -78,19 +73,16 @@
     searchController.searchResultsDelegate = self;
     searchController.displaysSearchBarInNavigationBar = YES;
     searchController.searchResultsTableView.hidden = YES;
-
 }
 
 
 #pragma mark - Data
-- (void)setupMyData
-{
+- (void)setupMyData {
     self.showData = [NSMutableArray arrayWithArray:@[ @"1", @"2", @"3" ]];
     self.historyData = @[ @"H0", @"H1", @"H2", @"H3" ];
 }
 
-- (void)getData
-{
+- (void)getData {
     [self showLoadingTips];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         [self.showData addObjectsFromArray:@[ @1, @2, @3 ]];
@@ -102,13 +94,11 @@
 }
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == searchController.searchResultsTableView) {
         //        return self.historyData.count;
         return 0;
@@ -119,8 +109,7 @@
     }
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == searchController.searchResultsTableView) {
         //        static NSString *cellId = @"ReuseIdHistory";
         //        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
@@ -149,13 +138,11 @@
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 44;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if (tableView == searchController.searchResultsTableView) {
@@ -215,19 +202,16 @@
 
 //- (BOOL)searchbar
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
-{
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [self getData];
 }
 
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
-{
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 
-- (void)showTextTips:(NSString *)tips
-{
+- (void)showTextTips:(NSString *)tips {
     [MBProgressHUD hideHUDForView:self.view animated:NO];
     [self.view addSubview:_tipHud];
     [self.view bringSubviewToFront:_tipHud];
@@ -238,8 +222,7 @@
     [_tipHud hide:YES afterDelay:1];
 }
 
-- (void)showLoadingTips
-{
+- (void)showLoadingTips {
     [MBProgressHUD hideHUDForView:self.view animated:NO];
     [self.view addSubview:_tipHud];
     [self.view bringSubviewToFront:_tipHud];
@@ -249,8 +232,7 @@
     [_tipHud show:YES];
 }
 
-- (void)dismissLoadingTips
-{
+- (void)dismissLoadingTips {
     [_tipHud hide:YES];
 }
 

@@ -25,8 +25,7 @@
 
 @implementation MethodSignatureViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self.view setBackgroundColor:[UIColor whiteColor]];
@@ -52,8 +51,7 @@
     [ac printClassName];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
@@ -80,8 +78,7 @@
 //}
 
 
-- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
-{
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     NSMethodSignature *sign = [[self class] instanceMethodSignatureForSelector:aSelector];
     if (sign) {
         return sign;
@@ -96,8 +93,7 @@
 }
 
 
-- (void)forwardInvocation:(NSInvocation *)anInvocation
-{
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
     SEL sel = [anInvocation selector];
     //    if ([self methodSignatureForSelector:sel]) {
     //        return [super forwardInvocation:anInvocation];
@@ -137,8 +133,7 @@
 
 
 /* 获取对象的所有方法 */
-- (void)getAllMethods
-{
+- (void)getAllMethods {
     unsigned int mothCout_f = 0;
     Method *mothList_f = class_copyMethodList([self class], &mothCout_f);
     for (int i = 0; i < mothCout_f; i++) {

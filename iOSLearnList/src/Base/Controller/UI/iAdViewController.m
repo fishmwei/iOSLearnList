@@ -10,8 +10,7 @@
 
 
 @implementation iAdViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
@@ -27,26 +26,21 @@
 #pragma mark - AdViewDelegates
 
 - (void)bannerView:(ADBannerView *)banner
-    didFailToReceiveAdWithError:(NSError *)error
-{
+    didFailToReceiveAdWithError:(NSError *)error {
     NSLog(@"Error loading");
 }
 
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner
-{
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
     NSLog(@"Ad loaded");
 }
-- (void)bannerViewWillLoadAd:(ADBannerView *)banner
-{
+- (void)bannerViewWillLoadAd:(ADBannerView *)banner {
     NSLog(@"Ad will load");
 }
-- (void)bannerViewActionDidFinish:(ADBannerView *)banner
-{
+- (void)bannerViewActionDidFinish:(ADBannerView *)banner {
     NSLog(@"Ad did finish");
 }
 
-- (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave
-{
+- (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave {
     return YES;
 }
 

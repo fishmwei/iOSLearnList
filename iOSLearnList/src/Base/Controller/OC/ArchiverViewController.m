@@ -18,8 +18,7 @@
 
 @implementation ArchiverViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     //init status
@@ -36,14 +35,12 @@
     });
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setupData
-{
+- (void)setupData {
     self.data = [NSMutableArray array];
 
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -66,8 +63,7 @@
 }
 
 
-- (IBAction)addBtnPressed:(id)sender
-{
+- (IBAction)addBtnPressed:(id)sender {
     NSNumber *number = @([self.inputView.text integerValue]);
     [self.data addObject:number];
 
@@ -82,8 +78,7 @@
     self.showView.text = ss;
 }
 
-- (IBAction)saveBtnPressed:(id)sender
-{
+- (IBAction)saveBtnPressed:(id)sender {
     BOOL ret = [self.data writeToFile:_filepath atomically:YES];
     if (ret) {
         NSLog(@"write success");

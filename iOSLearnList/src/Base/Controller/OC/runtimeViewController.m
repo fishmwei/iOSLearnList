@@ -20,15 +20,13 @@
 
 @implementation runtimeViewController
 
-- (void)dealloc
-{
+- (void)dealloc {
     [vv removeFromSuperview];
     vv = nil;
     //    objc_disposeClassPair(myView);
 }
 
-void showAllMetaClass(id self, SEL _cmd)
-{
+void showAllMetaClass(id self, SEL _cmd) {
     Class currentClass = [self class];
 
     while (![NSStringFromClass(currentClass) isEqualToString:NSStringFromClass([NSObject class])]) {
@@ -38,8 +36,7 @@ void showAllMetaClass(id self, SEL _cmd)
     }
 }
 
-void customFrame(id self, SEL _cmd, id value)
-{
+void customFrame(id self, SEL _cmd, id value) {
     CGRect rect = [value CGRectValue];
     //    [self performSelectorOnMainThread:@selector(setFrame:) withObject:rect waitUntilDone:YES];
 
@@ -48,8 +45,7 @@ void customFrame(id self, SEL _cmd, id value)
     });
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     myView = [self createAView];
 
@@ -67,14 +63,12 @@ void customFrame(id self, SEL _cmd, id value)
     [self.view addSubview:vv];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (Class)createAView
-{
+- (Class)createAView {
     if (NSClassFromString(@"mwCustomView")) {
         return NSClassFromString(@"mwCustomView");
     }

@@ -10,8 +10,7 @@
 
 
 @implementation libextobjcExp
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.showData = @[ @"safeCategoriesViewController" ];
 }

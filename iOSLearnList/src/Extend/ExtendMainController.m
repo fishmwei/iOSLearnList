@@ -35,8 +35,7 @@
 
 @implementation ExtendMainController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self createData];
@@ -47,8 +46,7 @@
 }
 
 
-- (void)createViewControllers
-{
+- (void)createViewControllers {
     AdvancedViewController *vc = [[AdvancedViewController alloc] init];
     vc.hideNavigationbar = YES;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
@@ -82,44 +80,39 @@
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _otherCtl = nav;
- 
+
     nav = [[UINavigationController alloc] initWithRootViewController:[[HideTabController alloc] init]];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.title = @"hideTab";
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _hideVc = nav;
- 
-    
+
+
     ivc = [[IndexTableViewController alloc] init];
-    ivc.showData = @[@"TestCreateObjectAsync", @"AdaptIOS11ViewController",
-                     @"AutoSizeViewController"];
-    
+    ivc.showData = @[ @"TestCreateObjectAsync", @"AdaptIOS11ViewController", @"AutoSizeViewController" ];
+
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:@"Test"];
     _testCtl = nav;
-    
 }
 
 
-- (void)createView
-{
+- (void)createView {
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self createViewControllers];
- 
-    
-    self.bottomItems = @[_testCtl, _hideVc, _baseCtl, _advanceCtl, _otherCtl];
- 
-    
-    self.viewControllers = self.bottomItems ;
- 
+
+
+    self.bottomItems = @[ _testCtl, _hideVc, _baseCtl, _advanceCtl, _otherCtl ];
+
+
+    self.viewControllers = self.bottomItems;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setHidden:YES];
 
@@ -128,14 +121,12 @@
     //    [self procShortItem];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.navigationController.navigationBar setHidden:NO];
 }
 
-- (void)procShortItem:(NSNotification *)notification
-{
+- (void)procShortItem:(NSNotification *)notification {
     NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:@"ShortCut"];
     if (str.length) {
         if ([str isEqualToString:@"Base"]) {
@@ -148,14 +139,12 @@
     }
 }
 
-- (void)createData
-{
+- (void)createData {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(procShortItem:) name:@"MWShortCutClick" object:nil];
 }
 
 
-- (void)popBack
-{
+- (void)popBack {
     [self.navigationController popViewControllerAnimated:YES];
 }
 

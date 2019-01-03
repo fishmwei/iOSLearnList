@@ -15,15 +15,13 @@
 
 
 @implementation StartRunLoopViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self setupUI];
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     btn.frame = CGRectMake(0, 100, 100, 30);
     btn.backgroundColor = [UIColor blueColor];
@@ -32,16 +30,14 @@
     [btn addTarget:self action:@selector(createNewThread) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)createNewThread
-{
+- (void)createNewThread {
     if (!self.thread || [self.thread isFinished]) {
         self.thread = [[NSThread alloc] initWithTarget:self selector:@selector(threadMain) object:nil];
         [self.thread start];
     }
 }
 
-- (void)threadMain
-{
+- (void)threadMain {
     // The application uses garbage collection, so no autorelease pool is needed.
     NSRunLoop *myRunLoop = [NSRunLoop currentRunLoop];
 
@@ -77,13 +73,11 @@
     });
 }
 
-void myRunLoopObserver(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info)
-{
+void myRunLoopObserver(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info) {
     NSLog(@"observer my runloop %lx", activity);
 }
 
-- (void)doFireTimer:(id)sender
-{
+- (void)doFireTimer:(id)sender {
     NSLog(@"doFireTimer");
 }
 @end

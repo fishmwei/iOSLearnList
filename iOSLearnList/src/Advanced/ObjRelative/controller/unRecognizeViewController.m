@@ -17,8 +17,7 @@
 
 @implementation fellow
 
-- (void)pressed:(id)a
-{
+- (void)pressed:(id)a {
     NSLog(@"pressed stub");
 }
 @end
@@ -31,8 +30,7 @@
 
 @implementation unRecognizeViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
 
@@ -49,15 +47,13 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
-- (BOOL)respondsToSelector:(SEL)aSelector
-{
+- (BOOL)respondsToSelector:(SEL)aSelector {
     if (aSelector == @selector(pressed:)) {
         return YES;
     }
@@ -68,8 +64,7 @@
 
 #pragma mark - rewrite method
 
-- (void)forwardInvocation:(NSInvocation *)anInvocation
-{
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
     SEL sel = [anInvocation selector];
     fellow *next = [[fellow alloc] init];
     if ([next respondsToSelector:sel]) {
@@ -80,8 +75,7 @@
 }
 
 
-- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
-{
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     if ([super respondsToSelector:aSelector]) {
         return [super methodSignatureForSelector:aSelector];
     }

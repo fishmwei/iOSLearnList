@@ -21,8 +21,7 @@
 
 @implementation MasonryViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
 
@@ -32,11 +31,11 @@
     [_v1 mas_makeConstraints:^(MASConstraintMaker *maker) {
         //        maker.width.equalTo(self.view);
         maker.height.equalTo(@100);
- 
+
         maker.top.equalTo(self.view.mas_top).with.offset(80);
         maker.left.equalTo(self.view.mas_left).with.offset(20);
         maker.right.equalTo(self.view.mas_right).with.offset(-20);
- 
+
     }];
 
     _lab1 = [[UILabel alloc] init];
@@ -58,9 +57,9 @@
     _img1.backgroundColor = [UIColor darkGrayColor];
     [_img1 mas_makeConstraints:^(MASConstraintMaker *maker) {
         maker.top.equalTo(_lab1.mas_bottom);
- 
+
         maker.left.equalTo(self.view.mas_left).with.offset(20);
- 
+
         maker.width.equalTo(_v1);
         maker.bottom.equalTo(self.view.mas_bottom);
     }];
@@ -153,8 +152,7 @@
     }
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

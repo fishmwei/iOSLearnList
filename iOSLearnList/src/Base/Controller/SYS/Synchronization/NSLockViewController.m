@@ -20,15 +20,13 @@
 
 @implementation NSLockViewController
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.readShow cancel];
     [self.readShow1 cancel];
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.countLock = [[NSLock alloc] init];
@@ -55,8 +53,7 @@
 }
 
 //不可重入代码
-- (void)showCountThread
-{
+- (void)showCountThread {
     while (true) {
         [self.countLock lock];
         {
@@ -76,8 +73,7 @@
     }
 }
 
-- (void)ShowCount
-{
+- (void)ShowCount {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self.countLock lock];
         {

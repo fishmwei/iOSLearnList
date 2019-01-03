@@ -14,6 +14,7 @@
 #import "caLayerViewController.h"
 #import "GLKOpenGLController.h"
 
+
 @interface AdvancedViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, retain) UITableView *tableview;
@@ -25,30 +26,25 @@
 @implementation AdvancedViewController
 
 #pragma mark Autorotate
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIDeviceOrientationPortrait);
 }
 
-- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0)
-{
+- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0) {
     return UIInterfaceOrientationMaskPortrait;
     //UIInterfaceOrientationMaskPortrait
 }
 
-- (BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0)
-{
+- (BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0) {
     return YES;
 }
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-{
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
     return UIInterfaceOrientationPortrait;
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     //    [self setTitle:@"分类"];
@@ -60,21 +56,18 @@
 }
 
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)createData
-{
+- (void)createData {
     self.showData = @[ @"NSURLLearn", @"iOSSystem", @"ObjRelative", @"CustomPresentView", @"CALayerSample", @"iOSAnimation", @"javaScript", @"OpenGL" ];
 }
 
-- (void)createView
-{
+- (void)createView {
     self.hidesBottomBarWhenPushed = NO;
-//    self.tabBarController.tabBar.hidden = NO;
+    //    self.tabBarController.tabBar.hidden = NO;
     self.tableview = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
 
     self.tableview.dataSource = self;
@@ -89,16 +82,14 @@
 
 
 #pragma mark - tableView datasource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.showData.count;
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identifier = @"tableCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
@@ -111,14 +102,12 @@
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 50;
 }
 
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *subject = [self.showData objectAtIndex:indexPath.row];
 
     NSString *selectorStr = [@"goto" stringByAppendingString:subject];
@@ -133,8 +122,7 @@
 
 #pragma mark - goto Function
 
-- (void)gotoNSURLLearn
-{
+- (void)gotoNSURLLearn {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
     vc.showData = @[ @"NSURLParseViewController", @"defaultNSURLSessionController", @"downloadController", @"NSURLConnectionController" ];
@@ -143,8 +131,7 @@
 }
 
 
-- (void)gotoiOSSystem
-{
+- (void)gotoiOSSystem {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
     vc.showData = @[ @"Timer_NotificationViewController", @"multiThreadController" ];
@@ -152,8 +139,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)gotoObjRelative
-{
+- (void)gotoObjRelative {
     IndexTableViewController *vc = [[IndexTableViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
     vc.showData = @[ @"undoRedoViewController", @"unRecognizeViewController", @"methodSelectorViewController" ];
@@ -162,8 +148,7 @@
 }
 
 
-- (void)gotoCustomPresentView
-{
+- (void)gotoCustomPresentView {
     MWBasePresentViewController *vc = [[MWBasePresentViewController alloc] init];
 
     vc.showRect = CGRectMake(60, 60, CGRectGetWidth(self.view.bounds) - 120, CGRectGetHeight(self.view.bounds) - 120);
@@ -171,8 +156,7 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (void)gotoCALayerSample
-{
+- (void)gotoCALayerSample {
     caLayerViewController *vc = [[caLayerViewController alloc] initWithNibName:@"caLayerViewController" bundle:[NSBundle mainBundle]];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
@@ -181,8 +165,7 @@
     //    [CABasicAnimation animationWithKeyPath:@"position"];
 }
 
-- (void)gotoiOSAnimation
-{
+- (void)gotoiOSAnimation {
     Class cls = NSClassFromString(@"AnimationListViewController");
     if (cls) {
         UIViewController *vc = (UIViewController *)[[cls alloc] init];
@@ -191,8 +174,7 @@
     }
 }
 
-- (void)gotojavaScript
-{
+- (void)gotojavaScript {
     Class cls = NSClassFromString(@"MWJSViewController");
     if (cls) {
         UIViewController *vc = (UIViewController *)[[cls alloc] init];

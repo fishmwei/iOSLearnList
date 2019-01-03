@@ -17,8 +17,7 @@
 
 @implementation MWDrawingViewController
 
-- (void)loadView
-{
+- (void)loadView {
     //    MWCGDrawView *vv = [[MWCGDrawView alloc] init];
     //    vv.MWDrawColor = [UIColor blueColor];
 
@@ -29,8 +28,7 @@
     self.view = vv;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
@@ -38,8 +36,7 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

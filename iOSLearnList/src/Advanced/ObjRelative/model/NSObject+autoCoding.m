@@ -11,8 +11,7 @@
 
 
 @implementation NSObject_autoCoding
-- (void)encodeWithCoder:(NSCoder *)aCoder
-{
+- (void)encodeWithCoder:(NSCoder *)aCoder {
     // Loop through the properties
     for (NSString *key in [self propertyNames]) {
         // Use the KVC valueForKey: method to get the property and then encode it
@@ -21,8 +20,7 @@
     }
 }
 
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder
-{
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder {
     if ((self = [self init])) {
         // Loop through the properties
         for (NSString *key in [self propertyNames]) {
@@ -34,8 +32,7 @@
     return self;
 }
 
-- (NSArray *)propertyNames
-{
+- (NSArray *)propertyNames {
     // Check for a cached value (we use _cmd as the cache key,
     // which represents @selector(propertyNames))
     NSMutableArray *array = objc_getAssociatedObject([self class], _cmd);

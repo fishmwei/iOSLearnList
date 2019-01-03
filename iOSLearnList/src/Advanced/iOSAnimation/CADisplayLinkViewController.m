@@ -36,40 +36,37 @@
         [self.timer invalidate];
         self.timer = nil;
     }
-    
+
     [_rotationView stop];
 }
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self setupBallView];
     [self setupRotationView];
-    
+
     self.stopBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:self.stopBtn];
     self.stopBtn.frame = CGRectMake(10, 60, 50, 50);
     [self.stopBtn addTarget:self action:@selector(stopRotate) forControlEvents:UIControlEventTouchUpInside];
-    
+
     [self.stopBtn setTitle:@"Stop" forState:UIControlStateNormal];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setupRotationView
-{
+- (void)setupRotationView {
     _rotationView = [[MWRotationView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     [self.view addSubview:_rotationView];
 
     _rotationView.duration = 1;
-        _rotationView.layer.contents = (__bridge id)[MWCommon imageNamed:@"lion"].CGImage;
-//    _rotationView.layer.contents = (__bridge id)[UIImage imageNamed:@"common-PullDownRefresh"].CGImage;
+    _rotationView.layer.contents = (__bridge id)[MWCommon imageNamed:@"lion"].CGImage;
+    //    _rotationView.layer.contents = (__bridge id)[UIImage imageNamed:@"common-PullDownRefresh"].CGImage;
 
     UIView *vv = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 10, 10)];
     vv.backgroundColor = [UIColor blueColor];
@@ -78,8 +75,7 @@
 }
 
 
-- (void)setupBallView
-{
+- (void)setupBallView {
     _ballView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     [self.view addSubview:_ballView];
     _ballView.layer.cornerRadius = 50;
@@ -88,14 +84,13 @@
     _ballView.center = self.view.center;
 }
 
-- (void)animateAction
-{
+- (void)animateAction {
     if (self.timer) {
         [self.timer removeFromRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
         [self.timer invalidate];
         self.timer = nil;
     }
-    
+
     CGFloat toY = [_fromValue CGPointValue].y + 300;
     toY = toY > CGRectGetMaxY(self.view.bounds) ? CGRectGetMaxY(self.view.bounds) : toY;
 
@@ -112,16 +107,13 @@
 
 - (void)stopRotate {
     if ([self.rotationView isStop]) {
-        
         [self.rotationView start];
     } else {
-        
         [self.rotationView stop];
     }
 }
 
-- (void)step:(CADisplayLink *)timer
-{
+- (void)step:(CADisplayLink *)timer {
     CFTimeInterval thisStep = CACurrentMediaTime();
     CFTimeInterval stepDuration = thisStep - self.lastStep;
     self.lastStep = thisStep;
@@ -142,8 +134,7 @@
 }
 
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     if (!self.timer.paused) {
         CGPoint p = [[touches anyObject] locationInView:self.view];
         _ballView.center = p;
@@ -151,16 +142,14 @@
 }
 
 
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     if (!self.timer.paused) {
         CGPoint p = [[touches anyObject] locationInView:self.view];
         _ballView.center = p;
     }
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     if (!self.timer.paused) {
         CGPoint p = [[touches anyObject] locationInView:self.view];
         _fromValue = [NSValue valueWithCGPoint:p];
@@ -169,13 +158,11 @@
 }
 
 
-- (float)interpolate:(float)from :(float)to :(float)time
-{
+- (float)interpolate:(float)from:(float)to:(float)time {
     return (to - from) * time + from;
 }
 
-- (id)interpolateFromValue:(id)fromValue toValue:(id)toValue time:(float)time
-{
+- (id)interpolateFromValue:(id)fromValue toValue:(id)toValue time:(float)time {
     if ([fromValue isKindOfClass:[NSValue class]]) {
         //get type
         const char *type = [(NSValue *)fromValue objCType];
@@ -191,8 +178,7 @@
     return (time < 0.5) ? fromValue : toValue;
 }
 
-- (float)bounceEaseOut:(float)t
-{
+- (float)bounceEaseOut:(float)t {
     if (t < 4 / 11.0) {
         return (121 * t * t) / 16.0;
     } else if (t < 8 / 11.0) {

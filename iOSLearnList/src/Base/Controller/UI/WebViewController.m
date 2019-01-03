@@ -17,21 +17,18 @@
 
 @implementation WebViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
     UIButton *btn = [[UIButton alloc] init];
     [self.view addSubview:btn];
     [btn mas_makeConstraints:^(MASConstraintMaker *mk) {
@@ -59,8 +56,7 @@
     }];
 }
 
-- (void)BtnPressed
-{
+- (void)BtnPressed {
     static int i = 0;
     i++;
     NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];

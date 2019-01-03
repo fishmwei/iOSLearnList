@@ -11,8 +11,7 @@
 
 @implementation IndexTableViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     if (!self.navigationItem.title) {
@@ -20,31 +19,26 @@
     }
 
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
- 
+
     self.hidesBottomBarWhenPushed = NO;
- 
 }
 
 - (void)viewSafeAreaInsetsDidChange {
- 
 }
 
-- (void)backBtnPressed
-{
+- (void)backBtnPressed {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - tableView datasource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.showData.count;
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identifier = @"tableCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
@@ -57,14 +51,12 @@
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 50;
 }
 
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *className = [self.showData objectAtIndex:indexPath.row];
     Class cls = NSClassFromString(className);
     dispatch_async(dispatch_get_main_queue(), ^{

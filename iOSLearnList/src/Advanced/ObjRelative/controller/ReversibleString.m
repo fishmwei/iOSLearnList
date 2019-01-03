@@ -10,8 +10,7 @@
 
 
 @implementation ReversibleString
-- (id)initWithString:(NSString *)string
-{
+- (id)initWithString:(NSString *)string {
     self = [super init];
     if (self) {
         content = string;
@@ -20,13 +19,11 @@
     return self;
 }
 
-- (id)reversedString
-{
+- (id)reversedString {
     return [NSString stringWithFormat:@"Revere-%@", content];
 }
 
-- (void)forwardInvocation:(NSInvocation *)anInvocation
-{
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
     SEL sel = [anInvocation selector];
     if ([content respondsToSelector:sel]) {
         [anInvocation invokeWithTarget:content];
@@ -35,8 +32,7 @@
     }
 }
 
-- (BOOL)respondsToSelector:(SEL)aSelector
-{
+- (BOOL)respondsToSelector:(SEL)aSelector {
     if ([super respondsToSelector:aSelector]) {
         return YES;
     }
@@ -53,8 +49,7 @@
 }
 
 
-- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
-{
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     if ([super respondsToSelector:aSelector]) {
         return [super methodSignatureForSelector:aSelector];
     }

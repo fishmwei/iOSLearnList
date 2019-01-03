@@ -24,30 +24,25 @@
 
 #pragma mark - UI
 #pragma mark Autorotate
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIDeviceOrientationPortrait);
 }
 
-- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0)
-{
+- (NSUInteger)supportedInterfaceOrientations NS_AVAILABLE_IOS(6_0) {
     return UIInterfaceOrientationMaskPortrait;
     //UIInterfaceOrientationMaskPortrait
 }
 
-- (BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0)
-{
+- (BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0) {
     return YES;
 }
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-{
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
     return UIInterfaceOrientationPortrait;
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self setupMyData];
     //    [self setupMyUI];
@@ -69,14 +64,12 @@
 }
 
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (id)init
-{
+- (id)init {
     self = [super init];
     if (self) {
         self.presentAnimation = [[MWPresentAnimation alloc] init];
@@ -90,8 +83,7 @@
 
 
 #pragma mark -Data
-- (void)setupMyData
-{
+- (void)setupMyData {
     if (CGRectEqualToRect(self.showRect, CGRectZero)) {
         self.showRect = self.view.bounds;
     }
@@ -99,16 +91,14 @@
 
 
 #pragma mark UIViewControllerTransitioningDelegate
-- (nullable id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
-{
+- (nullable id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     self.presentAnimation.type = MWAnimationPresent;
     self.presentAnimation.modalFrame = self.showRect;
 
     return self.presentAnimation;
 }
 
-- (nullable id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
-{
+- (nullable id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     self.presentAnimation.type = MWAnimationDismiss;
     self.presentAnimation.modalFrame = self.showRect;
 
@@ -116,8 +106,7 @@
 }
 
 
-- (void)btnPressed:(id)sender
-{
+- (void)btnPressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

@@ -28,23 +28,20 @@
 
 @implementation dispatch_sourceViewController
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
     countTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(addCount) userInfo:nil repeats:YES];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [countTimer invalidate];
     countTimer = nil;
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self setupData];
@@ -52,13 +49,11 @@
     [self setupUI];
 }
 
-- (void)addCount
-{
+- (void)addCount {
     count++;
 }
 
-- (void)setupData
-{
+- (void)setupData {
     self.concurrentQueue = dispatch_queue_create(NSStringFromClass([self class]).UTF8String, DISPATCH_QUEUE_CONCURRENT);
 
 
@@ -73,8 +68,7 @@
     isRunning = YES;
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
     textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 100, 200, 50)];
     textField.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:textField];
@@ -86,8 +80,7 @@
     [btn addTarget:self action:@selector(btnPressed) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)btnPressed
-{
+- (void)btnPressed {
     if (isRunning) {
         dispatch_suspend(timer);
         [btn setTitle:@"ToResume" forState:UIControlStateNormal];

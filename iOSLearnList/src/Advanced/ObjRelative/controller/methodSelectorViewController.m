@@ -12,8 +12,7 @@
 
 @implementation methodSelectorViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     NSMutableArray *target = [NSMutableArray array];

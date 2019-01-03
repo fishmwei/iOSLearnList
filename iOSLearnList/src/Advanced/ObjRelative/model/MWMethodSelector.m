@@ -12,8 +12,7 @@
 
 @implementation MWMethodSelector
 
-- (void)printTag
-{
+- (void)printTag {
     NSLog(@"Class name:%s tagStr:%@", object_getClassName([self class]), self.tagStr);
 }
 

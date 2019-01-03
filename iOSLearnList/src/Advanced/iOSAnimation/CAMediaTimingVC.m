@@ -22,8 +22,7 @@
 
 @implementation CAMediaTimingVC
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     _opView = [[UIView alloc] init];
@@ -81,14 +80,12 @@
     [self.view addGestureRecognizer:tap];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)start
-{
+- (void)start {
     CFTimeInterval duration = [self.durationField.text doubleValue];
     float repeat = [self.countField.text floatValue];
 
@@ -109,21 +106,18 @@
 }
 
 
-- (void)ResignTextField
-{
+- (void)ResignTextField {
     [self.view endEditing:YES];
 }
 
-- (void)setControlsEnabled:(BOOL)enabled
-{
+- (void)setControlsEnabled:(BOOL)enabled {
     for (UIControl *control in @[ self.durationField, self.countField, self.startButton ]) {
         control.enabled = enabled;
         control.alpha = enabled ? 1.0f : 0.25f;
     }
 }
 
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
-{
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     [self setControlsEnabled:YES];
 }
 

@@ -10,8 +10,7 @@
 
 
 @implementation GCDViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.showData = @[ @"display_applyViewController",

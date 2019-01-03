@@ -18,8 +18,7 @@
 
 @implementation defaultNSURLSessionController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
 
@@ -46,8 +45,7 @@
     [self.view addSubview:_responseView];
 }
 
-- (void)requestSystemDelegateData
-{
+- (void)requestSystemDelegateData {
     NSURLSessionConfiguration *cfg = [NSURLSessionConfiguration defaultSessionConfiguration];
 
     NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration:cfg];
@@ -73,8 +71,7 @@
 }
 
 
-- (void)requestCustomDelegateData
-{
+- (void)requestCustomDelegateData {
     NSURLSessionConfiguration *cfg = [NSURLSessionConfiguration defaultSessionConfiguration];
 
 
@@ -91,8 +88,7 @@
 
 #pragma mark 接收组装数据
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask
-    didReceiveData:(NSData *)data
-{
+    didReceiveData:(NSData *)data {
     NSString *identifier = [NSString stringWithFormat:@"%@", dataTask.originalRequest];
     NSData *tskData = [taskDataDict objectForKey:identifier];
 
@@ -109,8 +105,7 @@
 
 #pragma mark 完成接收数据
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
-    didCompleteWithError:(nullable NSError *)error
-{
+    didCompleteWithError:(nullable NSError *)error {
     NSString *identifier = [NSString stringWithFormat:@"%@", task.originalRequest];
     NSData *data = [taskDataDict objectForKey:identifier];
 
@@ -129,8 +124,7 @@
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
     willPerformHTTPRedirection:(NSHTTPURLResponse *)response
                     newRequest:(NSURLRequest *)request
-             completionHandler:(void (^)(NSURLRequest *__nullable))completionHandler
-{
+             completionHandler:(void (^)(NSURLRequest *__nullable))completionHandler {
     NSURLRequest *newRequest = request;
     if (response) {
         newRequest = nil;
@@ -140,8 +134,7 @@
 }
 
 - (void)connection:(NSURLConnection *)connection
-    didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
-{
+    didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
     if ([challenge previousFailureCount] == 0) {
         NSURLCredential *newCredential;
         newCredential = [NSURLCredential credentialWithUser:@"userName"

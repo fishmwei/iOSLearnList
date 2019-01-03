@@ -10,6 +10,7 @@
 
 @protocol ObjectSaveProtocol;
 
+
 @interface TestObject : NSObject
 - (instancetype)initWithConsumer:(id<ObjectSaveProtocol>)consumer;
 @property (nonatomic, assign) NSInteger number;

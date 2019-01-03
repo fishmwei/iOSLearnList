@@ -12,39 +12,33 @@
 
 @implementation OBJModel
 
-+ (void)initialize
-{
++ (void)initialize {
     [[self class] swMethod];
 }
 
-- (void)mehtod1Test
-{
+- (void)mehtod1Test {
     NSLog(@"%@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
 
 
-- (void)unknown
-{
+- (void)unknown {
     NSLog(@"%@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 }
 
-- (void)methodSw
-{
+- (void)methodSw {
     //    [self methodSw];
     NSLog(@"call methodSw:%@ %@", [self class], NSStringFromSelector(_cmd));
 
     [[self class] swMethod];
 }
 
-- (void)methodReplace
-{
+- (void)methodReplace {
     NSLog(@"call methodReplace:%@ %@", [self class], NSStringFromSelector(_cmd));
     [[self class] swMethod];
 }
 
 
-+ (void)swMethod
-{
++ (void)swMethod {
     Method Origin = class_getInstanceMethod([self class], @selector(methodSw));
     Method Swap = class_getInstanceMethod([self class], @selector(methodReplace));
 

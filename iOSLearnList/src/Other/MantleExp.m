@@ -10,8 +10,7 @@
 
 
 @implementation MantleExp
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.showData = @[ @"MantleObjectModelViewController" ];
 }

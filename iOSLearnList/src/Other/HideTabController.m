@@ -20,13 +20,12 @@
 
 @implementation HideTabController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-//    self.edgesForExtendedLayout = UIRectEdgeAll;
+    //    self.edgesForExtendedLayout = UIRectEdgeAll;
     self.view.backgroundColor = [UIColor lightGrayColor];
-    
+
 
     self.isTopPage = self.tabBarController && self.navigationController && [self isEqual:self.navigationController.viewControllers[0]];
 
@@ -62,27 +61,25 @@
     [self.view addSubview:btn];
     [btn setTitle:@"present" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(present) forControlEvents:UIControlEventTouchUpInside];
-    
+
     btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 550, 100, 44)];
     btn.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:btn];
     [btn setTitle:@"close" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
-    
+
     btn = [[UIButton alloc] initWithFrame:CGRectMake(210, 550, 100, 44)];
     btn.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:btn];
     [btn setTitle:@"calcute" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(calcute) forControlEvents:UIControlEventTouchUpInside];
-    
-    
+
+
     btn = [[UIButton alloc] initWithFrame:CGRectMake(260, 550, 100, 44)];
     btn.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:btn];
     [btn setTitle:@"crash" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(crash) forControlEvents:UIControlEventTouchUpInside];
-    
-    
 }
 
 - (void)crash {
@@ -96,42 +93,37 @@
     NSURL *url = [NSURL URLWithString:string];
     NSString *host = url.host;
     NSString *scheme = url.scheme;
-    
-//    NSError *error = NULL;
-//    NSRegularExpression *exp = [NSRegularExpression regularExpressionWithPattern:host options:0 error:&error];
-//
-//
-//    NSRange range = [exp rangeOfFirstMatchInString:string
-//                                           options:0
-//                                             range:NSMakeRange(scheme.length, string.length-scheme.length)];
-    
+
+    //    NSError *error = NULL;
+    //    NSRegularExpression *exp = [NSRegularExpression regularExpressionWithPattern:host options:0 error:&error];
+    //
+    //
+    //    NSRange range = [exp rangeOfFirstMatchInString:string
+    //                                           options:0
+    //                                             range:NSMakeRange(scheme.length, string.length-scheme.length)];
+
     NSRange range = [string rangeOfString:host options:0 range:NSMakeRange(scheme.length, string.length - scheme.length)];
     NSLog(@"%@", NSStringFromRange(range));
     NSString *replaceString = [@"hello.prefix" stringByAppendingPathExtension:host];
-    NSString *result = [string stringByReplacingCharactersInRange:range withString:replaceString ];
-    
+    NSString *result = [string stringByReplacingCharactersInRange:range withString:replaceString];
+
     NSLog(@"%@", result);
     // 正则匹配， 获取首个
-    
 }
 
-- (void)hideTabbar
-{
+- (void)hideTabbar {
     if (!self.isTopPage) {
         return;
     }
- 
+
     self.hidesBottomBarWhenPushed = YES;
     self.tabBarController.tabBar.hidden = YES;
     self.isHidden = YES;
-//    self.edgesForExtendedLayout = UIRectEdgeAll;
-//    [self.view setNeedsLayout];
-    
-    
+    //    self.edgesForExtendedLayout = UIRectEdgeAll;
+    //    [self.view setNeedsLayout];
 }
 
-- (void)showTabbar
-{
+- (void)showTabbar {
     if (!self.isTopPage) {
         return;
     }
@@ -139,22 +131,20 @@
     self.hidesBottomBarWhenPushed = NO;
     self.tabBarController.tabBar.hidden = NO;
     self.isHidden = NO;
-    
+
     [self setNeedsFocusUpdate];
-//    self.edgesForExtendedLayout = UIRectEdgeNone;
-//    [self.view setNeedsLayout];
+    //    self.edgesForExtendedLayout = UIRectEdgeNone;
+    //    [self.view setNeedsLayout];
 }
 
-- (void)goFirst
-{
+- (void)goFirst {
     UITabBarController *vc = self.tabBarController;
     if (vc) {
         [vc setSelectedIndex:0];
     }
 }
 
-- (void)push
-{
+- (void)push {
     HideTabController *vc = [HideTabController new];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
@@ -163,19 +153,18 @@
 
 - (void)present {
     HideTabController *vc = [HideTabController new];
-//    [self.navigationController presentViewController:vc animated:YES completion:nil];
-    
+    //    [self.navigationController presentViewController:vc animated:YES completion:nil];
+
     [self presentViewController:[[UINavigationController alloc] initWithRootViewController:vc] animated:YES completion:nil];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-//    if (self.isHidden) {
-//        [self hideTabbar];
-//    } else {
-//        [self showTabbar];
-//    }
+    //    if (self.isHidden) {
+    //        [self hideTabbar];
+    //    } else {
+    //        [self showTabbar];
+    //    }
 }
 
 - (void)close {
@@ -190,8 +179,7 @@
     }
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 
     if (self.tabBarController) {
@@ -228,13 +216,11 @@
     //    }
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
+- (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
+- (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
 }
 

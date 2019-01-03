@@ -33,8 +33,7 @@
 
 @implementation MWJSViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.wbView = [[UIWebView alloc] initWithFrame:self.view.bounds];
@@ -77,23 +76,20 @@
     [self factorial];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
-- (void)calculate
-{
+- (void)calculate {
     JSValue *v = [context evaluateScript:@"1+1"];
     int iv = [v toInt32];
 
     NSLog(@"javalue %@, int: %d", v, iv);
 }
 
-- (void)printJSArray
-{
+- (void)printJSArray {
     [context evaluateScript:@"var arr = [21, 7 , 'iderzheng.com']; \
      log(arr.toString())"];
 
@@ -109,8 +105,7 @@
     NSLog(@"NSArray: %@", nsArr);
 }
 
-- (void)printJSObject
-{
+- (void)printJSObject {
     //    [context evaluateScript:@"var oo = {a:9}; \
                             oo.b = 10;\
      "];
@@ -125,8 +120,7 @@
 }
 
 
-- (void)callOCFunc
-{
+- (void)callOCFunc {
     context[@"logg"] = ^() {
         NSLog(@"+++++++Begin Log+++++++");
 
@@ -143,8 +137,7 @@
     [context evaluateScript:@"logg('ider', [7, 21], { hello:'world', js:100 });"];
 }
 
-- (void)callJSFunc
-{
+- (void)callJSFunc {
     [context evaluateScript:@"function add (a, b) {return a+b;}"];
 
     JSValue *add = context[@"add"];
@@ -152,8 +145,7 @@
     NSLog(@"sum is %@", sum);
 }
 
-- (void)JSCallException
-{
+- (void)JSCallException {
     context.exceptionHandler = ^(JSContext *txt, JSValue *exception) {
         NSLog(@"recv exception %@", exception);
         txt.exception = exception;
@@ -162,8 +154,7 @@
     [context evaluateScript:@"log(11, 2, 3, 4, 5)"];
 }
 
-- (void)arraytoJSArray
-{
+- (void)arraytoJSArray {
     NSArray *arr = @[ @11, @22, @32, @4222 ];
     context[@"arr2"] = arr;
     [context evaluateScript:@"log(arr2); \
@@ -174,8 +165,7 @@
 }
 
 
-- (void)callOCOBJFunc
-{
+- (void)callOCOBJFunc {
     MWJSPerson *p = [[MWJSPerson alloc] init];
     context[@"p"] = p;
     p.firstName = @"huang";
@@ -195,8 +185,7 @@
     //setPersonFullName
 }
 
-- (void)addProtocolToLabel
-{
+- (void)addProtocolToLabel {
     showLabel = [[UILabel alloc] init];
     showLabel.frame = CGRectMake(0, 100, 100, 30);
     [self.view addSubview:showLabel];
@@ -217,8 +206,7 @@
     [context evaluateScript:@"log(nn)"];
 }
 
-- (void)factorial
-{
+- (void)factorial {
     [context evaluateScript:@"function factorial(n) {\
         if (n < 0) {\
             return 0;\
@@ -248,8 +236,7 @@
 }
 
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView
-{
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
     //网页加载完成调用此方法
     //首先创建JSContext 对象（此处通过当前webView的键获取到jscontext）
     JSContext *xx = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];

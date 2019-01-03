@@ -19,8 +19,7 @@
 
 
 @implementation NSRecursiveLockViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     self.countLock = [[NSRecursiveLock alloc] init];
@@ -39,8 +38,7 @@
 }
 
 
-- (void)ShowCount
-{
+- (void)ShowCount {
     static NSInteger n = 0;
     n++;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -54,8 +52,7 @@
     });
 }
 
-- (NSInteger)calculateFromZeroTo:(NSInteger)count
-{
+- (NSInteger)calculateFromZeroTo:(NSInteger)count {
     [self.countLock lock];
     if (count == 1) {
         [self.countLock unlock];

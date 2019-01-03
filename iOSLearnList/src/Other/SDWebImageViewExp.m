@@ -10,8 +10,7 @@
 
 
 @implementation SDWebImageViewExp
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.showData = @[ @"SDUIImageViewController" ];
 }

@@ -11,8 +11,7 @@
 
 
 @implementation MantleObjectModelViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     MWMtlObject *mw = [[MWMtlObject alloc] init];

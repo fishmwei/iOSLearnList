@@ -16,24 +16,21 @@
 
 @implementation SysBaseViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
-    
-    self.showData = @[@"multiThreadController",
-                      @"Timer_NotificationViewController",
-                      @"GCDViewController",
-                      @"NSJSONSerializationViewController",
-                      @"ThreadProgramingViewController",
-                      @"RunLoopsExp",
-                      @"SynchronizationExp",
-                      @"InvocationBlockViewController"];
 
+    self.showData = @[ @"multiThreadController",
+                       @"Timer_NotificationViewController",
+                       @"GCDViewController",
+                       @"NSJSONSerializationViewController",
+                       @"ThreadProgramingViewController",
+                       @"RunLoopsExp",
+                       @"SynchronizationExp",
+                       @"InvocationBlockViewController" ];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

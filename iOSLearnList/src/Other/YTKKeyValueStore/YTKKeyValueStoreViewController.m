@@ -23,8 +23,7 @@
 
 
 @implementation YTKKeyValueStoreViewController
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     @weakify(self);
@@ -37,8 +36,7 @@
     store = [[YTKKeyValueStore alloc] initDBWithName:@"test.db"];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MWTextButtonCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MWTextButtonCell" forIndexPath:indexPath];
     [cell settitle:@"x" btnTitle:@"Press"];
     cell.cellDelegate = self;
@@ -47,13 +45,11 @@
     return cell;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 100;
 }
 
-- (void)btnPressed:(NSString *)content
-{
+- (void)btnPressed:(NSString *)content {
     if (content.length) {
         [store createTableWithName:[NSString stringWithFormat:@"'%@'", content]];
         [store putString:[NSString stringWithFormat:@"'%@'", content] withId:[NSString stringWithFormat:@"'%@'", content] intoTable:[NSString stringWithFormat:@"'%@'", content]];

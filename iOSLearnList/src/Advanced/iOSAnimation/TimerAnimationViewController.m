@@ -24,8 +24,7 @@
 
 @implementation TimerAnimationViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     _ballView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
@@ -37,14 +36,12 @@
     _ballView.backgroundColor = [UIColor orangeColor];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)animateAction
-{
+- (void)animateAction {
     CGFloat toY = _ballView.center.y + 500;
     toY = toY > CGRectGetMaxX(self.view.bounds) ? CGRectGetMaxX(self.view.bounds) : toY;
     _toValue = [NSValue valueWithCGPoint:CGPointMake(_ballView.center.x, toY)];
@@ -55,8 +52,7 @@
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1 / 60.0 target:self selector:@selector(Step:) userInfo:nil repeats:YES];
 }
 
-- (void)Step:(NSTimer *)timer
-{
+- (void)Step:(NSTimer *)timer {
     //update time offset
     self.timeOffset = MIN(self.timeOffset + 1 / (60.0 * self.duration), 1);
     //get normalized time offset (in range 0 - 1)
@@ -74,32 +70,27 @@
 }
 
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     CGPoint p = [[touches anyObject] locationInView:self.view];
     _ballView.center = p;
 }
 
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     CGPoint p = [[touches anyObject] locationInView:self.view];
     _ballView.center = p;
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     _fromValue = [NSValue valueWithCGPoint:[[touches anyObject] locationInView:self.view]];
     [self animateAction];
 }
 
 
-- (float)interpolate:(float)from:(float)to:(float)time
-{
+- (float)interpolate:(float)from:(float)to:(float)time {
     return (to - from) * time + from;
 }
 
-- (id)interpolateFromValue:(id)fromValue toValue:(id)toValue time:(float)time
-{
+- (id)interpolateFromValue:(id)fromValue toValue:(id)toValue time:(float)time {
     if ([fromValue isKindOfClass:[NSValue class]]) {
         //get type
         const char *type = [(NSValue *)fromValue objCType];
@@ -115,8 +106,7 @@
     return (time < 0.5) ? fromValue : toValue;
 }
 
-float bounceEaseOut(float t)
-{
+float bounceEaseOut(float t) {
     if (t < 4 / 11.0) {
         return (121 * t * t) / 16.0;
     } else if (t < 8 / 11.0) {

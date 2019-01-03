@@ -8,18 +8,20 @@
 
 #import "ILSearchViewController.h"
 
+
 @interface ILSearchViewController ()
 
 @end
+
 
 @implementation ILSearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self setTitle:@"Frieds"];
-    
-     
+
+
     // Do any additional setup after loading the view.
 }
 

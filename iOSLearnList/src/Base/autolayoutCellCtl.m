@@ -17,26 +17,22 @@
 
 @implementation autolayoutCellCtl
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
 
     UINib *cellNib = [UINib nibWithNibName:@"autolayoutCell" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:@"autolayoutCell"];
- 
+
     self.showData = @[ @"1", @"2\n2", @"autolayoutCellautolayoutCellautolayoutCellautolayoutCellautolayoutCell5autolayoutCellautolayoutCellautolayoutCellautolayoutCellautolayoutCell5", @"\n\n\n5" ];
- 
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     autolayoutCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"autolayoutCell"];
     cell.label.text = [self.showData objectAtIndex:indexPath.row];
     cell.imgVeiw.image = [MWCommon imageNamed:@"lion"];
@@ -45,8 +41,7 @@
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (_prototypeCell == nil) {
         _prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"autolayoutCell"];
     }
