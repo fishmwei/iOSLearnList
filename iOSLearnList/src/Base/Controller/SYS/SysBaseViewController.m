@@ -20,13 +20,16 @@
 {
     [super viewDidLoad];
 
-    self.showData = @[ @"multiThreadController",
-                       @"Timer_NotificationViewController",
-                       @"GCDViewController",
-                       @"NSJSONSerializationViewController",
-                       @"ThreadProgramingViewController",
-                       @"RunLoopsExp",
-                       @"SynchronizationExp" ];
+    
+    self.showData = @[@"multiThreadController",
+                      @"Timer_NotificationViewController",
+                      @"GCDViewController",
+                      @"NSJSONSerializationViewController",
+                      @"ThreadProgramingViewController",
+                      @"RunLoopsExp",
+                      @"SynchronizationExp",
+                      @"InvocationBlockViewController"];
+
 }
 
 - (void)didReceiveMemoryWarning

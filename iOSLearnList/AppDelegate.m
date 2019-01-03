@@ -44,12 +44,17 @@
 
 @end
 
-
 @implementation AppDelegate
 
+- (void)setAppearence {
+    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTitle:@"取消"];
+    
+//    [[UIBarButtonItem appearanceWhenContainedIn: [UISearchBar class], nil] setTitle:@"取消"];
+}
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self setAppearence];
+
     NSString *componentID = nil;
     NSString *st = componentID ?: @"public";
     NSLog(@"%@", st);
@@ -68,6 +73,7 @@
 
 
     [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
+
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 
 
@@ -76,9 +82,7 @@
     [self.window makeKeyAndVisible];
     [self.window setBackgroundColor:[UIColor whiteColor]];
 
-
-    //    [[[myBundleFrame alloc] init] showBundleframe];
-
+#ifdef TEST_ENV
     NSString *t = @"aaaaa";
     self.b = t;
     t = @"ccc";
@@ -86,17 +90,18 @@
     NSLog(@"%@", self.b);
 
     [self testShowIdClass:self.window.rootViewController];
-
-    //    //AD
-    //    {
-    //        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAdDetail:) name:BBLaunchAdDetailDisplayNotification object:nil];
-    //        NSString *path = @"http://mg.soupingguo.com/bizhi/big/10/258/043/10258043.jpg";
-    //        [BBLaunchAdMonitor showAdAtPath:path
-    //                                 onView:self.window.rootViewController.view
-    //                           timeInterval:5.
-    //                       detailParameters:@{@"carId":@(12345), @"name":@"奥迪-品质生活"}];
-    //    }
-
+#endif
+    
+//    //AD
+//    {
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAdDetail:) name:BBLaunchAdDetailDisplayNotification object:nil];
+//        NSString *path = @"http://mg.soupingguo.com/bizhi/big/10/258/043/10258043.jpg";
+//        [BBLaunchAdMonitor showAdAtPath:path
+//                                 onView:self.window.rootViewController.view
+//                           timeInterval:5.
+//                       detailParameters:@{@"carId":@(12345), @"name":@"奥迪-品质生活"}];
+//    }
+    
     if ([launchOptions objectForKey:@"UIApplicationLaunchOptionsShortcutItemKey"]) {
         //        return NO;
     } else {

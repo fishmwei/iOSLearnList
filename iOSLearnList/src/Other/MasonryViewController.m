@@ -32,9 +32,11 @@
     [_v1 mas_makeConstraints:^(MASConstraintMaker *maker) {
         //        maker.width.equalTo(self.view);
         maker.height.equalTo(@100);
-        //        maker.topMargin.equalTo(self.view.mas_top).with.offset(80);
-        //        maker.leftMargin.equalTo(self.view.mas_left).with.offset(20);
-        //        maker.rightMargin.equalTo(self.view.mas_right).with.offset(-20);
+ 
+        maker.top.equalTo(self.view.mas_top).with.offset(80);
+        maker.left.equalTo(self.view.mas_left).with.offset(20);
+        maker.right.equalTo(self.view.mas_right).with.offset(-20);
+ 
     }];
 
     _lab1 = [[UILabel alloc] init];
@@ -56,8 +58,9 @@
     _img1.backgroundColor = [UIColor darkGrayColor];
     [_img1 mas_makeConstraints:^(MASConstraintMaker *maker) {
         maker.top.equalTo(_lab1.mas_bottom);
-        //        maker.leftMargin.equalTo(self.view.mas_left).with.offset(20);
-        //        maker.width.equalTo(self.view.mas_width);
+ 
+        maker.left.equalTo(self.view.mas_left).with.offset(20);
+ 
         maker.width.equalTo(_v1);
         maker.bottom.equalTo(self.view.mas_bottom);
     }];
@@ -119,7 +122,7 @@
         [scrollView addSubview:container];
         [container mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(scrollView);
-            make.width.equalTo(scrollView);
+            make.width.equalTo(scrollView).offset(-5);
         }];
         int count = 10;
         UIView *lastView = nil;

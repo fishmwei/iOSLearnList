@@ -10,18 +10,87 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 
 
-@interface MWBaseViewController ()
+@interface MWBaseViewController () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, retain) MBProgressHUD *tipHud;
+
+
+@property (nonatomic, assign) BOOL isOriginalNavigationBarHidden;
+@property (nonatomic, assign) BOOL isNextNavigationBarHidden;
+@property (nonatomic, assign) BOOL isFirstInto;
+
 
 @end
 
 
 @implementation MWBaseViewController
+-(id)init
+{
+    self = [super init];
+    if (self) {
+//        self.hidesBottomBarWhenPushed = YES;
+        _isOriginalNavigationBarHidden = YES;
+        _isNextNavigationBarHidden = NO;
+        _isFirstInto = YES;
+        _hideNavigationbar = NO;
+    }
+    
+    return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (self.isFirstInto) {
+        [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:NO];
+        self.isFirstInto = NO;
+    } else {
+        [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:animated];
+    }
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:NO];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    //Pop
+    if (self.isMovingFromParentViewController) {
+        [self.navigationController setNavigationBarHidden:_isOriginalNavigationBarHidden animated:YES];
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+        return;
+    }
+    
+    if (self.isBeingDismissed) {
+        return;
+    }
+    
+    if ([self isEqual:self.navigationController.topViewController]) {
+        return;
+    }
+    
+    [self.navigationController setNavigationBarHidden:_isNextNavigationBarHidden animated:animated];
+}
+
+#pragma mark 设置手势右滑后退
+-(void) setRightPanPopCtrlEnabled:(BOOL)isEnabled
+{
+    //禁用滑动后退
+    self.navigationController.interactivePopGestureRecognizer.enabled = isEnabled;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationController.interactivePopGestureRecognizer.delegate=(id)self;
+    
+    
     self.view.backgroundColor = [UIColor whiteColor];
 
 #ifdef __IPHONE_7_0

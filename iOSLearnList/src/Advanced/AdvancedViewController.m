@@ -73,7 +73,8 @@
 
 - (void)createView
 {
-    self.tabBarController.tabBar.hidden = NO;
+    self.hidesBottomBarWhenPushed = NO;
+//    self.tabBarController.tabBar.hidden = NO;
     self.tableview = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
 
     self.tableview.dataSource = self;

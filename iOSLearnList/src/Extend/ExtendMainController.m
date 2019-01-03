@@ -27,6 +27,9 @@
 
 @property (nonatomic, retain) UIViewController *hideVc;
 
+@property (nonatomic, retain) UIViewController *testCtl;
+
+
 @end
 
 
@@ -47,6 +50,7 @@
 - (void)createViewControllers
 {
     AdvancedViewController *vc = [[AdvancedViewController alloc] init];
+    vc.hideNavigationbar = YES;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -78,13 +82,25 @@
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _otherCtl = nav;
-
+ 
     nav = [[UINavigationController alloc] initWithRootViewController:[[HideTabController alloc] init]];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.title = @"hideTab";
     [ivc setTitle:[[ConfigCommon shareInstance] currentConfig]];
     _hideVc = nav;
+ 
+    
+    ivc = [[IndexTableViewController alloc] init];
+    ivc.showData = @[@"TestCreateObjectAsync", @"AdaptIOS11ViewController",
+                     @"AutoSizeViewController"];
+    
+    nav = [[UINavigationController alloc] initWithRootViewController:ivc];
+    nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [ivc setTitle:@"Test"];
+    _testCtl = nav;
+    
 }
 
 
@@ -93,11 +109,13 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self createViewControllers];
-
-    self.bottomItems = @[ _baseCtl, _hideVc, _advanceCtl, _otherCtl ];
-
-
-    self.viewControllers = self.bottomItems;
+ 
+    
+    self.bottomItems = @[_testCtl, _hideVc, _baseCtl, _advanceCtl, _otherCtl];
+ 
+    
+    self.viewControllers = self.bottomItems ;
+ 
 }
 
 - (void)viewWillAppear:(BOOL)animated
