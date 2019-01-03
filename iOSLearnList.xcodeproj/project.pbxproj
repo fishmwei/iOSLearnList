@@ -103,11 +103,9 @@
 		C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2491D5C99AB00A8FECC /* runtimeViewController.m */; };
 		C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */; };
 		C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2501D5CB62300A8FECC /* MWJSPerson.m */; };
-
 		C176293A21CCFE7D002ED848 /* RotateTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C176293921CCFE7D002ED848 /* RotateTestViewController.m */; };
 		C1791E89215F1742006DA265 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1791E88215F1742006DA265 /* GLKit.framework */; };
 		C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1791E8B215F176F006DA265 /* GLKOpenGLController.m */; };
-
 		C189E5F121D5C946002AABBE /* methodSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35A1D51853B00061311 /* methodSelectorViewController.m */; };
 		C189E5F221D5C946002AABBE /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */; };
 		C189E5F321D5C946002AABBE /* DataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */; };
@@ -240,7 +238,6 @@
 		C189E67421D5C946002AABBE /* iOSLearnListBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */; };
 		C189E67521D5C946002AABBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F68EC91CDE1905009338D6 /* Main.storyboard */; };
 		C189E67621D5C946002AABBE /* lanch5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C162E35F1D51D05500061311 /* lanch5@2x.png */; };
-
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
 		C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
@@ -492,17 +489,14 @@
 		C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSViewController.m; sourceTree = "<group>"; };
 		C172F24F1D5CB62300A8FECC /* MWJSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWJSPerson.h; sourceTree = "<group>"; };
 		C172F2501D5CB62300A8FECC /* MWJSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSPerson.m; sourceTree = "<group>"; };
-
 		C176293821CCFE7D002ED848 /* RotateTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateTestViewController.h; sourceTree = "<group>"; };
 		C176293921CCFE7D002ED848 /* RotateTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateTestViewController.m; sourceTree = "<group>"; };
 		C1791E88215F1742006DA265 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		C1791E8A215F176F006DA265 /* GLKOpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKOpenGLController.h; sourceTree = "<group>"; };
 		C1791E8B215F176F006DA265 /* GLKOpenGLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKOpenGLController.m; sourceTree = "<group>"; };
-
 		C189E5ED21D5C218002AABBE /* iOSLearnList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSLearnList copy-Info.plist"; path = "/Users/huangmingwei/Documents/GitHubCode/iOSLearnList/iOSLearnList copy-Info.plist"; sourceTree = "<absolute>"; };
 		C189E67D21D5C946002AABBE /* iOSLearnListEnv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnListEnv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C189E67E21D5C946002AABBE /* iOSLearnList copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSLearnList copy2-Info.plist"; path = "/Users/huangmingwei/Documents/GitHubCode/iOSLearnList/iOSLearnList copy2-Info.plist"; sourceTree = "<absolute>"; };
-
 		C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseCollectionViewController.h; sourceTree = "<group>"; };
 		C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseCollectionViewController.m; sourceTree = "<group>"; };
 		C18F58E41D475AB800F95031 /* testCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCollectionViewController.h; sourceTree = "<group>"; };
@@ -1538,7 +1532,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-
 			showEnvVarsInLog = 0;
 		};
 		77E2DAAB79F29D0A9A310118 /* [CP] Check Pods Manifest.lock */ = {
@@ -1575,7 +1568,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh\"\n";
-
 			showEnvVarsInLog = 0;
 		};
 		976012E5720C53C6F39C441B /* [CP] Copy Pods Resources */ = {
@@ -1584,20 +1576,16 @@
 			files = (
 			);
 			inputPaths = (
-
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh\"\n";
-
 			showEnvVarsInLog = 0;
 		};
 		C1209B1A1CF53D1500182559 /* Copy configuration */ = {
@@ -1623,16 +1611,12 @@
 			files = (
 			);
 			inputPaths = (
-
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
-
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-
 				"$(DERIVED_FILE_DIR)/Pods-iOSLearnListEnv-checkManifestLockResult.txt",
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2187,7 +2171,7 @@
 					"COCOAPODS=1",
 					"TEST_ENV=1",
 				);
-				INFOPLIST_FILE = "iOSLearnList copy2-Info.plist";
+				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2214,7 +2198,7 @@
 					"COCOAPODS=1",
 					"TEST_ENV=1",
 				);
-				INFOPLIST_FILE = "iOSLearnList copy2-Info.plist";
+				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2241,7 +2225,7 @@
 					"COCOAPODS=1",
 					"TEST_ENV=1",
 				);
-				INFOPLIST_FILE = "iOSLearnList copy2-Info.plist";
+				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
