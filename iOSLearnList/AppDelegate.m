@@ -10,6 +10,7 @@
 #import "ExtendMainController.h"
 #import "BBLaunchAdMonitor.h"
 #import "myBundleFrame.h"
+#import <DoraemonKit/DoraemonKit.h>
 
 @interface AppDelegate ()
 @property (nonatomic, retain) NSString *b;
@@ -109,6 +110,15 @@
 //    
 //        @throw @"error";
 //    });
+    
+    
+#ifdef DEBUG
+    [[DoraemonManager shareInstance] addH5DoorBlock:^(NSString *h5Url) {
+        //使用自己的H5容器打开这个链接
+    }];
+    
+    [[DoraemonManager shareInstance] install];
+#endif
     
     return YES;
 }

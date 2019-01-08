@@ -43,6 +43,8 @@
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
 		C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C13D8B121D879EFB008BE3B9 /* TimerObject.m */; };
+		C142106A21E471EB00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
+		C142106B21E4721A00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
 		C144F9E61E9DC77700EAA011 /* HideNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */; };
 		C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */; };
 		C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */; };
@@ -371,6 +373,7 @@
 		C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDrawingViewController.m; sourceTree = "<group>"; };
 		C13D8B111D879EFB008BE3B9 /* TimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerObject.h; sourceTree = "<group>"; };
 		C13D8B121D879EFB008BE3B9 /* TimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerObject.m; sourceTree = "<group>"; };
+		C142106921E471EB00FC1DF9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C144F9E41E9DC77700EAA011 /* HideNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideNavigatorViewController.h; sourceTree = "<group>"; };
 		C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavigatorViewController.m; sourceTree = "<group>"; };
 		C144F9E71E9DCA8C00EAA011 /* MWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNavigationController.h; sourceTree = "<group>"; };
@@ -579,6 +582,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C142106B21E4721A00FC1DF9 /* WebKit.framework in Frameworks */,
 				C16D84491DC8480D00D7F062 /* Foundation.framework in Frameworks */,
 				C16D84471DC8480500D7F062 /* UIKit.framework in Frameworks */,
 				C16BB76B1D92264500495A88 /* iAd.framework in Frameworks */,
@@ -592,6 +596,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C142106A21E471EB00FC1DF9 /* WebKit.framework in Frameworks */,
 				C189E66321D5C946002AABBE /* Foundation.framework in Frameworks */,
 				C189E66421D5C946002AABBE /* UIKit.framework in Frameworks */,
 				C189E66521D5C946002AABBE /* iAd.framework in Frameworks */,
@@ -616,6 +621,7 @@
 		31DFC973CFDBCBD61F0C0EA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C142106921E471EB00FC1DF9 /* WebKit.framework */,
 				C16D84481DC8480D00D7F062 /* Foundation.framework */,
 				C16D84461DC8480500D7F062 /* UIKit.framework */,
 				C16BB76A1D92264500495A88 /* iAd.framework */,
@@ -1527,10 +1533,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1545,10 +1553,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1595,10 +1605,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
