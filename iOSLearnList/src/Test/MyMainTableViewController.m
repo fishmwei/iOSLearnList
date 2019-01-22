@@ -32,6 +32,10 @@ UISearchResultsUpdating>
 
 @implementation MyMainTableViewController
 
+- (void)dealloc {
+    [self.searchController.view removeFromSuperview];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

@@ -30,7 +30,8 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    self.tabBar.translucent = NO;
     [self createData];
     [self createView];
     [self procShortItem:nil];
