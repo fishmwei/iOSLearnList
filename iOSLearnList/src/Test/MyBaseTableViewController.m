@@ -94,6 +94,6 @@
 */
 
 - (void)configureCell:(UITableViewCell *)cell data:(id)data {
-
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", data];
 }
 @end

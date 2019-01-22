@@ -1435,7 +1435,7 @@
 				TargetAttributes = {
 					51F68EBC1CDE1905009338D6 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = N4G9ZN8438;
+						DevelopmentTeam = H79W6YY34M;
 					};
 					C1ECDDF41E3849E3007A5C05 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -2054,6 +2054,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H79W6YY34M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -2076,6 +2077,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H79W6YY34M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -2139,6 +2141,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H79W6YY34M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

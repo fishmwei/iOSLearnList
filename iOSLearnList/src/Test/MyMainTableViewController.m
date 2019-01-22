@@ -35,6 +35,7 @@ UISearchResultsUpdating>
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.products = @[@(1), @(2), @(3)];
     self.resultsTableController = [MyResultsTableController new];
     self.resultsTableController.tableView.delegate = self;
     
@@ -96,6 +97,7 @@ UISearchResultsUpdating>
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyTableViewID forIndexPath:indexPath];
     
+//    cell.textLabel.text = [NSString ];
     id data = [self.products objectAtIndex:indexPath.row];
     [self configureCell:cell data:data];
     
@@ -108,9 +110,15 @@ UISearchResultsUpdating>
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (tableView == self.tableView) {
-        
+        UIViewController *vc = [[UIViewController alloc] init];
+        vc.view.backgroundColor = [UIColor whiteColor];
+        vc.title = @"table";
+        [self.navigationController pushViewController:vc animated:YES];
     } else {
-        
+        UIViewController *vc = [[UIViewController alloc] init];
+        vc.view.backgroundColor = [UIColor whiteColor];
+        vc.title = @"result";
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
