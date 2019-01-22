@@ -248,6 +248,12 @@
 		C19DB7CC1DBF5B7E005A43BE /* MasonryExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7CB1DBF5B7E005A43BE /* MasonryExp.m */; };
 		C19DB7D01DBF5C02005A43BE /* BlocksKitExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7CF1DBF5C02005A43BE /* BlocksKitExp.m */; };
 		C19DB7D31DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7D21DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m */; };
+		C1A2C84021F7059D000343CF /* MyBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C83F21F7059D000343CF /* MyBaseTableViewController.m */; };
+		C1A2C84121F7059D000343CF /* MyBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C83F21F7059D000343CF /* MyBaseTableViewController.m */; };
+		C1A2C84421F7067F000343CF /* MyResultsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84321F7067F000343CF /* MyResultsTableController.m */; };
+		C1A2C84521F7067F000343CF /* MyResultsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84321F7067F000343CF /* MyResultsTableController.m */; };
+		C1A2C84821F7073A000343CF /* MyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84721F7073A000343CF /* MyMainTableViewController.m */; };
+		C1A2C84921F7073A000343CF /* MyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84721F7073A000343CF /* MyMainTableViewController.m */; };
 		C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */; };
 		C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506F1CE99E75006A117B /* defaultNSURLSessionController.m */; };
 		C1A650821CE99E75006A117B /* downloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650711CE99E75006A117B /* downloadController.m */; };
@@ -512,6 +518,12 @@
 		C19DB7CF1DBF5C02005A43BE /* BlocksKitExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksKitExp.m; sourceTree = "<group>"; };
 		C19DB7D11DBF5C3D005A43BE /* UIVIewBlocksKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVIewBlocksKitViewController.h; sourceTree = "<group>"; };
 		C19DB7D21DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVIewBlocksKitViewController.m; sourceTree = "<group>"; };
+		C1A2C83E21F7059D000343CF /* MyBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBaseTableViewController.h; sourceTree = "<group>"; };
+		C1A2C83F21F7059D000343CF /* MyBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBaseTableViewController.m; sourceTree = "<group>"; };
+		C1A2C84221F7067F000343CF /* MyResultsTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyResultsTableController.h; sourceTree = "<group>"; };
+		C1A2C84321F7067F000343CF /* MyResultsTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyResultsTableController.m; sourceTree = "<group>"; };
+		C1A2C84621F7073A000343CF /* MyMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMainTableViewController.h; sourceTree = "<group>"; };
+		C1A2C84721F7073A000343CF /* MyMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMainTableViewController.m; sourceTree = "<group>"; };
 		C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Timer+NotificationViewController.h"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.h"; sourceTree = "<group>"; };
 		C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Timer+NotificationViewController.m"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.m"; sourceTree = "<group>"; };
 		C1A6506E1CE99E75006A117B /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
@@ -774,6 +786,7 @@
 		C1040B731F90A5770027EE09 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				C1A2C83D21F70564000343CF /* MyUISearchController */,
 				517CA88D1FE4EF5100A6A82F /* iOS11 */,
 				C1040B771F90A6BE0027EE09 /* CreateObjectAsync */,
 				5107762E1FE66E9000169CED /* AutoSizeViewController.h */,
@@ -1094,6 +1107,19 @@
 				C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */,
 			);
 			name = BlocksKit;
+			sourceTree = "<group>";
+		};
+		C1A2C83D21F70564000343CF /* MyUISearchController */ = {
+			isa = PBXGroup;
+			children = (
+				C1A2C83E21F7059D000343CF /* MyBaseTableViewController.h */,
+				C1A2C83F21F7059D000343CF /* MyBaseTableViewController.m */,
+				C1A2C84221F7067F000343CF /* MyResultsTableController.h */,
+				C1A2C84321F7067F000343CF /* MyResultsTableController.m */,
+				C1A2C84621F7073A000343CF /* MyMainTableViewController.h */,
+				C1A2C84721F7073A000343CF /* MyMainTableViewController.m */,
+			);
+			name = MyUISearchController;
 			sourceTree = "<group>";
 		};
 		C1A650661CE99E75006A117B /* Advanced */ = {
@@ -1673,6 +1699,7 @@
 				C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */,
 				C1A650831CE99E75006A117B /* FWSessionDelegate.m in Sources */,
 				C15579981DBE23C000F50CD2 /* dispatch_barrierViewController.m in Sources */,
+				C1A2C84821F7073A000343CF /* MyMainTableViewController.m in Sources */,
 				C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */,
 				C15C2C861DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m in Sources */,
 				C1040B7A1F90A7B30027EE09 /* TestObjectFacotry.m in Sources */,
@@ -1686,6 +1713,7 @@
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
 				C16D845F1DC88B5A00D7F062 /* NSLockViewController.m in Sources */,
 				C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */,
+				C1A2C84421F7067F000343CF /* MyResultsTableController.m in Sources */,
 				516928021DBE486B00DA92D7 /* NSJSONSerializationViewController.m in Sources */,
 				C19321061D41FA0900378778 /* MasonryViewController.m in Sources */,
 				C16D84561DC87D1D00D7F062 /* NSConditionLockViewController.m in Sources */,
@@ -1733,6 +1761,7 @@
 				513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */,
 				C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */,
 				513EC4B61D5389D400279CA1 /* CAScrollViewController.m in Sources */,
+				C1A2C84021F7059D000343CF /* MyBaseTableViewController.m in Sources */,
 				C16858771D5AD0C80017157D /* UIButton_MWEdge.m in Sources */,
 				C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */,
 				C11D279F1DBF6A3A00FA2955 /* safeCategoriesViewController.m in Sources */,
@@ -1793,6 +1822,7 @@
 				C189E61E21D5C946002AABBE /* SysBaseViewController.m in Sources */,
 				C189E61F21D5C946002AABBE /* FWSessionDelegate.m in Sources */,
 				C189E62021D5C946002AABBE /* dispatch_barrierViewController.m in Sources */,
+				C1A2C84921F7073A000343CF /* MyMainTableViewController.m in Sources */,
 				C189E62121D5C946002AABBE /* MWBaseAnimation.m in Sources */,
 				C189E62221D5C946002AABBE /* YTKKeyValueStoreExp.m in Sources */,
 				C189E62321D5C946002AABBE /* TestObjectFacotry.m in Sources */,
@@ -1806,6 +1836,7 @@
 				C189E62B21D5C946002AABBE /* ConfigCommon.m in Sources */,
 				C189E62C21D5C946002AABBE /* NSLockViewController.m in Sources */,
 				C189E62D21D5C946002AABBE /* caLayerViewController.m in Sources */,
+				C1A2C84521F7067F000343CF /* MyResultsTableController.m in Sources */,
 				C189E62E21D5C946002AABBE /* NSJSONSerializationViewController.m in Sources */,
 				C189E62F21D5C946002AABBE /* MasonryViewController.m in Sources */,
 				C189E63021D5C946002AABBE /* NSConditionLockViewController.m in Sources */,
@@ -1853,6 +1884,7 @@
 				C189E65A21D5C946002AABBE /* CACustomScrollView.m in Sources */,
 				C189E65B21D5C946002AABBE /* MWNavigationController.m in Sources */,
 				C189E65C21D5C946002AABBE /* CAScrollViewController.m in Sources */,
+				C1A2C84121F7059D000343CF /* MyBaseTableViewController.m in Sources */,
 				C189E65D21D5C946002AABBE /* UIButton_MWEdge.m in Sources */,
 				C189E65E21D5C946002AABBE /* CAMediaTimingFunctionVC.m in Sources */,
 				C189E65F21D5C946002AABBE /* safeCategoriesViewController.m in Sources */,

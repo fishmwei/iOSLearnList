@@ -76,7 +76,7 @@
     _otherCtl = nav;
     
     ivc = [[IndexTableViewController alloc] init];
-    ivc.showData = @[@"TestCreateObjectAsync", @"AdaptIOS11ViewController",
+    ivc.showData = @[@"TestCreateObjectAsync", @"MyMainTableViewController", @"AdaptIOS11ViewController",
                      @"AutoSizeViewController"];
     
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
