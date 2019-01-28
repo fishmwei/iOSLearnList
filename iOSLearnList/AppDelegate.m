@@ -11,6 +11,7 @@
 #import "BBLaunchAdMonitor.h"
 #import "myBundleFrame.h"
 #import <DoraemonKit/DoraemonKit.h>
+#import <Bugly/Bugly.h>
 
 @interface AppDelegate ()
 @property (nonatomic, retain) NSString *b;
@@ -50,6 +51,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setAppearence];
+    
+    [Bugly startWithAppId:@"83b91fa7fe"];
     
     NSString *componentID = nil;
         NSString *st = componentID ?: @"public";
