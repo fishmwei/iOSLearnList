@@ -21,7 +21,8 @@ pod 'MLeaksFinder'
 
 pod 'Bugly'
 
-pod 'DoraemonKit/Core', '1.1.3', :configurations => ['Debug']
+pod 'DoraemonKit/Core', '1.1.3'
+
 
 target 'iOSLearnList' do
     
