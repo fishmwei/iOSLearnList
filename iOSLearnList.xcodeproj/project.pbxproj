@@ -45,6 +45,8 @@
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
 		C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C13D8B121D879EFB008BE3B9 /* TimerObject.m */; };
+		C142106A21E471EB00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
+		C142106B21E4721A00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
 		C144F9E61E9DC77700EAA011 /* HideNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */; };
 		C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */; };
 		C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */; };
@@ -251,6 +253,12 @@
 		C19DB7CC1DBF5B7E005A43BE /* MasonryExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7CB1DBF5B7E005A43BE /* MasonryExp.m */; };
 		C19DB7D01DBF5C02005A43BE /* BlocksKitExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7CF1DBF5C02005A43BE /* BlocksKitExp.m */; };
 		C19DB7D31DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DB7D21DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m */; };
+		C1A2C84021F7059D000343CF /* MyBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C83F21F7059D000343CF /* MyBaseTableViewController.m */; };
+		C1A2C84121F7059D000343CF /* MyBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C83F21F7059D000343CF /* MyBaseTableViewController.m */; };
+		C1A2C84421F7067F000343CF /* MyResultsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84321F7067F000343CF /* MyResultsTableController.m */; };
+		C1A2C84521F7067F000343CF /* MyResultsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84321F7067F000343CF /* MyResultsTableController.m */; };
+		C1A2C84821F7073A000343CF /* MyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84721F7073A000343CF /* MyMainTableViewController.m */; };
+		C1A2C84921F7073A000343CF /* MyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84721F7073A000343CF /* MyMainTableViewController.m */; };
 		C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */; };
 		C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506F1CE99E75006A117B /* defaultNSURLSessionController.m */; };
 		C1A650821CE99E75006A117B /* downloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650711CE99E75006A117B /* downloadController.m */; };
@@ -380,6 +388,7 @@
 		C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDrawingViewController.m; sourceTree = "<group>"; };
 		C13D8B111D879EFB008BE3B9 /* TimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerObject.h; sourceTree = "<group>"; };
 		C13D8B121D879EFB008BE3B9 /* TimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerObject.m; sourceTree = "<group>"; };
+		C142106921E471EB00FC1DF9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C144F9E41E9DC77700EAA011 /* HideNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideNavigatorViewController.h; sourceTree = "<group>"; };
 		C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavigatorViewController.m; sourceTree = "<group>"; };
 		C144F9E71E9DCA8C00EAA011 /* MWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNavigationController.h; sourceTree = "<group>"; };
@@ -523,6 +532,12 @@
 		C19DB7CF1DBF5C02005A43BE /* BlocksKitExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksKitExp.m; sourceTree = "<group>"; };
 		C19DB7D11DBF5C3D005A43BE /* UIVIewBlocksKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVIewBlocksKitViewController.h; sourceTree = "<group>"; };
 		C19DB7D21DBF5C3D005A43BE /* UIVIewBlocksKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVIewBlocksKitViewController.m; sourceTree = "<group>"; };
+		C1A2C83E21F7059D000343CF /* MyBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBaseTableViewController.h; sourceTree = "<group>"; };
+		C1A2C83F21F7059D000343CF /* MyBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBaseTableViewController.m; sourceTree = "<group>"; };
+		C1A2C84221F7067F000343CF /* MyResultsTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyResultsTableController.h; sourceTree = "<group>"; };
+		C1A2C84321F7067F000343CF /* MyResultsTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyResultsTableController.m; sourceTree = "<group>"; };
+		C1A2C84621F7073A000343CF /* MyMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMainTableViewController.h; sourceTree = "<group>"; };
+		C1A2C84721F7073A000343CF /* MyMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMainTableViewController.m; sourceTree = "<group>"; };
 		C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Timer+NotificationViewController.h"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.h"; sourceTree = "<group>"; };
 		C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Timer+NotificationViewController.m"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.m"; sourceTree = "<group>"; };
 		C1A6506E1CE99E75006A117B /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
@@ -594,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1791E89215F1742006DA265 /* GLKit.framework in Frameworks */,
+				C142106B21E4721A00FC1DF9 /* WebKit.framework in Frameworks */,
 				C16D84491DC8480D00D7F062 /* Foundation.framework in Frameworks */,
 				C16D84471DC8480500D7F062 /* UIKit.framework in Frameworks */,
 				C16BB76B1D92264500495A88 /* iAd.framework in Frameworks */,
@@ -607,6 +623,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C142106A21E471EB00FC1DF9 /* WebKit.framework in Frameworks */,
 				C189E66321D5C946002AABBE /* Foundation.framework in Frameworks */,
 				C189E66421D5C946002AABBE /* UIKit.framework in Frameworks */,
 				C189E66521D5C946002AABBE /* iAd.framework in Frameworks */,
@@ -632,6 +649,7 @@
 			isa = PBXGroup;
 			children = (
 				C1791E88215F1742006DA265 /* GLKit.framework */,
+				C142106921E471EB00FC1DF9 /* WebKit.framework */,
 				C16D84481DC8480D00D7F062 /* Foundation.framework */,
 				C16D84461DC8480500D7F062 /* UIKit.framework */,
 				C16BB76A1D92264500495A88 /* iAd.framework */,
@@ -784,6 +802,7 @@
 		C1040B731F90A5770027EE09 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				C1A2C83D21F70564000343CF /* MyUISearchController */,
 				517CA88D1FE4EF5100A6A82F /* iOS11 */,
 				C1040B771F90A6BE0027EE09 /* CreateObjectAsync */,
 				5107762E1FE66E9000169CED /* AutoSizeViewController.h */,
@@ -1117,6 +1136,19 @@
 			name = BlocksKit;
 			sourceTree = "<group>";
 		};
+		C1A2C83D21F70564000343CF /* MyUISearchController */ = {
+			isa = PBXGroup;
+			children = (
+				C1A2C83E21F7059D000343CF /* MyBaseTableViewController.h */,
+				C1A2C83F21F7059D000343CF /* MyBaseTableViewController.m */,
+				C1A2C84221F7067F000343CF /* MyResultsTableController.h */,
+				C1A2C84321F7067F000343CF /* MyResultsTableController.m */,
+				C1A2C84621F7073A000343CF /* MyMainTableViewController.h */,
+				C1A2C84721F7073A000343CF /* MyMainTableViewController.m */,
+			);
+			name = MyUISearchController;
+			sourceTree = "<group>";
+		};
 		C1A650661CE99E75006A117B /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
@@ -1375,6 +1407,7 @@
 				51F68EBB1CDE1905009338D6 /* Resources */,
 				C1209B1A1CF53D1500182559 /* Copy configuration */,
 				976012E5720C53C6F39C441B /* [CP] Copy Pods Resources */,
+				C17D71BF21FEEE810097355A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1435,7 +1468,7 @@
 				TargetAttributes = {
 					51F68EBC1CDE1905009338D6 = {
 						CreatedOnToolsVersion = 7.3.1;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = H79W6YY34M;
 					};
 					C1ECDDF41E3849E3007A5C05 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1559,10 +1592,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1577,10 +1612,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1604,6 +1641,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "RESOURCE_PATH=${SRCROOT}/${PRODUCT_NAME}/Configuration/${CONFIGURATION}\n\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\necho \"Copying all files under ${RESOURCE_PATH} to ${BUILD_APP_DIR}\"\n\ncp -v \"${RESOURCE_PATH}/\"* \"${BUILD_APP_DIR}/\"";
+		};
+		C17D71BF21FEEE810097355A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"YOUR_APP_ID\"\n# #\nBUGLY_APP_KEY=\"YOUR_APP_KEY\"\n# #\nBUNDLE_IDENTIFIER=\"YOUR_BUNDLE_IDENTIFIER\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\n# UPLOAD_DEBUG_SYMBOLS=0\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\n# UPLOAD_SIMULATOR_SYMBOLS=0\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\nBUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\necho \"--------------------------------\"\necho \"${1}\"\necho \"--------------------------------\"\nexit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\nP_APP_ID=\"$1\"\nP_APP_KEY=\"$2\"\nP_APP_BUNDLE_ID=\"$3\"\nP_APP_VERSION=\"$4\"\nP_BSYMBOL_ZIP_FILE=\"$5\"\n\n#\nP_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\nP_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\nP_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n\nDSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\necho \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n\necho \"-----------------------------\"\nSTATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\necho \"-----------------------------\"\n\nUPLOAD_RESULT=\"FAILTURE\"\necho \"Bugly server response: ${STATUS}\"\nif [ ! \"${STATUS}\" ]; then\necho \"Error: Failed to upload the zip archive file.\"\nelif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\necho \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\nUPLOAD_RESULT=\"SUCCESS\"\nelse\necho \"Error: Failed to upload the zip archive file to Bugly.\"\nfi\n\n#Remove temp dSYM archive\n#echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n#/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n\nif [ \"$?\" -ne 0 ]; then\nexitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\nfi\n\necho \"--------------------------------\"\necho \"${UPLOAD_RESULT} - dSYM upload complete.\"\n\nif [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\necho \"--------------------------------\"\necho \"Failed to upload the dSYM\"\necho \"Please check the script and try it again.\"\nfi\n}\n\n# .dSYM解析为bSYMBOL文件\nfunction dSYMParse() {\nDSYM_FILE=\"$1\"\nDSYM_SYMBOL_FILE=\"$2\"\n\necho \"--------------------------------\"\necho \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n(/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\necho \"--------------------------------\"\n\n}\n\n# 执行\nfunction run() {\n\nCONFIG_BUGLY_APP_ID=\"$1\"\nCONFIG_BUGLY_APP_KEY=\"$2\"\n\nCONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\nCONFIG_BUGLY_APP_VERSION=\"$4\"\nCONFIG_DSYM_SOURCE_DIR=\"$5\"\nCONFIG_DSYM_DEST_DIR=\"$6\"\nCONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n\n# 检查必须参数是否设置\nif [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\nexitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\nfi\n\nif [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\nexitWithMessage \"Error: Bugly App ID not defined.\" 0\nfi\n\nif [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\nexitWithMessage \"Error: Bugly App Key not defined.\" 0\nfi\n\nif [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\nexitWithMessage \"Error: Bundle Identifier not defined.\" 0\nfi\n\nif [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\nexitWithMessage \"Error: App Version not defined.\" 0\nfi\n\nif [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\nexitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\nfi\n\nif [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\nexitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\nfi\n\nif [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\nmkdir ${CONFIG_DSYM_DEST_DIR}\nfi\n\nDSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\nIFS=$'\\n'\n\necho \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\nRET=\"F\"\n\n#\nfor dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\nRET=\"T\"\necho \"Found dSYM file: $dsymFile\"\n\nDSYM_FILE_NAME=${dsymFile##*/}\nDSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\nDSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\nDSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n\nif [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\nif [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\nrm -f $DSYM_SYMBOL_ZIP_FILE\nfi\n# 如果只上传dSYM，直接压缩dSYM目录\nzip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\nelse\n# 使用符号表工具来生成Symbol文件\ndSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\nfi\n\n# 上传\ndSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\ndone\n\nif [ $RET = \"F\" ]; then\nexitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\nfi\n}\n\n# 在Xcode工程中执行\nfunction runInXcode(){\necho \"Uploading dSYM to Bugly in Xcode ...\"\n\necho \"Info.Plist : ${INFOPLIST_FILE}\"\n\nBUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\nBUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n\n# 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\nif [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\nBUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\nelse\nBUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\nfi\n\necho \"--------------------------------\"\necho \"Prepare application information.\"\necho \"--------------------------------\"\n\necho \"Product Name: ${PRODUCT_NAME}\"\necho \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\necho \"Version: ${BUNDLE_SHORT_VERSION}\"\necho \"Build: ${BUNDLE_VERSION}\"\n\necho \"Bugly App ID: ${BUGLY_APP_ID}\"\necho \"Bugly App key: ${BUGLY_APP_KEY}\"\necho \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n\necho \"--------------------------------\"\necho \"Check the arguments ...\"\n\n##检查模拟器编译是否允许上传符号\nif [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\nif [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否是Release模式编译\nif [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\nif [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否Archive操作\nif [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\nif [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\necho \"Archive the package\"\nelse\nexitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\nfi\nfi\n\n#\nrun ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n}\n\n# 根据Xcode的环境变量判断是否处于Xcode环境\nINFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n\nBuildInXcode=\"F\"\nif [ -f \"${INFO_PLIST_FILE}\" ]; then\nBuildInXcode=\"T\"\nfi\n\nif [ $BuildInXcode = \"T\" ]; then\nrunInXcode\nelse\necho \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n# 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\nBUGLY_APP_ID=\"$1\"\nBUGLY_APP_KEY=\"$2\"\nBUNDLE_IDENTIFIER=\"$3\"\nBUGLY_APP_VERSION=\"$4\"\nDWARF_DSYM_FOLDER_PATH=\"$5\"\nSYMBOL_OUTPUT_PATH=\"$6\"\nUPLOAD_DSYM_ONLY=$7\nrun ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\nfi\n";
 		};
 		C189E5EF21D5C946002AABBE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1630,10 +1684,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1698,6 +1754,7 @@
 				C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */,
 				C1A650831CE99E75006A117B /* FWSessionDelegate.m in Sources */,
 				C15579981DBE23C000F50CD2 /* dispatch_barrierViewController.m in Sources */,
+				C1A2C84821F7073A000343CF /* MyMainTableViewController.m in Sources */,
 				C19D17DF1D18D7B900E29256 /* MWBaseAnimation.m in Sources */,
 				C15C2C861DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m in Sources */,
 				C1040B7A1F90A7B30027EE09 /* TestObjectFacotry.m in Sources */,
@@ -1712,6 +1769,7 @@
 				C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */,
 				C16D845F1DC88B5A00D7F062 /* NSLockViewController.m in Sources */,
 				C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */,
+				C1A2C84421F7067F000343CF /* MyResultsTableController.m in Sources */,
 				516928021DBE486B00DA92D7 /* NSJSONSerializationViewController.m in Sources */,
 				C19321061D41FA0900378778 /* MasonryViewController.m in Sources */,
 				C16D84561DC87D1D00D7F062 /* NSConditionLockViewController.m in Sources */,
@@ -1760,6 +1818,7 @@
 				513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */,
 				C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */,
 				513EC4B61D5389D400279CA1 /* CAScrollViewController.m in Sources */,
+				C1A2C84021F7059D000343CF /* MyBaseTableViewController.m in Sources */,
 				C16858771D5AD0C80017157D /* UIButton_MWEdge.m in Sources */,
 				C156DDC21D4899E5004CD422 /* CAMediaTimingFunctionVC.m in Sources */,
 				C11D279F1DBF6A3A00FA2955 /* safeCategoriesViewController.m in Sources */,
@@ -1820,6 +1879,7 @@
 				C189E61E21D5C946002AABBE /* SysBaseViewController.m in Sources */,
 				C189E61F21D5C946002AABBE /* FWSessionDelegate.m in Sources */,
 				C189E62021D5C946002AABBE /* dispatch_barrierViewController.m in Sources */,
+				C1A2C84921F7073A000343CF /* MyMainTableViewController.m in Sources */,
 				C189E62121D5C946002AABBE /* MWBaseAnimation.m in Sources */,
 				C189E62221D5C946002AABBE /* YTKKeyValueStoreExp.m in Sources */,
 				C189E62321D5C946002AABBE /* TestObjectFacotry.m in Sources */,
@@ -1833,6 +1893,7 @@
 				C189E62B21D5C946002AABBE /* ConfigCommon.m in Sources */,
 				C189E62C21D5C946002AABBE /* NSLockViewController.m in Sources */,
 				C189E62D21D5C946002AABBE /* caLayerViewController.m in Sources */,
+				C1A2C84521F7067F000343CF /* MyResultsTableController.m in Sources */,
 				C189E62E21D5C946002AABBE /* NSJSONSerializationViewController.m in Sources */,
 				C189E62F21D5C946002AABBE /* MasonryViewController.m in Sources */,
 				C189E63021D5C946002AABBE /* NSConditionLockViewController.m in Sources */,
@@ -1880,6 +1941,7 @@
 				C189E65A21D5C946002AABBE /* CACustomScrollView.m in Sources */,
 				C189E65B21D5C946002AABBE /* MWNavigationController.m in Sources */,
 				C189E65C21D5C946002AABBE /* CAScrollViewController.m in Sources */,
+				C1A2C84121F7059D000343CF /* MyBaseTableViewController.m in Sources */,
 				C189E65D21D5C946002AABBE /* UIButton_MWEdge.m in Sources */,
 				C189E65E21D5C946002AABBE /* CAMediaTimingFunctionVC.m in Sources */,
 				C189E65F21D5C946002AABBE /* safeCategoriesViewController.m in Sources */,
@@ -2049,9 +2111,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = H79W6YY34M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"UPLOAD_DEBUG_SYMBOLS=1",
+					"UPLOAD_SIMULATOR_SYMBOLS=1",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"UPLOAD_DEBUG_SYMBOLS=1",
+				);
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2059,7 +2131,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSLearnList/3rdParty",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.test.proj1;
+				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.project.iOSLearnList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2074,8 +2146,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = H79W6YY34M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2084,7 +2155,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSLearnList/3rdParty",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.test.proj1;
+				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.project.iOSLearnList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2140,8 +2211,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = H79W6YY34M;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearnList/common/iOSLearnList.pch";
 				INFOPLIST_FILE = iOSLearnList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2150,7 +2220,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSLearnList/3rdParty",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.test.proj1;
+				PRODUCT_BUNDLE_IDENTIFIER = hmw.vip.project.iOSLearnList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

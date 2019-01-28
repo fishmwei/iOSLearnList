@@ -10,6 +10,8 @@
 #import "ExtendMainController.h"
 #import "BBLaunchAdMonitor.h"
 #import "myBundleFrame.h"
+#import <DoraemonKit/DoraemonKit.h>
+#import <Bugly/Bugly.h>
 
 
 @interface AppDelegate ()
@@ -53,7 +55,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setAppearence];
-
+ 
+    [Bugly startWithAppId:@"83b91fa7fe"];
+    
     NSString *componentID = nil;
     NSString *st = componentID ?: @"public";
     NSLog(@"%@", st);
@@ -106,13 +110,22 @@
     } else {
         [self addDynamicShortCutItems];
     }
-
-
-    //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    //
-    //        @throw @"error";
-    //    });
-
+ 
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//    
+//        @throw @"error";
+//    });
+    
+    
+#ifdef DEBUG
+    [[DoraemonManager shareInstance] addH5DoorBlock:^(NSString *h5Url) {
+        //使用自己的H5容器打开这个链接
+    }];
+    
+    [[DoraemonManager shareInstance] install];
+#endif
+    
     return YES;
 }
 

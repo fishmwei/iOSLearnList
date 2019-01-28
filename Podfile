@@ -19,6 +19,10 @@ pod 'Mantle'
 pod 'M13OrderedDictionary'
 pod 'MLeaksFinder'
 
+pod 'Bugly'
+
+pod 'DoraemonKit/Core', '1.1.3', :configurations => ['Debug']
+
 target 'iOSLearnList' do
     
 end

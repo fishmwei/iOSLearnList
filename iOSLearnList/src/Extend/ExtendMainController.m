@@ -37,7 +37,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    self.tabBar.translucent = NO;
     [self createData];
     [self createView];
     [self procShortItem:nil];
@@ -90,8 +91,9 @@
 
 
     ivc = [[IndexTableViewController alloc] init];
-    ivc.showData = @[ @"TestCreateObjectAsync", @"AdaptIOS11ViewController", @"AutoSizeViewController" ];
-
+    ivc.showData = @[@"TestCreateObjectAsync", @"MyMainTableViewController", @"AdaptIOS11ViewController",
+                     @"AutoSizeViewController"];
+    
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
