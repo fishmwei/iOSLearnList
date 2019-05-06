@@ -17,6 +17,8 @@
 		519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785F91D04189A00DF3981 /* autolayoutCellCtl.m */; };
 		519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785FD1D0418E200DF3981 /* autolayoutCell.m */; };
 		519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519785FE1D0418E200DF3981 /* autolayoutCell.xib */; };
+		519D9130227FBAE8009321F9 /* MWBaseViewController_hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */; };
+		519D9131227FBAE8009321F9 /* MWBaseViewController_hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */; };
 		519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B21CE85BCC002CB3AE /* myLanguage.strings */; };
 		519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B81CE85C03002CB3AE /* InfoPlist.strings */; };
 		519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5BE1CE85C88002CB3AE /* Localizable.strings */; };
@@ -323,6 +325,8 @@
 		519785FC1D0418E200DF3981 /* autolayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCell.h; sourceTree = "<group>"; };
 		519785FD1D0418E200DF3981 /* autolayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autolayoutCell.m; sourceTree = "<group>"; };
 		519785FE1D0418E200DF3981 /* autolayoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = autolayoutCell.xib; sourceTree = "<group>"; };
+		519D912E227FBAE8009321F9 /* MWBaseViewController_hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWBaseViewController_hook.h; sourceTree = "<group>"; };
+		519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWBaseViewController_hook.m; sourceTree = "<group>"; };
 		519EB5AA1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		519EB5AB1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		519EB5B11CE85BCC002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/myLanguage.strings; sourceTree = "<group>"; };
@@ -708,6 +712,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		519D912D227FBA58009321F9 /* hook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = hook;
+			sourceTree = "<group>";
+		};
 		51F68EB41CDE1905009338D6 = {
 			isa = PBXGroup;
 			children = (
@@ -735,6 +746,7 @@
 		51F68EBF1CDE1905009338D6 /* iOSLearnList */ = {
 			isa = PBXGroup;
 			children = (
+				519D912D227FBA58009321F9 /* hook */,
 				C1FD40CD1E45B6CC008B85D7 /* StubObjects */,
 				C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */,
 				5106AE041D26A50800284022 /* common */,
@@ -806,6 +818,8 @@
 				517CA88D1FE4EF5100A6A82F /* iOS11 */,
 				C1040B771F90A6BE0027EE09 /* CreateObjectAsync */,
 				5107762E1FE66E9000169CED /* AutoSizeViewController.h */,
+				519D912E227FBAE8009321F9 /* MWBaseViewController_hook.h */,
+				519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */,
 				5107762F1FE66E9000169CED /* AutoSizeViewController.m */,
 			);
 			path = Test;
@@ -1784,6 +1798,7 @@
 				C1F7DCDF1DC3532E00C29808 /* MantleExp.m in Sources */,
 				C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */,
 				C19DB7C91DBF5AF6005A43BE /* SDWebImageViewExp.m in Sources */,
+				519D9130227FBAE8009321F9 /* MWBaseViewController_hook.m in Sources */,
 				C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */,
 				C19DB7CC1DBF5B7E005A43BE /* MasonryExp.m in Sources */,
 				C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */,
@@ -1835,6 +1850,7 @@
 				C189E5F621D5C946002AABBE /* dispatch_sourceViewController.m in Sources */,
 				C189E5F721D5C946002AABBE /* MWScrollView.m in Sources */,
 				C189E5F821D5C946002AABBE /* BaseMainViewController.m in Sources */,
+				519D9131227FBAE8009321F9 /* MWBaseViewController_hook.m in Sources */,
 				C189E5F921D5C946002AABBE /* ILSearchViewController.m in Sources */,
 				C189E5FA21D5C946002AABBE /* RunLoopsExp.m in Sources */,
 				C189E5FB21D5C946002AABBE /* MWDrawingViewController.m in Sources */,

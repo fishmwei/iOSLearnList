@@ -119,7 +119,7 @@ DEPENDENCIES:
   - YTKKeyValueStore
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AFNetworking
     - BlocksKit
     - BSBacktraceLogger
@@ -171,6 +171,6 @@ SPEC CHECKSUMS:
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
 
-PODFILE CHECKSUM: d6713710fbcc0c91a3bf56238955f74bc294c7ae
+PODFILE CHECKSUM: 6622c4a309c02774858d2b58463f3d1922680251
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
