@@ -108,6 +108,8 @@
 		C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */; };
 		C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2501D5CB62300A8FECC /* MWJSPerson.m */; };
 		C176293A21CCFE7D002ED848 /* RotateTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C176293921CCFE7D002ED848 /* RotateTestViewController.m */; };
+		C1766AA3228A5D32008D4063 /* CrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = C1766AA2228A5D32008D4063 /* CrashReport.m */; };
+		C1766AA4228A5D32008D4063 /* CrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = C1766AA2228A5D32008D4063 /* CrashReport.m */; };
 		C1791E89215F1742006DA265 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1791E88215F1742006DA265 /* GLKit.framework */; };
 		C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1791E8B215F176F006DA265 /* GLKOpenGLController.m */; };
 		C189E5F121D5C946002AABBE /* methodSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35A1D51853B00061311 /* methodSelectorViewController.m */; };
@@ -504,6 +506,8 @@
 		C172F2501D5CB62300A8FECC /* MWJSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSPerson.m; sourceTree = "<group>"; };
 		C176293821CCFE7D002ED848 /* RotateTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateTestViewController.h; sourceTree = "<group>"; };
 		C176293921CCFE7D002ED848 /* RotateTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateTestViewController.m; sourceTree = "<group>"; };
+		C1766AA2228A5D32008D4063 /* CrashReport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashReport.m; sourceTree = "<group>"; };
+		C1766AA5228A5D4A008D4063 /* CrashReport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashReport.h; sourceTree = "<group>"; };
 		C1791E88215F1742006DA265 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		C1791E8A215F176F006DA265 /* GLKOpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKOpenGLController.h; sourceTree = "<group>"; };
 		C1791E8B215F176F006DA265 /* GLKOpenGLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKOpenGLController.m; sourceTree = "<group>"; };
@@ -773,6 +777,8 @@
 				519EB5B21CE85BCC002CB3AE /* myLanguage.strings */,
 				519EB5B81CE85C03002CB3AE /* InfoPlist.strings */,
 				519EB5BE1CE85C88002CB3AE /* Localizable.strings */,
+				C1766AA2228A5D32008D4063 /* CrashReport.m */,
+				C1766AA5228A5D4A008D4063 /* CrashReport.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1783,6 +1789,7 @@
 				516928021DBE486B00DA92D7 /* NSJSONSerializationViewController.m in Sources */,
 				C19321061D41FA0900378778 /* MasonryViewController.m in Sources */,
 				C16D84561DC87D1D00D7F062 /* NSConditionLockViewController.m in Sources */,
+				C1766AA3228A5D32008D4063 /* CrashReport.m in Sources */,
 				C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				C11D279C1DBF69B100FA2955 /* libextobjcExp.m in Sources */,
@@ -1889,6 +1896,7 @@
 				C189E61C21D5C946002AABBE /* AdaptIOS11ViewController.m in Sources */,
 				C189E61D21D5C946002AABBE /* M13OrderedDictionaryExp.m in Sources */,
 				C189E61E21D5C946002AABBE /* SysBaseViewController.m in Sources */,
+				C1766AA4228A5D32008D4063 /* CrashReport.m in Sources */,
 				C189E61F21D5C946002AABBE /* FWSessionDelegate.m in Sources */,
 				C189E62021D5C946002AABBE /* dispatch_barrierViewController.m in Sources */,
 				C1A2C84921F7073A000343CF /* MyMainTableViewController.m in Sources */,

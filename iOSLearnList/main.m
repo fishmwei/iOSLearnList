@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import <fishhook/fishhook.h>
-
+#import "CrashReport.h"
 
 //函数指针，用来保存原始的函数地址
 static void (*old_nslog)(NSString *format, ...);
@@ -58,10 +58,12 @@ void hookLog()
     rebind_symbols(rebs, 1);
 }
 
+
 int main(int argc, char *argv[])
 {
     @autoreleasepool
     {
+        InitCrashReport();
         hookLog();
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
