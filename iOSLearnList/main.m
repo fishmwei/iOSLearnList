@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import <fishhook/fishhook.h>
 
+
 //函数指针，用来保存原始的函数地址
 static void (*old_nslog)(NSString *format, ...);
 
