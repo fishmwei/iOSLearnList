@@ -31,6 +31,9 @@ PODS:
     - BlocksKit/DynamicDelegate
   - BSBacktraceLogger (0.0.1)
   - Bugly (2.5.0)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
   - DoraemonKit/Core (1.1.3):
     - AFNetworking
     - BSBacktraceLogger
@@ -103,6 +106,7 @@ PODS:
 DEPENDENCIES:
   - BlocksKit
   - Bugly
+  - CocoaLumberjack
   - DoraemonKit/Core (= 1.1.3)
   - libextobjc
   - M13OrderedDictionary
@@ -124,6 +128,7 @@ SPEC REPOS:
     - BlocksKit
     - BSBacktraceLogger
     - Bugly
+    - CocoaLumberjack
     - DoraemonKit
     - FBRetainCycleDetector
     - fishhook
@@ -150,6 +155,7 @@ SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   DoraemonKit: 719b45ca8607e5067cf0d4a8bdb319aa81eebdba
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
@@ -171,6 +177,6 @@ SPEC CHECKSUMS:
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
 
-PODFILE CHECKSUM: 6622c4a309c02774858d2b58463f3d1922680251
+PODFILE CHECKSUM: df8a6a720536a0009fde8bf5c89db2aa7838504b
 
 COCOAPODS: 1.5.0

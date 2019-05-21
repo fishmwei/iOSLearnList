@@ -20,7 +20,7 @@ pod 'M13OrderedDictionary'
 pod 'MLeaksFinder'
 
 pod 'Bugly'
-
+pod 'CocoaLumberjack'
 pod 'DoraemonKit/Core', '1.1.3'
 
 
