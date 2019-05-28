@@ -22,7 +22,7 @@ pod 'MLeaksFinder'
 pod 'Bugly'
 pod 'CocoaLumberjack'
 pod 'DoraemonKit/Core', '1.1.3'
-
+pod 'lottie-ios', '2.5.3'
 
 target 'iOSLearnList' do
     

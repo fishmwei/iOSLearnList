@@ -75,7 +75,8 @@
                       @"libextobjcExp",
                       @"YTKKeyValueStoreExp",
                       @"MantleExp",
-                      @"M13OrderedDictionaryExp" ];
+                      @"M13OrderedDictionaryExp",
+                      @"LottieViewController"];
     nav = [[UINavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

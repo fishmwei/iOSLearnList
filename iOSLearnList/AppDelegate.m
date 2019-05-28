@@ -14,7 +14,6 @@
 #import <Bugly/Bugly.h>
 
 #import <CocoaLumberjack/CocoaLumberjack.h>
-#import <CocoaLumberjack/DDLog.h>
 
 
 static DDLogLevel ddLogLevel = DDLogLevelAll;
