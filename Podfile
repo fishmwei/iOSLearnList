@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '7.0'
+platform :ios, '9.0'
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
@@ -20,9 +20,10 @@ pod 'M13OrderedDictionary'
 pod 'MLeaksFinder'
 
 pod 'Bugly'
-
+pod 'CocoaLumberjack'
 pod 'DoraemonKit/Core', '1.1.3'
-
+pod 'lottie-ios', '2.5.3'
+pod 'SkyLab'
 
 target 'iOSLearnList' do
     

@@ -13,6 +13,12 @@
 #import <DoraemonKit/DoraemonKit.h>
 #import <Bugly/Bugly.h>
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+
+static DDLogLevel ddLogLevel = DDLogLevelAll;
+
+#define NSLog(frmt, ...)  DDLogInfo(frmt, ##__VA_ARGS__)
 
 @interface AppDelegate ()
 @property (nonatomic, retain) NSString *b;
@@ -47,6 +53,11 @@
 
 @implementation AppDelegate
 
++ (void)initialize {
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+}
+
 - (void)setAppearence {
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[ [UISearchBar class] ]] setTitle:@"取消"];
 
@@ -54,13 +65,16 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    
     [self setAppearence];
  
     [Bugly startWithAppId:@"83b91fa7fe"];
     
     NSString *componentID = nil;
     NSString *st = componentID ?: @"public";
-    NSLog(@"%@", st);
+    DDLogInfo(@"%@", st);
 
     NSNumber *isAlreadyRunning = [[NSUserDefaults standardUserDefaults] objectForKey:@"isAlreadyRunning"];
     if (isAlreadyRunning) {

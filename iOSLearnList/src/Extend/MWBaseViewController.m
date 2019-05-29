@@ -81,7 +81,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (!self.title && !self.navigationItem.title) {
+        self.navigationItem.title = NSStringFromClass([self class]);
 
+    }
+    
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
 
 

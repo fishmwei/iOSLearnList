@@ -9,6 +9,7 @@
 #import "TestCreateObjectAsync.h"
 #import "TestObjectSellerProtocol.h"
 #import "TestObjectFacotry.h"
+#import <mach/mach.h>
 
 
 @interface TestSeller : NSObject <TestObjectSellerProtocol>
@@ -21,7 +22,8 @@
 @implementation TestSeller
 
 static NSInteger gseq = 0;
-- (instancetype)init {
+- (instancetype)init
+{
     self = [super init];
     if (self) {
         seq = gseq++;
@@ -30,7 +32,8 @@ static NSInteger gseq = 0;
     return self;
 }
 
-- (void)receiveObject:(id)object {
+- (void)receiveObject:(id)object
+{
     NSLog(@"======== seller %ld  Finish ========", seq);
 }
 
@@ -46,7 +49,8 @@ static NSInteger gseq = 0;
 
 @implementation TestCreateObjectAsync
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 
     self.objectPool = [NSMutableArray array];
@@ -54,9 +58,22 @@ static NSInteger gseq = 0;
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self addButton:@"add" selector:@selector(add) react:CGRectMake(0, 100, 200, 50)];
+
+    [self addButton:@"getTaskInfo" selector:@selector(getTaskInfo) react:CGRectMake(0, 100, 200, 50)];
 }
 
-- (void)addButton:(NSString *)title selector:(SEL)selector react:(CGRect)react {
+- (void)getTaskInfo
+{
+    struct mach_task_basic_info info;
+    mach_msg_type_number_t size = sizeof(info);
+    kern_return_t kl = task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &size);
+
+    float used_mem = info.resident_size;
+    NSLog(@" 使用了 %f MB 内存 ", used_mem / 1024.0f / 1024.0f);
+}
+
+- (void)addButton:(NSString *)title selector:(SEL)selector react:(CGRect)react
+{
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [btn setBackgroundColor:[UIColor grayColor]];
     [btn addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
@@ -67,13 +84,15 @@ static NSInteger gseq = 0;
     [self.view addSubview:btn];
 }
 
-- (void)add {
+- (void)add
+{
     for (int i = 0; i < 3; i++)
         [[TestObjectFacotry sharedInstance] addListener:[TestSeller new]];
 }
 
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

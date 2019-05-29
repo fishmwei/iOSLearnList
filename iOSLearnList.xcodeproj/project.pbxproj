@@ -17,6 +17,8 @@
 		519785FA1D04189A00DF3981 /* autolayoutCellCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785F91D04189A00DF3981 /* autolayoutCellCtl.m */; };
 		519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 519785FD1D0418E200DF3981 /* autolayoutCell.m */; };
 		519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519785FE1D0418E200DF3981 /* autolayoutCell.xib */; };
+		519D9130227FBAE8009321F9 /* MWBaseViewController_hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */; };
+		519D9131227FBAE8009321F9 /* MWBaseViewController_hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */; };
 		519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B21CE85BCC002CB3AE /* myLanguage.strings */; };
 		519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5B81CE85C03002CB3AE /* InfoPlist.strings */; };
 		519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 519EB5BE1CE85C88002CB3AE /* Localizable.strings */; };
@@ -36,6 +38,8 @@
 		C1040B761F90A6B50027EE09 /* TestCreateObjectAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B751F90A6B50027EE09 /* TestCreateObjectAsync.m */; };
 		C1040B7A1F90A7B30027EE09 /* TestObjectFacotry.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B791F90A7B30027EE09 /* TestObjectFacotry.m */; };
 		C1040B7E1F90ACB90027EE09 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B7D1F90ACB90027EE09 /* TestObject.m */; };
+		C1143F43229E23BA00B99BD1 /* SkyLabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1143F42229E23BA00B99BD1 /* SkyLabViewController.m */; };
+		C1143F44229E23BA00B99BD1 /* SkyLabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1143F42229E23BA00B99BD1 /* SkyLabViewController.m */; };
 		C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */; };
 		C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27971DBF63F800FA2955 /* UIControllBlocksKitViewController.m */; };
 		C11D279C1DBF69B100FA2955 /* libextobjcExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D279B1DBF69B100FA2955 /* libextobjcExp.m */; };
@@ -44,6 +48,10 @@
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
+		C134A419229CD7B200CC06E9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C134A418229CD7B200CC06E9 /* data.json */; };
+		C134A41A229CD7B200CC06E9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C134A418229CD7B200CC06E9 /* data.json */; };
+		C134A41E229CD89700CC06E9 /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C134A41D229CD89700CC06E9 /* LottieViewController.m */; };
+		C134A41F229CD89700CC06E9 /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C134A41D229CD89700CC06E9 /* LottieViewController.m */; };
 		C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C13D8B121D879EFB008BE3B9 /* TimerObject.m */; };
 		C142106A21E471EB00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
 		C142106B21E4721A00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
@@ -106,6 +114,8 @@
 		C172F24E1D5CAB4000A8FECC /* MWJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F24D1D5CAB4000A8FECC /* MWJSViewController.m */; };
 		C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C172F2501D5CB62300A8FECC /* MWJSPerson.m */; };
 		C176293A21CCFE7D002ED848 /* RotateTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C176293921CCFE7D002ED848 /* RotateTestViewController.m */; };
+		C1766AA3228A5D32008D4063 /* CrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = C1766AA2228A5D32008D4063 /* CrashReport.m */; };
+		C1766AA4228A5D32008D4063 /* CrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = C1766AA2228A5D32008D4063 /* CrashReport.m */; };
 		C1791E89215F1742006DA265 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1791E88215F1742006DA265 /* GLKit.framework */; };
 		C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1791E8B215F176F006DA265 /* GLKOpenGLController.m */; };
 		C189E5F121D5C946002AABBE /* methodSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35A1D51853B00061311 /* methodSelectorViewController.m */; };
@@ -323,6 +333,8 @@
 		519785FC1D0418E200DF3981 /* autolayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolayoutCell.h; sourceTree = "<group>"; };
 		519785FD1D0418E200DF3981 /* autolayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autolayoutCell.m; sourceTree = "<group>"; };
 		519785FE1D0418E200DF3981 /* autolayoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = autolayoutCell.xib; sourceTree = "<group>"; };
+		519D912E227FBAE8009321F9 /* MWBaseViewController_hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWBaseViewController_hook.h; sourceTree = "<group>"; };
+		519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWBaseViewController_hook.m; sourceTree = "<group>"; };
 		519EB5AA1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		519EB5AB1CE85894002CB3AE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		519EB5B11CE85BCC002CB3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/myLanguage.strings; sourceTree = "<group>"; };
@@ -367,6 +379,8 @@
 		C1040B7C1F90ACB90027EE09 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		C1040B7D1F90ACB90027EE09 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 		C1040B7F1F90B1540027EE09 /* TestObjectSellerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectSellerProtocol.h; sourceTree = "<group>"; };
+		C1143F41229E23BA00B99BD1 /* SkyLabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyLabViewController.h; sourceTree = "<group>"; };
+		C1143F42229E23BA00B99BD1 /* SkyLabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyLabViewController.m; sourceTree = "<group>"; };
 		C11D27931DBF60C000FA2955 /* arrayBlockskitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayBlockskitViewController.h; sourceTree = "<group>"; };
 		C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayBlockskitViewController.m; sourceTree = "<group>"; };
 		C11D27961DBF63F800FA2955 /* UIControllBlocksKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControllBlocksKitViewController.h; sourceTree = "<group>"; };
@@ -386,6 +400,9 @@
 		C1209B211CF53F2900182559 /* ConfigCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCommon.m; sourceTree = "<group>"; };
 		C12F1EF21D4A199400A2D984 /* MWDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDrawingViewController.h; sourceTree = "<group>"; };
 		C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDrawingViewController.m; sourceTree = "<group>"; };
+		C134A418229CD7B200CC06E9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../../../../../../Volumes/Code/download/data.json; sourceTree = "<group>"; };
+		C134A41C229CD89700CC06E9 /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieViewController.h; sourceTree = "<group>"; };
+		C134A41D229CD89700CC06E9 /* LottieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieViewController.m; sourceTree = "<group>"; };
 		C13D8B111D879EFB008BE3B9 /* TimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerObject.h; sourceTree = "<group>"; };
 		C13D8B121D879EFB008BE3B9 /* TimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerObject.m; sourceTree = "<group>"; };
 		C142106921E471EB00FC1DF9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -500,6 +517,8 @@
 		C172F2501D5CB62300A8FECC /* MWJSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWJSPerson.m; sourceTree = "<group>"; };
 		C176293821CCFE7D002ED848 /* RotateTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateTestViewController.h; sourceTree = "<group>"; };
 		C176293921CCFE7D002ED848 /* RotateTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateTestViewController.m; sourceTree = "<group>"; };
+		C1766AA2228A5D32008D4063 /* CrashReport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashReport.m; sourceTree = "<group>"; };
+		C1766AA5228A5D4A008D4063 /* CrashReport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashReport.h; sourceTree = "<group>"; };
 		C1791E88215F1742006DA265 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		C1791E8A215F176F006DA265 /* GLKOpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKOpenGLController.h; sourceTree = "<group>"; };
 		C1791E8B215F176F006DA265 /* GLKOpenGLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKOpenGLController.m; sourceTree = "<group>"; };
@@ -708,6 +727,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		519D912D227FBA58009321F9 /* hook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = hook;
+			sourceTree = "<group>";
+		};
 		51F68EB41CDE1905009338D6 = {
 			isa = PBXGroup;
 			children = (
@@ -735,6 +761,8 @@
 		51F68EBF1CDE1905009338D6 /* iOSLearnList */ = {
 			isa = PBXGroup;
 			children = (
+				C134A418229CD7B200CC06E9 /* data.json */,
+				519D912D227FBA58009321F9 /* hook */,
 				C1FD40CD1E45B6CC008B85D7 /* StubObjects */,
 				C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */,
 				5106AE041D26A50800284022 /* common */,
@@ -761,6 +789,8 @@
 				519EB5B21CE85BCC002CB3AE /* myLanguage.strings */,
 				519EB5B81CE85C03002CB3AE /* InfoPlist.strings */,
 				519EB5BE1CE85C88002CB3AE /* Localizable.strings */,
+				C1766AA2228A5D32008D4063 /* CrashReport.m */,
+				C1766AA5228A5D4A008D4063 /* CrashReport.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -806,6 +836,8 @@
 				517CA88D1FE4EF5100A6A82F /* iOS11 */,
 				C1040B771F90A6BE0027EE09 /* CreateObjectAsync */,
 				5107762E1FE66E9000169CED /* AutoSizeViewController.h */,
+				519D912E227FBAE8009321F9 /* MWBaseViewController_hook.h */,
+				519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */,
 				5107762F1FE66E9000169CED /* AutoSizeViewController.m */,
 			);
 			path = Test;
@@ -883,6 +915,15 @@
 				C1209B211CF53F2900182559 /* ConfigCommon.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C134A41B229CD85900CC06E9 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				C134A41C229CD89700CC06E9 /* LottieViewController.h */,
+				C134A41D229CD89700CC06E9 /* LottieViewController.m */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		C15579821DBDDB1000F50CD2 /* DataStructure */ = {
@@ -1267,6 +1308,7 @@
 		C1A650881CE99E8C006A117B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C134A41B229CD85900CC06E9 /* Lottie */,
 				C1DD3A401DE4533600EE50A0 /* M13OrderedDictionary */,
 				C1F7DCDC1DC352CF00C29808 /* Mantle */,
 				C15C2C831DC0CB8800EE1B72 /* YTKKeyValueStore */,
@@ -1290,6 +1332,8 @@
 				51A76D65211203810067493A /* HideTabController.m */,
 				51A76D6721120DED0067493A /* MyPresentViewController.h */,
 				51A76D6821120DED0067493A /* MyPresentViewController.m */,
+				C1143F41229E23BA00B99BD1 /* SkyLabViewController.h */,
+				C1143F42229E23BA00B99BD1 /* SkyLabViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1504,6 +1548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C8C6B11D59DCF900059977 /* xiala_2@2x.png in Resources */,
+				C134A419229CD7B200CC06E9 /* data.json in Resources */,
 				C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */,
 				C1E1DBE51D546731007EE5F5 /* ArchiverViewController.xib in Resources */,
 				519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */,
@@ -1524,6 +1569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C189E66A21D5C946002AABBE /* xiala_2@2x.png in Resources */,
+				C134A41A229CD7B200CC06E9 /* data.json in Resources */,
 				C189E66B21D5C946002AABBE /* caLayerViewController.xib in Resources */,
 				C189E66C21D5C946002AABBE /* ArchiverViewController.xib in Resources */,
 				C189E66D21D5C946002AABBE /* InfoPlist.strings in Resources */,
@@ -1769,6 +1815,7 @@
 				516928021DBE486B00DA92D7 /* NSJSONSerializationViewController.m in Sources */,
 				C19321061D41FA0900378778 /* MasonryViewController.m in Sources */,
 				C16D84561DC87D1D00D7F062 /* NSConditionLockViewController.m in Sources */,
+				C1766AA3228A5D32008D4063 /* CrashReport.m in Sources */,
 				C19D17E21D18D96300E29256 /* MWBasePresentViewController.m in Sources */,
 				51F68EC21CDE1905009338D6 /* main.m in Sources */,
 				C11D279C1DBF69B100FA2955 /* libextobjcExp.m in Sources */,
@@ -1784,10 +1831,12 @@
 				C1F7DCDF1DC3532E00C29808 /* MantleExp.m in Sources */,
 				C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */,
 				C19DB7C91DBF5AF6005A43BE /* SDWebImageViewExp.m in Sources */,
+				519D9130227FBAE8009321F9 /* MWBaseViewController_hook.m in Sources */,
 				C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */,
 				C19DB7CC1DBF5B7E005A43BE /* MasonryExp.m in Sources */,
 				C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */,
 				C16D845C1DC8874500D7F062 /* synchronizedViewController.m in Sources */,
+				C1143F43229E23BA00B99BD1 /* SkyLabViewController.m in Sources */,
 				C19DB7D01DBF5C02005A43BE /* BlocksKitExp.m in Sources */,
 				C15579881DBDFA4A00F50CD2 /* GCDViewController.m in Sources */,
 				C17091751DE296F80032C75D /* NSURLParseViewController.m in Sources */,
@@ -1811,6 +1860,7 @@
 				C1040B7E1F90ACB90027EE09 /* TestObject.m in Sources */,
 				C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */,
 				C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */,
+				C134A41E229CD89700CC06E9 /* LottieViewController.m in Sources */,
 				513EC4B31D53876B00279CA1 /* CACustomScrollView.m in Sources */,
 				C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */,
 				513EC4B61D5389D400279CA1 /* CAScrollViewController.m in Sources */,
@@ -1835,6 +1885,7 @@
 				C189E5F621D5C946002AABBE /* dispatch_sourceViewController.m in Sources */,
 				C189E5F721D5C946002AABBE /* MWScrollView.m in Sources */,
 				C189E5F821D5C946002AABBE /* BaseMainViewController.m in Sources */,
+				519D9131227FBAE8009321F9 /* MWBaseViewController_hook.m in Sources */,
 				C189E5F921D5C946002AABBE /* ILSearchViewController.m in Sources */,
 				C189E5FA21D5C946002AABBE /* RunLoopsExp.m in Sources */,
 				C189E5FB21D5C946002AABBE /* MWDrawingViewController.m in Sources */,
@@ -1873,12 +1924,14 @@
 				C189E61C21D5C946002AABBE /* AdaptIOS11ViewController.m in Sources */,
 				C189E61D21D5C946002AABBE /* M13OrderedDictionaryExp.m in Sources */,
 				C189E61E21D5C946002AABBE /* SysBaseViewController.m in Sources */,
+				C1766AA4228A5D32008D4063 /* CrashReport.m in Sources */,
 				C189E61F21D5C946002AABBE /* FWSessionDelegate.m in Sources */,
 				C189E62021D5C946002AABBE /* dispatch_barrierViewController.m in Sources */,
 				C1A2C84921F7073A000343CF /* MyMainTableViewController.m in Sources */,
 				C189E62121D5C946002AABBE /* MWBaseAnimation.m in Sources */,
 				C189E62221D5C946002AABBE /* YTKKeyValueStoreExp.m in Sources */,
 				C189E62321D5C946002AABBE /* TestObjectFacotry.m in Sources */,
+				C1143F44229E23BA00B99BD1 /* SkyLabViewController.m in Sources */,
 				C189E62421D5C946002AABBE /* multiThreadController.m in Sources */,
 				C189E62521D5C946002AABBE /* MWMtlObject.m in Sources */,
 				C189E62621D5C946002AABBE /* AutoSizeViewController.m in Sources */,
@@ -1934,6 +1987,7 @@
 				C189E65721D5C946002AABBE /* TestObject.m in Sources */,
 				C189E65821D5C946002AABBE /* CAMediaTimingVC.m in Sources */,
 				C189E65921D5C946002AABBE /* arrayBlockskitViewController.m in Sources */,
+				C134A41F229CD89700CC06E9 /* LottieViewController.m in Sources */,
 				C189E65A21D5C946002AABBE /* CACustomScrollView.m in Sources */,
 				C189E65B21D5C946002AABBE /* MWNavigationController.m in Sources */,
 				C189E65C21D5C946002AABBE /* CAScrollViewController.m in Sources */,
