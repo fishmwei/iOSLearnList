@@ -8,7 +8,7 @@
 
 #import "blockViewController.h"
 #import "blockObject.h"
-
+#import <pthread/pthread.h>
 
 @interface blockViewController ()
 @property (nonatomic, retain) blockObject *bObj;
@@ -35,14 +35,23 @@
     [self testCallBack:^{
         NSLog(@"5");
         obj.a = 9999;
-        NSLog(@"6??");
+        NSLog(@"6");
         dispatch_semaphore_signal(sem);
-
     }];
-    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    
     NSLog(@"7");
+    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
     NSLog(@"obj.a = %ld", obj.a);
     NSLog(@"8");
+    
+    
+    __uint64_t threadId=0;
+    
+    if (pthread_threadid_np(0, &threadId)) {
+        threadId = pthread_mach_thread_np(pthread_self());
+    }
+    
+    NSLog(@"%ld:%llu",(long)getpid(),threadId);
 }
 
 - (void)testCallBack:(void (^)())test {

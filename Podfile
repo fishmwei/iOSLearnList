@@ -20,9 +20,10 @@ pod 'M13OrderedDictionary'
 pod 'MLeaksFinder'
 
 pod 'Bugly'
-
+pod 'CocoaLumberjack'
 pod 'DoraemonKit/Core', '1.1.3'
-
+pod 'lottie-ios', '2.5.3'
+pod 'SkyLab'
 
 target 'iOSLearnList' do
     

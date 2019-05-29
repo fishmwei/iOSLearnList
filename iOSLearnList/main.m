@@ -59,12 +59,14 @@ void hookLog()
 }
 
 
+
 int main(int argc, char *argv[])
 {
     @autoreleasepool
     {
         InitCrashReport();
         hookLog();
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
