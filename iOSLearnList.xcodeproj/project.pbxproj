@@ -38,6 +38,8 @@
 		C1040B761F90A6B50027EE09 /* TestCreateObjectAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B751F90A6B50027EE09 /* TestCreateObjectAsync.m */; };
 		C1040B7A1F90A7B30027EE09 /* TestObjectFacotry.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B791F90A7B30027EE09 /* TestObjectFacotry.m */; };
 		C1040B7E1F90ACB90027EE09 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B7D1F90ACB90027EE09 /* TestObject.m */; };
+		C1143F43229E23BA00B99BD1 /* SkyLabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1143F42229E23BA00B99BD1 /* SkyLabViewController.m */; };
+		C1143F44229E23BA00B99BD1 /* SkyLabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1143F42229E23BA00B99BD1 /* SkyLabViewController.m */; };
 		C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */; };
 		C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D27971DBF63F800FA2955 /* UIControllBlocksKitViewController.m */; };
 		C11D279C1DBF69B100FA2955 /* libextobjcExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C11D279B1DBF69B100FA2955 /* libextobjcExp.m */; };
@@ -377,6 +379,8 @@
 		C1040B7C1F90ACB90027EE09 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		C1040B7D1F90ACB90027EE09 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 		C1040B7F1F90B1540027EE09 /* TestObjectSellerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectSellerProtocol.h; sourceTree = "<group>"; };
+		C1143F41229E23BA00B99BD1 /* SkyLabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyLabViewController.h; sourceTree = "<group>"; };
+		C1143F42229E23BA00B99BD1 /* SkyLabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyLabViewController.m; sourceTree = "<group>"; };
 		C11D27931DBF60C000FA2955 /* arrayBlockskitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayBlockskitViewController.h; sourceTree = "<group>"; };
 		C11D27941DBF60C000FA2955 /* arrayBlockskitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayBlockskitViewController.m; sourceTree = "<group>"; };
 		C11D27961DBF63F800FA2955 /* UIControllBlocksKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControllBlocksKitViewController.h; sourceTree = "<group>"; };
@@ -1328,6 +1332,8 @@
 				51A76D65211203810067493A /* HideTabController.m */,
 				51A76D6721120DED0067493A /* MyPresentViewController.h */,
 				51A76D6821120DED0067493A /* MyPresentViewController.m */,
+				C1143F41229E23BA00B99BD1 /* SkyLabViewController.h */,
+				C1143F42229E23BA00B99BD1 /* SkyLabViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1830,6 +1836,7 @@
 				C19DB7CC1DBF5B7E005A43BE /* MasonryExp.m in Sources */,
 				C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */,
 				C16D845C1DC8874500D7F062 /* synchronizedViewController.m in Sources */,
+				C1143F43229E23BA00B99BD1 /* SkyLabViewController.m in Sources */,
 				C19DB7D01DBF5C02005A43BE /* BlocksKitExp.m in Sources */,
 				C15579881DBDFA4A00F50CD2 /* GCDViewController.m in Sources */,
 				C17091751DE296F80032C75D /* NSURLParseViewController.m in Sources */,
@@ -1924,6 +1931,7 @@
 				C189E62121D5C946002AABBE /* MWBaseAnimation.m in Sources */,
 				C189E62221D5C946002AABBE /* YTKKeyValueStoreExp.m in Sources */,
 				C189E62321D5C946002AABBE /* TestObjectFacotry.m in Sources */,
+				C1143F44229E23BA00B99BD1 /* SkyLabViewController.m in Sources */,
 				C189E62421D5C946002AABBE /* multiThreadController.m in Sources */,
 				C189E62521D5C946002AABBE /* MWMtlObject.m in Sources */,
 				C189E62621D5C946002AABBE /* AutoSizeViewController.m in Sources */,

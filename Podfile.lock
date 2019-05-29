@@ -99,6 +99,7 @@ PODS:
   - SDWebImage (4.4.3):
     - SDWebImage/Core (= 4.4.3)
   - SDWebImage/Core (4.4.3)
+  - SkyLab (1.0.0)
   - UICountingLabel (1.2.0)
   - "UITextView+Placeholder (1.2.1)"
   - YTKKeyValueStore (0.1.2):
@@ -122,6 +123,7 @@ DEPENDENCIES:
   - MWUITools
   - OCMock
   - SDWebImage
+  - SkyLab
   - YTKKeyValueStore
 
 SPEC REPOS:
@@ -149,6 +151,7 @@ SPEC REPOS:
     - OCMock
     - PNChart
     - SDWebImage
+    - SkyLab
     - UICountingLabel
     - "UITextView+Placeholder"
     - YTKKeyValueStore
@@ -177,10 +180,11 @@ SPEC CHECKSUMS:
   OCMock: 43565190abc78977ad44a61c0d20d7f0784d35ab
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  SkyLab: 01d9559bbab2183e54e67dc7a8a12a22b0a4be99
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
 
-PODFILE CHECKSUM: 15928b97e6c4fa5a57bb1be4be2e49fb014acb95
+PODFILE CHECKSUM: eb3bca69bc21f876931f6455020e36b236ed3baa
 
 COCOAPODS: 1.5.0
