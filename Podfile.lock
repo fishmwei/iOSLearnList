@@ -27,8 +27,8 @@ PODS:
     - libextobjc/EXTScope (= 0.4.1)
     - libextobjc/EXTSelectorChecking (= 0.4.1)
     - libextobjc/EXTSynthesize (= 0.4.1)
-    - libextobjc/NSInvocation+EXT (= 0.4.1)
-    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - "libextobjc/NSInvocation+EXT (= 0.4.1)"
+    - "libextobjc/NSMethodSignature+EXT (= 0.4.1)"
     - libextobjc/RuntimeExtensions (= 0.4.1)
     - libextobjc/UmbrellaHeader (= 0.4.1)
   - libextobjc/EXTADT (0.4.1):
@@ -47,9 +47,9 @@ PODS:
     - libextobjc/RuntimeExtensions
   - libextobjc/EXTSynthesize (0.4.1):
     - libextobjc/RuntimeExtensions
-  - libextobjc/NSInvocation+EXT (0.4.1):
+  - "libextobjc/NSInvocation+EXT (0.4.1)":
     - libextobjc/RuntimeExtensions
-  - libextobjc/NSMethodSignature+EXT (0.4.1):
+  - "libextobjc/NSMethodSignature+EXT (0.4.1)":
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4.1)
   - libextobjc/UmbrellaHeader (0.4.1)
@@ -88,6 +88,25 @@ DEPENDENCIES:
   - SDWebImage
   - YTKKeyValueStore
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BlocksKit
+    - FBRetainCycleDetector
+    - FMDB
+    - libextobjc
+    - M13OrderedDictionary
+    - Mantle
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MLeaksFinder
+    - MWMarqueeView
+    - MWObjTools
+    - MWUITools
+    - OCMock
+    - SDWebImage
+    - YTKKeyValueStore
+
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
@@ -108,4 +127,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3e329ffcc276b53282e387afffb0c86137d7fcfa
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.0
