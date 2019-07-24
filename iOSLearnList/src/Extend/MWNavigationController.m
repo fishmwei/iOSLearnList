@@ -7,7 +7,7 @@
 //
 
 #import "MWNavigationController.h"
-
+#import "AutorotateViewController.h"
 
 @interface MWNavigationController () <UIGestureRecognizerDelegate>
 
@@ -46,5 +46,46 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (BOOL)shouldAutorotate {
+    if (self.viewControllers && [self.viewControllers count] > 0) {
+        return [self.topViewController shouldAutorotate];
+    }
+    
+    return [super shouldAutorotate];
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    if (self.viewControllers && [self.viewControllers count] > 0) {
+        return [self.topViewController supportedInterfaceOrientations];
+    }
+    
+    return [super supportedInterfaceOrientations];
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    if (self.viewControllers && [self.viewControllers count] > 0) {
+        return [self.topViewController preferredInterfaceOrientationForPresentation];
+    }
+    
+    return [super preferredInterfaceOrientationForPresentation];
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+//    if (![viewController shouldAutorotate]) {
+//        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//
+//        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
+//        [UIViewController attemptRotationToDeviceOrientation];
+//
+//        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+//        [UIViewController attemptRotationToDeviceOrientation];
+//
+//        [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+//    }
+    
+    [super pushViewController:viewController animated:animated];
+}
+
 
 @end

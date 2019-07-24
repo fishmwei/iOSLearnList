@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CrashReport.h"
-
+#import "execinfo.h"
 
 static int s_fatal_signals[] = {
     SIGABRT,
@@ -29,11 +29,31 @@ void UncaughtExceptionHandler(NSException *exception) {
     NSString *exceptionName = [exception name];           // 异常类型
     
     NSLog(@"%@", exceptionArray);
+    
+    
+    NSMutableString *crashString = [[NSMutableString alloc]init];
+    void* callstack[128];
+    int i, frames = backtrace(callstack, 128);
+    char** traceChar = backtrace_symbols(callstack, frames);
+    for (i = 0; i <frames; ++i) {
+        [crashString appendFormat:@"%s\n", traceChar[i]];
+    }
+    NSLog(crashString);
 }
 
 void SignalHandler(int code)
 {
     NSLog(@"signal handler = %d",code);
+    
+    NSMutableString *crashString = [[NSMutableString alloc]init];
+    void* callstack[128];
+    int i, frames = backtrace(callstack, 128);
+    char** traceChar = backtrace_symbols(callstack, frames);
+    for (i = 0; i <frames; ++i) {
+        [crashString appendFormat:@"%s\n", traceChar[i]];
+    }
+    NSLog(crashString);
+    
 }
 
 void InitCrashReport()

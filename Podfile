@@ -17,7 +17,7 @@ pod 'libextobjc'
 pod 'YTKKeyValueStore'
 pod 'Mantle'
 pod 'M13OrderedDictionary'
-pod 'MLeaksFinder'
+#pod 'MLeaksFinder'
 
 pod 'Bugly'
 pod 'CocoaLumberjack'

@@ -12,7 +12,7 @@
 #import "myBundleFrame.h"
 #import <DoraemonKit/DoraemonKit.h>
 #import <Bugly/Bugly.h>
-
+#import "MWOrientation.h"
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
 
@@ -61,12 +61,15 @@ static DDLogLevel ddLogLevel = DDLogLevelAll;
 - (void)setAppearence {
     [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[ [UISearchBar class] ]] setTitle:@"取消"];
 
-    //    [[UIBarButtonItem appearanceWhenContainedIn: [UISearchBar class], nil] setTitle:@"取消"];
+}
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    
+    
+    return [MWOrientation getOrientation];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
     
     [self setAppearence];
  
@@ -125,22 +128,45 @@ static DDLogLevel ddLogLevel = DDLogLevelAll;
         [self addDynamicShortCutItems];
     }
  
+   
     
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//    
-//        @throw @"error";
-//    });
-    
-    
-#ifdef DEBUG
-    [[DoraemonManager shareInstance] addH5DoorBlock:^(NSString *h5Url) {
-        //使用自己的H5容器打开这个链接
-    }];
-    
-    [[DoraemonManager shareInstance] install];
-#endif
+//#ifdef DEBUG
+//    [[DoraemonManager shareInstance] addH5DoorBlock:^(NSString *h5Url) {
+//        //使用自己的H5容器打开这个链接
+//    }];
+//
+//    [[DoraemonManager shareInstance] install];
+//#endif
     
     return YES;
+}
+
+//获取界面最上层的控制器
+- (UIViewController*)topViewController {
+    return [self topViewControllerWithRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+}
+//一层一层的进行查找判断
+- (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)rootViewController {
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController* tabBarController = (UITabBarController*)rootViewController;
+        return [self topViewControllerWithRootViewController:tabBarController.selectedViewController];
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController* nav = (UINavigationController*)rootViewController;
+        return [self topViewControllerWithRootViewController:nav.visibleViewController];
+    } else if (rootViewController.presentedViewController) {
+        UIViewController* presentedViewController = rootViewController.presentedViewController;
+        return [self topViewControllerWithRootViewController:presentedViewController];
+    } else {
+        return rootViewController;
+    }
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window {
+    UIViewController *topVc = [self topViewController];
+    if (topVc) {
+        return [topVc supportedInterfaceOrientations];
+    } else {
+        return UIInterfaceOrientationMaskPortrait;
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

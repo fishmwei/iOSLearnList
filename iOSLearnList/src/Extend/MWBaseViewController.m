@@ -9,6 +9,17 @@
 #import "MWBaseViewController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
+//@interface UITabBarController (rotate)
+//
+//@end
+//
+//@implementation UITabBarController(rotate)
+//
+//- (BOOL)shouldAutorotate {
+//    return NO;
+//}
+//
+//@end
 
 @interface MWBaseViewController () <UIGestureRecognizerDelegate>
 
@@ -28,7 +39,7 @@
     self = [super init];
     if (self) {
         //        self.hidesBottomBarWhenPushed = YES;
-        _isOriginalNavigationBarHidden = YES;
+        _isOriginalNavigationBarHidden = NO;
         _isNextNavigationBarHidden = NO;
         _isFirstInto = YES;
         _hideNavigationbar = NO;
@@ -45,6 +56,17 @@
     } else {
         [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:animated];
     }
+    
+//    // 如果只支持竖屏 ?  跳转手动竖屏
+//    if (![self shouldAutorotate]) {
+//        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//
+//        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
+//        [UIViewController attemptRotationToDeviceOrientation];
+//
+//        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+//        [UIViewController attemptRotationToDeviceOrientation];
+//    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -54,14 +76,26 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-
+    
     //Pop
     if (self.isMovingFromParentViewController) {
         [self.navigationController setNavigationBarHidden:_isOriginalNavigationBarHidden animated:YES];
         self.navigationController.interactivePopGestureRecognizer.enabled = YES;
         return;
     }
-
+    
+    // 开启自动旋转， 那么在消失时 发送通知
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    // 获取设备方向
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
+    [UIViewController attemptRotationToDeviceOrientation];
+    [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
+//    [UIViewController attemptRotationToDeviceOrientation];
+    
+    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+    
     if (self.isBeingDismissed) {
         return;
     }
@@ -72,6 +106,24 @@
 
     [self.navigationController setNavigationBarHidden:_isNextNavigationBarHidden animated:animated];
 }
+
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait;
+}
+
+//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+//    //    return self.preferredOrientation;
+//    return UIInterfaceOrientationLandscapeRight;
+//}
+
 
 #pragma mark 设置手势右滑后退
 - (void)setRightPanPopCtrlEnabled:(BOOL)isEnabled {
@@ -137,14 +189,14 @@
     [_tipHud hide:YES];
 }
 
-/*
-#pragma mark - Navigation
+//- (BOOL)shouldAutorotate {
+//    return NO;
+//}
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (BOOL)prefersStatusBarHidden {
+    return NO;
 }
-*/
+
+
 
 @end

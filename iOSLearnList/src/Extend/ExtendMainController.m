@@ -16,7 +16,17 @@
 
 #import "HideTabController.h"
 
+@interface UIViewController (rotate)
 
+@end
+
+@implementation UIViewController (rotate)
+
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
+@end
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
 
@@ -45,7 +55,6 @@
 
     //    [self setSelectedIndex:1];
 }
-
 
 - (void)createViewControllers {
     AdvancedViewController *vc = [[AdvancedViewController alloc] init];
@@ -93,10 +102,14 @@
 
 
     ivc = [[IndexTableViewController alloc] init];
-    ivc.showData = @[@"TestCreateObjectAsync", @"MyMainTableViewController", @"AdaptIOS11ViewController",
-                     @"AutoSizeViewController"];
+    ivc.showData = @[@"TestCreateObjectAsync",
+                     @"MyMainTableViewController",
+                     @"AdaptIOS11ViewController",
+                     @"AutorotateViewController",
+                     @"AutoSizeViewController",
+                     @"RotateEnvetViewController"];
     
-    nav = [[UINavigationController alloc] initWithRootViewController:ivc];
+    nav = [[MWNavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav.tabBarItem.selectedImage = [[MWCommon imageNamed:@"weibo_touch"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [ivc setTitle:@"Test"];
@@ -150,6 +163,18 @@
 
 - (void)popBack {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (BOOL)shouldAutorotate {
+    return [self.selectedViewController shouldAutorotate];
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return [self.selectedViewController supportedInterfaceOrientations];
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
 }
 
 @end

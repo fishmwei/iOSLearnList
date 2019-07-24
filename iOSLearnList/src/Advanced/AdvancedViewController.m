@@ -36,7 +36,7 @@
 }
 
 - (BOOL)shouldAutorotate NS_AVAILABLE_IOS(6_0) {
-    return YES;
+    return NO;
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
