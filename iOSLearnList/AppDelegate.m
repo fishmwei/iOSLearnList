@@ -63,11 +63,11 @@ static DDLogLevel ddLogLevel = DDLogLevelAll;
 
 }
 
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-    
-    
-    return [MWOrientation getOrientation];
-}
+//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+//
+//    
+//    return [MWOrientation getOrientation];
+//}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     

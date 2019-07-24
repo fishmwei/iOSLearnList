@@ -22,7 +22,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     
     UIDeviceOrientation oriention = [[UIDevice currentDevice] orientation];
     if (oriention != UIDeviceOrientationPortrait) {

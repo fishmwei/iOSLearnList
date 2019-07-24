@@ -9,17 +9,17 @@
 #import "MWBaseViewController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
-//@interface UITabBarController (rotate)
-//
-//@end
-//
-//@implementation UITabBarController(rotate)
-//
-//- (BOOL)shouldAutorotate {
-//    return NO;
-//}
-//
-//@end
+@interface UIViewController (rotate)
+
+@end
+
+@implementation UIViewController(rotate)
+
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
+@end
 
 @interface MWBaseViewController () <UIGestureRecognizerDelegate>
 
@@ -57,21 +57,31 @@
         [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:animated];
     }
     
-//    // 如果只支持竖屏 ?  跳转手动竖屏
-//    if (![self shouldAutorotate]) {
+//    if ([self shouldAutorotate]) {
+//        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//        [UIViewController attemptRotationToDeviceOrientation];
+//    }
+    
+//    [UIViewController attemptRotationToDeviceOrientation];
+//    if (![self shouldAutorotate])
+//    {
 //        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
 //
-//        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
-//        [UIViewController attemptRotationToDeviceOrientation];
+//        if ([UIDevice currentDevice].orientation != UIDeviceOrientationPortrait) {
+//            [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
+//            [UIViewController attemptRotationToDeviceOrientation];
 //
-//        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
-//        [UIViewController attemptRotationToDeviceOrientation];
+//            [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+//            [UIViewController attemptRotationToDeviceOrientation];
+//        }
 //    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:NO];
+    
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -84,18 +94,18 @@
         return;
     }
     
-    // 开启自动旋转， 那么在消失时 发送通知
-    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-    // 获取设备方向
-    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
-    
-    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
-    [UIViewController attemptRotationToDeviceOrientation];
-    [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
+//    // 开启自动旋转， 那么在消失时 发送通知
+//    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//    // 获取设备方向
+//    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+//
+//    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
 //    [UIViewController attemptRotationToDeviceOrientation];
-    
-    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
-    
+//    [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
+//
+//
+//    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+//
     if (self.isBeingDismissed) {
         return;
     }
@@ -115,6 +125,7 @@
 {
     return UIInterfaceOrientationMaskPortrait;
 }
+
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
     return UIInterfaceOrientationPortrait;
 }
@@ -196,7 +207,6 @@
 - (BOOL)prefersStatusBarHidden {
     return NO;
 }
-
 
 
 @end

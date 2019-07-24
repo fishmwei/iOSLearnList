@@ -76,10 +76,33 @@
 }
 
 - (BOOL)shouldAutorotate {
-    return NO;
+    return YES;
 }
+
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait;
 }
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [UIViewController attemptRotationToDeviceOrientation];
+//    if (![self shouldAutorotate])
+//    {
+//        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//
+//        if ([UIDevice currentDevice].orientation != UIDeviceOrientationPortrait) {
+//            [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
+//            [UIViewController attemptRotationToDeviceOrientation];
+//
+//            [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+//            [UIViewController attemptRotationToDeviceOrientation];
+//        }
+//    }
+}
+
 @end

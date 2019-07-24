@@ -8,6 +8,7 @@
 
 #import "MWNavigationController.h"
 #import "AutorotateViewController.h"
+#import "MWNavigationProtocol.h"
 
 @interface MWNavigationController () <UIGestureRecognizerDelegate>
 
@@ -71,7 +72,14 @@
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
+
+    if (self.viewControllers.count > 0 && self.topViewController) {
+        if ([self.topViewController conformsToProtocol:@protocol(MWNavigationProtocol)]) {
+            id <MWNavigationProtocol> vc = (id <MWNavigationProtocol>)self.topViewController;
+            [vc processOrientationWhenPushViewController:viewController];
+        }
+    }
+
 //    if (![viewController shouldAutorotate]) {
 //        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
 //
@@ -83,9 +91,29 @@
 //
 //        [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
 //    }
-    
+
     [super pushViewController:viewController animated:animated];
 }
-
+//
+//
+//- (nullable UIViewController *)popViewControllerAnimated:(BOOL)animated {
+//
+//    if (self.viewControllers.count > 0 && self.topViewController) {
+//        if ([self.topViewController conformsToProtocol:@protocol(MWNavigationProtocol)]) {
+//            id <MWNavigationProtocol> vc = (id <MWNavigationProtocol>)self.topViewController;
+//            [vc processOrientationWhenPopViewController];
+//        }
+//    }
+//
+////    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+////    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
+////    [UIViewController attemptRotationToDeviceOrientation];
+////    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+////    [UIViewController attemptRotationToDeviceOrientation];
+////    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+//
+//    return  [super popViewControllerAnimated:animated];
+//
+//}
 
 @end

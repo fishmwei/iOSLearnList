@@ -565,6 +565,7 @@
 		C1A4D06722E86E8000481615 /* MWOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWOrientation.m; sourceTree = "<group>"; };
 		C1A4D06922E874D400481615 /* RotateEnvetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateEnvetViewController.h; sourceTree = "<group>"; };
 		C1A4D06A22E874D400481615 /* RotateEnvetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateEnvetViewController.m; sourceTree = "<group>"; };
+		C1A4D06C22E889AB00481615 /* MWNavigationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWNavigationProtocol.h; sourceTree = "<group>"; };
 		C1A650691CE99E75006A117B /* Timer+NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Timer+NotificationViewController.h"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.h"; sourceTree = "<group>"; };
 		C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Timer+NotificationViewController.m"; path = "../../../Advanced/iOSSystem/controller/Timer+NotificationViewController.m"; sourceTree = "<group>"; };
 		C1A6506E1CE99E75006A117B /* defaultNSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultNSURLSessionController.h; sourceTree = "<group>"; };
@@ -852,9 +853,9 @@
 				519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */,
 				5107762F1FE66E9000169CED /* AutoSizeViewController.m */,
 				C1B621E122CC4E2D006304A3 /* AutorotateViewController.h */,
+				C1B621E222CC4E2D006304A3 /* AutorotateViewController.m */,
 				C1A4D06922E874D400481615 /* RotateEnvetViewController.h */,
 				C1A4D06A22E874D400481615 /* RotateEnvetViewController.m */,
-				C1B621E222CC4E2D006304A3 /* AutorotateViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1415,6 +1416,7 @@
 				C1ED596D1CE5B0A200096EC7 /* ExtendMainController.m */,
 				C144F9E71E9DCA8C00EAA011 /* MWNavigationController.h */,
 				C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */,
+				C1A4D06C22E889AB00481615 /* MWNavigationProtocol.h */,
 				C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */,
 				C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */,
 				C15F15521D45B8D700392D95 /* MWBaseViewController.h */,
