@@ -23,7 +23,7 @@
     if (self) {
         _isAutoRotate = YES;
         _inLandScape = NO;
-        _supportedOrientation = UIInterfaceOrientationMaskAll;
+        _supportedOrientation = UIInterfaceOrientationMaskPortrait;
         _preferredOrientation = UIInterfaceOrientationPortrait;
     }
     
@@ -74,6 +74,10 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    NSLog(@"First %ld", [UIDevice currentDevice].orientation);
+    
     self.view.backgroundColor = [UIColor redColor];
     _bgView = [UIView new];
     _bgView.backgroundColor = [UIColor lightGrayColor];
@@ -124,6 +128,19 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)forceOrientation2Landscape {
+//    _isAutoRotate = YES;
+    _inLandScape = YES;
+    self.supportedOrientation = UIInterfaceOrientationMaskLandscape;
+    
+//    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
+//    [UIViewController attemptRotationToDeviceOrientation];
+    
+    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationLandscapeLeft) forKey:@"orientation"];
+    [UIViewController attemptRotationToDeviceOrientation];
+//    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+}
+
 - (void)resumeOrientation {
  
 }
@@ -138,9 +155,18 @@
 }
 
 #pragma mark - orientation
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    
+    if (_inLandScape) {
+        self.supportedOrientation = UIInterfaceOrientationMaskLandscape;
+        
+        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationLandscapeLeft) forKey:@"orientation"];
+        [UIViewController attemptRotationToDeviceOrientation];
+    }
     
     UIDeviceOrientation oriention = [[UIDevice currentDevice] orientation];
     if (oriention != UIDeviceOrientationPortrait) {
@@ -149,17 +175,7 @@
         self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     }
     
-    // 设备方向 与 界面方向不一致， 转一转
-    
-    
-//    if ([self shouldAutorotate]) {
-//        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-//        [UIViewController attemptRotationToDeviceOrientation];
-//    }
-    
-    //  TODO  设置方向
-    
-//    [self handleDeviceOrientationDidChange:UIInterfaceOrientationUnknown];
+    [self handleDeviceOrientationDidChange:UIInterfaceOrientationUnknown];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(handleDeviceOrientationDidChange:)
@@ -168,8 +184,30 @@
      ];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    
+    
+}
+
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+   
+    [super viewWillDisappear:animated];
+    
+//    if (_inLandScape) {
+        _supportedOrientation = UIInterfaceOrientationMaskPortrait;
+        _preferredOrientation = UIInterfaceOrientationPortrait;
+    
+        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+        [UIViewController attemptRotationToDeviceOrientation];
+//    }
+    
     /**
      *  销毁 设备旋转 通知
      *
@@ -187,19 +225,16 @@
      *  @return return value description
      */
     [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-   
-    [super viewWillDisappear:animated];
     
 }
 
 - (void)handleDeviceOrientationDidChange:(UIInterfaceOrientation)interfaceOrientation
 {
+    return;
+    
     
     //1.获取 当前设备 实例
-    UIDevice *device = [UIDevice currentDevice] ;
+    UIDevice *device = [UIDevice currentDevice];
     
     if (device.orientation != UIDeviceOrientationPortrait) {
         self.navigationController.interactivePopGestureRecognizer.enabled = NO;
@@ -207,6 +242,7 @@
         self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     }
     
+    BOOL shouldRotate = NO;
     /**
      *  2.取得当前Device的方向，Device的方向类型为Integer
      *
@@ -218,10 +254,12 @@
     switch (device.orientation) {
         case UIDeviceOrientationFaceUp:
             NSLog(@"屏幕朝上平躺");
+            shouldRotate = YES;
             break;
             
         case UIDeviceOrientationFaceDown:
             NSLog(@"屏幕朝下平躺");
+            shouldRotate = YES;
             break;
             
             //系統無法判斷目前Device的方向，有可能是斜置
@@ -232,18 +270,19 @@
         case UIDeviceOrientationLandscapeLeft:
             NSLog(@"屏幕向左横置");
             //  旋转角度 =  需要旋转的角度 - 当前的角度
-            
+            shouldRotate = YES;
 //            self.view.transform = CGAffineTransformMakeRotation((CGFloat)(90 *M_PI)/180);
             break;
             
         case UIDeviceOrientationLandscapeRight:
             NSLog(@"屏幕向右橫置");
 //            self.view.transform = CGAffineTransformMakeRotation((CGFloat)(-90 *M_PI)/180);
-            
+            shouldRotate = YES;
             break;
             
         case UIDeviceOrientationPortrait:
             NSLog(@"屏幕直立");
+            shouldRotate = YES;
 //            self.view.transform = CGAffineTransformMakeRotation((CGFloat)(0 *M_PI)/180);
             break;
             
@@ -257,9 +296,11 @@
             break;
     }
     
-    if ((NSInteger)device.orientation != (NSInteger)interfaceOrientation) {
+    if ((NSInteger)device.orientation != (NSInteger)interfaceOrientation && shouldRotate) {
         [UIViewController attemptRotationToDeviceOrientation];
     }
+    
+    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications ];
 }
 
 /**
@@ -270,12 +311,11 @@
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskAllButUpsideDown;
+    return self.supportedOrientation;
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    //    return self.preferredOrientation;
-    return UIInterfaceOrientationPortrait;
+      return self.preferredOrientation;
 }
 
 #pragma mark -- 更新状态栏方向
@@ -285,21 +325,27 @@
 }
 
 - (void)processOrientationWhenPushViewController:(UIViewController *)controller {
-    if (![controller shouldAutorotate]) {
-//        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-
-        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
-        [UIViewController attemptRotationToDeviceOrientation];
-
-        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
-        [UIViewController attemptRotationToDeviceOrientation];
-
-//        [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
-    }
+////    if (![controller shouldAutorotate]) {
+////        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//
+////        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
+////        [UIViewController attemptRotationToDeviceOrientation];
+//
+//        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+//        [UIViewController attemptRotationToDeviceOrientation];
+//
+////        [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+////    }
 }
 
 - (void)processOrientationWhenPopViewController {
-    // 恢复？
+    // 恢复？ 之前的界面?
+    
+//    _supportedOrientation = UIInterfaceOrientationMaskPortrait;
+//    _preferredOrientation = UIInterfaceOrientationPortrait;
+    
+//    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
 }
 
 @end

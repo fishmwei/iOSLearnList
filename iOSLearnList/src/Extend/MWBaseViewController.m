@@ -57,31 +57,15 @@
         [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:animated];
     }
     
-//    if ([self shouldAutorotate]) {
-//        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-//        [UIViewController attemptRotationToDeviceOrientation];
-//    }
-    
-//    [UIViewController attemptRotationToDeviceOrientation];
-//    if (![self shouldAutorotate])
-//    {
-//        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-//
-//        if ([UIDevice currentDevice].orientation != UIDeviceOrientationPortrait) {
-//            [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
-//            [UIViewController attemptRotationToDeviceOrientation];
-//
-//            [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
-//            [UIViewController attemptRotationToDeviceOrientation];
-//        }
-//    }
+    if ([self shouldAutorotate]) {
+        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+        [UIViewController attemptRotationToDeviceOrientation];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self.navigationController setNavigationBarHidden:self.hideNavigationbar animated:NO];
-    
-    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -204,9 +188,9 @@
 //    return NO;
 //}
 
-- (BOOL)prefersStatusBarHidden {
-    return NO;
-}
+//- (BOOL)prefersStatusBarHidden {
+//    return NO;
+//}
 
 
 @end

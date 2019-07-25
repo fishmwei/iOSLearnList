@@ -51,8 +51,10 @@
     if (self.viewControllers && [self.viewControllers count] > 0) {
         return [self.topViewController shouldAutorotate];
     }
-    
+
     return [super shouldAutorotate];
+    
+    return YES;
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
@@ -79,41 +81,22 @@
             [vc processOrientationWhenPushViewController:viewController];
         }
     }
-
-//    if (![viewController shouldAutorotate]) {
-//        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-//
-//        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
-//        [UIViewController attemptRotationToDeviceOrientation];
-//
-//        [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
-//        [UIViewController attemptRotationToDeviceOrientation];
-//
-//        [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
-//    }
-
+ 
     [super pushViewController:viewController animated:animated];
 }
-//
-//
-//- (nullable UIViewController *)popViewControllerAnimated:(BOOL)animated {
-//
-//    if (self.viewControllers.count > 0 && self.topViewController) {
-//        if ([self.topViewController conformsToProtocol:@protocol(MWNavigationProtocol)]) {
-//            id <MWNavigationProtocol> vc = (id <MWNavigationProtocol>)self.topViewController;
-//            [vc processOrientationWhenPopViewController];
-//        }
-//    }
-//
-////    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-////    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationUnknown) forKey:@"orientation"];
-////    [UIViewController attemptRotationToDeviceOrientation];
-////    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
-////    [UIViewController attemptRotationToDeviceOrientation];
-////    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
-//
-//    return  [super popViewControllerAnimated:animated];
-//
-//}
+
+
+- (nullable UIViewController *)popViewControllerAnimated:(BOOL)animated {
+
+    if (self.viewControllers.count > 0 && self.topViewController) {
+        if ([self.topViewController conformsToProtocol:@protocol(MWNavigationProtocol)]) {
+            id <MWNavigationProtocol> vc = (id <MWNavigationProtocol>)self.topViewController;
+            [vc processOrientationWhenPopViewController];
+        }
+    }
+
+    return  [super popViewControllerAnimated:animated];
+
+}
 
 @end

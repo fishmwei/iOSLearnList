@@ -90,7 +90,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [UIViewController attemptRotationToDeviceOrientation];
+//    [UIViewController attemptRotationToDeviceOrientation];
 //    if (![self shouldAutorotate])
 //    {
 //        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];

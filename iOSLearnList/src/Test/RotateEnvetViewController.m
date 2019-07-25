@@ -75,6 +75,8 @@
         self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     }
     
+    return;
+    
     /**
      *  2.取得当前Device的方向，Device的方向类型为Integer
      *
