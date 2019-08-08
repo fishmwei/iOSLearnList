@@ -48,8 +48,6 @@
 		C1209B1E1CF53EED00182559 /* configViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B1D1CF53EED00182559 /* configViewController.m */; };
 		C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
 		C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
-		C134A419229CD7B200CC06E9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C134A418229CD7B200CC06E9 /* data.json */; };
-		C134A41A229CD7B200CC06E9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C134A418229CD7B200CC06E9 /* data.json */; };
 		C134A41E229CD89700CC06E9 /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C134A41D229CD89700CC06E9 /* LottieViewController.m */; };
 		C134A41F229CD89700CC06E9 /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C134A41D229CD89700CC06E9 /* LottieViewController.m */; };
 		C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C13D8B121D879EFB008BE3B9 /* TimerObject.m */; };
@@ -404,7 +402,6 @@
 		C1209B211CF53F2900182559 /* ConfigCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigCommon.m; sourceTree = "<group>"; };
 		C12F1EF21D4A199400A2D984 /* MWDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDrawingViewController.h; sourceTree = "<group>"; };
 		C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDrawingViewController.m; sourceTree = "<group>"; };
-		C134A418229CD7B200CC06E9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../../../../../../Volumes/Code/download/data.json; sourceTree = "<group>"; };
 		C134A41C229CD89700CC06E9 /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieViewController.h; sourceTree = "<group>"; };
 		C134A41D229CD89700CC06E9 /* LottieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieViewController.m; sourceTree = "<group>"; };
 		C13D8B111D879EFB008BE3B9 /* TimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerObject.h; sourceTree = "<group>"; };
@@ -774,7 +771,6 @@
 		51F68EBF1CDE1905009338D6 /* iOSLearnList */ = {
 			isa = PBXGroup;
 			children = (
-				C134A418229CD7B200CC06E9 /* data.json */,
 				519D912D227FBA58009321F9 /* hook */,
 				C1FD40CD1E45B6CC008B85D7 /* StubObjects */,
 				C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */,
@@ -1543,6 +1539,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -1565,7 +1562,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C8C6B11D59DCF900059977 /* xiala_2@2x.png in Resources */,
-				C134A419229CD7B200CC06E9 /* data.json in Resources */,
 				C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */,
 				C1E1DBE51D546731007EE5F5 /* ArchiverViewController.xib in Resources */,
 				519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */,
@@ -1586,7 +1582,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C189E66A21D5C946002AABBE /* xiala_2@2x.png in Resources */,
-				C134A41A229CD7B200CC06E9 /* data.json in Resources */,
 				C189E66B21D5C946002AABBE /* caLayerViewController.xib in Resources */,
 				C189E66C21D5C946002AABBE /* ArchiverViewController.xib in Resources */,
 				C189E66D21D5C946002AABBE /* InfoPlist.strings in Resources */,

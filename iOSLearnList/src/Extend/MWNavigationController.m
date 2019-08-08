@@ -17,6 +17,10 @@
 
 @implementation MWNavigationController
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -53,8 +57,6 @@
     }
 
     return [super shouldAutorotate];
-    
-    return YES;
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {

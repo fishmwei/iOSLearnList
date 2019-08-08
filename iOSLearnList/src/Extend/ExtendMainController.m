@@ -27,6 +27,7 @@
 }
 
 @end
+
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
 
@@ -48,7 +49,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tabBar.translucent = NO;
+    self.tabBar.translucent = NO; // 解决tabbar位移的问题
     [self createData];
     [self createView];
     [self procShortItem:nil];

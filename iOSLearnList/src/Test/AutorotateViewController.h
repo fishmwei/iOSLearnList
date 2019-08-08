@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) UIInterfaceOrientationMask supportedOrientation; // 支持方向 默认Portrait
 @property (nonatomic, assign) UIInterfaceOrientation preferredOrientation; // 刚展示时的方向， 默认Portait
 
-- (void)resumeOrientation;
+@property (nonatomic, assign) UIInterfaceOrientationMask configSupportedOrientation;
 
 @end
 
