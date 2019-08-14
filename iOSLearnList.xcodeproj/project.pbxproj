@@ -116,6 +116,9 @@
 		C1766AA4228A5D32008D4063 /* CrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = C1766AA2228A5D32008D4063 /* CrashReport.m */; };
 		C1791E89215F1742006DA265 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1791E88215F1742006DA265 /* GLKit.framework */; };
 		C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1791E8B215F176F006DA265 /* GLKOpenGLController.m */; };
+		C17CA8C522FBD2F800EB797D /* UITabBarController+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = C17CA8C422FBD2F800EB797D /* UITabBarController+Rotate.m */; };
+		C17CA8C822FBD33100EB797D /* UINavigationController+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = C17CA8C722FBD33100EB797D /* UINavigationController+Rotate.m */; };
+		C17CA8CB22FBD3B000EB797D /* UIViewController+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = C17CA8CA22FBD3B000EB797D /* UIViewController+Rotate.m */; };
 		C189E5F121D5C946002AABBE /* methodSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C162E35A1D51853B00061311 /* methodSelectorViewController.m */; };
 		C189E5F221D5C946002AABBE /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDBA1D4897CA004CD422 /* AdvancedViewController.m */; };
 		C189E5F321D5C946002AABBE /* DataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */; };
@@ -523,6 +526,12 @@
 		C1791E88215F1742006DA265 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		C1791E8A215F176F006DA265 /* GLKOpenGLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKOpenGLController.h; sourceTree = "<group>"; };
 		C1791E8B215F176F006DA265 /* GLKOpenGLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKOpenGLController.m; sourceTree = "<group>"; };
+		C17CA8C322FBD2F800EB797D /* UITabBarController+Rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Rotate.h"; sourceTree = "<group>"; };
+		C17CA8C422FBD2F800EB797D /* UITabBarController+Rotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Rotate.m"; sourceTree = "<group>"; };
+		C17CA8C622FBD33100EB797D /* UINavigationController+Rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Rotate.h"; sourceTree = "<group>"; };
+		C17CA8C722FBD33100EB797D /* UINavigationController+Rotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Rotate.m"; sourceTree = "<group>"; };
+		C17CA8C922FBD3B000EB797D /* UIViewController+Rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Rotate.h"; sourceTree = "<group>"; };
+		C17CA8CA22FBD3B000EB797D /* UIViewController+Rotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Rotate.m"; sourceTree = "<group>"; };
 		C189E5ED21D5C218002AABBE /* iOSLearnList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSLearnList copy-Info.plist"; path = "/Users/huangmingwei/Documents/GitHubCode/iOSLearnList/iOSLearnList copy-Info.plist"; sourceTree = "<absolute>"; };
 		C189E67D21D5C946002AABBE /* iOSLearnListEnv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnListEnv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C189E67E21D5C946002AABBE /* iOSLearnList copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSLearnList copy2-Info.plist"; path = "/Users/huangmingwei/Documents/GitHubCode/iOSLearnList/iOSLearnList copy2-Info.plist"; sourceTree = "<absolute>"; };
@@ -705,6 +714,12 @@
 				C16B6BC91D49EBE400459688 /* iOSLearnList.pch */,
 				C1A4D06622E86E8000481615 /* MWOrientation.h */,
 				C1A4D06722E86E8000481615 /* MWOrientation.m */,
+				C17CA8C322FBD2F800EB797D /* UITabBarController+Rotate.h */,
+				C17CA8C422FBD2F800EB797D /* UITabBarController+Rotate.m */,
+				C17CA8C922FBD3B000EB797D /* UIViewController+Rotate.h */,
+				C17CA8CA22FBD3B000EB797D /* UIViewController+Rotate.m */,
+				C17CA8C622FBD33100EB797D /* UINavigationController+Rotate.h */,
+				C17CA8C722FBD33100EB797D /* UINavigationController+Rotate.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -1752,6 +1767,7 @@
 				C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */,
 				C1F7DCB51DC2F5CD00C29808 /* dispatch_sourceViewController.m in Sources */,
 				C1C8C6AF1D59C96F00059977 /* MWScrollView.m in Sources */,
+				C17CA8C822FBD33100EB797D /* UINavigationController+Rotate.m in Sources */,
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
 				C12070001EF7C37C0020D208 /* ILSearchViewController.m in Sources */,
 				C1B8EE671DC6E94F008FF1C6 /* RunLoopsExp.m in Sources */,
@@ -1807,6 +1823,7 @@
 				C15C2C8D1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.m in Sources */,
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
 				C1B8EE6A1DC6E98A008FF1C6 /* StartRunLoopViewController.m in Sources */,
+				C17CA8C522FBD2F800EB797D /* UITabBarController+Rotate.m in Sources */,
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
 				C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */,
 				C16D845F1DC88B5A00D7F062 /* NSLockViewController.m in Sources */,
@@ -1858,6 +1875,7 @@
 				C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */,
 				C1E1DBE41D546731007EE5F5 /* ArchiverViewController.m in Sources */,
 				C1040B7E1F90ACB90027EE09 /* TestObject.m in Sources */,
+				C17CA8CB22FBD3B000EB797D /* UIViewController+Rotate.m in Sources */,
 				C16B6BBB1D499D5E00459688 /* CAMediaTimingVC.m in Sources */,
 				C11D27951DBF60C000FA2955 /* arrayBlockskitViewController.m in Sources */,
 				C134A41E229CD89700CC06E9 /* LottieViewController.m in Sources */,

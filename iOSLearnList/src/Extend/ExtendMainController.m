@@ -16,17 +16,6 @@
 
 #import "HideTabController.h"
 
-@interface UIViewController (rotate)
-
-@end
-
-@implementation UIViewController (rotate)
-
-- (BOOL)shouldAutorotate {
-    return NO;
-}
-
-@end
 
 @interface ExtendMainController ()
 @property (nonatomic, retain) NSArray *bottomItems;
@@ -166,16 +155,5 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (BOOL)shouldAutorotate {
-    return [self.selectedViewController shouldAutorotate];
-}
-
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return [self.selectedViewController supportedInterfaceOrientations];
-}
-
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
-}
 
 @end

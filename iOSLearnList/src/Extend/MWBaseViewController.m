@@ -9,17 +9,7 @@
 #import "MWBaseViewController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
-@interface UIViewController (rotate)
 
-@end
-
-@implementation UIViewController(rotate)
-
-- (BOOL)shouldAutorotate {
-    return NO;
-}
-
-@end
 
 @interface MWBaseViewController () <UIGestureRecognizerDelegate>
 
@@ -100,24 +90,6 @@
 
     [self.navigationController setNavigationBarHidden:_isNextNavigationBarHidden animated:animated];
 }
-
-- (BOOL)shouldAutorotate {
-    return NO;
-}
-
--(UIInterfaceOrientationMask)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskPortrait;
-}
-
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    return UIInterfaceOrientationPortrait;
-}
-
-//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-//    //    return self.preferredOrientation;
-//    return UIInterfaceOrientationLandscapeRight;
-//}
 
 
 #pragma mark 设置手势右滑后退
