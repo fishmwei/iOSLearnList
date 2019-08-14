@@ -7,9 +7,7 @@
 //
 
 #import "UIViewController+Rotate.h"
-
-#import <AppKit/AppKit.h>
-
+ 
 
 @implementation UIViewController (Rotate)
 

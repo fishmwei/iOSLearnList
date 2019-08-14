@@ -8,8 +8,6 @@
 
 #import "UINavigationController+Rotate.h"
 
-#import <AppKit/AppKit.h>
-
 
 @implementation UINavigationController (Rotate)
 

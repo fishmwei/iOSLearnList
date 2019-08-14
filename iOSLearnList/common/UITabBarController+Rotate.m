@@ -7,9 +7,7 @@
 //
 
 #import "UITabBarController+Rotate.h"
-
-#import <AppKit/AppKit.h>
-
+ 
 
 @implementation UITabBarController (Rotate)
 
