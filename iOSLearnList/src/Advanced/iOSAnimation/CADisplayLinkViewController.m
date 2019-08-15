@@ -64,7 +64,7 @@
     _rotationView = [[MWRotationView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     [self.view addSubview:_rotationView];
 
-    _rotationView.duration = 1;
+//    _rotationView.duration = 1;
     _rotationView.layer.contents = (__bridge id)[MWCommon imageNamed:@"lion"].CGImage;
     //    _rotationView.layer.contents = (__bridge id)[UIImage imageNamed:@"common-PullDownRefresh"].CGImage;
 

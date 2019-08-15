@@ -55,6 +55,8 @@
 		C142106B21E4721A00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
 		C144F9E61E9DC77700EAA011 /* HideNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */; };
 		C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */; };
+		C14CE7102303B9B200EC300F /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CE70F2303B9B200EC300F /* ParentViewController.m */; };
+		C14CE7132303B9C100EC300F /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CE7122303B9C100EC300F /* ChildViewController.m */; };
 		C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */; };
 		C15579881DBDFA4A00F50CD2 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15579871DBDFA4A00F50CD2 /* GCDViewController.m */; };
 		C155798C1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C155798B1DBDFBC500F50CD2 /* dispatch_group_notifyViewController.m */; };
@@ -414,6 +416,10 @@
 		C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavigatorViewController.m; sourceTree = "<group>"; };
 		C144F9E71E9DCA8C00EAA011 /* MWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNavigationController.h; sourceTree = "<group>"; };
 		C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWNavigationController.m; sourceTree = "<group>"; };
+		C14CE70E2303B9B200EC300F /* ParentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		C14CE70F2303B9B200EC300F /* ParentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		C14CE7112303B9C100EC300F /* ChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		C14CE7122303B9C100EC300F /* ChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
 		C15579831DBDDB9700F50CD2 /* DataStructureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructureViewController.h; sourceTree = "<group>"; };
 		C15579841DBDDB9700F50CD2 /* DataStructureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStructureViewController.m; sourceTree = "<group>"; };
 		C15579861DBDFA4A00F50CD2 /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
@@ -867,6 +873,10 @@
 				C1B621E222CC4E2D006304A3 /* AutorotateViewController.m */,
 				C1A4D06922E874D400481615 /* RotateEnvetViewController.h */,
 				C1A4D06A22E874D400481615 /* RotateEnvetViewController.m */,
+				C14CE70E2303B9B200EC300F /* ParentViewController.h */,
+				C14CE70F2303B9B200EC300F /* ParentViewController.m */,
+				C14CE7112303B9C100EC300F /* ChildViewController.h */,
+				C14CE7122303B9C100EC300F /* ChildViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1765,6 +1775,7 @@
 				C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */,
 				C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */,
 				C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */,
+				C14CE7102303B9B200EC300F /* ParentViewController.m in Sources */,
 				C1F7DCB51DC2F5CD00C29808 /* dispatch_sourceViewController.m in Sources */,
 				C1C8C6AF1D59C96F00059977 /* MWScrollView.m in Sources */,
 				C17CA8C822FBD33100EB797D /* UINavigationController+Rotate.m in Sources */,
@@ -1890,6 +1901,7 @@
 				C11D279F1DBF6A3A00FA2955 /* safeCategoriesViewController.m in Sources */,
 				C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */,
 				C15579921DBE16FD00F50CD2 /* dispatch_semaphoreViewController.m in Sources */,
+				C14CE7132303B9C100EC300F /* ChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
