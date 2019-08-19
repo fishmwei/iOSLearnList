@@ -98,7 +98,8 @@
                      @"AutorotateViewController",
                      @"AutoSizeViewController",
                      @"RotateEnvetViewController",
-                     @"ParentViewController"];
+                     @"ParentViewController",
+                     @"NSCopyViewController"];
     
     nav = [[MWNavigationController alloc] initWithRootViewController:ivc];
     nav.tabBarItem.image = [[MWCommon imageNamed:@"weibo"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

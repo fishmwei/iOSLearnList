@@ -63,6 +63,11 @@
     [self addChildVC];
 }
 
+
+- (void)didMoveToParentViewController:(UIViewController *)parent {
+    [super didMoveToParentViewController:parent];
+}
+
 - (ChildViewController *)child {
     
     if (!_child) {

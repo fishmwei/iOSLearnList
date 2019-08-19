@@ -53,6 +53,11 @@
 		C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C13D8B121D879EFB008BE3B9 /* TimerObject.m */; };
 		C142106A21E471EB00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
 		C142106B21E4721A00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
+		C1436C21230653E90031A5DB /* NSCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1436C20230653E90031A5DB /* NSCopyViewController.m */; };
+		C1436C24230655950031A5DB /* ContentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1436C23230655950031A5DB /* ContentObject.m */; };
+		C1436C27230683E20031A5DB /* CopyObjectBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1436C26230683E20031A5DB /* CopyObjectBaseManager.m */; };
+		C1436C2A230684210031A5DB /* BaseCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1436C29230684210031A5DB /* BaseCopyObject.m */; };
+		C1436C2D230687780031A5DB /* SubCopyObjectBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1436C2C230687780031A5DB /* SubCopyObjectBaseManager.m */; };
 		C144F9E61E9DC77700EAA011 /* HideNavigatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */; };
 		C144F9E91E9DCA8C00EAA011 /* MWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C144F9E81E9DCA8C00EAA011 /* MWNavigationController.m */; };
 		C14CE7102303B9B200EC300F /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CE70F2303B9B200EC300F /* ParentViewController.m */; };
@@ -412,6 +417,16 @@
 		C13D8B111D879EFB008BE3B9 /* TimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerObject.h; sourceTree = "<group>"; };
 		C13D8B121D879EFB008BE3B9 /* TimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerObject.m; sourceTree = "<group>"; };
 		C142106921E471EB00FC1DF9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C1436C1F230653E90031A5DB /* NSCopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCopyViewController.h; sourceTree = "<group>"; };
+		C1436C20230653E90031A5DB /* NSCopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCopyViewController.m; sourceTree = "<group>"; };
+		C1436C22230655950031A5DB /* ContentObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentObject.h; sourceTree = "<group>"; };
+		C1436C23230655950031A5DB /* ContentObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentObject.m; sourceTree = "<group>"; };
+		C1436C25230683E20031A5DB /* CopyObjectBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyObjectBaseManager.h; sourceTree = "<group>"; };
+		C1436C26230683E20031A5DB /* CopyObjectBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyObjectBaseManager.m; sourceTree = "<group>"; };
+		C1436C28230684210031A5DB /* BaseCopyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCopyObject.h; sourceTree = "<group>"; };
+		C1436C29230684210031A5DB /* BaseCopyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCopyObject.m; sourceTree = "<group>"; };
+		C1436C2B230687780031A5DB /* SubCopyObjectBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubCopyObjectBaseManager.h; sourceTree = "<group>"; };
+		C1436C2C230687780031A5DB /* SubCopyObjectBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubCopyObjectBaseManager.m; sourceTree = "<group>"; };
 		C144F9E41E9DC77700EAA011 /* HideNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideNavigatorViewController.h; sourceTree = "<group>"; };
 		C144F9E51E9DC77700EAA011 /* HideNavigatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavigatorViewController.m; sourceTree = "<group>"; };
 		C144F9E71E9DCA8C00EAA011 /* MWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNavigationController.h; sourceTree = "<group>"; };
@@ -862,6 +877,7 @@
 		C1040B731F90A5770027EE09 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				C1436C1E230653CB0031A5DB /* Copy */,
 				C1A2C83D21F70564000343CF /* MyUISearchController */,
 				517CA88D1FE4EF5100A6A82F /* iOS11 */,
 				C1040B771F90A6BE0027EE09 /* CreateObjectAsync */,
@@ -962,6 +978,23 @@
 				C134A41D229CD89700CC06E9 /* LottieViewController.m */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		C1436C1E230653CB0031A5DB /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				C1436C1F230653E90031A5DB /* NSCopyViewController.h */,
+				C1436C20230653E90031A5DB /* NSCopyViewController.m */,
+				C1436C28230684210031A5DB /* BaseCopyObject.h */,
+				C1436C29230684210031A5DB /* BaseCopyObject.m */,
+				C1436C2B230687780031A5DB /* SubCopyObjectBaseManager.h */,
+				C1436C2C230687780031A5DB /* SubCopyObjectBaseManager.m */,
+				C1436C25230683E20031A5DB /* CopyObjectBaseManager.h */,
+				C1436C26230683E20031A5DB /* CopyObjectBaseManager.m */,
+				C1436C22230655950031A5DB /* ContentObject.h */,
+				C1436C23230655950031A5DB /* ContentObject.m */,
+			);
+			name = Copy;
 			sourceTree = "<group>";
 		};
 		C15579821DBDDB1000F50CD2 /* DataStructure */ = {
@@ -1791,6 +1824,7 @@
 				C16D84651DC8956D00D7F062 /* NSConditionViewController.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
+				C1436C21230653E90031A5DB /* NSCopyViewController.m in Sources */,
 				C1040B761F90A6B50027EE09 /* TestCreateObjectAsync.m in Sources */,
 				C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */,
 				C19726C11DEBC48C00B062FE /* blockViewController.m in Sources */,
@@ -1801,6 +1835,7 @@
 				C1209B1E1CF53EED00182559 /* configViewController.m in Sources */,
 				C19D17E51D18D9BA00E29256 /* MWPresentAnimation.m in Sources */,
 				51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */,
+				C1436C2A230684210031A5DB /* BaseCopyObject.m in Sources */,
 				C176293A21CCFE7D002ED848 /* RotateTestViewController.m in Sources */,
 				C1F7DCE21DC353A100C29808 /* MantleObjectModelViewController.m in Sources */,
 				C156DDC51D48B98E004CD422 /* TimerAnimationViewController.m in Sources */,
@@ -1839,6 +1874,7 @@
 				C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */,
 				C16D845F1DC88B5A00D7F062 /* NSLockViewController.m in Sources */,
 				C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */,
+				C1436C2D230687780031A5DB /* SubCopyObjectBaseManager.m in Sources */,
 				C1A2C84421F7067F000343CF /* MyResultsTableController.m in Sources */,
 				516928021DBE486B00DA92D7 /* NSJSONSerializationViewController.m in Sources */,
 				C19321061D41FA0900378778 /* MasonryViewController.m in Sources */,
@@ -1865,6 +1901,7 @@
 				C15F15541D45B8D700392D95 /* MWBaseViewController.m in Sources */,
 				C16D845C1DC8874500D7F062 /* synchronizedViewController.m in Sources */,
 				C1143F43229E23BA00B99BD1 /* SkyLabViewController.m in Sources */,
+				C1436C27230683E20031A5DB /* CopyObjectBaseManager.m in Sources */,
 				C19DB7D01DBF5C02005A43BE /* BlocksKitExp.m in Sources */,
 				C15579881DBDFA4A00F50CD2 /* GCDViewController.m in Sources */,
 				C17091751DE296F80032C75D /* NSURLParseViewController.m in Sources */,
@@ -1877,6 +1914,7 @@
 				C155799B1DBE273E00F50CD2 /* display_applyViewController.m in Sources */,
 				C155798F1DBE06B800F50CD2 /* dispatch_group_waitViewController.m in Sources */,
 				C172F2471D5C77A200A8FECC /* MW_AC.m in Sources */,
+				C1436C24230655950031A5DB /* ContentObject.m in Sources */,
 				C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */,
 				C16D84621DC88CC300D7F062 /* pthread_mutexViewController.m in Sources */,
 				51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */,
