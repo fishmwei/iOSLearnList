@@ -37,6 +37,9 @@
 
 - (void)copyItems {
     SubCopyObjectBaseManager *copy = [self.manager copy];
+    NSDictionary *content = @{@"a":@"1", @"b":@2, @"c":@(3)};
+    BaseCopyObject *obj = [[BaseCopyObject alloc] initWithId:@"new" content:content];
+    [copy.allConfig setObject:@"bbbb" forKey:@"new"];
     [_datas addObject:copy];
     [self.tableView reloadData];
 }

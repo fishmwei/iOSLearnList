@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseCopyObject : NSObject
+@interface BaseCopyObject : NSObject <NSCopying>
 @property (nonatomic, strong) NSString *objectId;
 @property (nonatomic, strong) NSDictionary *content;
 

@@ -19,4 +19,11 @@
     return self;
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+    BaseCopyObject *copy = [[self class] allocWithZone:zone];
+    copy.objectId = _objectId;
+    copy.content = _content;
+    
+    return copy;
+}
 @end

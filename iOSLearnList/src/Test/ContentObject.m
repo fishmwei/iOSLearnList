@@ -14,7 +14,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _addr = [NSString stringWithFormat:@"%p", self];
+        _addr = [NSString stringWithFormat:@"addr %p", self];
     }
     
     return self;

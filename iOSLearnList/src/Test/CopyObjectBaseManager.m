@@ -30,7 +30,7 @@
 - (id)copyWithZone:(NSZone *)zone {
     CopyObjectBaseManager *manager = [[self class] allocWithZone:zone];
     manager->_finishParse = _finishParse;
-    manager.allConfig = [self.allConfig copy];
+    manager.allConfig = [self.allConfig mutableCopy]; // allConfig 是可变的
     
     return manager;
 }
