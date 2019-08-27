@@ -76,7 +76,6 @@
 		C156DDC51D48B98E004CD422 /* TimerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C156DDC41D48B98E004CD422 /* TimerAnimationViewController.m */; };
 		C15C2C861DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C2C851DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m */; };
 		C15C2C8A1DC0CCBF00EE1B72 /* MWTextButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C2C891DC0CCBF00EE1B72 /* MWTextButtonCell.m */; };
-		C15C2C8D1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C2C8C1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.m */; };
 		C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F15441D45B16C00392D95 /* BaseMainViewController.m */; };
 		C15F154B1D45B43E00392D95 /* UIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154A1D45B43E00392D95 /* UIBaseViewController.m */; };
 		C15F154E1D45B74D00392D95 /* SysBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15F154D1D45B74D00392D95 /* SysBaseViewController.m */; };
@@ -181,7 +180,6 @@
 		C189E62521D5C946002AABBE /* MWMtlObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F7DCE41DC3542B00C29808 /* MWMtlObject.m */; };
 		C189E62621D5C946002AABBE /* AutoSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5107762F1FE66E9000169CED /* AutoSizeViewController.m */; };
 		C189E62721D5C946002AABBE /* NSRecursiveLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16D84581DC8844C00D7F062 /* NSRecursiveLockViewController.m */; };
-		C189E62821D5C946002AABBE /* YTKKeyValueStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C2C8C1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.m */; };
 		C189E62921D5C946002AABBE /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */; };
 		C189E62A21D5C946002AABBE /* StartRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B8EE691DC6E98A008FF1C6 /* StartRunLoopViewController.m */; };
 		C189E62B21D5C946002AABBE /* ConfigCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C1209B211CF53F2900182559 /* ConfigCommon.m */; };
@@ -277,6 +275,10 @@
 		C1A2C84521F7067F000343CF /* MyResultsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84321F7067F000343CF /* MyResultsTableController.m */; };
 		C1A2C84821F7073A000343CF /* MyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84721F7073A000343CF /* MyMainTableViewController.m */; };
 		C1A2C84921F7073A000343CF /* MyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C84721F7073A000343CF /* MyMainTableViewController.m */; };
+		C1A4735B2314C9FE004B875A /* YTKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A4735A2314C9FE004B875A /* YTKStoreManager.m */; };
+		C1A4735F2314D1A0004B875A /* YTKTableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A4735E2314D1A0004B875A /* YTKTableDetailViewController.m */; };
+		C1A473622314D6D7004B875A /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A473612314D6D7004B875A /* ItemModel.m */; };
+		C1A473652314E238004B875A /* ItemModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A473642314E238004B875A /* ItemModelCell.m */; };
 		C1A4D06822E86E8000481615 /* MWOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A4D06722E86E8000481615 /* MWOrientation.m */; };
 		C1A4D06B22E874D400481615 /* RotateEnvetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A4D06A22E874D400481615 /* RotateEnvetViewController.m */; };
 		C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6506A1CE99E75006A117B /* Timer+NotificationViewController.m */; };
@@ -463,8 +465,6 @@
 		C15C2C851DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKKeyValueStoreExp.m; sourceTree = "<group>"; };
 		C15C2C881DC0CCBF00EE1B72 /* MWTextButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTextButtonCell.h; sourceTree = "<group>"; };
 		C15C2C891DC0CCBF00EE1B72 /* MWTextButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTextButtonCell.m; sourceTree = "<group>"; };
-		C15C2C8B1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKKeyValueStoreViewController.h; sourceTree = "<group>"; };
-		C15C2C8C1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKKeyValueStoreViewController.m; sourceTree = "<group>"; };
 		C15F15431D45B16C00392D95 /* BaseMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMainViewController.h; sourceTree = "<group>"; };
 		C15F15441D45B16C00392D95 /* BaseMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMainViewController.m; sourceTree = "<group>"; };
 		C15F15491D45B43E00392D95 /* UIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseViewController.h; sourceTree = "<group>"; };
@@ -588,6 +588,15 @@
 		C1A2C84321F7067F000343CF /* MyResultsTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyResultsTableController.m; sourceTree = "<group>"; };
 		C1A2C84621F7073A000343CF /* MyMainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMainTableViewController.h; sourceTree = "<group>"; };
 		C1A2C84721F7073A000343CF /* MyMainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMainTableViewController.m; sourceTree = "<group>"; };
+		C1A473592314C9FE004B875A /* YTKStoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTKStoreManager.h; sourceTree = "<group>"; };
+		C1A4735A2314C9FE004B875A /* YTKStoreManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTKStoreManager.m; sourceTree = "<group>"; };
+		C1A4735C2314CAA6004B875A /* YTKStoreManager+private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTKStoreManager+private.h"; sourceTree = "<group>"; };
+		C1A4735D2314D1A0004B875A /* YTKTableDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTKTableDetailViewController.h; sourceTree = "<group>"; };
+		C1A4735E2314D1A0004B875A /* YTKTableDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTKTableDetailViewController.m; sourceTree = "<group>"; };
+		C1A473602314D6D7004B875A /* ItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		C1A473612314D6D7004B875A /* ItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
+		C1A473632314E238004B875A /* ItemModelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemModelCell.h; sourceTree = "<group>"; };
+		C1A473642314E238004B875A /* ItemModelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemModelCell.m; sourceTree = "<group>"; };
 		C1A4D06622E86E8000481615 /* MWOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWOrientation.h; sourceTree = "<group>"; };
 		C1A4D06722E86E8000481615 /* MWOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWOrientation.m; sourceTree = "<group>"; };
 		C1A4D06922E874D400481615 /* RotateEnvetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateEnvetViewController.h; sourceTree = "<group>"; };
@@ -1055,8 +1064,15 @@
 			isa = PBXGroup;
 			children = (
 				C15C2C871DC0CC9300EE1B72 /* view */,
-				C15C2C8B1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.h */,
-				C15C2C8C1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.m */,
+				C15C2C841DC0CBA000EE1B72 /* YTKKeyValueStoreExp.h */,
+				C15C2C851DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m */,
+				C1A473592314C9FE004B875A /* YTKStoreManager.h */,
+				C1A4735C2314CAA6004B875A /* YTKStoreManager+private.h */,
+				C1A4735A2314C9FE004B875A /* YTKStoreManager.m */,
+				C1A4735D2314D1A0004B875A /* YTKTableDetailViewController.h */,
+				C1A4735E2314D1A0004B875A /* YTKTableDetailViewController.m */,
+				C1A473602314D6D7004B875A /* ItemModel.h */,
+				C1A473612314D6D7004B875A /* ItemModel.m */,
 			);
 			path = YTKKeyValueStore;
 			sourceTree = "<group>";
@@ -1066,6 +1082,8 @@
 			children = (
 				C15C2C881DC0CCBF00EE1B72 /* MWTextButtonCell.h */,
 				C15C2C891DC0CCBF00EE1B72 /* MWTextButtonCell.m */,
+				C1A473632314E238004B875A /* ItemModelCell.h */,
+				C1A473642314E238004B875A /* ItemModelCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1395,8 +1413,6 @@
 				C19DB7CB1DBF5B7E005A43BE /* MasonryExp.m */,
 				C11D279A1DBF69B100FA2955 /* libextobjcExp.h */,
 				C11D279B1DBF69B100FA2955 /* libextobjcExp.m */,
-				C15C2C841DC0CBA000EE1B72 /* YTKKeyValueStoreExp.h */,
-				C15C2C851DC0CBA000EE1B72 /* YTKKeyValueStoreExp.m */,
 				C1F7DCDD1DC3532E00C29808 /* MantleExp.h */,
 				C1F7DCDE1DC3532E00C29808 /* MantleExp.m */,
 				51A76D64211203810067493A /* HideTabController.h */,
@@ -1805,10 +1821,12 @@
 			files = (
 				C162E35B1D51853B00061311 /* methodSelectorViewController.m in Sources */,
 				C156DDBB1D4897CA004CD422 /* AdvancedViewController.m in Sources */,
+				C1A473652314E238004B875A /* ItemModelCell.m in Sources */,
 				C15579851DBDDB9700F50CD2 /* DataStructureViewController.m in Sources */,
 				C15F15601D4604CF00392D95 /* SearchBarVC.m in Sources */,
 				C11D27981DBF63F800FA2955 /* UIControllBlocksKitViewController.m in Sources */,
 				C14CE7102303B9B200EC300F /* ParentViewController.m in Sources */,
+				C1A4735F2314D1A0004B875A /* YTKTableDetailViewController.m in Sources */,
 				C1F7DCB51DC2F5CD00C29808 /* dispatch_sourceViewController.m in Sources */,
 				C1C8C6AF1D59C96F00059977 /* MWScrollView.m in Sources */,
 				C17CA8C822FBD33100EB797D /* UINavigationController+Rotate.m in Sources */,
@@ -1823,6 +1841,7 @@
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
 				C16D84651DC8956D00D7F062 /* NSConditionViewController.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
+				C1A4735B2314C9FE004B875A /* YTKStoreManager.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C1436C21230653E90031A5DB /* NSCopyViewController.m in Sources */,
 				C1040B761F90A6B50027EE09 /* TestCreateObjectAsync.m in Sources */,
@@ -1866,7 +1885,6 @@
 				C1F7DCE51DC3542B00C29808 /* MWMtlObject.m in Sources */,
 				510776301FE66E9000169CED /* AutoSizeViewController.m in Sources */,
 				C16D84591DC8844C00D7F062 /* NSRecursiveLockViewController.m in Sources */,
-				C15C2C8D1DC0D08B00EE1B72 /* YTKKeyValueStoreViewController.m in Sources */,
 				C1A650801CE99E75006A117B /* Timer+NotificationViewController.m in Sources */,
 				C1B8EE6A1DC6E98A008FF1C6 /* StartRunLoopViewController.m in Sources */,
 				C17CA8C522FBD2F800EB797D /* UITabBarController+Rotate.m in Sources */,
@@ -1889,6 +1907,7 @@
 				C1ED59771CE5D09100096EC7 /* BBLaunchAdMonitor.m in Sources */,
 				C15F155D1D45EB7800392D95 /* OBJModel.m in Sources */,
 				519785FF1D0418E200DF3981 /* autolayoutCell.m in Sources */,
+				C1A473622314D6D7004B875A /* ItemModel.m in Sources */,
 				C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */,
 				C15F15571D45C65700392D95 /* KVOViewController.m in Sources */,
 				C15C2C8A1DC0CCBF00EE1B72 /* MWTextButtonCell.m in Sources */,
@@ -2007,7 +2026,6 @@
 				C189E62521D5C946002AABBE /* MWMtlObject.m in Sources */,
 				C189E62621D5C946002AABBE /* AutoSizeViewController.m in Sources */,
 				C189E62721D5C946002AABBE /* NSRecursiveLockViewController.m in Sources */,
-				C189E62821D5C946002AABBE /* YTKKeyValueStoreViewController.m in Sources */,
 				C189E62921D5C946002AABBE /* Timer+NotificationViewController.m in Sources */,
 				C189E62A21D5C946002AABBE /* StartRunLoopViewController.m in Sources */,
 				C189E62B21D5C946002AABBE /* ConfigCommon.m in Sources */,

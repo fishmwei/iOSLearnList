@@ -7,7 +7,7 @@
 //
 
 #import "IndexTableViewController.h"
-
+#import "YTKStoreManager.h"
 
 @interface YTKKeyValueStoreExp : IndexTableViewController
 
