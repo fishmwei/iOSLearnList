@@ -25,6 +25,7 @@
 
 - (void)addTable {
     NSString *tablenName = [[[NSUUID UUID] UUIDString] stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    tablenName = [@"table" stringByAppendingString:tablenName];
     [[YTKStoreManager sharedManager] createTable:tablenName];
     
     self.showData = [[YTKStoreManager sharedManager] getTableNames];

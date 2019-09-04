@@ -292,6 +292,8 @@
 		C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6508A1CE99E8C006A117B /* SDUIImageViewController.m */; };
 		C1A6508E1CE99F42006A117B /* multiThreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A6508D1CE99F42006A117B /* multiThreadController.m */; };
 		C1A650911CE99FA1006A117B /* NSObject+autoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A650901CE99FA1006A117B /* NSObject+autoCoding.m */; };
+		C1ABBC55231F5B070036BF07 /* NSString+MWUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ABBC54231F5B070036BF07 /* NSString+MWUtils.m */; };
+		C1ABBC58231F5E410036BF07 /* PalindromeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1ABBC57231F5E410036BF07 /* PalindromeViewController.m */; };
 		C1B621E322CC4E2D006304A3 /* AutorotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B621E222CC4E2D006304A3 /* AutorotateViewController.m */; };
 		C1B621E422CC4E2D006304A3 /* AutorotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B621E222CC4E2D006304A3 /* AutorotateViewController.m */; };
 		C1B8EE671DC6E94F008FF1C6 /* RunLoopsExp.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B8EE661DC6E94F008FF1C6 /* RunLoopsExp.m */; };
@@ -624,6 +626,11 @@
 		C1A6508D1CE99F42006A117B /* multiThreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = multiThreadController.m; path = ../../../Advanced/iOSSystem/controller/multiThreadController.m; sourceTree = "<group>"; };
 		C1A6508F1CE99FA1006A117B /* NSObject+autoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+autoCoding.h"; sourceTree = "<group>"; };
 		C1A650901CE99FA1006A117B /* NSObject+autoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+autoCoding.m"; sourceTree = "<group>"; };
+		C1ABBC53231F5AB80036BF07 /* NSString+MWUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MWUtils.h"; sourceTree = "<group>"; };
+		C1ABBC54231F5B070036BF07 /* NSString+MWUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MWUtils.m"; sourceTree = "<group>"; };
+		C1ABBC56231F5E410036BF07 /* PalindromeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PalindromeViewController.h; sourceTree = "<group>"; };
+		C1ABBC57231F5E410036BF07 /* PalindromeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalindromeViewController.m; sourceTree = "<group>"; };
+		C1ABBC59231F63130036BF07 /* MWUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWUtils.h; sourceTree = "<group>"; };
 		C1B621E122CC4E2D006304A3 /* AutorotateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutorotateViewController.h; sourceTree = "<group>"; };
 		C1B621E222CC4E2D006304A3 /* AutorotateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutorotateViewController.m; sourceTree = "<group>"; };
 		C1B8EE651DC6E94F008FF1C6 /* RunLoopsExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopsExp.h; sourceTree = "<group>"; };
@@ -816,6 +823,7 @@
 		51F68EBF1CDE1905009338D6 /* iOSLearnList */ = {
 			isa = PBXGroup;
 			children = (
+				C1ABBC4F231F5A4F0036BF07 /* MWUtils */,
 				519D912D227FBA58009321F9 /* hook */,
 				C1FD40CD1E45B6CC008B85D7 /* StubObjects */,
 				C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */,
@@ -894,14 +902,16 @@
 				519D912E227FBAE8009321F9 /* MWBaseViewController_hook.h */,
 				519D912F227FBAE8009321F9 /* MWBaseViewController_hook.m */,
 				5107762F1FE66E9000169CED /* AutoSizeViewController.m */,
-				C1B621E122CC4E2D006304A3 /* AutorotateViewController.h */,
 				C1B621E222CC4E2D006304A3 /* AutorotateViewController.m */,
 				C1A4D06922E874D400481615 /* RotateEnvetViewController.h */,
 				C1A4D06A22E874D400481615 /* RotateEnvetViewController.m */,
 				C14CE70E2303B9B200EC300F /* ParentViewController.h */,
+				C1B621E122CC4E2D006304A3 /* AutorotateViewController.h */,
 				C14CE70F2303B9B200EC300F /* ParentViewController.m */,
 				C14CE7112303B9C100EC300F /* ChildViewController.h */,
 				C14CE7122303B9C100EC300F /* ChildViewController.m */,
+				C1ABBC56231F5E410036BF07 /* PalindromeViewController.h */,
+				C1ABBC57231F5E410036BF07 /* PalindromeViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1425,6 +1435,16 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		C1ABBC4F231F5A4F0036BF07 /* MWUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C1ABBC53231F5AB80036BF07 /* NSString+MWUtils.h */,
+				C1ABBC54231F5B070036BF07 /* NSString+MWUtils.m */,
+				C1ABBC59231F63130036BF07 /* MWUtils.h */,
+			);
+			path = MWUtils;
+			sourceTree = "<group>";
+		};
 		C1B8EE641DC6E925008FF1C6 /* RunLoops */ = {
 			isa = PBXGroup;
 			children = (
@@ -1845,6 +1865,7 @@
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C1436C21230653E90031A5DB /* NSCopyViewController.m in Sources */,
 				C1040B761F90A6B50027EE09 /* TestCreateObjectAsync.m in Sources */,
+				C1ABBC55231F5B070036BF07 /* NSString+MWUtils.m in Sources */,
 				C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */,
 				C19726C11DEBC48C00B062FE /* blockViewController.m in Sources */,
 				C1A650851CE99E75006A117B /* ReversibleString.m in Sources */,
@@ -1910,6 +1931,7 @@
 				C1A473622314D6D7004B875A /* ItemModel.m in Sources */,
 				C1A650811CE99E75006A117B /* defaultNSURLSessionController.m in Sources */,
 				C15F15571D45C65700392D95 /* KVOViewController.m in Sources */,
+				C1ABBC58231F5E410036BF07 /* PalindromeViewController.m in Sources */,
 				C15C2C8A1DC0CCBF00EE1B72 /* MWTextButtonCell.m in Sources */,
 				C1F7DCDF1DC3532E00C29808 /* MantleExp.m in Sources */,
 				C172F2511D5CB62300A8FECC /* MWJSPerson.m in Sources */,
