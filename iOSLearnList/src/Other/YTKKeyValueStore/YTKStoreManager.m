@@ -53,8 +53,8 @@
 }
 
 - (void)removeTable:(NSString *)name {
-//    [_store clearTable:name];
-    [_store dropTable:name];
+    [_store clearTable:name];
+//    [_store dropTable:name];
     [_store deleteObjectById:name fromTable:TABLE_LIST_NAME];
 }
 

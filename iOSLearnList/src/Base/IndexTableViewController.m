@@ -63,10 +63,7 @@
         if (cls) {
             UIViewController *vc = [[cls alloc] init];
             vc.hidesBottomBarWhenPushed = YES;
-
-            if ([vc respondsToSelector:@selector(setIsOriginalNavigationBarHidden:)] && self.navigationController) {
-                [vc performSelector:@selector(setIsOriginalNavigationBarHidden:) withObject:@(self.navigationController.navigationBarHidden)];
-            }
+ 
             [self.navigationController pushViewController:vc animated:YES];
         }
     });

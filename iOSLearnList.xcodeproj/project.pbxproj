@@ -33,7 +33,8 @@
 		51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F68ECE1CDE1905009338D6 /* LaunchScreen.storyboard */; };
 		51FAA2F01CECB49A0050E75E /* myTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2EF1CECB49A0050E75E /* myTableViewController.m */; };
 		51FAA2F31CECB5750050E75E /* collectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FAA2F21CECB5750050E75E /* collectionViewController.m */; };
-		71BC9BDE2B7D9BDEE3B07A8F /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833BD4455DD575B15500BA9D /* libPods-iOSLearnList.a */; };
+		5CE5D697F7F3AE0E454D7056 /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FD3E80C9EFE709A5576987 /* libPods-iOSLearnList.a */; };
+		71BC9BDE2B7D9BDEE3B07A8F /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		7AD6E4B3A1FF81BC36F4B3D0 /* libPods-iOSLearnListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E30031823BFCBF8BFCE8165F /* libPods-iOSLearnListTests.a */; };
 		C1040B761F90A6B50027EE09 /* TestCreateObjectAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B751F90A6B50027EE09 /* TestCreateObjectAsync.m */; };
 		C1040B7A1F90A7B30027EE09 /* TestObjectFacotry.m in Sources */ = {isa = PBXBuildFile; fileRef = C1040B791F90A7B30027EE09 /* TestObjectFacotry.m */; };
@@ -50,6 +51,8 @@
 		C12F1EF41D4A199400A2D984 /* MWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */; };
 		C134A41E229CD89700CC06E9 /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C134A41D229CD89700CC06E9 /* LottieViewController.m */; };
 		C134A41F229CD89700CC06E9 /* LottieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C134A41D229CD89700CC06E9 /* LottieViewController.m */; };
+		C1379370236AB5F00053842E /* UIViewController+MWUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C137936F236AB5F00053842E /* UIViewController+MWUtils.m */; };
+		C13C82E4235F1ED7005BD1F2 /* MWUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C13C82E3235F1ED6005BD1F2 /* MWUtilsTests.m */; };
 		C13D8B131D879EFB008BE3B9 /* TimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C13D8B121D879EFB008BE3B9 /* TimerObject.m */; };
 		C142106A21E471EB00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
 		C142106B21E4721A00FC1DF9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C142106921E471EB00FC1DF9 /* WebKit.framework */; };
@@ -242,7 +245,6 @@
 		C189E66521D5C946002AABBE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16BB76A1D92264500495A88 /* iAd.framework */; };
 		C189E66621D5C946002AABBE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C162E3631D51DBE200061311 /* SpriteKit.framework */; };
 		C189E66721D5C946002AABBE /* mergedBundleFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F5BEF51D28A308000641A7 /* mergedBundleFrame.a */; };
-		C189E66821D5C946002AABBE /* libPods-iOSLearnList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 833BD4455DD575B15500BA9D /* libPods-iOSLearnList.a */; };
 		C189E66A21D5C946002AABBE /* xiala_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1C8C6B01D59DCF900059977 /* xiala_2@2x.png */; };
 		C189E66B21D5C946002AABBE /* caLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165B0F01D33A14500675C94 /* caLayerViewController.xib */; };
 		C189E66C21D5C946002AABBE /* ArchiverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E1DBE31D546731007EE5F5 /* ArchiverViewController.xib */; };
@@ -381,7 +383,7 @@
 		51FAA2F21CECB5750050E75E /* collectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionViewController.m; sourceTree = "<group>"; };
 		5AB57DD133BDA8E1660D7CF2 /* Pods-iOSLearnList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.release.xcconfig"; sourceTree = "<group>"; };
 		70B3FBDC4BE59422D21BE7DF /* Pods-iOSLearnListEnv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListEnv.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv.release.xcconfig"; sourceTree = "<group>"; };
-		833BD4455DD575B15500BA9D /* libPods-iOSLearnList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81FD3E80C9EFE709A5576987 /* libPods-iOSLearnList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearnList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6AEB92408A69B5BDC22BA4 /* Pods-iOSLearnListUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListUITests/Pods-iOSLearnListUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		976E1D446B14B1765DCA593D /* Pods-iOSLearnList.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnList.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList.adhoc.xcconfig"; sourceTree = "<group>"; };
 		9E11869B73308523AED5C2DA /* Pods-iOSLearnListTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearnListTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearnListTest/Pods-iOSLearnListTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -418,6 +420,9 @@
 		C12F1EF31D4A199400A2D984 /* MWDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDrawingViewController.m; sourceTree = "<group>"; };
 		C134A41C229CD89700CC06E9 /* LottieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieViewController.h; sourceTree = "<group>"; };
 		C134A41D229CD89700CC06E9 /* LottieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieViewController.m; sourceTree = "<group>"; };
+		C137936E236AB5F00053842E /* UIViewController+MWUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MWUtils.h"; sourceTree = "<group>"; };
+		C137936F236AB5F00053842E /* UIViewController+MWUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MWUtils.m"; sourceTree = "<group>"; };
+		C13C82E3235F1ED6005BD1F2 /* MWUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWUtilsTests.m; sourceTree = "<group>"; };
 		C13D8B111D879EFB008BE3B9 /* TimerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerObject.h; sourceTree = "<group>"; };
 		C13D8B121D879EFB008BE3B9 /* TimerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerObject.m; sourceTree = "<group>"; };
 		C142106921E471EB00FC1DF9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -688,7 +693,8 @@
 				C16BB76B1D92264500495A88 /* iAd.framework in Frameworks */,
 				C162E3641D51DBE200061311 /* SpriteKit.framework in Frameworks */,
 				51F5BEF61D28A308000641A7 /* mergedBundleFrame.a in Frameworks */,
-				71BC9BDE2B7D9BDEE3B07A8F /* libPods-iOSLearnList.a in Frameworks */,
+				71BC9BDE2B7D9BDEE3B07A8F /* (null) in Frameworks */,
+				5CE5D697F7F3AE0E454D7056 /* libPods-iOSLearnList.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +708,6 @@
 				C189E66521D5C946002AABBE /* iAd.framework in Frameworks */,
 				C189E66621D5C946002AABBE /* SpriteKit.framework in Frameworks */,
 				C189E66721D5C946002AABBE /* mergedBundleFrame.a in Frameworks */,
-				C189E66821D5C946002AABBE /* libPods-iOSLearnList.a in Frameworks */,
 				3CBA2B9896EF757D6C8402E4 /* libPods-iOSLearnListEnv.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,11 +732,11 @@
 				C16D84461DC8480500D7F062 /* UIKit.framework */,
 				C16BB76A1D92264500495A88 /* iAd.framework */,
 				C162E3631D51DBE200061311 /* SpriteKit.framework */,
-				833BD4455DD575B15500BA9D /* libPods-iOSLearnList.a */,
 				E30031823BFCBF8BFCE8165F /* libPods-iOSLearnListTests.a */,
 				24FC80A02FD2D64262943026 /* libPods-iOSLearnListUITests.a */,
 				03C4F686A2CEE05A7499C86C /* libPods-iOSLearnListTest.a */,
 				2BD4F71C8E87908E0AD61CD0 /* libPods-iOSLearnListEnv.a */,
+				81FD3E80C9EFE709A5576987 /* libPods-iOSLearnList.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1441,6 +1446,8 @@
 				C1ABBC53231F5AB80036BF07 /* NSString+MWUtils.h */,
 				C1ABBC54231F5B070036BF07 /* NSString+MWUtils.m */,
 				C1ABBC59231F63130036BF07 /* MWUtils.h */,
+				C137936E236AB5F00053842E /* UIViewController+MWUtils.h */,
+				C137936F236AB5F00053842E /* UIViewController+MWUtils.m */,
 			);
 			path = MWUtils;
 			sourceTree = "<group>";
@@ -1495,6 +1502,7 @@
 				C1ECDDF71E3849E3007A5C05 /* iOSLearnListTests.m */,
 				C1ECDDF91E3849E3007A5C05 /* Info.plist */,
 				C1FD40D11E45B796008B85D7 /* ObjectStubATests.m */,
+				C13C82E3235F1ED6005BD1F2 /* MWUtilsTests.m */,
 			);
 			path = iOSLearnListTests;
 			sourceTree = "<group>";
@@ -1743,7 +1751,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
@@ -1754,7 +1762,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSLearnList/Pods-iOSLearnList-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		86E2FB9E16D39780954CE367 /* [CP] Copy Pods Resources */ = {
@@ -1763,7 +1771,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
@@ -1774,7 +1782,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSLearnListTests/Pods-iOSLearnListTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C1209B1A1CF53D1500182559 /* Copy configuration */ = {
@@ -1818,7 +1826,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
@@ -1829,7 +1837,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSLearnListEnv/Pods-iOSLearnListEnv-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1860,6 +1868,7 @@
 				C15579951DBE1C2000F50CD2 /* dispatch_queueViewController.m in Sources */,
 				C1ED596E1CE5B0A200096EC7 /* ExtendMainController.m in Sources */,
 				C16D84651DC8956D00D7F062 /* NSConditionViewController.m in Sources */,
+				C1379370236AB5F00053842E /* UIViewController+MWUtils.m in Sources */,
 				C1A6508B1CE99E8C006A117B /* SDUIImageViewController.m in Sources */,
 				C1A4735B2314C9FE004B875A /* YTKStoreManager.m in Sources */,
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
@@ -2116,6 +2125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FD40D21E45B796008B85D7 /* ObjectStubATests.m in Sources */,
+				C13C82E4235F1ED7005BD1F2 /* MWUtilsTests.m in Sources */,
 				C1ECDDF81E3849E3007A5C05 /* iOSLearnListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

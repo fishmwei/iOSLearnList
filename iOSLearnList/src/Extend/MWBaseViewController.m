@@ -8,7 +8,7 @@
 
 #import "MWBaseViewController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
-
+#import "UIViewController+MWUtils.h"
 
 
 @interface MWBaseViewController () <UIGestureRecognizerDelegate>
@@ -16,7 +16,6 @@
 @property (nonatomic, retain) MBProgressHUD *tipHud;
 
 
-@property (nonatomic, assign) BOOL isOriginalNavigationBarHidden;
 @property (nonatomic, assign) BOOL isNextNavigationBarHidden;
 @property (nonatomic, assign) BOOL isFirstInto;
 
@@ -28,8 +27,6 @@
 - (id)init {
     self = [super init];
     if (self) {
-        //        self.hidesBottomBarWhenPushed = YES;
-        _isOriginalNavigationBarHidden = NO;
         _isNextNavigationBarHidden = NO;
         _isFirstInto = YES;
         _hideNavigationbar = NO;
@@ -63,7 +60,7 @@
     
     //Pop
     if (self.isMovingFromParentViewController) {
-        [self.navigationController setNavigationBarHidden:_isOriginalNavigationBarHidden animated:YES];
+        [self.navigationController setNavigationBarHidden:self.previousNavigationBarHidden animated:YES];
         self.navigationController.interactivePopGestureRecognizer.enabled = YES;
         return;
     }

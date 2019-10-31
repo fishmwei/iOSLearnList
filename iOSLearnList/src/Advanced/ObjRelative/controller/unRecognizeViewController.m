@@ -24,7 +24,7 @@
 
 
 @interface unRecognizeViewController ()
-
+@property (nonatomic, strong) fellow *forwardObject;
 @end
 
 
@@ -33,18 +33,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+    self.forwardObject = [fellow new];
     self.view.backgroundColor = [UIColor whiteColor];
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"按钮" forState:UIControlStateNormal];
+    [btn setTitle:@"按钮1" forState:UIControlStateNormal];
     btn.frame = CGRectMake(0, 200, 100, 30);
     [self.view addSubview:btn];
 
     [btn setBackgroundColor:[UIColor orangeColor]];
     [btn addTarget:self action:@selector(pressed:) forControlEvents:UIControlEventTouchUpInside];
 
-    // Do any additional setup after loading the view.
+    btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"按钮2" forState:UIControlStateNormal];
+    btn.frame = CGRectMake(120, 200, 100, 30);
+    [self.view addSubview:btn];
+    
+    [btn setBackgroundColor:[UIColor orangeColor]];
+    [btn addTarget:self action:@selector(pressed2:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,9 +72,8 @@
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
     SEL sel = [anInvocation selector];
-    fellow *next = [[fellow alloc] init];
-    if ([next respondsToSelector:sel]) {
-        [anInvocation invokeWithTarget:next];
+    if ([self.forwardObject respondsToSelector:sel]) {
+        [anInvocation invokeWithTarget:self.forwardObject];
     } else {
         [super forwardInvocation:anInvocation];
     }
@@ -81,7 +86,7 @@
     }
 
 
-    return [fellow instanceMethodSignatureForSelector:aSelector];
+    return [self.forwardObject methodSignatureForSelector:aSelector];
 }
 
 //-(void)pressed:(id)sender

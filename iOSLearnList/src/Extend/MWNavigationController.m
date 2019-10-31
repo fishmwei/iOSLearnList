@@ -9,6 +9,7 @@
 #import "MWNavigationController.h"
 #import "AutorotateViewController.h"
 #import "MWNavigationProtocol.h"
+#import "UIViewController+MWUtils.h"
 
 @interface MWNavigationController () <UIGestureRecognizerDelegate>
 
@@ -83,7 +84,9 @@
             [vc processOrientationWhenPushViewController:viewController];
         }
     }
- 
+    
+    viewController.previousNavigationBarHidden = self.navigationBarHidden;
+    
     [super pushViewController:viewController animated:animated];
 }
 

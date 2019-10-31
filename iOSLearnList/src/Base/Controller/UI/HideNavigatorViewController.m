@@ -7,7 +7,7 @@
 //
 
 #import "HideNavigatorViewController.h"
-
+#import "UIViewController+MWUtils.h"
 
 @interface HideNavigatorViewController () <UIPageViewControllerDelegate>
 
@@ -67,8 +67,7 @@
 
 - (void)goNextHide {
     HideNavigatorViewController *VC = [[HideNavigatorViewController alloc] init];
-    VC.isOriginalNavigationBarHidden = self.navigationController.navigationBarHidden;
-
+ 
     [self.navigationController pushViewController:VC animated:YES];
 }
 
@@ -91,7 +90,7 @@
     [super viewWillDisappear:animated];
 
     if (self.movingFromParentViewController) {
-        [self.navigationController setNavigationBarHidden:self.isOriginalNavigationBarHidden animated:animated];
+        [self.navigationController setNavigationBarHidden:self.previousNavigationBarHidden animated:animated];
     } else {
         [self.navigationController setNavigationBarHidden:self.isNextNavigationBarHidden animated:animated];
     }

@@ -11,7 +11,6 @@
 
 @interface HideNavigatorViewController : UIViewController
 
-@property (nonatomic, assign) BOOL isOriginalNavigationBarHidden;
 @property (nonatomic, assign) BOOL hideNavigationbar;
 
 @end
