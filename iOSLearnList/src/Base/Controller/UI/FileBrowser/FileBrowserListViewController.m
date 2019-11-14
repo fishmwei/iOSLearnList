@@ -66,10 +66,22 @@
         }
             break;
         case 1:
+        {
+            NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
+            FileBrowserViewController *vc = [[FileBrowserViewController alloc] initWithDirectoryPath:path];
+            [vc setTitle:[self.showData objectAtIndex:indexPath.row]];
+            [self.navigationController pushViewController:vc animated:YES];
             
+        }
             break;
         case 2:
+        {
+            NSString *path = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0];
+            FileBrowserViewController *vc = [[FileBrowserViewController alloc] initWithDirectoryPath:path];
+            [vc setTitle:[self.showData objectAtIndex:indexPath.row]];
+            [self.navigationController pushViewController:vc animated:YES];
             
+        }
             break;
         default:
             break;

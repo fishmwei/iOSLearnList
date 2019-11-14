@@ -262,6 +262,12 @@
 		C18D5080237D2F5D00F55F52 /* FileBrowserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D507F237D2F5D00F55F52 /* FileBrowserListViewController.m */; };
 		C18D5083237D33C400F55F52 /* FileBrowserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5082237D33C400F55F52 /* FileBrowserInfo.m */; };
 		C18D5086237D3C5300F55F52 /* FileBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5085237D3C5300F55F52 /* FileBrowserCell.m */; };
+		C18D508E237D5B4A00F55F52 /* clouddisk_icon_txt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18D5088237D5B4900F55F52 /* clouddisk_icon_txt@2x.png */; };
+		C18D508F237D5B4A00F55F52 /* clouddisk_icon_unknown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18D5089237D5B4900F55F52 /* clouddisk_icon_unknown@2x.png */; };
+		C18D5090237D5B4A00F55F52 /* clouddisk_icon_unknown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18D508A237D5B4900F55F52 /* clouddisk_icon_unknown@3x.png */; };
+		C18D5091237D5B4A00F55F52 /* clouddisk_icon_txt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18D508B237D5B4900F55F52 /* clouddisk_icon_txt@3x.png */; };
+		C18D5092237D5B4A00F55F52 /* clouddisk_icon_folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18D508C237D5B4A00F55F52 /* clouddisk_icon_folder@2x.png */; };
+		C18D5093237D5B4A00F55F52 /* clouddisk_icon_folder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C18D508D237D5B4A00F55F52 /* clouddisk_icon_folder@3x.png */; };
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
 		C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
@@ -575,6 +581,12 @@
 		C18D5082237D33C400F55F52 /* FileBrowserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserInfo.m; sourceTree = "<group>"; };
 		C18D5084237D3C5300F55F52 /* FileBrowserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserCell.h; sourceTree = "<group>"; };
 		C18D5085237D3C5300F55F52 /* FileBrowserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserCell.m; sourceTree = "<group>"; };
+		C18D5088237D5B4900F55F52 /* clouddisk_icon_txt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clouddisk_icon_txt@2x.png"; sourceTree = "<group>"; };
+		C18D5089237D5B4900F55F52 /* clouddisk_icon_unknown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clouddisk_icon_unknown@2x.png"; sourceTree = "<group>"; };
+		C18D508A237D5B4900F55F52 /* clouddisk_icon_unknown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clouddisk_icon_unknown@3x.png"; sourceTree = "<group>"; };
+		C18D508B237D5B4900F55F52 /* clouddisk_icon_txt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clouddisk_icon_txt@3x.png"; sourceTree = "<group>"; };
+		C18D508C237D5B4A00F55F52 /* clouddisk_icon_folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clouddisk_icon_folder@2x.png"; sourceTree = "<group>"; };
+		C18D508D237D5B4A00F55F52 /* clouddisk_icon_folder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clouddisk_icon_folder@3x.png"; sourceTree = "<group>"; };
 		C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseCollectionViewController.h; sourceTree = "<group>"; };
 		C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseCollectionViewController.m; sourceTree = "<group>"; };
 		C18F58E41D475AB800F95031 /* testCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCollectionViewController.h; sourceTree = "<group>"; };
@@ -1261,6 +1273,12 @@
 			isa = PBXGroup;
 			children = (
 				C18D5087237D576100F55F52 /* icons */,
+				C18D508C237D5B4A00F55F52 /* clouddisk_icon_folder@2x.png */,
+				C18D508D237D5B4A00F55F52 /* clouddisk_icon_folder@3x.png */,
+				C18D5088237D5B4900F55F52 /* clouddisk_icon_txt@2x.png */,
+				C18D508B237D5B4900F55F52 /* clouddisk_icon_txt@3x.png */,
+				C18D5089237D5B4900F55F52 /* clouddisk_icon_unknown@2x.png */,
+				C18D508A237D5B4900F55F52 /* clouddisk_icon_unknown@3x.png */,
 				C18D507B237D2CE300F55F52 /* FileBrowserViewController.h */,
 				C18D507C237D2CE300F55F52 /* FileBrowserViewController.m */,
 				C18D507E237D2F5D00F55F52 /* FileBrowserListViewController.h */,
@@ -1700,13 +1718,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C8C6B11D59DCF900059977 /* xiala_2@2x.png in Resources */,
+				C18D508E237D5B4A00F55F52 /* clouddisk_icon_txt@2x.png in Resources */,
 				C165B0F21D33A14500675C94 /* caLayerViewController.xib in Resources */,
 				C1E1DBE51D546731007EE5F5 /* ArchiverViewController.xib in Resources */,
+				C18D5091237D5B4A00F55F52 /* clouddisk_icon_txt@3x.png in Resources */,
+				C18D5090237D5B4A00F55F52 /* clouddisk_icon_unknown@3x.png in Resources */,
+				C18D5092237D5B4A00F55F52 /* clouddisk_icon_folder@2x.png in Resources */,
 				519EB5B61CE85C03002CB3AE /* InfoPlist.strings in Resources */,
+				C18D508F237D5B4A00F55F52 /* clouddisk_icon_unknown@2x.png in Resources */,
 				51F68ED01CDE1905009338D6 /* LaunchScreen.storyboard in Resources */,
 				519EB5B01CE85BCC002CB3AE /* myLanguage.strings in Resources */,
 				519EB5BC1CE85C88002CB3AE /* Localizable.strings in Resources */,
 				51F68ECD1CDE1905009338D6 /* Assets.xcassets in Resources */,
+				C18D5093237D5B4A00F55F52 /* clouddisk_icon_folder@3x.png in Resources */,
 				C162E3621D51D05600061311 /* launch4@2x.png in Resources */,
 				519786001D0418E200DF3981 /* autolayoutCell.xib in Resources */,
 				C16B6BC81D49E48C00459688 /* iOSLearnListBundle.bundle in Resources */,

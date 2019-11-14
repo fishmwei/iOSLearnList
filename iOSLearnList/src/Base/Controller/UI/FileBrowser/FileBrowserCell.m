@@ -38,36 +38,36 @@
 
 - (void)initBaseUI {
     
+    self.icon = [UIImageView new];
+    self.icon.contentMode = UIViewContentModeScaleAspectFill;
+    [self addSubview:self.icon];
+    [self.icon mas_makeConstraints:^(MASConstraintMaker *maker) {
+                maker.top.equalTo(self.mas_top).offset(10);
+                maker.height.width.equalTo(@(30));
+                maker.left.equalTo(self.mas_left).offset(5);
+    }];
     
-//    self.nameLabel = [UILabel new];
-//    [self addSubview:self.nameLabel];
-//    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *maker) {
-//        //        maker.height.equalTo(self.mas_height);
-//        maker.top.equalTo(self.mas_top).offset(15);
-//        maker.height.equalTo(@(20));
-//        maker.left.equalTo(self.mas_right).offset(-15);
-//        maker.left.equalTo(self.mas_left).offset(15);
-//    }];
-//    self.nameLabel.font = [UIFont systemFontOfSize:15];
-//    self.nameLabel.textColor = [UIColor colorWithRed:0x33/255.0f green:0x33/255.0f blue:0x33/255.0f alpha:1];
-//
-//    self.positionLabel = [UILabel new];
-//    [self addSubview:self.positionLabel];
-//    [self.positionLabel mas_makeConstraints:^(MASConstraintMaker *maker) {
-//        maker.top.equalTo(self.nameLabel.mas_bottom).offset(5);
-//        maker.height.equalTo(@(20));
-//        maker.left.equalTo(self.mas_right).offset(-15);
-//        maker.left.equalTo(self.mas_left).offset(15);
-//    }];
-//    self.positionLabel.font = [UIFont systemFontOfSize:15];
-//    self.positionLabel.textColor = [UIColor colorWithRed:0x33/255.0f green:0x33/255.0f blue:0x33/255.0f alpha:1];
     
+    self.label = [UILabel new];
+    [self addSubview:self.label];
+    [self.label mas_makeConstraints:^(MASConstraintMaker *maker) {
+        maker.top.equalTo(self.mas_top).offset(15);
+        maker.height.equalTo(@(20));
+        maker.left.equalTo(self.icon.mas_right).offset(15);
+        maker.right.equalTo(self.mas_right);
+    }];
+    self.label.font = [UIFont systemFontOfSize:15];
+    self.label.textColor = [UIColor colorWithRed:0x33/255.0f green:0x33/255.0f blue:0x33/255.0f alpha:1];
 }
 
 - (void)fillWithInfo:(FileBrowserInfo *)info {
+    if (info.isFolder) {
+        [self.imageView setImage:[UIImage imageNamed:@"clouddisk_icon_folder"]];
+    } else {
+        [self.imageView setImage:[UIImage imageNamed:@"clouddisk_icon_txt"]];
+    }
     
+    self.label.text = info.fileName;
 }
-
-
 
 @end

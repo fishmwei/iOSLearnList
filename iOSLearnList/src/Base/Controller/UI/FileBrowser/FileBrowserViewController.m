@@ -84,23 +84,22 @@
         cell = [[FileBrowserCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FileBrowserCell"];
     }
     
+    [cell fillWithInfo:[self.showData objectAtIndex:indexPath.row]];
+    
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case 0:
-            
-            break;
-        case 1:
-            
-            break;
-        case 2:
-            
-            break;
-        default:
-            break;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    FileBrowserInfo *info = [self.showData objectAtIndex:indexPath.row];
+    if (info.isFolder) {
+        
+        FileBrowserViewController *vc = [[FileBrowserViewController alloc] initWithDirectoryPath:info.filePath];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    } else {
+        
     }
+    
 }
 
 @end
