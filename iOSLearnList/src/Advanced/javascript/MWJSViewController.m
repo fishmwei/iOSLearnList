@@ -240,7 +240,7 @@
     //网页加载完成调用此方法
     //首先创建JSContext 对象（此处通过当前webView的键获取到jscontext）
     JSContext *xx = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-    NSString *alertJS = @"alert('超哥你好，大河向东流')"; //准备执行的js代码
+    NSString *alertJS = @"alert('大河向东流')"; //准备执行的js代码
     [xx evaluateScript:alertJS];                          //通过oc方法调用js的alert
 }
 

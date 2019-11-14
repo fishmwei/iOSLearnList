@@ -13,14 +13,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    if (!self.navigationItem.title) {
-        self.navigationItem.title = NSStringFromClass([self class]);
+    
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:nil
+                                                                            action:nil];
+    
+    if (!self.title && !self.navigationItem.title) {
+        if ([[self class] respondsToSelector:@selector(cellTitle)]) {
+            self.navigationItem.title =  [[self class] performSelector:@selector(cellTitle)];
+        } else {
+            self.navigationItem.title = NSStringFromClass([self class]);
+        }
     }
-
+    
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-
-    self.hidesBottomBarWhenPushed = NO;
+ 
 }
 
 - (void)viewSafeAreaInsetsDidChange {
@@ -44,8 +53,17 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-
-    cell.textLabel.text = [self.showData objectAtIndex:indexPath.row];
+    
+    NSString *vcClassName = [self.showData objectAtIndex:indexPath.row];
+    Class vcClass = NSClassFromString(vcClassName);
+    
+    
+    if (vcClass && [vcClass respondsToSelector:@selector(cellTitle)]) {
+        cell.textLabel.text = [vcClass performSelector:@selector(cellTitle)];
+    } else {
+        cell.textLabel.text = vcClassName;
+    }
+    
 
 
     return cell;
@@ -58,17 +76,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *className = [self.showData objectAtIndex:indexPath.row];
-    Class cls = NSClassFromString(className);
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if (cls) {
-            UIViewController *vc = [[cls alloc] init];
-            vc.hidesBottomBarWhenPushed = YES;
- 
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-    });
-
-
+    if ([className isKindOfClass:[NSString class]]) {
+        Class cls = NSClassFromString(className);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (cls) {
+                UIViewController *vc = [[cls alloc] init];
+                vc.hidesBottomBarWhenPushed = YES;
+                
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+        });
+    }
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

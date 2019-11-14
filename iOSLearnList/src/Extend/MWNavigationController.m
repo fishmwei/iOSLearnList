@@ -83,6 +83,7 @@
             id <MWNavigationProtocol> vc = (id <MWNavigationProtocol>)self.topViewController;
             [vc processOrientationWhenPushViewController:viewController];
         }
+        viewController.hidesBottomBarWhenPushed = YES;
     }
     
     viewController.previousNavigationBarHidden = self.navigationBarHidden;

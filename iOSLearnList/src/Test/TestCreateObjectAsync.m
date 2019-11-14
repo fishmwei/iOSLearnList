@@ -22,6 +22,8 @@
 @implementation TestSeller
 
 static NSInteger gseq = 0;
+
+
 - (instancetype)init
 {
     self = [super init];
@@ -48,6 +50,11 @@ static NSInteger gseq = 0;
 
 
 @implementation TestCreateObjectAsync
+
+
++ (NSString *)cellTitle {
+    return @"测试异步创建对象";
+}
 
 - (void)viewDidLoad
 {

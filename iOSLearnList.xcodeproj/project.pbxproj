@@ -258,6 +258,10 @@
 		C189E67421D5C946002AABBE /* iOSLearnListBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C16B6BC71D49E48C00459688 /* iOSLearnListBundle.bundle */; };
 		C189E67521D5C946002AABBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F68EC91CDE1905009338D6 /* Main.storyboard */; };
 		C189E67621D5C946002AABBE /* lanch5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C162E35F1D51D05500061311 /* lanch5@2x.png */; };
+		C18D507D237D2CE300F55F52 /* FileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D507C237D2CE300F55F52 /* FileBrowserViewController.m */; };
+		C18D5080237D2F5D00F55F52 /* FileBrowserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D507F237D2F5D00F55F52 /* FileBrowserListViewController.m */; };
+		C18D5083237D33C400F55F52 /* FileBrowserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5082237D33C400F55F52 /* FileBrowserInfo.m */; };
+		C18D5086237D3C5300F55F52 /* FileBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5085237D3C5300F55F52 /* FileBrowserCell.m */; };
 		C18F58E31D474BEA00F95031 /* MWBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */; };
 		C18F58E61D475AB800F95031 /* testCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18F58E51D475AB800F95031 /* testCollectionViewController.m */; };
 		C19321061D41FA0900378778 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19321051D41FA0900378778 /* MasonryViewController.m */; };
@@ -563,6 +567,14 @@
 		C189E5ED21D5C218002AABBE /* iOSLearnList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSLearnList copy-Info.plist"; path = "/Users/huangmingwei/Documents/GitHubCode/iOSLearnList/iOSLearnList copy-Info.plist"; sourceTree = "<absolute>"; };
 		C189E67D21D5C946002AABBE /* iOSLearnListEnv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearnListEnv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C189E67E21D5C946002AABBE /* iOSLearnList copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOSLearnList copy2-Info.plist"; path = "/Users/huangmingwei/Documents/GitHubCode/iOSLearnList/iOSLearnList copy2-Info.plist"; sourceTree = "<absolute>"; };
+		C18D507B237D2CE300F55F52 /* FileBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserViewController.h; sourceTree = "<group>"; };
+		C18D507C237D2CE300F55F52 /* FileBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserViewController.m; sourceTree = "<group>"; };
+		C18D507E237D2F5D00F55F52 /* FileBrowserListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserListViewController.h; sourceTree = "<group>"; };
+		C18D507F237D2F5D00F55F52 /* FileBrowserListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserListViewController.m; sourceTree = "<group>"; };
+		C18D5081237D33C400F55F52 /* FileBrowserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserInfo.h; sourceTree = "<group>"; };
+		C18D5082237D33C400F55F52 /* FileBrowserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserInfo.m; sourceTree = "<group>"; };
+		C18D5084237D3C5300F55F52 /* FileBrowserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileBrowserCell.h; sourceTree = "<group>"; };
+		C18D5085237D3C5300F55F52 /* FileBrowserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileBrowserCell.m; sourceTree = "<group>"; };
 		C18F58E11D474BEA00F95031 /* MWBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWBaseCollectionViewController.h; sourceTree = "<group>"; };
 		C18F58E21D474BEA00F95031 /* MWBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWBaseCollectionViewController.m; sourceTree = "<group>"; };
 		C18F58E41D475AB800F95031 /* testCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCollectionViewController.h; sourceTree = "<group>"; };
@@ -1165,6 +1177,7 @@
 		C15F15481D45B42600392D95 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C18D507A237D2CA600F55F52 /* FileBrowser */,
 				C12070011EF7C4670020D208 /* SearchController */,
 				C16BB7671D92261900495A88 /* iAdViewController.h */,
 				C16BB7681D92261900495A88 /* iAdViewController.m */,
@@ -1242,6 +1255,29 @@
 				C1791E8B215F176F006DA265 /* GLKOpenGLController.m */,
 			);
 			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		C18D507A237D2CA600F55F52 /* FileBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				C18D5087237D576100F55F52 /* icons */,
+				C18D507B237D2CE300F55F52 /* FileBrowserViewController.h */,
+				C18D507C237D2CE300F55F52 /* FileBrowserViewController.m */,
+				C18D507E237D2F5D00F55F52 /* FileBrowserListViewController.h */,
+				C18D507F237D2F5D00F55F52 /* FileBrowserListViewController.m */,
+				C18D5081237D33C400F55F52 /* FileBrowserInfo.h */,
+				C18D5082237D33C400F55F52 /* FileBrowserInfo.m */,
+				C18D5084237D3C5300F55F52 /* FileBrowserCell.h */,
+				C18D5085237D3C5300F55F52 /* FileBrowserCell.m */,
+			);
+			path = FileBrowser;
+			sourceTree = "<group>";
+		};
+		C18D5087237D576100F55F52 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = icons;
 			sourceTree = "<group>";
 		};
 		C19D17D91D18CC6000E29256 /* customPresentView */ = {
@@ -1856,6 +1892,8 @@
 				C14CE7102303B9B200EC300F /* ParentViewController.m in Sources */,
 				C1A4735F2314D1A0004B875A /* YTKTableDetailViewController.m in Sources */,
 				C1F7DCB51DC2F5CD00C29808 /* dispatch_sourceViewController.m in Sources */,
+				C18D507D237D2CE300F55F52 /* FileBrowserViewController.m in Sources */,
+				C18D5086237D3C5300F55F52 /* FileBrowserCell.m in Sources */,
 				C1C8C6AF1D59C96F00059977 /* MWScrollView.m in Sources */,
 				C17CA8C822FBD33100EB797D /* UINavigationController+Rotate.m in Sources */,
 				C15F15451D45B16C00392D95 /* BaseMainViewController.m in Sources */,
@@ -1874,6 +1912,7 @@
 				C1A650871CE99E75006A117B /* unRecognizeViewController.m in Sources */,
 				C1436C21230653E90031A5DB /* NSCopyViewController.m in Sources */,
 				C1040B761F90A6B50027EE09 /* TestCreateObjectAsync.m in Sources */,
+				C18D5083237D33C400F55F52 /* FileBrowserInfo.m in Sources */,
 				C1ABBC55231F5B070036BF07 /* NSString+MWUtils.m in Sources */,
 				C172F24A1D5C99AB00A8FECC /* runtimeViewController.m in Sources */,
 				C19726C11DEBC48C00B062FE /* blockViewController.m in Sources */,
@@ -1921,6 +1960,7 @@
 				C1209B221CF53F2900182559 /* ConfigCommon.m in Sources */,
 				C1791E8C215F176F006DA265 /* GLKOpenGLController.m in Sources */,
 				C16D845F1DC88B5A00D7F062 /* NSLockViewController.m in Sources */,
+				C18D5080237D2F5D00F55F52 /* FileBrowserListViewController.m in Sources */,
 				C165B0F11D33A14500675C94 /* caLayerViewController.m in Sources */,
 				C1436C2D230687780031A5DB /* SubCopyObjectBaseManager.m in Sources */,
 				C1A2C84421F7067F000343CF /* MyResultsTableController.m in Sources */,

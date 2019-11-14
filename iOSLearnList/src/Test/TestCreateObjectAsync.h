@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MWBaseViewController.h"
 
-
-@interface TestCreateObjectAsync : UIViewController
+@interface TestCreateObjectAsync : MWBaseViewController
 
 @end

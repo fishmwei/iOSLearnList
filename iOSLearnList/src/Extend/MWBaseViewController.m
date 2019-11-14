@@ -97,10 +97,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+ 
+    
+    // 返回键不显示title
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:nil
+                                                                            action:nil];
     
     if (!self.title && !self.navigationItem.title) {
-        self.navigationItem.title = NSStringFromClass([self class]);
-
+        if ([[self class] respondsToSelector:@selector(cellTitle)]) {
+            self.navigationItem.title =  [[self class] performSelector:@selector(cellTitle)];
+        } else {
+            self.navigationItem.title = NSStringFromClass([self class]);
+        }
     }
     
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;

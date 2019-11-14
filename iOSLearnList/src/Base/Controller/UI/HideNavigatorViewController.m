@@ -26,6 +26,9 @@
 
 @implementation HideNavigatorViewController
 
++(NSString *)cellTitle {
+    return @"导航栏隐藏";
+}
 - (instancetype)init {
     self = [super init];
     if (self) {
